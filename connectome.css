@@ -1,0 +1,122 @@
+/* ========== Base & Layout ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  /* allow page to scroll if content is taller than viewport */
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+header .description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.home-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+main {
+  flex: 1;
+  /* center the wrapper, allow scroll */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+#graph-container {
+  position: relative;
+  /* padding around the graph */
+  padding: 1rem;
+}
+
+/* fixed 1000×1000 box for your graph */
+#graph-wrapper {
+  position: relative;
+  width: 1300px;
+  height: 1000px;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+/* canvases will be appended inside this wrapper */
+#graph-wrapper canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ========== Tooltip ========== */
+.tooltip {
+  position: absolute;
+  pointer-events: none;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.2);
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  z-index: 10;
+}
+
+/* ========== Legend ========== */
+#legend {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 12px;
+  line-height: 1.4;
+  z-index: 5;
+}
+#legend .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+#legend .item:last-child {
+  margin-bottom: 0;
+}
+#legend .swatch {
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  border: 1px solid #333;
+}

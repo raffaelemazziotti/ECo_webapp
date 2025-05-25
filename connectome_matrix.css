@@ -1,0 +1,77 @@
+/* ===== Reset & Base ===== */
+* { margin:0; padding:0; box-sizing:border-box }
+html, body {
+  height:100%;
+  font-family:Arial, sans-serif;
+  background:#f4f4f4;
+}
+body { display:flex; flex-direction:column; }
+
+header {
+  background:#fff;
+  padding:1rem 2rem;
+  text-align:center;
+  box-shadow:0 2px 4px rgba(0,0,0,0.1);
+}
+header h1 { font-size:1.6rem; margin-bottom:0.5rem; }
+header .description { color:#666; margin-bottom:1rem; }
+.home-button {
+  background:#007bff; color:#fff; border:none;
+  padding:0.5rem 1rem; border-radius:4px; cursor:pointer;
+  transition:background-color .2s;
+}
+.home-button:hover { background:#0056b3; }
+
+/* ===== Controls ===== */
+.controls {
+  margin:0.5rem 2rem;
+  font-size:14px;
+}
+.controls label { font-weight:bold; }
+.controls select {
+  margin-left:0.5rem;
+  padding:2px;
+  font-size:14px;
+}
+
+/* ===== Heatmap Container ===== */
+main {
+  flex:1;
+  overflow:auto;
+  position:relative;
+  padding:1rem;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+}
+#heatmap-container {
+  position:relative;
+  overflow:auto;
+}
+#heatmap-container svg {
+  display:block;
+  margin:auto;
+}
+
+/* ===== Tooltip ===== */
+.tooltip {
+  position:absolute;
+  pointer-events:none;
+  background:#fff;
+  border:1px solid #ccc;
+  border-radius:4px;
+  padding:4px 6px;
+  font-size:12px;
+  box-shadow:0 1px 4px rgba(0,0,0,0.2);
+  opacity:0;
+  transition:opacity .08s;
+  z-index:10;
+}
+
+/* ===== Axis Titles ===== */
+.axis-title {
+  font-size:12px;
+  fill:#333;
+  font-weight:bold;
+  pointer-events:none;
+}

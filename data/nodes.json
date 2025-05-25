@@ -1,0 +1,882 @@
+[
+  {
+    "id": "VISpl",
+    "name": "Posterolateral visual area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "both",
+    "shape": "square",
+    "x": 553.15,
+    "y": 150.39
+  },
+  {
+    "id": "MOs",
+    "name": "Secondary motor area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "observer",
+    "shape": "circle",
+    "x": 294.57,
+    "y": 500.03
+  },
+  {
+    "id": "VISC",
+    "name": "Visceral area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "both",
+    "shape": "square",
+    "x": 685.7,
+    "y": 468.48
+  },
+  {
+    "id": "AUDd",
+    "name": "Dorsal auditory area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "observer",
+    "shape": "circle",
+    "x": 346.25,
+    "y": 308.68
+  },
+  {
+    "id": "ORB",
+    "name": "Orbital area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "both",
+    "shape": "square",
+    "x": 143.47,
+    "y": 549.16
+  },
+  {
+    "id": "AUDv",
+    "name": "Ventral auditory area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "both",
+    "shape": "square",
+    "x": 372.64,
+    "y": 82.7
+  },
+  {
+    "id": "ACA",
+    "name": "Anterior cingulate area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "both",
+    "shape": "square",
+    "x": 262.89,
+    "y": 546.46
+  },
+  {
+    "id": "PERI",
+    "name": "Perirhinal area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "observer",
+    "shape": "circle",
+    "x": 690.16,
+    "y": 431.41
+  },
+  {
+    "id": "AI",
+    "name": "Agranular insular area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "both",
+    "shape": "square",
+    "x": 924.84,
+    "y": 415.07
+  },
+  {
+    "id": "PL",
+    "name": "Prelimbic area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "observer",
+    "shape": "circle",
+    "x": 67.39,
+    "y": 475.98
+  },
+  {
+    "id": "VISrl",
+    "name": "Rostrolateral visual area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "both",
+    "shape": "square",
+    "x": 497.29,
+    "y": 50.0
+  },
+  {
+    "id": "VISp",
+    "name": "Primary visual area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "both",
+    "shape": "square",
+    "x": 457.09,
+    "y": 332.13
+  },
+  {
+    "id": "VISal",
+    "name": "Anterolateral visual area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "both",
+    "shape": "square",
+    "x": 536.41,
+    "y": 82.78
+  },
+  {
+    "id": "VISam",
+    "name": "Anteromedial visual area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "both",
+    "shape": "square",
+    "x": 335.13,
+    "y": 254.8
+  },
+  {
+    "id": "VISl",
+    "name": "Lateral visual area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "both",
+    "shape": "square",
+    "x": 587.4,
+    "y": 123.97
+  },
+  {
+    "id": "RSP",
+    "name": "Retrosplenial area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "both",
+    "shape": "square",
+    "x": 468.18,
+    "y": 87.64
+  },
+  {
+    "id": "AUDpo",
+    "name": "Posterior auditory area",
+    "structure": "Isocortex",
+    "color": "#e15759",
+    "group": "both",
+    "shape": "square",
+    "x": 424.79,
+    "y": 57.88
+  },
+  {
+    "id": "NLOT",
+    "name": "Nucleus of the lateral olfactory tract",
+    "structure": "Olfactory areas",
+    "color": "#76b7b2",
+    "group": "both",
+    "shape": "square",
+    "x": 880.85,
+    "y": 267.44
+  },
+  {
+    "id": "TR",
+    "name": "Postpiriform transition area",
+    "structure": "Olfactory areas",
+    "color": "#76b7b2",
+    "group": "both",
+    "shape": "square",
+    "x": 754.53,
+    "y": 519.72
+  },
+  {
+    "id": "AOB",
+    "name": "Accessory olfactory bulb",
+    "structure": "Olfactory areas",
+    "color": "#76b7b2",
+    "group": "observer",
+    "shape": "circle",
+    "x": 813.56,
+    "y": 520.61
+  },
+  {
+    "id": "MOB",
+    "name": "Main olfactory bulb",
+    "structure": "Olfactory areas",
+    "color": "#76b7b2",
+    "group": "both",
+    "shape": "square",
+    "x": 887.83,
+    "y": 463.99
+  },
+  {
+    "id": "DP",
+    "name": "Dorsal peduncular area",
+    "structure": "Olfactory areas",
+    "color": "#76b7b2",
+    "group": "both",
+    "shape": "square",
+    "x": 694.12,
+    "y": 357.41
+  },
+  {
+    "id": "PAA",
+    "name": "Piriform-amygdalar area",
+    "structure": "Olfactory areas",
+    "color": "#76b7b2",
+    "group": "both",
+    "shape": "square",
+    "x": 862.87,
+    "y": 413.26
+  },
+  {
+    "id": "COA",
+    "name": "Cortical amygdalar area",
+    "structure": "Olfactory areas",
+    "color": "#76b7b2",
+    "group": "both",
+    "shape": "square",
+    "x": 950.0,
+    "y": 461.58
+  },
+  {
+    "id": "AON",
+    "name": "Anterior olfactory nucleus",
+    "structure": "Olfactory areas",
+    "color": "#76b7b2",
+    "group": "both",
+    "shape": "square",
+    "x": 779.25,
+    "y": 246.49
+  },
+  {
+    "id": "TT",
+    "name": "Taenia tecta",
+    "structure": "Olfactory areas",
+    "color": "#76b7b2",
+    "group": "both",
+    "shape": "square",
+    "x": 897.38,
+    "y": 312.3
+  },
+  {
+    "id": "PIR",
+    "name": "Piriform area",
+    "structure": "Olfactory areas",
+    "color": "#76b7b2",
+    "group": "both",
+    "shape": "square",
+    "x": 920.9,
+    "y": 365.02
+  },
+  {
+    "id": "PAR",
+    "name": "Parasubiculum",
+    "structure": "Hippocampal formation",
+    "color": "#edc948",
+    "group": "observer",
+    "shape": "circle",
+    "x": 282.48,
+    "y": 690.0
+  },
+  {
+    "id": "POST",
+    "name": "Postsubiculum",
+    "structure": "Hippocampal formation",
+    "color": "#edc948",
+    "group": "observer",
+    "shape": "circle",
+    "x": 227.06,
+    "y": 878.05
+  },
+  {
+    "id": "DG",
+    "name": "Dentate gyrus",
+    "structure": "Hippocampal formation",
+    "color": "#edc948",
+    "group": "observer",
+    "shape": "circle",
+    "x": 454.17,
+    "y": 780.36
+  },
+  {
+    "id": "PRE",
+    "name": "Presubiculum",
+    "structure": "Hippocampal formation",
+    "color": "#edc948",
+    "group": "observer",
+    "shape": "circle",
+    "x": 335.42,
+    "y": 950.0
+  },
+  {
+    "id": "ENT",
+    "name": "Entorhinal area",
+    "structure": "Hippocampal formation",
+    "color": "#edc948",
+    "group": "both",
+    "shape": "square",
+    "x": 846.21,
+    "y": 239.45
+  },
+  {
+    "id": "SUB",
+    "name": "Subiculum",
+    "structure": "Hippocampal formation",
+    "color": "#edc948",
+    "group": "observer",
+    "shape": "circle",
+    "x": 429.09,
+    "y": 884.88
+  },
+  {
+    "id": "BAC",
+    "name": "Bed nucleus of the anterior commissure",
+    "structure": "Pallidum",
+    "color": "#bab0ac",
+    "group": "observer",
+    "shape": "circle",
+    "x": 628.21,
+    "y": 752.14
+  },
+  {
+    "id": "MSC",
+    "name": "Medial septal complex",
+    "structure": "Pallidum",
+    "color": "#bab0ac",
+    "group": "both",
+    "shape": "square",
+    "x": 880.81,
+    "y": 859.47
+  },
+  {
+    "id": "BLA",
+    "name": "Basolateral amygdalar nucleus",
+    "structure": "Cortical subplate",
+    "color": "#59a14f",
+    "group": "both",
+    "shape": "square",
+    "x": 846.26,
+    "y": 490.66
+  },
+  {
+    "id": "BMA",
+    "name": "Basomedial amygdalar nucleus",
+    "structure": "Cortical subplate",
+    "color": "#59a14f",
+    "group": "both",
+    "shape": "square",
+    "x": 934.94,
+    "y": 307.92
+  },
+  {
+    "id": "CLA",
+    "name": "Claustrum",
+    "structure": "Cortical subplate",
+    "color": "#59a14f",
+    "group": "both",
+    "shape": "square",
+    "x": 704.55,
+    "y": 308.82
+  },
+  {
+    "id": "EP",
+    "name": "Endopiriform nucleus",
+    "structure": "Cortical subplate",
+    "color": "#59a14f",
+    "group": "both",
+    "shape": "square",
+    "x": 727.52,
+    "y": 268.39
+  },
+  {
+    "id": "LA",
+    "name": "Lateral amygdalar nucleus",
+    "structure": "Cortical subplate",
+    "color": "#59a14f",
+    "group": "both",
+    "shape": "square",
+    "x": 764.35,
+    "y": 477.79
+  },
+  {
+    "id": "ACB",
+    "name": "Nucleus accumbens",
+    "structure": "Striatum",
+    "color": "#9c755f",
+    "group": "observer",
+    "shape": "circle",
+    "x": 707.14,
+    "y": 508.21
+  },
+  {
+    "id": "IA",
+    "name": "Intercalated amygdalar nucleus",
+    "structure": "Striatum",
+    "color": "#9c755f",
+    "group": "both",
+    "shape": "square",
+    "x": 822.22,
+    "y": 274.48
+  },
+  {
+    "id": "MEA",
+    "name": "Medial amygdalar nucleus",
+    "structure": "Striatum",
+    "color": "#9c755f",
+    "group": "both",
+    "shape": "square",
+    "x": 703.01,
+    "y": 394.44
+  },
+  {
+    "id": "LS",
+    "name": "Lateral septal nucleus",
+    "structure": "Striatum",
+    "color": "#9c755f",
+    "group": "both",
+    "shape": "square",
+    "x": 812.34,
+    "y": 666.13
+  },
+  {
+    "id": "BA",
+    "name": "Bed nucleus of the accessory olfactory tract",
+    "structure": "Striatum",
+    "color": "#9c755f",
+    "group": "both",
+    "shape": "square",
+    "x": 751.7,
+    "y": 294.2
+  },
+  {
+    "id": "PRT",
+    "name": "Pretectal region",
+    "structure": "Midbrain",
+    "color": "#ff9da7",
+    "group": "observer",
+    "shape": "circle",
+    "x": 365.44,
+    "y": 161.43
+  },
+  {
+    "id": "SCs",
+    "name": "Superior colliculus, sensory related",
+    "structure": "Midbrain",
+    "color": "#ff9da7",
+    "group": "both",
+    "shape": "square",
+    "x": 423.5,
+    "y": 269.08
+  },
+  {
+    "id": "DR",
+    "name": "Dorsal nucleus raphe",
+    "structure": "Midbrain",
+    "color": "#ff9da7",
+    "group": "observer",
+    "shape": "circle",
+    "x": 852.29,
+    "y": 765.13
+  },
+  {
+    "id": "PAG",
+    "name": "Periaqueductal gray",
+    "structure": "Midbrain",
+    "color": "#ff9da7",
+    "group": "observer",
+    "shape": "circle",
+    "x": 577.46,
+    "y": 213.92
+  },
+  {
+    "id": "SCm",
+    "name": "Superior colliculus, motor related",
+    "structure": "Midbrain",
+    "color": "#ff9da7",
+    "group": "observer",
+    "shape": "circle",
+    "x": 540.15,
+    "y": 272.51
+  },
+  {
+    "id": "IC",
+    "name": "Inferior colliculus",
+    "structure": "Midbrain",
+    "color": "#ff9da7",
+    "group": "observer",
+    "shape": "circle",
+    "x": 395.23,
+    "y": 329.16
+  },
+  {
+    "id": "VTA",
+    "name": "Ventral tegmental area",
+    "structure": "Midbrain",
+    "color": "#ff9da7",
+    "group": "observer",
+    "shape": "circle",
+    "x": 712.12,
+    "y": 877.42
+  },
+  {
+    "id": "CUN",
+    "name": "Cuneiform nucleus",
+    "structure": "Midbrain",
+    "color": "#ff9da7",
+    "group": "observer",
+    "shape": "circle",
+    "x": 494.87,
+    "y": 301.59
+  },
+  {
+    "id": "IMD",
+    "name": "Intermediodorsal nucleus of the thalamus",
+    "structure": "Thalamus",
+    "color": "#b07aa1",
+    "group": "both",
+    "shape": "square",
+    "x": 60.45,
+    "y": 589.25
+  },
+  {
+    "id": "LH",
+    "name": "Lateral habenula",
+    "structure": "Thalamus",
+    "color": "#b07aa1",
+    "group": "observer",
+    "shape": "circle",
+    "x": 87.4,
+    "y": 428.67
+  },
+  {
+    "id": "PVT",
+    "name": "Paraventricular nucleus of the thalamus",
+    "structure": "Thalamus",
+    "color": "#b07aa1",
+    "group": "observer",
+    "shape": "circle",
+    "x": 252.09,
+    "y": 359.31
+  },
+  {
+    "id": "POL",
+    "name": "Posterior limiting nucleus of the thalamus",
+    "structure": "Thalamus",
+    "color": "#b07aa1",
+    "group": "observer",
+    "shape": "circle",
+    "x": 600.68,
+    "y": 271.65
+  },
+  {
+    "id": "MD",
+    "name": "Mediodorsal nucleus of thalamus",
+    "structure": "Thalamus",
+    "color": "#b07aa1",
+    "group": "observer",
+    "shape": "circle",
+    "x": 269.69,
+    "y": 431.6
+  },
+  {
+    "id": "SPF",
+    "name": "Subparafascicular nucleus",
+    "structure": "Thalamus",
+    "color": "#b07aa1",
+    "group": "observer",
+    "shape": "circle",
+    "x": 352.64,
+    "y": 205.99
+  },
+  {
+    "id": "AM",
+    "name": "Anteromedial nucleus",
+    "structure": "Thalamus",
+    "color": "#b07aa1",
+    "group": "observer",
+    "shape": "circle",
+    "x": 306.71,
+    "y": 405.22
+  },
+  {
+    "id": "SPA",
+    "name": "Subparafascicular area",
+    "structure": "Thalamus",
+    "color": "#b07aa1",
+    "group": "both",
+    "shape": "square",
+    "x": 208.72,
+    "y": 326.75
+  },
+  {
+    "id": "PR",
+    "name": "Perireunensis nucleus",
+    "structure": "Thalamus",
+    "color": "#b07aa1",
+    "group": "observer",
+    "shape": "circle",
+    "x": 112.54,
+    "y": 610.64
+  },
+  {
+    "id": "CM",
+    "name": "Central medial nucleus of the thalamus",
+    "structure": "Thalamus",
+    "color": "#b07aa1",
+    "group": "both",
+    "shape": "square",
+    "x": 50.0,
+    "y": 531.32
+  },
+  {
+    "id": "RE",
+    "name": "Nucleus of reuniens",
+    "structure": "Thalamus",
+    "color": "#b07aa1",
+    "group": "both",
+    "shape": "square",
+    "x": 178.45,
+    "y": 613.21
+  },
+  {
+    "id": "IAM",
+    "name": "Interanteromedial nucleus of the thalamus",
+    "structure": "Thalamus",
+    "color": "#b07aa1",
+    "group": "both",
+    "shape": "square",
+    "x": 84.23,
+    "y": 364.23
+  },
+  {
+    "id": "IAD",
+    "name": "Interanterodorsal nucleus of the thalamus",
+    "structure": "Thalamus",
+    "color": "#b07aa1",
+    "group": "observer",
+    "shape": "circle",
+    "x": 218.72,
+    "y": 578.93
+  },
+  {
+    "id": "PT",
+    "name": "Parataenial nucleus",
+    "structure": "Thalamus",
+    "color": "#b07aa1",
+    "group": "both",
+    "shape": "square",
+    "x": 126.9,
+    "y": 374.01
+  },
+  {
+    "id": "RH",
+    "name": "Rhomboid nucleus",
+    "structure": "Thalamus",
+    "color": "#b07aa1",
+    "group": "both",
+    "shape": "square",
+    "x": 181.53,
+    "y": 363.12
+  },
+  {
+    "id": "PVp",
+    "name": "Periventricular hypothalamic nucleus, posterior part",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 756.71,
+    "y": 673.55
+  },
+  {
+    "id": "AVPV",
+    "name": "Anteroventral periventricular nucleus",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 659.68,
+    "y": 667.35
+  },
+  {
+    "id": "AHN",
+    "name": "Anterior hypothalamic nucleus",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 820.06,
+    "y": 860.66
+  },
+  {
+    "id": "LPO",
+    "name": "Lateral preoptic area",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 830.08,
+    "y": 710.09
+  },
+  {
+    "id": "MPO",
+    "name": "Medial preoptic area",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 634.65,
+    "y": 785.46
+  },
+  {
+    "id": "PSTN",
+    "name": "Parasubthalamic nucleus",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 689.34,
+    "y": 689.73
+  },
+  {
+    "id": "TM",
+    "name": "Tuberomammillary nucleus",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 686.21,
+    "y": 916.94
+  },
+  {
+    "id": "PVHd",
+    "name": "Paraventricular hypothalamic nucleus, descending division",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 799.05,
+    "y": 785.64
+  },
+  {
+    "id": "LHA",
+    "name": "Lateral hypothalamic area",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 855.63,
+    "y": 814.46
+  },
+  {
+    "id": "TU",
+    "name": "Tuberal nucleus",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 669.8,
+    "y": 833.27
+  },
+  {
+    "id": "SUM",
+    "name": "Supramammillary nucleus",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 641.0,
+    "y": 906.24
+  },
+  {
+    "id": "PMv",
+    "name": "Ventral premammillary nucleus",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 747.75,
+    "y": 917.31
+  },
+  {
+    "id": "PST",
+    "name": "Preparasubthalamic nucleus",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 619.61,
+    "y": 868.37
+  },
+  {
+    "id": "PH",
+    "name": "Posterior hypothalamic nucleus",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "both",
+    "shape": "square",
+    "x": 866.19,
+    "y": 706.59
+  },
+  {
+    "id": "ADP",
+    "name": "Anterodorsal preoptic nucleus",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 639.36,
+    "y": 704.85
+  },
+  {
+    "id": "PS",
+    "name": "Parastrial nucleus",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "both",
+    "shape": "square",
+    "x": 712.65,
+    "y": 645.18
+  },
+  {
+    "id": "PMd",
+    "name": "Dorsal premammillary nucleus",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 621.74,
+    "y": 830.02
+  },
+  {
+    "id": "DMH",
+    "name": "Dorsomedial nucleus of the hypothalamus",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "both",
+    "shape": "square",
+    "x": 779.47,
+    "y": 638.71
+  },
+  {
+    "id": "ZI",
+    "name": "Zona incerta",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 358.46,
+    "y": 124.11
+  },
+  {
+    "id": "VMH",
+    "name": "Ventromedial hypothalamic nucleus",
+    "structure": "Hypothalamus",
+    "color": "#f28e2b",
+    "group": "observer",
+    "shape": "circle",
+    "x": 781.03,
+    "y": 886.34
+  }
+]
