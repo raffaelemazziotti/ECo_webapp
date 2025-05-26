@@ -88,3 +88,9 @@ main {
 .nav-button:hover {
   background-color: #0056b3;
 }
+
+#chart-container {
+  position: relative;  /* required for Chart.js */
+  width: 70%;
+  height: 100%;       /* bump this up/down to taste */
+}

@@ -1,0 +1,1849 @@
+,acronyms,variable,density,role,structure,color
+2,MOs,BL2observer,2314.8563824885,observer,Isocortex,#e15759
+5,VISC,BL2observer,2684.60656310752,observer,Isocortex,#e15759
+6,AUDd,BL2observer,4883.79127804386,observer,Isocortex,#e15759
+8,AUDpo,BL2observer,3619.26010244735,observer,Isocortex,#e15759
+9,AUDv,BL2observer,2411.35710664188,observer,Isocortex,#e15759
+10,VISal,BL2observer,6348.35089138444,observer,Isocortex,#e15759
+11,VISam,BL2observer,4523.45255943456,observer,Isocortex,#e15759
+12,VISl,BL2observer,8133.24858567477,observer,Isocortex,#e15759
+13,VISp,BL2observer,6044.88533206936,observer,Isocortex,#e15759
+14,VISpl,BL2observer,2963.03121041115,observer,Isocortex,#e15759
+17,ACA,BL2observer,3312.66666904035,observer,Isocortex,#e15759
+18,PL,BL2observer,2153.69246420485,observer,Isocortex,#e15759
+20,ORB,BL2observer,1478.5618923514,observer,Isocortex,#e15759
+21,AI,BL2observer,2759.82689231453,observer,Isocortex,#e15759
+22,RSP,BL2observer,2715.83453868292,observer,Isocortex,#e15759
+24,VISrl,BL2observer,5363.90722232698,observer,Isocortex,#e15759
+25,PERI,BL2observer,8336.35257536839,observer,Isocortex,#e15759
+27,MOB,BL2observer,6185.33119580043,observer,Olfactory areas,#76b7b2
+28,AOB,BL2observer,2603.22367907871,observer,Olfactory areas,#76b7b2
+29,AON,BL2observer,2872.43606052896,observer,Olfactory areas,#76b7b2
+30,TT,BL2observer,2813.38073245429,observer,Olfactory areas,#76b7b2
+31,DP,BL2observer,1192.09617244715,observer,Olfactory areas,#76b7b2
+32,PIR,BL2observer,3375.81585286478,observer,Olfactory areas,#76b7b2
+33,NLOT,BL2observer,2821.74507296858,observer,Olfactory areas,#76b7b2
+34,COA,BL2observer,1043.26618447009,observer,Olfactory areas,#76b7b2
+35,PAA,BL2observer,543.96778467942,observer,Olfactory areas,#76b7b2
+36,TR,BL2observer,1942.35769209492,observer,Olfactory areas,#76b7b2
+38,DG,BL2observer,3012.21230382805,observer,Hippocampal formation,#edc948
+41,ENT,BL2observer,4086.44614647907,observer,Hippocampal formation,#edc948
+42,PAR,BL2observer,2895.44673289248,observer,Hippocampal formation,#edc948
+43,POST,BL2observer,4594.75323971643,observer,Hippocampal formation,#edc948
+44,PRE,BL2observer,6353.68720149229,observer,Hippocampal formation,#edc948
+45,SUB,BL2observer,6784.57231561209,observer,Hippocampal formation,#edc948
+49,CLA,BL2observer,4841.80786399851,observer,Cortical subplate,#59a14f
+50,EP,BL2observer,4372.06023586021,observer,Cortical subplate,#59a14f
+51,LA,BL2observer,1506.9743633494,observer,Cortical subplate,#59a14f
+52,BLA,BL2observer,1549.2278727043,observer,Cortical subplate,#59a14f
+53,BMA,BL2observer,1207.72317828026,observer,Cortical subplate,#59a14f
+56,ACB,BL2observer,2099.62423088439,observer,Striatum,#9c755f
+60,LS,BL2observer,3814.45517648987,observer,Striatum,#9c755f
+64,BA,BL2observer,13686.8754163889,observer,Striatum,#9c755f
+66,IA,BL2observer,3079.19386886178,observer,Striatum,#9c755f
+67,MEA,BL2observer,2391.53190745271,observer,Striatum,#9c755f
+72,MSC,BL2observer,6024.06136974025,observer,Pallidum,#bab0ac
+75,BAC,BL2observer,8654.58108770211,observer,Pallidum,#bab0ac
+80,SPF,BL2observer,11171.9322442998,observer,Thalamus,#b07aa1
+81,SPA,BL2observer,709.326641572558,observer,Thalamus,#b07aa1
+87,POL,BL2observer,2409.40564907511,observer,Thalamus,#b07aa1
+92,AM,BL2observer,4365.41530290147,observer,Thalamus,#b07aa1
+94,IAM,BL2observer,2661.00151745072,observer,Thalamus,#b07aa1
+95,IAD,BL2observer,5153.60390852637,observer,Thalamus,#b07aa1
+97,IMD,BL2observer,596.375314231599,observer,Thalamus,#b07aa1
+98,MD,BL2observer,2823.93831394753,observer,Thalamus,#b07aa1
+100,PR,BL2observer,518.320632153202,observer,Thalamus,#b07aa1
+101,PVT,BL2observer,2127.20238034792,observer,Thalamus,#b07aa1
+102,PT,BL2observer,8934.95075869648,observer,Thalamus,#b07aa1
+103,RE,BL2observer,1509.83236445736,observer,Thalamus,#b07aa1
+105,RH,BL2observer,806.02995897339,observer,Thalamus,#b07aa1
+106,CM,BL2observer,865.040530310025,observer,Thalamus,#b07aa1
+117,LH,BL2observer,5367.74747461202,observer,Thalamus,#b07aa1
+123,ADP,BL2observer,1848.29307424903,observer,Hypothalamus,#f28e2b
+126,AVPV,BL2observer,374.657280474261,observer,Hypothalamus,#f28e2b
+127,DMH,BL2observer,5636.05976451071,observer,Hypothalamus,#f28e2b
+129,MPO,BL2observer,4975.60502449196,observer,Hypothalamus,#f28e2b
+132,PS,BL2observer,1706.11375942981,observer,Hypothalamus,#f28e2b
+134,PVp,BL2observer,490.143242093324,observer,Hypothalamus,#f28e2b
+141,AHN,BL2observer,3476.55171949569,observer,Hypothalamus,#f28e2b
+144,SUM,BL2observer,2691.47403156629,observer,Hypothalamus,#f28e2b
+145,TM,BL2observer,977.09923664122,observer,Hypothalamus,#f28e2b
+147,PMd,BL2observer,2128.32806283789,observer,Hypothalamus,#f28e2b
+148,PMv,BL2observer,638.358506697062,observer,Hypothalamus,#f28e2b
+149,PVHd,BL2observer,1080.33760550172,observer,Hypothalamus,#f28e2b
+150,VMH,BL2observer,1030.97197606471,observer,Hypothalamus,#f28e2b
+151,PH,BL2observer,3810.51372917078,observer,Hypothalamus,#f28e2b
+152,LHA,BL2observer,9362.08373312116,observer,Hypothalamus,#f28e2b
+153,LPO,BL2observer,12295.8590765063,observer,Hypothalamus,#f28e2b
+154,PST,BL2observer,2366.19718309859,observer,Hypothalamus,#f28e2b
+155,PSTN,BL2observer,2450.76352457647,observer,Hypothalamus,#f28e2b
+159,TU,BL2observer,1820.93104404699,observer,Hypothalamus,#f28e2b
+160,ZI,BL2observer,3675.74458893844,observer,Hypothalamus,#f28e2b
+162,SCs,BL2observer,4042.26753081089,observer,Midbrain,#ff9da7
+163,IC,BL2observer,6590.17063611293,observer,Midbrain,#ff9da7
+170,VTA,BL2observer,13104.5105453144,observer,Midbrain,#ff9da7
+174,SCm,BL2observer,5721.27682617107,observer,Midbrain,#ff9da7
+175,PAG,BL2observer,2156.05807965974,observer,Midbrain,#ff9da7
+176,PRT,BL2observer,3952.93076100189,observer,Midbrain,#ff9da7
+178,CUN,BL2observer,1562.19220788118,observer,Midbrain,#ff9da7
+197,DR,BL2observer,2163.5234928948,observer,Midbrain,#ff9da7
+200,MOs,BL16observer,838.402403234984,observer,Isocortex,#e15759
+203,VISC,BL16observer,1116.23114992365,observer,Isocortex,#e15759
+204,AUDd,BL16observer,3431.81245273506,observer,Isocortex,#e15759
+206,AUDpo,BL16observer,2226.34035287421,observer,Isocortex,#e15759
+207,AUDv,BL16observer,1465.26956227818,observer,Isocortex,#e15759
+208,VISal,BL16observer,9054.16558706245,observer,Isocortex,#e15759
+209,VISam,BL16observer,4436.63882344541,observer,Isocortex,#e15759
+210,VISl,BL16observer,10980.2645864012,observer,Isocortex,#e15759
+211,VISp,BL16observer,8712.51126788579,observer,Isocortex,#e15759
+212,VISpl,BL16observer,3393.63668875055,observer,Isocortex,#e15759
+215,ACA,BL16observer,3049.1435570067,observer,Isocortex,#e15759
+216,PL,BL16observer,1787.30639613947,observer,Isocortex,#e15759
+218,ORB,BL16observer,2732.28675672016,observer,Isocortex,#e15759
+219,AI,BL16observer,2270.44240880584,observer,Isocortex,#e15759
+220,RSP,BL16observer,2755.72794847862,observer,Isocortex,#e15759
+222,VISrl,BL16observer,6323.36413350933,observer,Isocortex,#e15759
+223,PERI,BL16observer,3248.88468297959,observer,Isocortex,#e15759
+225,MOB,BL16observer,8153.80207599167,observer,Olfactory areas,#76b7b2
+226,AOB,BL16observer,4936.86666335742,observer,Olfactory areas,#76b7b2
+227,AON,BL16observer,4849.68318007245,observer,Olfactory areas,#76b7b2
+228,TT,BL16observer,3336.47795645453,observer,Olfactory areas,#76b7b2
+229,DP,BL16observer,735.7744921929,observer,Olfactory areas,#76b7b2
+230,PIR,BL16observer,4903.76645104969,observer,Olfactory areas,#76b7b2
+231,NLOT,BL16observer,2979.76279705483,observer,Olfactory areas,#76b7b2
+232,COA,BL16observer,1850.10460876323,observer,Olfactory areas,#76b7b2
+233,PAA,BL16observer,643.287745365269,observer,Olfactory areas,#76b7b2
+234,TR,BL16observer,608.065497593626,observer,Olfactory areas,#76b7b2
+236,DG,BL16observer,1708.95443874094,observer,Hippocampal formation,#edc948
+239,ENT,BL16observer,2313.26915377712,observer,Hippocampal formation,#edc948
+240,PAR,BL16observer,2395.78174614735,observer,Hippocampal formation,#edc948
+241,POST,BL16observer,3237.13369756626,observer,Hippocampal formation,#edc948
+242,PRE,BL16observer,6167.4010845899,observer,Hippocampal formation,#edc948
+243,SUB,BL16observer,4964.88039166256,observer,Hippocampal formation,#edc948
+247,CLA,BL16observer,5294.3712110816,observer,Cortical subplate,#59a14f
+248,EP,BL16observer,2995.6249130965,observer,Cortical subplate,#59a14f
+249,LA,BL16observer,1132.27829202747,observer,Cortical subplate,#59a14f
+250,BLA,BL16observer,1286.15144149036,observer,Cortical subplate,#59a14f
+251,BMA,BL16observer,1429.11836441197,observer,Cortical subplate,#59a14f
+254,ACB,BL16observer,961.107728329359,observer,Striatum,#9c755f
+258,LS,BL16observer,2286.20619874664,observer,Striatum,#9c755f
+262,BA,BL16observer,8314.45702864748,observer,Striatum,#9c755f
+264,IA,BL16observer,3042.86119784276,observer,Striatum,#9c755f
+265,MEA,BL16observer,1932.54174521467,observer,Striatum,#9c755f
+270,MSC,BL16observer,1774.23097148696,observer,Pallidum,#bab0ac
+273,BAC,BL16observer,2445.85987261147,observer,Pallidum,#bab0ac
+278,SPF,BL16observer,2888.15137278564,observer,Thalamus,#b07aa1
+279,SPA,BL16observer,73.6093684650767,observer,Thalamus,#b07aa1
+285,POL,BL16observer,522.427762097193,observer,Thalamus,#b07aa1
+290,AM,BL16observer,2008.26994979791,observer,Thalamus,#b07aa1
+292,IAM,BL16observer,2020.03034901368,observer,Thalamus,#b07aa1
+293,IAD,BL16observer,1130.17629572947,observer,Thalamus,#b07aa1
+295,IMD,BL16observer,434.646415456928,observer,Thalamus,#b07aa1
+296,MD,BL16observer,1171.89370953442,observer,Thalamus,#b07aa1
+298,PR,BL16observer,237.563623070217,observer,Thalamus,#b07aa1
+299,PVT,BL16observer,2361.17514445585,observer,Thalamus,#b07aa1
+300,PT,BL16observer,6849.31738450484,observer,Thalamus,#b07aa1
+301,RE,BL16observer,908.831132003462,observer,Thalamus,#b07aa1
+303,RH,BL16observer,494.609293006398,observer,Thalamus,#b07aa1
+304,CM,BL16observer,556.60394778145,observer,Thalamus,#b07aa1
+315,LH,BL16observer,1638.14174369158,observer,Thalamus,#b07aa1
+321,ADP,BL16observer,855.691238078253,observer,Hypothalamus,#f28e2b
+324,AVPV,BL16observer,203.927380511307,observer,Hypothalamus,#f28e2b
+325,DMH,BL16observer,4728.88576131892,observer,Hypothalamus,#f28e2b
+327,MPO,BL16observer,2858.72253746544,observer,Hypothalamus,#f28e2b
+330,PS,BL16observer,622.020641458785,observer,Hypothalamus,#f28e2b
+332,PVp,BL16observer,626.294142674803,observer,Hypothalamus,#f28e2b
+339,AHN,BL16observer,2078.17664124501,observer,Hypothalamus,#f28e2b
+342,SUM,BL16observer,1745.20153141707,observer,Hypothalamus,#f28e2b
+343,TM,BL16observer,494.435758300376,observer,Hypothalamus,#f28e2b
+345,PMd,BL16observer,822.605324900536,observer,Hypothalamus,#f28e2b
+346,PMv,BL16observer,465.089769165002,observer,Hypothalamus,#f28e2b
+347,PVHd,BL16observer,693.550067729502,observer,Hypothalamus,#f28e2b
+348,VMH,BL16observer,320.072999105057,observer,Hypothalamus,#f28e2b
+349,PH,BL16observer,1982.85231413599,observer,Hypothalamus,#f28e2b
+350,LHA,BL16observer,5312.78930986872,observer,Hypothalamus,#f28e2b
+351,LPO,BL16observer,3325.98172408892,observer,Hypothalamus,#f28e2b
+352,PST,BL16observer,4394.3661971831,observer,Hypothalamus,#f28e2b
+353,PSTN,BL16observer,962.341698132123,observer,Hypothalamus,#f28e2b
+357,TU,BL16observer,515.357842654809,observer,Hypothalamus,#f28e2b
+358,ZI,BL16observer,1629.50592536594,observer,Hypothalamus,#f28e2b
+360,SCs,BL16observer,3348.57331471834,observer,Midbrain,#ff9da7
+361,IC,BL16observer,2895.12865563048,observer,Midbrain,#ff9da7
+368,VTA,BL16observer,5367.66674878697,observer,Midbrain,#ff9da7
+372,SCm,BL16observer,1999.88121897286,observer,Midbrain,#ff9da7
+373,PAG,BL16observer,832.750729976751,observer,Midbrain,#ff9da7
+374,PRT,BL16observer,1307.61001881294,observer,Midbrain,#ff9da7
+376,CUN,BL16observer,749.852259782969,observer,Midbrain,#ff9da7
+395,DR,BL16observer,576.186413251356,observer,Midbrain,#ff9da7
+398,MOs,BL10observer,679.876639218461,observer,Isocortex,#e15759
+401,VISC,BL10observer,259.040984159497,observer,Isocortex,#e15759
+402,AUDd,BL10observer,1742.37459037056,observer,Isocortex,#e15759
+404,AUDpo,BL10observer,1433.71656232214,observer,Isocortex,#e15759
+405,AUDv,BL10observer,1213.79077235086,observer,Isocortex,#e15759
+406,VISal,BL10observer,5236.90413746469,observer,Isocortex,#e15759
+407,VISam,BL10observer,1457.5569358178,observer,Isocortex,#e15759
+408,VISl,BL10observer,7467.73206580315,observer,Isocortex,#e15759
+409,VISp,BL10observer,3790.58025908731,observer,Isocortex,#e15759
+410,VISpl,BL10observer,2660.44357698346,observer,Isocortex,#e15759
+413,ACA,BL10observer,385.885335260685,observer,Isocortex,#e15759
+414,PL,BL10observer,320.196371450303,observer,Isocortex,#e15759
+416,ORB,BL10observer,1039.87125441974,observer,Isocortex,#e15759
+417,AI,BL10observer,1059.35129410451,observer,Isocortex,#e15759
+418,RSP,BL10observer,917.729758982056,observer,Isocortex,#e15759
+420,VISrl,BL10observer,3283.877050726,observer,Isocortex,#e15759
+421,PERI,BL10observer,1475.19264566716,observer,Isocortex,#e15759
+423,MOB,BL10observer,2248.85909742337,observer,Olfactory areas,#76b7b2
+424,AOB,BL10observer,912.217502606032,observer,Olfactory areas,#76b7b2
+425,AON,BL10observer,3002.70175311065,observer,Olfactory areas,#76b7b2
+426,TT,BL10observer,2592.7975657072,observer,Olfactory areas,#76b7b2
+427,DP,BL10observer,403.26101975957,observer,Olfactory areas,#76b7b2
+428,PIR,BL10observer,3743.47896555303,observer,Olfactory areas,#76b7b2
+429,NLOT,BL10observer,2579.07499669329,observer,Olfactory areas,#76b7b2
+430,COA,BL10observer,980.716121704827,observer,Olfactory areas,#76b7b2
+431,PAA,BL10observer,479.791810082409,observer,Olfactory areas,#76b7b2
+432,TR,BL10observer,778.005199977871,observer,Olfactory areas,#76b7b2
+434,DG,BL10observer,1153.80557576756,observer,Hippocampal formation,#edc948
+437,ENT,BL10observer,1591.80650884323,observer,Hippocampal formation,#edc948
+438,PAR,BL10observer,1525.09686252804,observer,Hippocampal formation,#edc948
+439,POST,BL10observer,1005.64410529643,observer,Hippocampal formation,#edc948
+440,PRE,BL10observer,3388.63317412922,observer,Hippocampal formation,#edc948
+441,SUB,BL10observer,2730.81158535776,observer,Hippocampal formation,#edc948
+445,CLA,BL10observer,2479.79916209911,observer,Cortical subplate,#59a14f
+446,EP,BL10observer,1637.81523746084,observer,Cortical subplate,#59a14f
+447,LA,BL10observer,417.693981145759,observer,Cortical subplate,#59a14f
+448,BLA,BL10observer,1281.27965572714,observer,Cortical subplate,#59a14f
+449,BMA,BL10observer,794.783842349216,observer,Cortical subplate,#59a14f
+452,ACB,BL10observer,1066.17506063777,observer,Striatum,#9c755f
+456,LS,BL10observer,1175.48125568144,observer,Striatum,#9c755f
+460,BA,BL10observer,5180.54630246497,observer,Striatum,#9c755f
+462,IA,BL10observer,1471.47317627023,observer,Striatum,#9c755f
+463,MEA,BL10observer,1039.39655977752,observer,Striatum,#9c755f
+468,MSC,BL10observer,1294.83407128501,observer,Pallidum,#bab0ac
+471,BAC,BL10observer,3010.28907398334,observer,Pallidum,#bab0ac
+476,SPF,BL10observer,1746.13163225722,observer,Thalamus,#b07aa1
+477,SPA,BL10observer,354.663320786279,observer,Thalamus,#b07aa1
+483,POL,BL10observer,693.971206367913,observer,Thalamus,#b07aa1
+488,AM,BL10observer,1230.00943473146,observer,Thalamus,#b07aa1
+490,IAM,BL10observer,2466.76783004555,observer,Thalamus,#b07aa1
+491,IAD,BL10observer,926.744562498162,observer,Thalamus,#b07aa1
+493,IMD,BL10observer,212.269179641755,observer,Thalamus,#b07aa1
+494,MD,BL10observer,553.394251724587,observer,Thalamus,#b07aa1
+496,PR,BL10observer,151.176851044684,observer,Thalamus,#b07aa1
+497,PVT,BL10observer,1070.42539579378,observer,Thalamus,#b07aa1
+498,PT,BL10observer,4252.41979796272,observer,Thalamus,#b07aa1
+499,RE,BL10observer,1047.04047465837,observer,Thalamus,#b07aa1
+501,RH,BL10observer,430.493273542606,observer,Thalamus,#b07aa1
+502,CM,BL10observer,740.956847683587,observer,Thalamus,#b07aa1
+513,LH,BL10observer,906.644487074583,observer,Thalamus,#b07aa1
+519,ADP,BL10observer,496.300918085387,observer,Hypothalamus,#f28e2b
+522,AVPV,BL10observer,184.957391626534,observer,Hypothalamus,#f28e2b
+523,DMH,BL10observer,4410.40978147499,observer,Hypothalamus,#f28e2b
+525,MPO,BL10observer,2542.12134439109,observer,Hypothalamus,#f28e2b
+528,PS,BL10observer,675.336696440966,observer,Hypothalamus,#f28e2b
+530,PVp,BL10observer,592.256417529434,observer,Hypothalamus,#f28e2b
+537,AHN,BL10observer,2284.96038664252,observer,Hypothalamus,#f28e2b
+540,SUM,BL10observer,2485.19317513237,observer,Hypothalamus,#f28e2b
+541,TM,BL10observer,565.069438057573,observer,Hypothalamus,#f28e2b
+543,PMd,BL10observer,1632.1534224217,observer,Hypothalamus,#f28e2b
+544,PMv,BL10observer,620.119692220003,observer,Hypothalamus,#f28e2b
+545,PVHd,BL10observer,833.593831405651,observer,Hypothalamus,#f28e2b
+546,VMH,BL10observer,235.843262498463,observer,Hypothalamus,#f28e2b
+547,PH,BL10observer,4041.37622370149,observer,Hypothalamus,#f28e2b
+548,LHA,BL10observer,4687.33238164331,observer,Hypothalamus,#f28e2b
+549,LPO,BL10observer,3069.14915852221,observer,Hypothalamus,#f28e2b
+550,PST,BL10observer,1352.11267605634,observer,Hypothalamus,#f28e2b
+551,PSTN,BL10observer,1218.96615096736,observer,Hypothalamus,#f28e2b
+555,TU,BL10observer,395.107679368687,observer,Hypothalamus,#f28e2b
+556,ZI,BL10observer,1254.24416353431,observer,Hypothalamus,#f28e2b
+558,SCs,BL10observer,1283.76250607744,observer,Midbrain,#ff9da7
+559,IC,BL10observer,1532.48810171373,observer,Midbrain,#ff9da7
+566,VTA,BL10observer,5573.32447862555,observer,Midbrain,#ff9da7
+570,SCm,BL10observer,1447.17213816332,observer,Midbrain,#ff9da7
+571,PAG,BL10observer,693.991606224447,observer,Midbrain,#ff9da7
+572,PRT,BL10observer,1958.3164262791,observer,Midbrain,#ff9da7
+574,CUN,BL10observer,674.209268664511,observer,Midbrain,#ff9da7
+593,DR,BL10observer,768.248551001808,observer,Midbrain,#ff9da7
+596,MOs,BL5observer,1320.85304483139,observer,Isocortex,#e15759
+599,VISC,BL5observer,2013.45492233064,observer,Isocortex,#e15759
+600,AUDd,BL5observer,1532.14015628939,observer,Isocortex,#e15759
+602,AUDpo,BL5observer,1643.52874217416,observer,Isocortex,#e15759
+603,AUDv,BL5observer,1025.18167990536,observer,Isocortex,#e15759
+604,VISal,BL5observer,3550.32008948602,observer,Isocortex,#e15759
+605,VISam,BL5observer,2008.13878774898,observer,Isocortex,#e15759
+606,VISl,BL5observer,3715.67423736978,observer,Isocortex,#e15759
+607,VISp,BL5observer,4684.66424874413,observer,Isocortex,#e15759
+608,VISpl,BL5observer,2897.85848936518,observer,Isocortex,#e15759
+611,ACA,BL5observer,1056.14321165236,observer,Isocortex,#e15759
+612,PL,BL5observer,959.023361923281,observer,Isocortex,#e15759
+614,ORB,BL5observer,857.998773451022,observer,Isocortex,#e15759
+615,AI,BL5observer,2296.36070114381,observer,Isocortex,#e15759
+616,RSP,BL5observer,1809.16613423513,observer,Isocortex,#e15759
+618,VISrl,BL5observer,2983.36790495946,observer,Isocortex,#e15759
+619,PERI,BL5observer,5372.98904961471,observer,Isocortex,#e15759
+621,MOB,BL5observer,1585.93117678157,observer,Olfactory areas,#76b7b2
+622,AOB,BL5observer,4277.89163162411,observer,Olfactory areas,#76b7b2
+623,AON,BL5observer,2367.26880626128,observer,Olfactory areas,#76b7b2
+624,TT,BL5observer,1636.09685964412,observer,Olfactory areas,#76b7b2
+625,DP,BL5observer,208.705264612409,observer,Olfactory areas,#76b7b2
+626,PIR,BL5observer,3184.82202809167,observer,Olfactory areas,#76b7b2
+627,NLOT,BL5observer,1416.51602663023,observer,Olfactory areas,#76b7b2
+628,COA,BL5observer,1027.77213222548,observer,Olfactory areas,#76b7b2
+629,PAA,BL5observer,545.495784074587,observer,Olfactory areas,#76b7b2
+630,TR,BL5observer,958.566133761131,observer,Olfactory areas,#76b7b2
+632,DG,BL5observer,2099.39501310694,observer,Hippocampal formation,#edc948
+635,ENT,BL5observer,2451.09732387475,observer,Hippocampal formation,#edc948
+636,PAR,BL5observer,2129.16945844379,observer,Hippocampal formation,#edc948
+637,POST,BL5observer,4324.26965277463,observer,Hippocampal formation,#edc948
+638,PRE,BL5observer,4637.19369574882,observer,Hippocampal formation,#edc948
+639,SUB,BL5observer,4301.70755330298,observer,Hippocampal formation,#edc948
+643,CLA,BL5observer,3567.81104447009,observer,Cortical subplate,#59a14f
+644,EP,BL5observer,3623.30922131216,observer,Cortical subplate,#59a14f
+645,LA,BL5observer,1197.79891652093,observer,Cortical subplate,#59a14f
+646,BLA,BL5observer,1893.17594758771,observer,Cortical subplate,#59a14f
+647,BMA,BL5observer,1340.80904859539,observer,Cortical subplate,#59a14f
+650,ACB,BL5observer,1176.4096387974,observer,Striatum,#9c755f
+654,LS,BL5observer,912.138917708733,observer,Striatum,#9c755f
+658,BA,BL5observer,11064.623584277,observer,Striatum,#9c755f
+660,IA,BL5observer,3215.4413851831,observer,Striatum,#9c755f
+661,MEA,BL5observer,2328.98414987318,observer,Striatum,#9c755f
+666,MSC,BL5observer,2487.93117982619,observer,Pallidum,#bab0ac
+669,BAC,BL5observer,2257.71680548751,observer,Pallidum,#bab0ac
+674,SPF,BL5observer,7961.03616223434,observer,Thalamus,#b07aa1
+675,SPA,BL5observer,374.738603094936,observer,Thalamus,#b07aa1
+681,POL,BL5observer,2253.45706337446,observer,Thalamus,#b07aa1
+686,AM,BL5observer,3153.29691449338,observer,Thalamus,#b07aa1
+688,IAM,BL5observer,874.051593323228,observer,Thalamus,#b07aa1
+689,IAD,BL5observer,2181.24025075787,observer,Thalamus,#b07aa1
+691,IMD,BL5observer,96.0265336474608,observer,Thalamus,#b07aa1
+692,MD,BL5observer,1614.06656753005,observer,Thalamus,#b07aa1
+694,PR,BL5observer,280.757009082984,observer,Thalamus,#b07aa1
+695,PVT,BL5observer,892.996049678596,observer,Thalamus,#b07aa1
+696,PT,BL5observer,3578.84948645336,observer,Thalamus,#b07aa1
+697,RE,BL5observer,433.474756508564,observer,Thalamus,#b07aa1
+699,RH,BL5observer,155.710332983496,observer,Thalamus,#b07aa1
+700,CM,BL5observer,141.809923001643,observer,Thalamus,#b07aa1
+711,LH,BL5observer,3394.76543739858,observer,Thalamus,#b07aa1
+717,ADP,BL5observer,667.439165701038,observer,Hypothalamus,#f28e2b
+720,AVPV,BL5observer,251.352352723238,observer,Hypothalamus,#f28e2b
+721,DMH,BL5observer,3580.44207642718,observer,Hypothalamus,#f28e2b
+723,MPO,BL5observer,4475.87176875696,observer,Hypothalamus,#f28e2b
+726,PS,BL5observer,764.196788077936,observer,Hypothalamus,#f28e2b
+728,PVp,BL5observer,265.494256133884,observer,Hypothalamus,#f28e2b
+735,AHN,BL5observer,3411.93179905897,observer,Hypothalamus,#f28e2b
+738,SUM,BL5observer,2082.45436018997,observer,Hypothalamus,#f28e2b
+739,TM,BL5observer,553.29715809804,observer,Hypothalamus,#f28e2b
+741,PMd,BL5observer,1227.37937366112,observer,Hypothalamus,#f28e2b
+742,PMv,BL5observer,155.029923055001,observer,Hypothalamus,#f28e2b
+743,PVHd,BL5observer,720.225070334482,observer,Hypothalamus,#f28e2b
+744,VMH,BL5observer,640.145998210115,observer,Hypothalamus,#f28e2b
+745,PH,BL5observer,2286.82126526809,observer,Hypothalamus,#f28e2b
+746,LHA,BL5observer,9251.55039666753,observer,Hypothalamus,#f28e2b
+747,LPO,BL5observer,7942.54709015057,observer,Hypothalamus,#f28e2b
+748,PST,BL5observer,4056.33802816901,observer,Hypothalamus,#f28e2b
+749,PSTN,BL5observer,1603.90283022021,observer,Hypothalamus,#f28e2b
+753,TU,BL5observer,1961.79552103931,observer,Hypothalamus,#f28e2b
+754,ZI,BL5observer,2737.08444074502,observer,Hypothalamus,#f28e2b
+756,SCs,BL5observer,6526.72051955716,observer,Midbrain,#ff9da7
+757,IC,BL5observer,6574.30104200059,observer,Midbrain,#ff9da7
+764,VTA,BL5observer,11767.7353013636,observer,Midbrain,#ff9da7
+768,SCm,BL5observer,7680.91223828887,observer,Midbrain,#ff9da7
+769,PAG,BL5observer,2046.1091129577,observer,Midbrain,#ff9da7
+770,PRT,BL5observer,4425.68888560996,observer,Midbrain,#ff9da7
+772,CUN,BL5observer,1868.05299805582,observer,Midbrain,#ff9da7
+791,DR,BL5observer,1660.77260290097,observer,Midbrain,#ff9da7
+794,MOs,BL18observer,708.247486284149,observer,Isocortex,#e15759
+797,VISC,BL18observer,432.519946278433,observer,Isocortex,#e15759
+798,AUDd,BL18observer,601.966221325938,observer,Isocortex,#e15759
+800,AUDpo,BL18observer,877.131474103584,observer,Isocortex,#e15759
+801,AUDv,BL18observer,1340.54419469326,observer,Isocortex,#e15759
+802,VISal,BL18observer,652.792962455052,observer,Isocortex,#e15759
+803,VISam,BL18observer,587.135003926606,observer,Isocortex,#e15759
+804,VISl,BL18observer,1109.69952743969,observer,Isocortex,#e15759
+805,VISp,BL18observer,624.585786170442,observer,Isocortex,#e15759
+806,VISpl,BL18observer,791.38304127242,observer,Isocortex,#e15759
+809,ACA,BL18observer,1123.47661381919,observer,Isocortex,#e15759
+810,PL,BL18observer,916.748046377275,observer,Isocortex,#e15759
+812,ORB,BL18observer,865.751774415941,observer,Isocortex,#e15759
+813,AI,BL18observer,581.98347340706,observer,Isocortex,#e15759
+814,RSP,BL18observer,968.865856992912,observer,Isocortex,#e15759
+816,VISrl,BL18observer,742.221384122195,observer,Isocortex,#e15759
+817,PERI,BL18observer,1745.57252940381,observer,Isocortex,#e15759
+819,MOB,BL18observer,895.293197820352,observer,Olfactory areas,#76b7b2
+820,AOB,BL18observer,2064.06228947872,observer,Olfactory areas,#76b7b2
+821,AON,BL18observer,813.385187608282,observer,Olfactory areas,#76b7b2
+822,TT,BL18observer,1125.60438802943,observer,Olfactory areas,#76b7b2
+823,DP,BL18observer,357.275113997514,observer,Olfactory areas,#76b7b2
+824,PIR,BL18observer,952.664025980376,observer,Olfactory areas,#76b7b2
+825,NLOT,BL18observer,428.905251091225,observer,Olfactory areas,#76b7b2
+826,COA,BL18observer,375.874230378386,observer,Olfactory areas,#76b7b2
+827,PAA,BL18observer,224.615911089536,observer,Olfactory areas,#76b7b2
+828,TR,BL18observer,473.972451181058,observer,Olfactory areas,#76b7b2
+830,DG,BL18observer,2788.17512910139,observer,Hippocampal formation,#edc948
+833,ENT,BL18observer,1069.96862546022,observer,Hippocampal formation,#edc948
+834,PAR,BL18observer,1450.51999883474,observer,Hippocampal formation,#edc948
+835,POST,BL18observer,2807.13414909468,observer,Hippocampal formation,#edc948
+836,PRE,BL18observer,3781.16463474497,observer,Hippocampal formation,#edc948
+837,SUB,BL18observer,3680.14222977006,observer,Hippocampal formation,#edc948
+841,CLA,BL18observer,1069.41338865524,observer,Cortical subplate,#59a14f
+842,EP,BL18observer,1050.48649802265,observer,Cortical subplate,#59a14f
+843,LA,BL18observer,1711.72631489144,observer,Cortical subplate,#59a14f
+844,BLA,BL18observer,975.331509796859,observer,Cortical subplate,#59a14f
+845,BMA,BL18observer,572.144863036994,observer,Cortical subplate,#59a14f
+848,ACB,BL18observer,1766.76747730079,observer,Striatum,#9c755f
+852,LS,BL18observer,1628.77544399511,observer,Striatum,#9c755f
+856,BA,BL18observer,1662.8914057295,observer,Striatum,#9c755f
+858,IA,BL18observer,953.732614249225,observer,Striatum,#9c755f
+859,MEA,BL18observer,766.210030349271,observer,Striatum,#9c755f
+864,MSC,BL18observer,1396.57103402883,observer,Pallidum,#bab0ac
+867,BAC,BL18observer,7713.86575208231,observer,Pallidum,#bab0ac
+872,SPF,BL18observer,10493.3408042756,observer,Thalamus,#b07aa1
+873,SPA,BL18observer,421.580928481803,observer,Thalamus,#b07aa1
+879,POL,BL18observer,1777.81387698746,observer,Thalamus,#b07aa1
+884,AM,BL18observer,1990.37890347454,observer,Thalamus,#b07aa1
+886,IAM,BL18observer,407.89074355084,observer,Thalamus,#b07aa1
+887,IAD,BL18observer,2508.99137651941,observer,Thalamus,#b07aa1
+889,IMD,BL18observer,176.890983034796,observer,Thalamus,#b07aa1
+890,MD,BL18observer,1445.87811847649,observer,Thalamus,#b07aa1
+892,PR,BL18observer,151.176851044684,observer,Thalamus,#b07aa1
+893,PVT,BL18observer,1265.40269921705,observer,Thalamus,#b07aa1
+894,PT,BL18observer,5299.29413753751,observer,Thalamus,#b07aa1
+895,RE,BL18observer,337.147032839994,observer,Thalamus,#b07aa1
+897,RH,BL18observer,274.78294055911,observer,Thalamus,#b07aa1
+898,CM,BL18observer,319.072326753698,observer,Thalamus,#b07aa1
+909,LH,BL18observer,3029.01680909009,observer,Thalamus,#b07aa1
+915,ADP,BL18observer,701.666815224168,observer,Hypothalamus,#f28e2b
+918,AVPV,BL18observer,42.6824749907386,observer,Hypothalamus,#f28e2b
+919,DMH,BL18observer,3730.02927908115,observer,Hypothalamus,#f28e2b
+921,MPO,BL18observer,1573.69416557544,observer,Hypothalamus,#f28e2b
+924,PS,BL18observer,1226.26926459018,observer,Hypothalamus,#f28e2b
+926,PVp,BL18observer,279.109346192032,observer,Hypothalamus,#f28e2b
+933,AHN,BL18observer,1357.01832917118,observer,Hypothalamus,#f28e2b
+936,SUM,BL18observer,1489.80618535603,observer,Hypothalamus,#f28e2b
+937,TM,BL18observer,388.485238664581,observer,Hypothalamus,#f28e2b
+939,PMd,BL18observer,1122.92155462613,observer,Hypothalamus,#f28e2b
+940,PMv,BL18observer,209.746366486177,observer,Hypothalamus,#f28e2b
+941,PVHd,BL18observer,573.512556007088,observer,Hypothalamus,#f28e2b
+942,VMH,BL18observer,306.596241248002,observer,Hypothalamus,#f28e2b
+943,PH,BL18observer,2053.39363190926,observer,Hypothalamus,#f28e2b
+944,LHA,BL18observer,6196.15735648593,observer,Hypothalamus,#f28e2b
+945,LPO,BL18observer,4802.76897609752,observer,Hypothalamus,#f28e2b
+946,PST,BL18observer,3492.95774647887,observer,Hypothalamus,#f28e2b
+947,PSTN,BL18observer,1822.03361513015,observer,Hypothalamus,#f28e2b
+951,TU,BL18observer,515.357842654809,observer,Hypothalamus,#f28e2b
+952,ZI,BL18observer,3204.39154038442,observer,Hypothalamus,#f28e2b
+954,SCs,BL18observer,1824.15886453966,observer,Midbrain,#ff9da7
+955,IC,BL18observer,3604.54240324719,observer,Midbrain,#ff9da7
+962,VTA,BL18observer,12401.1611092664,observer,Midbrain,#ff9da7
+966,SCm,BL18observer,3389.03231892014,observer,Midbrain,#ff9da7
+967,PAG,BL18observer,1158.28590589847,observer,Midbrain,#ff9da7
+968,PRT,BL18observer,2867.53476705154,observer,Midbrain,#ff9da7
+970,CUN,BL18observer,1019.53596724877,observer,Midbrain,#ff9da7
+989,DR,BL18observer,90.382182470801,observer,Midbrain,#ff9da7
+992,MOs,BL8observer,791.605129724571,observer,Isocortex,#e15759
+995,VISC,BL8observer,363.442350502567,observer,Isocortex,#e15759
+996,AUDd,BL8observer,1622.88883287119,observer,Isocortex,#e15759
+998,AUDpo,BL8observer,1372.52134319863,observer,Isocortex,#e15759
+999,AUDv,BL8observer,869.021463579518,observer,Isocortex,#e15759
+1000,VISal,BL8observer,4698.16793796647,observer,Isocortex,#e15759
+1001,VISam,BL8observer,5693.15342328834,observer,Isocortex,#e15759
+1002,VISl,BL8observer,2918.26719989262,observer,Isocortex,#e15759
+1003,VISp,BL8observer,4050.86947873597,observer,Isocortex,#e15759
+1004,VISpl,BL8observer,961.297635427969,observer,Isocortex,#e15759
+1007,ACA,BL8observer,2079.13241310075,observer,Isocortex,#e15759
+1008,PL,BL8observer,1115.59860468627,observer,Isocortex,#e15759
+1010,ORB,BL8observer,1394.24800685791,observer,Isocortex,#e15759
+1011,AI,BL8observer,827.736008938867,observer,Isocortex,#e15759
+1012,RSP,BL8observer,2910.7682456392,observer,Isocortex,#e15759
+1014,VISrl,BL8observer,5885.27248727136,observer,Isocortex,#e15759
+1015,PERI,BL8observer,2357.71258618359,observer,Isocortex,#e15759
+1017,MOB,BL8observer,3695.88773610377,observer,Olfactory areas,#76b7b2
+1018,AOB,BL8observer,3030.740538509,observer,Olfactory areas,#76b7b2
+1019,AON,BL8observer,2019.89362604345,observer,Olfactory areas,#76b7b2
+1020,TT,BL8observer,2412.54960659387,observer,Olfactory areas,#76b7b2
+1021,DP,BL8observer,562.443001243611,observer,Olfactory areas,#76b7b2
+1022,PIR,BL8observer,3404.13562688287,observer,Olfactory areas,#76b7b2
+1023,NLOT,BL8observer,1303.64622371149,observer,Olfactory areas,#76b7b2
+1024,COA,BL8observer,1352.57337557535,observer,Olfactory areas,#76b7b2
+1025,PAA,BL8observer,811.367678833629,observer,Olfactory areas,#76b7b2
+1026,TR,BL8observer,593.46130441998,observer,Olfactory areas,#76b7b2
+1028,DG,BL8observer,1600.46733269423,observer,Hippocampal formation,#edc948
+1031,ENT,BL8observer,1491.15677588007,observer,Hippocampal formation,#edc948
+1032,PAR,BL8observer,919.159845019955,observer,Hippocampal formation,#edc948
+1033,POST,BL8observer,1628.10312909197,observer,Hippocampal formation,#edc948
+1034,PRE,BL8observer,1827.37809913775,observer,Hippocampal formation,#edc948
+1035,SUB,BL8observer,3282.7480065277,observer,Hippocampal formation,#edc948
+1039,CLA,BL8observer,3471.71882693875,observer,Cortical subplate,#59a14f
+1040,EP,BL8observer,2439.95977377601,observer,Cortical subplate,#59a14f
+1041,LA,BL8observer,1558.16235123491,observer,Cortical subplate,#59a14f
+1042,BLA,BL8observer,1153.63886873075,observer,Cortical subplate,#59a14f
+1043,BMA,BL8observer,1220.16111008542,observer,Cortical subplate,#59a14f
+1046,ACB,BL8observer,1576.87119226797,observer,Striatum,#9c755f
+1050,LS,BL8observer,1715.73392093691,observer,Striatum,#9c755f
+1054,BA,BL8observer,7674.88341105921,observer,Striatum,#9c755f
+1056,IA,BL8observer,1798.4672154414,observer,Striatum,#9c755f
+1057,MEA,BL8observer,1742.13901258286,observer,Striatum,#9c755f
+1062,MSC,BL8observer,1304.0828860799,observer,Pallidum,#bab0ac
+1065,BAC,BL8observer,2257.71680548751,observer,Pallidum,#bab0ac
+1070,SPF,BL8observer,8796.86220421529,observer,Thalamus,#b07aa1
+1071,SPA,BL8observer,93.684650773734,observer,Thalamus,#b07aa1
+1077,POL,BL8observer,1770.01644770243,observer,Thalamus,#b07aa1
+1082,AM,BL8observer,666.441475545409,observer,Thalamus,#b07aa1
+1084,IAM,BL8observer,135.963581183613,observer,Thalamus,#b07aa1
+1085,IAD,BL8observer,1017.15866615652,observer,Thalamus,#b07aa1
+1087,IMD,BL8observer,10.1080561734169,observer,Thalamus,#b07aa1
+1088,MD,BL8observer,619.855816269942,observer,Thalamus,#b07aa1
+1090,PR,BL8observer,172.773544051067,observer,Thalamus,#b07aa1
+1091,PVT,BL8observer,477.694393387022,observer,Thalamus,#b07aa1
+1092,PT,BL8observer,2799.78021049072,observer,Thalamus,#b07aa1
+1093,RE,BL8observer,286.889090056392,observer,Thalamus,#b07aa1
+1095,RH,BL8observer,27.478294055911,observer,Thalamus,#b07aa1
+1096,CM,BL8observer,49.6334730505752,observer,Thalamus,#b07aa1
+1107,LH,BL8observer,4486.85993319297,observer,Thalamus,#b07aa1
+1113,ADP,BL8observer,598.983866654777,observer,Hypothalamus,#f28e2b
+1116,AVPV,BL8observer,322.489811041136,observer,Hypothalamus,#f28e2b
+1117,DMH,BL8observer,5047.36174116285,observer,Hypothalamus,#f28e2b
+1119,MPO,BL8observer,3671.95305300935,observer,Hypothalamus,#f28e2b
+1122,PS,BL8observer,995.233026334056,observer,Hypothalamus,#f28e2b
+1124,PVp,BL8observer,462.913061977028,observer,Hypothalamus,#f28e2b
+1131,AHN,BL8observer,1662.02435363251,observer,Hypothalamus,#f28e2b
+1134,SUM,BL8observer,1895.81929960691,observer,Hypothalamus,#f28e2b
+1135,TM,BL8observer,353.168398785983,observer,Hypothalamus,#f28e2b
+1137,PMd,BL8observer,783.433642762415,observer,Hypothalamus,#f28e2b
+1138,PMv,BL8observer,337.41806782559,observer,Hypothalamus,#f28e2b
+1139,PVHd,BL8observer,500.156298843391,observer,Hypothalamus,#f28e2b
+1140,VMH,BL8observer,444.733009282817,observer,Hypothalamus,#f28e2b
+1141,PH,BL8observer,2407.38279018968,observer,Hypothalamus,#f28e2b
+1142,LHA,BL8observer,7145.12648896586,observer,Hypothalamus,#f28e2b
+1143,LPO,BL8observer,5765.89109697269,observer,Hypothalamus,#f28e2b
+1144,PST,BL8observer,6647.88732394366,observer,Hypothalamus,#f28e2b
+1145,PSTN,BL8observer,1911.85217362249,observer,Hypothalamus,#f28e2b
+1149,TU,BL8observer,1030.71568530962,observer,Hypothalamus,#f28e2b
+1150,ZI,BL8observer,3285.31051867695,observer,Hypothalamus,#f28e2b
+1152,SCs,BL8observer,2182.99574916037,observer,Midbrain,#ff9da7
+1153,IC,BL8observer,3511.89828626702,observer,Midbrain,#ff9da7
+1160,VTA,BL8observer,10587.2599320902,observer,Midbrain,#ff9da7
+1164,SCm,BL8observer,3943.75369007243,observer,Midbrain,#ff9da7
+1165,PAG,BL8observer,1158.4818933614,observer,Midbrain,#ff9da7
+1166,PRT,BL8observer,3471.31948799293,observer,Midbrain,#ff9da7
+1168,CUN,BL8observer,1341.84088592742,observer,Midbrain,#ff9da7
+1187,DR,BL8observer,525.346435611531,observer,Midbrain,#ff9da7
+1190,MOs,BL21observer,486.39916154885,observer,Isocortex,#e15759
+1193,VISC,BL21observer,147.574863702986,observer,Isocortex,#e15759
+1194,AUDd,BL21observer,1444.41643559365,observer,Isocortex,#e15759
+1196,AUDpo,BL21observer,1390.00569151963,observer,Isocortex,#e15759
+1197,AUDv,BL21observer,679.398343755282,observer,Isocortex,#e15759
+1198,VISal,BL21observer,3868.22298198272,observer,Isocortex,#e15759
+1199,VISam,BL21observer,1845.93417576925,observer,Isocortex,#e15759
+1200,VISl,BL21observer,5516.6619950178,observer,Isocortex,#e15759
+1201,VISp,BL21observer,3208.5183100499,observer,Isocortex,#e15759
+1202,VISpl,BL21observer,2108.80304527298,observer,Isocortex,#e15759
+1205,ACA,BL21observer,3057.34661107779,observer,Isocortex,#e15759
+1206,PL,BL21observer,1524.25998829765,observer,Isocortex,#e15759
+1208,ORB,BL21observer,799.85126621413,observer,Isocortex,#e15759
+1209,AI,BL21observer,474.069128945346,observer,Isocortex,#e15759
+1210,RSP,BL21observer,1422.56272657859,observer,Isocortex,#e15759
+1212,VISrl,BL21observer,2065.5478031303,observer,Isocortex,#e15759
+1213,PERI,BL21observer,1447.07313775855,observer,Isocortex,#e15759
+1215,MOB,BL21observer,2507.40803140375,observer,Olfactory areas,#76b7b2
+1216,AOB,BL21observer,1710.06743772116,observer,Olfactory areas,#76b7b2
+1217,AON,BL21observer,1511.62480766668,observer,Olfactory areas,#76b7b2
+1218,TT,BL21observer,1898.27570926351,observer,Olfactory areas,#76b7b2
+1219,DP,BL21observer,512.919718115243,observer,Olfactory areas,#76b7b2
+1220,PIR,BL21observer,1852.47545045026,observer,Olfactory areas,#76b7b2
+1221,NLOT,BL21observer,1365.7246153168,observer,Olfactory areas,#76b7b2
+1222,COA,BL21observer,832.087990913984,observer,Olfactory areas,#76b7b2
+1223,PAA,BL21observer,336.15986693672,observer,Olfactory areas,#76b7b2
+1224,TR,BL21observer,290.756209548044,observer,Olfactory areas,#76b7b2
+1226,DG,BL21observer,642.447081120333,observer,Hippocampal formation,#edc948
+1229,ENT,BL21observer,1065.27945320902,observer,Hippocampal formation,#edc948
+1230,PAR,BL21observer,783.057068779678,observer,Hippocampal formation,#edc948
+1231,POST,BL21observer,1045.52309567887,observer,Hippocampal formation,#edc948
+1232,PRE,BL21observer,2665.66562519851,observer,Hippocampal formation,#edc948
+1233,SUB,BL21observer,1827.33412055034,observer,Hippocampal formation,#edc948
+1237,CLA,BL21observer,2613.08836706194,observer,Cortical subplate,#59a14f
+1238,EP,BL21observer,877.267979731679,observer,Cortical subplate,#59a14f
+1239,LA,BL21observer,382.886149383612,observer,Cortical subplate,#59a14f
+1240,BLA,BL21observer,733.690935941094,observer,Cortical subplate,#59a14f
+1241,BMA,BL21observer,597.020726647298,observer,Cortical subplate,#59a14f
+1244,ACB,BL21observer,508.973716346461,observer,Striatum,#9c755f
+1248,LS,BL21observer,1442.52395437507,observer,Striatum,#9c755f
+1252,BA,BL21observer,3389.74017321782,observer,Striatum,#9c755f
+1254,IA,BL21observer,753.902923644625,observer,Striatum,#9c755f
+1255,MEA,BL21observer,689.864973303666,observer,Striatum,#9c755f
+1260,MSC,BL21observer,1527.59591028981,observer,Pallidum,#bab0ac
+1263,BAC,BL21observer,1505.14453699167,observer,Pallidum,#bab0ac
+1268,SPF,BL21observer,645.489418559542,observer,Thalamus,#b07aa1
+1269,SPA,BL21observer,100.376411543286,observer,Thalamus,#b07aa1
+1275,POL,BL21observer,31.1897171401309,observer,Thalamus,#b07aa1
+1280,AM,BL21observer,398.075780694909,observer,Thalamus,#b07aa1
+1282,IAM,BL21observer,1845.22003034904,observer,Thalamus,#b07aa1
+1283,IAD,BL21observer,1311.00450304618,observer,Thalamus,#b07aa1
+1285,IMD,BL21observer,363.890022243009,observer,Thalamus,#b07aa1
+1286,MD,BL21observer,438.103782615298,observer,Thalamus,#b07aa1
+1288,PR,BL21observer,43.1933860127668,observer,Thalamus,#b07aa1
+1289,PVT,BL21observer,1875.6816589319,observer,Thalamus,#b07aa1
+1290,PT,BL21observer,3270.46789805148,observer,Thalamus,#b07aa1
+1291,RE,BL21observer,802.033003588309,observer,Thalamus,#b07aa1
+1293,RH,BL21observer,760.232802213538,observer,Thalamus,#b07aa1
+1294,CM,BL21observer,811.861809184409,observer,Thalamus,#b07aa1
+1305,LH,BL21observer,576.955582683826,observer,Thalamus,#b07aa1
+1311,ADP,BL21observer,513.414742846952,observer,Hypothalamus,#f28e2b
+1314,AVPV,BL21observer,199.184883290113,observer,Hypothalamus,#f28e2b
+1315,DMH,BL21observer,3609.39443823118,observer,Hypothalamus,#f28e2b
+1317,MPO,BL21observer,2458.31514622435,observer,Hypothalamus,#f28e2b
+1320,PS,BL21observer,568.704586476603,observer,Hypothalamus,#f28e2b
+1322,PVp,BL21observer,1116.43738476813,observer,Hypothalamus,#f28e2b
+1329,AHN,BL21observer,2114.36379668957,observer,Hypothalamus,#f28e2b
+1332,SUM,BL21observer,1411.22300195264,observer,Hypothalamus,#f28e2b
+1333,TM,BL21observer,412.029798583647,observer,Hypothalamus,#f28e2b
+1335,PMd,BL21observer,900.948689176777,observer,Hypothalamus,#f28e2b
+1336,PMv,BL21observer,145.910515816471,observer,Hypothalamus,#f28e2b
+1337,PVHd,BL21observer,486.8187975409,observer,Hypothalamus,#f28e2b
+1338,VMH,BL21observer,572.76220892484,observer,Hypothalamus,#f28e2b
+1339,PH,BL21observer,1813.55315148013,observer,Hypothalamus,#f28e2b
+1340,LHA,BL21observer,2710.31335564345,observer,Hypothalamus,#f28e2b
+1341,LPO,BL21observer,2019.34604676827,observer,Hypothalamus,#f28e2b
+1342,PST,BL21observer,1239.43661971831,observer,Hypothalamus,#f28e2b
+1343,PSTN,BL21observer,192.468339626425,observer,Hypothalamus,#f28e2b
+1347,TU,BL21observer,817.70111034563,observer,Hypothalamus,#f28e2b
+1348,ZI,BL21observer,522.938897215513,observer,Hypothalamus,#f28e2b
+1350,SCs,BL21observer,1513.2810862167,observer,Midbrain,#ff9da7
+1351,IC,BL21observer,771.176492270163,observer,Midbrain,#ff9da7
+1358,VTA,BL21observer,2463.7796034662,observer,Midbrain,#ff9da7
+1362,SCm,BL21observer,1247.28463078318,observer,Midbrain,#ff9da7
+1363,PAG,BL21observer,559.34821919361,observer,Midbrain,#ff9da7
+1364,PRT,BL21observer,1043.78619646612,observer,Midbrain,#ff9da7
+1366,CUN,BL21observer,292.705487371422,observer,Midbrain,#ff9da7
+1385,DR,BL21observer,344.582070669929,observer,Midbrain,#ff9da7
+2,MOs,BL4demonstrator,1831.67453349349,demonstrator,Isocortex,#e15759
+5,VISC,BL4demonstrator,1915.33333742174,demonstrator,Isocortex,#e15759
+6,AUDd,BL4demonstrator,4486.00957902697,demonstrator,Isocortex,#e15759
+8,AUDpo,BL4demonstrator,5160.796812749,demonstrator,Isocortex,#e15759
+9,AUDv,BL4demonstrator,2875.78164610445,demonstrator,Isocortex,#e15759
+10,VISal,BL4demonstrator,6921.06144580597,demonstrator,Isocortex,#e15759
+11,VISam,BL4demonstrator,3068.18019561647,demonstrator,Isocortex,#e15759
+12,VISl,BL4demonstrator,4863.27333883405,demonstrator,Isocortex,#e15759
+13,VISp,BL4demonstrator,4199.56748246865,demonstrator,Isocortex,#e15759
+14,VISpl,BL4demonstrator,2276.39004224831,demonstrator,Isocortex,#e15759
+17,ACA,BL4demonstrator,2247.97860939727,demonstrator,Isocortex,#e15759
+18,PL,BL4demonstrator,2087.9308622444,demonstrator,Isocortex,#e15759
+20,ORB,BL4demonstrator,2133.36743218018,demonstrator,Isocortex,#e15759
+21,AI,BL4demonstrator,2661.80862310913,demonstrator,Isocortex,#e15759
+22,RSP,BL4demonstrator,2039.27857528398,demonstrator,Isocortex,#e15759
+24,VISrl,BL4demonstrator,5119.51725438431,demonstrator,Isocortex,#e15759
+25,PERI,BL4demonstrator,8407.73286467487,demonstrator,Isocortex,#e15759
+27,MOB,BL4demonstrator,6377.65778701745,demonstrator,Olfactory areas,#76b7b2
+28,AOB,BL4demonstrator,4539.30321446046,demonstrator,Olfactory areas,#76b7b2
+29,AON,BL4demonstrator,1745.79289790281,demonstrator,Olfactory areas,#76b7b2
+30,TT,BL4demonstrator,2785.65027720609,demonstrator,Olfactory areas,#76b7b2
+31,DP,BL4demonstrator,1322.9791350007,demonstrator,Olfactory areas,#76b7b2
+32,PIR,BL4demonstrator,4902.77855195604,demonstrator,Olfactory areas,#76b7b2
+33,NLOT,BL4demonstrator,6021.60398571496,demonstrator,Olfactory areas,#76b7b2
+34,COA,BL4demonstrator,1781.8160081296,demonstrator,Olfactory areas,#76b7b2
+35,PAA,BL4demonstrator,854.151661898302,demonstrator,Olfactory areas,#76b7b2
+36,TR,BL4demonstrator,1425.9003153178,demonstrator,Olfactory areas,#76b7b2
+38,DG,BL4demonstrator,4360.39061126263,demonstrator,Hippocampal formation,#edc948
+41,ENT,BL4demonstrator,4422.72678506478,demonstrator,Hippocampal formation,#edc948
+42,PAR,BL4demonstrator,3587.14714364786,demonstrator,Hippocampal formation,#edc948
+43,POST,BL4demonstrator,3479.87537815505,demonstrator,Hippocampal formation,#edc948
+44,PRE,BL4demonstrator,5357.94355281165,demonstrator,Hippocampal formation,#edc948
+45,SUB,BL4demonstrator,8267.15845617012,demonstrator,Hippocampal formation,#edc948
+49,CLA,BL4demonstrator,4178.461588137,demonstrator,Cortical subplate,#59a14f
+50,EP,BL4demonstrator,4329.84210236994,demonstrator,Cortical subplate,#59a14f
+51,LA,BL4demonstrator,2878.81243868106,demonstrator,Cortical subplate,#59a14f
+52,BLA,BL4demonstrator,2644.4053122764,demonstrator,Cortical subplate,#59a14f
+53,BMA,BL4demonstrator,2230.12117266376,demonstrator,Cortical subplate,#59a14f
+56,ACB,BL4demonstrator,2671.03550126658,demonstrator,Striatum,#9c755f
+60,LS,BL4demonstrator,3430.23438830018,demonstrator,Striatum,#9c755f
+64,BA,BL4demonstrator,24367.754830113,demonstrator,Striatum,#9c755f
+66,IA,BL4demonstrator,4032.92648311101,demonstrator,Striatum,#9c755f
+67,MEA,BL4demonstrator,3730.78977562622,demonstrator,Striatum,#9c755f
+72,MSC,BL4demonstrator,8757.08614163111,demonstrator,Pallidum,#bab0ac
+75,BAC,BL4demonstrator,6208.72121509064,demonstrator,Pallidum,#bab0ac
+80,SPF,BL4demonstrator,10054.7390198698,demonstrator,Thalamus,#b07aa1
+81,SPA,BL4demonstrator,1244.66750313675,demonstrator,Thalamus,#b07aa1
+87,POL,BL4demonstrator,2191.0776290942,demonstrator,Thalamus,#b07aa1
+92,AM,BL4demonstrator,3171.18796081675,demonstrator,Thalamus,#b07aa1
+94,IAM,BL4demonstrator,2039.4537177542,demonstrator,Thalamus,#b07aa1
+95,IAD,BL4demonstrator,1491.8327103629,demonstrator,Thalamus,#b07aa1
+97,IMD,BL4demonstrator,1228.12882507016,demonstrator,Thalamus,#b07aa1
+98,MD,BL4demonstrator,2802.23657858578,demonstrator,Thalamus,#b07aa1
+100,PR,BL4demonstrator,442.73220663086,demonstrator,Thalamus,#b07aa1
+101,PVT,BL4demonstrator,2374.82355569548,demonstrator,Thalamus,#b07aa1
+102,PT,BL4demonstrator,6151.40115812165,demonstrator,Thalamus,#b07aa1
+103,RE,BL4demonstrator,1761.12207837537,demonstrator,Thalamus,#b07aa1
+105,RH,BL4demonstrator,1135.76948764432,demonstrator,Thalamus,#b07aa1
+106,CM,BL4demonstrator,1425.18972616652,demonstrator,Thalamus,#b07aa1
+117,LH,BL4demonstrator,4218.98769837548,demonstrator,Thalamus,#b07aa1
+123,ADP,BL4demonstrator,2002.31749710311,demonstrator,Hypothalamus,#f28e2b
+126,AVPV,BL4demonstrator,578.584660985568,demonstrator,Hypothalamus,#f28e2b
+127,DMH,BL4demonstrator,6605.96388494449,demonstrator,Hypothalamus,#f28e2b
+129,MPO,BL4demonstrator,8324.7490178961,demonstrator,Hypothalamus,#f28e2b
+132,PS,BL4demonstrator,2203.73027259684,demonstrator,Hypothalamus,#f28e2b
+134,PVp,BL4demonstrator,721.599773081839,demonstrator,Hypothalamus,#f28e2b
+141,AHN,BL4demonstrator,5495.27803393891,demonstrator,Hypothalamus,#f28e2b
+144,SUM,BL4demonstrator,3971.72506117993,demonstrator,Hypothalamus,#f28e2b
+145,TM,BL4demonstrator,788.742757288695,demonstrator,Hypothalamus,#f28e2b
+147,PMd,BL4demonstrator,2271.957564011,demonstrator,Hypothalamus,#f28e2b
+148,PMv,BL4demonstrator,793.388429752063,demonstrator,Hypothalamus,#f28e2b
+149,PVHd,BL4demonstrator,1333.75013024904,demonstrator,Hypothalamus,#f28e2b
+150,VMH,BL4demonstrator,1371.26011195535,demonstrator,Hypothalamus,#f28e2b
+151,PH,BL4demonstrator,4799.37474741065,demonstrator,Hypothalamus,#f28e2b
+152,LHA,BL4demonstrator,9329.7325126957,demonstrator,Hypothalamus,#f28e2b
+153,LPO,BL4demonstrator,12231.6509351147,demonstrator,Hypothalamus,#f28e2b
+154,PST,BL4demonstrator,3154.92957746479,demonstrator,Hypothalamus,#f28e2b
+155,PSTN,BL4demonstrator,2117.15173589067,demonstrator,Hypothalamus,#f28e2b
+159,TU,BL4demonstrator,1594.17359327888,demonstrator,Hypothalamus,#f28e2b
+160,ZI,BL4demonstrator,3192.25369364054,demonstrator,Hypothalamus,#f28e2b
+162,SCs,BL4demonstrator,3234.67043726117,demonstrator,Midbrain,#ff9da7
+163,IC,BL4demonstrator,6123.94769556918,demonstrator,Midbrain,#ff9da7
+170,VTA,BL4demonstrator,11586.7564991057,demonstrator,Midbrain,#ff9da7
+174,SCm,BL4demonstrator,4497.13353432955,demonstrator,Midbrain,#ff9da7
+175,PAG,BL4demonstrator,2484.92504245122,demonstrator,Midbrain,#ff9da7
+176,PRT,BL4demonstrator,3388.98520786456,demonstrator,Midbrain,#ff9da7
+178,CUN,BL4demonstrator,2164.04731112804,demonstrator,Midbrain,#ff9da7
+197,DR,BL4demonstrator,1982.7591279532,demonstrator,Midbrain,#ff9da7
+200,MOs,BL9demonstrator,478.794604603408,demonstrator,Isocortex,#e15759
+203,VISC,BL9demonstrator,171.124044081122,demonstrator,Isocortex,#e15759
+204,AUDd,BL9demonstrator,1644.06352407361,demonstrator,Isocortex,#e15759
+206,AUDpo,BL9demonstrator,1168.53727945361,demonstrator,Isocortex,#e15759
+207,AUDv,BL9demonstrator,1028.22376204158,demonstrator,Isocortex,#e15759
+208,VISal,BL9demonstrator,2839.28537573387,demonstrator,Isocortex,#e15759
+209,VISam,BL9demonstrator,1539.80152780752,demonstrator,Isocortex,#e15759
+210,VISl,BL9demonstrator,2637.81035211073,demonstrator,Isocortex,#e15759
+211,VISp,BL9demonstrator,1181.18760342121,demonstrator,Isocortex,#e15759
+212,VISpl,BL9demonstrator,986.901204410312,demonstrator,Isocortex,#e15759
+215,ACA,BL9demonstrator,106.639702924122,demonstrator,Isocortex,#e15759
+216,PL,BL9demonstrator,143.266347128131,demonstrator,Isocortex,#e15759
+218,ORB,BL9demonstrator,574.045113110868,demonstrator,Isocortex,#e15759
+219,AI,BL9demonstrator,525.905713621278,demonstrator,Isocortex,#e15759
+220,RSP,BL9demonstrator,352.150008287523,demonstrator,Isocortex,#e15759
+222,VISrl,BL9demonstrator,1944.25796718838,demonstrator,Isocortex,#e15759
+223,PERI,BL9demonstrator,516.966337704475,demonstrator,Isocortex,#e15759
+225,MOB,BL9demonstrator,2065.69091531193,demonstrator,Olfactory areas,#76b7b2
+226,AOB,BL9demonstrator,522.823165672711,demonstrator,Olfactory areas,#76b7b2
+227,AON,BL9demonstrator,2450.62334169302,demonstrator,Olfactory areas,#76b7b2
+228,TT,BL9demonstrator,913.844547952222,demonstrator,Olfactory areas,#76b7b2
+229,DP,BL9demonstrator,173.331490949289,demonstrator,Olfactory areas,#76b7b2
+230,PIR,BL9demonstrator,2368.65272688449,demonstrator,Olfactory areas,#76b7b2
+231,NLOT,BL9demonstrator,1066.61963758213,demonstrator,Olfactory areas,#76b7b2
+232,COA,BL9demonstrator,628.369896586768,demonstrator,Olfactory areas,#76b7b2
+233,PAA,BL9demonstrator,412.559836695065,demonstrator,Olfactory areas,#76b7b2
+234,TR,BL9demonstrator,290.756209548044,demonstrator,Olfactory areas,#76b7b2
+236,DG,BL9demonstrator,854.618478623134,demonstrator,Hippocampal formation,#edc948
+239,ENT,BL9demonstrator,478.128099184367,demonstrator,Hippocampal formation,#edc948
+240,PAR,BL9demonstrator,397.121799166837,demonstrator,Hippocampal formation,#edc948
+241,POST,BL9demonstrator,400.523772971508,demonstrator,Hippocampal formation,#edc948
+242,PRE,BL9demonstrator,978.002113737556,demonstrator,Hippocampal formation,#edc948
+243,SUB,BL9demonstrator,665.720237226518,demonstrator,Hippocampal formation,#edc948
+247,CLA,BL9demonstrator,1236.79983209693,demonstrator,Cortical subplate,#59a14f
+248,EP,BL9demonstrator,1077.80411381047,demonstrator,Cortical subplate,#59a14f
+249,LA,BL9demonstrator,341.935759075205,demonstrator,Cortical subplate,#59a14f
+250,BLA,BL9demonstrator,907.126509111764,demonstrator,Cortical subplate,#59a14f
+251,BMA,BL9demonstrator,690.305215185939,demonstrator,Cortical subplate,#59a14f
+254,ACB,BL9demonstrator,547.297456409774,demonstrator,Striatum,#9c755f
+258,LS,BL9demonstrator,143.697341329368,demonstrator,Striatum,#9c755f
+262,BA,BL9demonstrator,4029.31379080609,demonstrator,Striatum,#9c755f
+264,IA,BL9demonstrator,908.316775475452,demonstrator,Striatum,#9c755f
+265,MEA,BL9demonstrator,654.91181465628,demonstrator,Striatum,#9c755f
+270,MSC,BL9demonstrator,174.186011970483,demonstrator,Pallidum,#bab0ac
+273,BAC,BL9demonstrator,0.0,demonstrator,Pallidum,#bab0ac
+278,SPF,BL9demonstrator,405.49976294125,demonstrator,Thalamus,#b07aa1
+279,SPA,BL9demonstrator,0.0,demonstrator,Thalamus,#b07aa1
+285,POL,BL9demonstrator,280.707454261178,demonstrator,Thalamus,#b07aa1
+290,AM,BL9demonstrator,93.9279931976751,demonstrator,Thalamus,#b07aa1
+292,IAM,BL9demonstrator,0.0,demonstrator,Thalamus,#b07aa1
+293,IAD,BL9demonstrator,0.0,demonstrator,Thalamus,#b07aa1
+295,IMD,BL9demonstrator,0.0,demonstrator,Thalamus,#b07aa1
+296,MD,BL9demonstrator,46.1161876437156,demonstrator,Thalamus,#b07aa1
+298,PR,BL9demonstrator,21.5966930063834,demonstrator,Thalamus,#b07aa1
+299,PVT,BL9demonstrator,0.0,demonstrator,Thalamus,#b07aa1
+300,PT,BL9demonstrator,8.11530495794412,demonstrator,Thalamus,#b07aa1
+301,RE,BL9demonstrator,8.37632379726693,demonstrator,Thalamus,#b07aa1
+303,RH,BL9demonstrator,0.0,demonstrator,Thalamus,#b07aa1
+304,CM,BL9demonstrator,0.0,demonstrator,Thalamus,#b07aa1
+315,LH,BL9demonstrator,231.812510899751,demonstrator,Thalamus,#b07aa1
+321,ADP,BL9demonstrator,17.1138247615651,demonstrator,Hypothalamus,#f28e2b
+324,AVPV,BL9demonstrator,9.48499444238635,demonstrator,Hypothalamus,#f28e2b
+325,DMH,BL9demonstrator,275.047437137937,demonstrator,Hypothalamus,#f28e2b
+327,MPO,BL9demonstrator,586.643387167175,demonstrator,Hypothalamus,#f28e2b
+330,PS,BL9demonstrator,319.896329893089,demonstrator,Hypothalamus,#f28e2b
+332,PVp,BL9demonstrator,6.80754502907395,demonstrator,Hypothalamus,#f28e2b
+339,AHN,BL9demonstrator,359.286757628179,demonstrator,Hypothalamus,#f28e2b
+342,SUM,BL9demonstrator,6.5485986169496,demonstrator,Hypothalamus,#f28e2b
+343,TM,BL9demonstrator,82.4059597167294,demonstrator,Hypothalamus,#f28e2b
+345,PMd,BL9demonstrator,13.0572273793736,demonstrator,Hypothalamus,#f28e2b
+346,PMv,BL9demonstrator,127.671701339412,demonstrator,Hypothalamus,#f28e2b
+347,PVHd,BL9demonstrator,80.0250078149425,demonstrator,Hypothalamus,#f28e2b
+348,VMH,BL9demonstrator,154.982715356133,demonstrator,Hypothalamus,#f28e2b
+349,PH,BL9demonstrator,33.346804765547,demonstrator,Hypothalamus,#f28e2b
+350,LHA,BL9demonstrator,1340.77835763263,demonstrator,Hypothalamus,#f28e2b
+351,LPO,BL9demonstrator,693.447927030123,demonstrator,Hypothalamus,#f28e2b
+352,PST,BL9demonstrator,450.704225352113,demonstrator,Hypothalamus,#f28e2b
+353,PSTN,BL9demonstrator,153.97467170114,demonstrator,Hypothalamus,#f28e2b
+357,TU,BL9demonstrator,367.62192776043,demonstrator,Hypothalamus,#f28e2b
+358,ZI,BL9demonstrator,591.720028764168,demonstrator,Hypothalamus,#f28e2b
+360,SCs,BL9demonstrator,509.565504413661,demonstrator,Midbrain,#ff9da7
+361,IC,BL9demonstrator,1006.21804831246,demonstrator,Midbrain,#ff9da7
+368,VTA,BL9demonstrator,271.468203386927,demonstrator,Midbrain,#ff9da7
+372,SCm,BL9demonstrator,747.565862332804,demonstrator,Midbrain,#ff9da7
+373,PAG,BL9demonstrator,65.0678376917584,demonstrator,Midbrain,#ff9da7
+374,PRT,BL9demonstrator,910.103655612529,demonstrator,Midbrain,#ff9da7
+376,CUN,BL9demonstrator,667.631617262906,demonstrator,Midbrain,#ff9da7
+395,DR,BL9demonstrator,0.0,demonstrator,Midbrain,#ff9da7
+398,MOs,BL17demonstrator,735.302160032356,demonstrator,Isocortex,#e15759
+401,VISC,BL17demonstrator,284.945082575447,demonstrator,Isocortex,#e15759
+402,AUDd,BL17demonstrator,1455.00378119486,demonstrator,Isocortex,#e15759
+404,AUDpo,BL17demonstrator,926.670461013089,demonstrator,Isocortex,#e15759
+405,AUDv,BL17demonstrator,1273.61838769647,demonstrator,Isocortex,#e15759
+406,VISal,BL17demonstrator,2414.60593919248,demonstrator,Isocortex,#e15759
+407,VISam,BL17demonstrator,1224.53059184693,demonstrator,Isocortex,#e15759
+408,VISl,BL17demonstrator,2455.89239679275,demonstrator,Isocortex,#e15759
+409,VISp,BL17demonstrator,1822.83709493802,demonstrator,Isocortex,#e15759
+410,VISpl,BL17demonstrator,865.866151039236,demonstrator,Isocortex,#e15759
+413,ACA,BL17demonstrator,1631.38237838729,demonstrator,Isocortex,#e15759
+414,PL,BL17demonstrator,1262.77933288347,demonstrator,Isocortex,#e15759
+416,ORB,BL17demonstrator,714.568255600023,demonstrator,Isocortex,#e15759
+417,AI,BL17demonstrator,739.613814989781,demonstrator,Isocortex,#e15759
+418,RSP,BL17demonstrator,923.895104132301,demonstrator,Isocortex,#e15759
+420,VISrl,BL17demonstrator,1364.9632283613,demonstrator,Isocortex,#e15759
+421,PERI,BL17demonstrator,1620.11626335001,demonstrator,Isocortex,#e15759
+423,MOB,BL17demonstrator,1916.573228593,demonstrator,Olfactory areas,#76b7b2
+424,AOB,BL17demonstrator,716.158815478765,demonstrator,Olfactory areas,#76b7b2
+425,AON,BL17demonstrator,1272.80437126692,demonstrator,Olfactory areas,#76b7b2
+426,TT,BL17demonstrator,2365.91202276734,demonstrator,Olfactory areas,#76b7b2
+427,DP,BL17demonstrator,615.503661738291,demonstrator,Olfactory areas,#76b7b2
+428,PIR,BL17demonstrator,2305.09788519275,demonstrator,Olfactory areas,#76b7b2
+429,NLOT,BL17demonstrator,1805.91684669989,demonstrator,Olfactory areas,#76b7b2
+430,COA,BL17demonstrator,668.539661665374,demonstrator,Olfactory areas,#76b7b2
+431,PAA,BL17demonstrator,493.543804638912,demonstrator,Olfactory areas,#76b7b2
+432,TR,BL17demonstrator,888.200475742655,demonstrator,Olfactory areas,#76b7b2
+434,DG,BL17demonstrator,1417.96037825108,demonstrator,Hippocampal formation,#edc948
+437,ENT,BL17demonstrator,1362.87442072238,demonstrator,Hippocampal formation,#edc948
+438,PAR,BL17demonstrator,648.818714131733,demonstrator,Hippocampal formation,#edc948
+439,POST,BL17demonstrator,794.112069354764,demonstrator,Hippocampal formation,#edc948
+440,PRE,BL17demonstrator,1827.37809913775,demonstrator,Hippocampal formation,#edc948
+441,SUB,BL17demonstrator,2494.75262368815,demonstrator,Hippocampal formation,#edc948
+445,CLA,BL17demonstrator,1912.54510376894,demonstrator,Cortical subplate,#59a14f
+446,EP,BL17demonstrator,918.244403413413,demonstrator,Cortical subplate,#59a14f
+447,LA,BL17demonstrator,982.809367401786,demonstrator,Cortical subplate,#59a14f
+448,BLA,BL17demonstrator,1246.20279823195,demonstrator,Cortical subplate,#59a14f
+449,BMA,BL17demonstrator,818.415912779005,demonstrator,Cortical subplate,#59a14f
+452,ACB,BL17demonstrator,1289.6584437036,demonstrator,Striatum,#9c755f
+456,LS,BL17demonstrator,1676.26340658035,demonstrator,Striatum,#9c755f
+460,BA,BL17demonstrator,3517.65489673547,demonstrator,Striatum,#9c755f
+462,IA,BL17demonstrator,1262.56031791088,demonstrator,Striatum,#9c755f
+463,MEA,BL17demonstrator,983.287541948825,demonstrator,Striatum,#9c755f
+468,MSC,BL17demonstrator,5492.25451903391,demonstrator,Pallidum,#bab0ac
+471,BAC,BL17demonstrator,752.572268495835,demonstrator,Pallidum,#bab0ac
+476,SPF,BL17demonstrator,2879.87586741949,demonstrator,Thalamus,#b07aa1
+477,SPA,BL17demonstrator,247.59514847344,demonstrator,Thalamus,#b07aa1
+483,POL,BL17demonstrator,116.961439275491,demonstrator,Thalamus,#b07aa1
+488,AM,BL17demonstrator,366.766449629017,demonstrator,Thalamus,#b07aa1
+490,IAM,BL17demonstrator,1320.7890743551,demonstrator,Thalamus,#b07aa1
+491,IAD,BL17demonstrator,1763.07502133797,demonstrator,Thalamus,#b07aa1
+493,IMD,BL17demonstrator,237.539320075298,demonstrator,Thalamus,#b07aa1
+494,MD,BL17demonstrator,370.285859609834,demonstrator,Thalamus,#b07aa1
+496,PR,BL17demonstrator,21.5966930063834,demonstrator,Thalamus,#b07aa1
+497,PVT,BL17demonstrator,1327.7954363125,demonstrator,Thalamus,#b07aa1
+498,PT,BL17demonstrator,4228.07388308889,demonstrator,Thalamus,#b07aa1
+499,RE,BL17demonstrator,479.544537393532,demonstrator,Thalamus,#b07aa1
+501,RH,BL17demonstrator,283.94237191108,demonstrator,Thalamus,#b07aa1
+502,CM,BL17demonstrator,294.25559022841,demonstrator,Thalamus,#b07aa1
+513,LH,BL17demonstrator,1318.75561756303,demonstrator,Thalamus,#b07aa1
+519,ADP,BL17demonstrator,753.008289508863,demonstrator,Hypothalamus,#f28e2b
+522,AVPV,BL17demonstrator,184.957391626534,demonstrator,Hypothalamus,#f28e2b
+523,DMH,BL17demonstrator,4622.72710137094,demonstrator,Hypothalamus,#f28e2b
+525,MPO,BL17demonstrator,2985.98380134826,demonstrator,Hypothalamus,#f28e2b
+528,PS,BL17demonstrator,781.968806405329,demonstrator,Hypothalamus,#f28e2b
+530,PVp,BL17demonstrator,878.173308750539,demonstrator,Hypothalamus,#f28e2b
+537,AHN,BL17demonstrator,2507.25291294485,demonstrator,Hypothalamus,#f28e2b
+540,SUM,BL17demonstrator,1306.44542408145,demonstrator,Hypothalamus,#f28e2b
+541,TM,BL17demonstrator,459.118918421778,demonstrator,Hypothalamus,#f28e2b
+543,PMd,BL17demonstrator,914.005916556151,demonstrator,Hypothalamus,#f28e2b
+544,PMv,BL17demonstrator,182.388144770589,demonstrator,Hypothalamus,#f28e2b
+545,PVHd,BL17demonstrator,853.600083359387,demonstrator,Hypothalamus,#f28e2b
+546,VMH,BL17demonstrator,303.227051783739,demonstrator,Hypothalamus,#f28e2b
+547,PH,BL17demonstrator,2586.94250815801,demonstrator,Hypothalamus,#f28e2b
+548,LHA,BL17demonstrator,3152.44670145796,demonstrator,Hypothalamus,#f28e2b
+549,LPO,BL17demonstrator,4590.88210950498,demonstrator,Hypothalamus,#f28e2b
+550,PST,BL17demonstrator,1014.08450704225,demonstrator,Hypothalamus,#f28e2b
+551,PSTN,BL17demonstrator,641.561132088082,demonstrator,Hypothalamus,#f28e2b
+555,TU,BL17demonstrator,481.000653144488,demonstrator,Hypothalamus,#f28e2b
+556,ZI,BL17demonstrator,617.007209480586,demonstrator,Hypothalamus,#f28e2b
+558,SCs,BL17demonstrator,1998.86703748149,demonstrator,Midbrain,#ff9da7
+559,IC,BL17demonstrator,1634.13928562254,demonstrator,Midbrain,#ff9da7
+566,VTA,BL17demonstrator,3413.91831532045,demonstrator,Midbrain,#ff9da7
+570,SCm,BL17demonstrator,1579.98330078503,demonstrator,Midbrain,#ff9da7
+571,PAG,BL17demonstrator,816.679758016738,demonstrator,Midbrain,#ff9da7
+572,PRT,BL17demonstrator,1066.80438230846,demonstrator,Midbrain,#ff9da7
+574,CUN,BL17demonstrator,388.081432694694,demonstrator,Midbrain,#ff9da7
+593,DR,BL17demonstrator,1124.12839448059,demonstrator,Midbrain,#ff9da7
+596,MOs,BL22demonstrator,336.50164483581,demonstrator,Isocortex,#e15759
+599,VISC,BL22demonstrator,373.646995333093,demonstrator,Isocortex,#e15759
+600,AUDd,BL22demonstrator,183.00983110663,demonstrator,Isocortex,#e15759
+602,AUDpo,BL22demonstrator,148.616960728514,demonstrator,Isocortex,#e15759
+603,AUDv,BL22demonstrator,307.250295757986,demonstrator,Isocortex,#e15759
+604,VISal,BL22demonstrator,354.303987057389,demonstrator,Isocortex,#e15759
+605,VISam,BL22demonstrator,105.090311986863,demonstrator,Isocortex,#e15759
+606,VISl,BL22demonstrator,398.703518738577,demonstrator,Isocortex,#e15759
+607,VISp,BL22demonstrator,216.41112018655,demonstrator,Isocortex,#e15759
+608,VISpl,BL22demonstrator,225.776926480661,demonstrator,Isocortex,#e15759
+611,ACA,BL22demonstrator,588.569129600442,demonstrator,Isocortex,#e15759
+612,PL,BL22demonstrator,309.236104456895,demonstrator,Isocortex,#e15759
+614,ORB,BL22demonstrator,282.338451805796,demonstrator,Isocortex,#e15759
+615,AI,BL22demonstrator,384.76883079908,demonstrator,Isocortex,#e15759
+616,RSP,BL22demonstrator,625.782532749867,demonstrator,Isocortex,#e15759
+618,VISrl,BL22demonstrator,383.78276447294,demonstrator,Isocortex,#e15759
+619,PERI,BL22demonstrator,506.151142355009,demonstrator,Isocortex,#e15759
+621,MOB,BL22demonstrator,537.410749694918,demonstrator,Olfactory areas,#76b7b2
+622,AOB,BL22demonstrator,506.484941745439,demonstrator,Olfactory areas,#76b7b2
+623,AON,BL22demonstrator,340.396660972389,demonstrator,Olfactory areas,#76b7b2
+624,TT,BL22demonstrator,626.45619356173,demonstrator,Olfactory areas,#76b7b2
+625,DP,BL22demonstrator,145.032472018793,demonstrator,Olfactory areas,#76b7b2
+626,PIR,BL22demonstrator,619.906681267908,demonstrator,Olfactory areas,#76b7b2
+627,NLOT,BL22demonstrator,411.974780653413,demonstrator,Olfactory areas,#76b7b2
+628,COA,BL22demonstrator,309.307191105267,demonstrator,Olfactory areas,#76b7b2
+629,PAA,BL22demonstrator,168.07993346836,demonstrator,Olfactory areas,#76b7b2
+630,TR,BL22demonstrator,698.345964485256,demonstrator,Olfactory areas,#76b7b2
+632,DG,BL22demonstrator,619.563082188606,demonstrator,Hippocampal formation,#edc948
+635,ENT,BL22demonstrator,666.867282294974,demonstrator,Hippocampal formation,#edc948
+636,PAR,BL22demonstrator,454.918868529146,demonstrator,Hippocampal formation,#edc948
+637,POST,BL22demonstrator,650.200930148552,demonstrator,Hippocampal formation,#edc948
+638,PRE,BL22demonstrator,1570.12584246302,demonstrator,Hippocampal formation,#edc948
+639,SUB,BL22demonstrator,989.23989332767,demonstrator,Hippocampal formation,#edc948
+643,CLA,BL22demonstrator,964.021924266028,demonstrator,Cortical subplate,#59a14f
+644,EP,BL22demonstrator,659.347908333363,demonstrator,Cortical subplate,#59a14f
+645,LA,BL22demonstrator,622.445932687798,demonstrator,Cortical subplate,#59a14f
+646,BLA,BL22demonstrator,391.691575362974,demonstrator,Cortical subplate,#59a14f
+647,BMA,BL22demonstrator,251.246222464071,demonstrator,Cortical subplate,#59a14f
+650,ACB,BL22demonstrator,423.283555980179,demonstrator,Striatum,#9c755f
+654,LS,BL22demonstrator,677.16601192981,demonstrator,Striatum,#9c755f
+658,BA,BL22demonstrator,575.616255829441,demonstrator,Striatum,#9c755f
+660,IA,BL22demonstrator,408.742548963953,demonstrator,Striatum,#9c755f
+661,MEA,BL22demonstrator,408.40006419577,demonstrator,Striatum,#9c755f
+666,MSC,BL22demonstrator,981.915837391131,demonstrator,Pallidum,#bab0ac
+669,BAC,BL22demonstrator,0.0,demonstrator,Pallidum,#bab0ac
+674,SPF,BL22demonstrator,1042.71367613464,demonstrator,Thalamus,#b07aa1
+675,SPA,BL22demonstrator,227.519866164783,demonstrator,Thalamus,#b07aa1
+681,POL,BL22demonstrator,15.5948585700655,demonstrator,Thalamus,#b07aa1
+686,AM,BL22demonstrator,111.819039521042,demonstrator,Thalamus,#b07aa1
+688,IAM,BL22demonstrator,738.088012139615,demonstrator,Thalamus,#b07aa1
+689,IAD,BL22demonstrator,632.898725608501,demonstrator,Thalamus,#b07aa1
+691,IMD,BL22demonstrator,520.564892930972,demonstrator,Thalamus,#b07aa1
+692,MD,BL22demonstrator,355.365916548632,demonstrator,Thalamus,#b07aa1
+694,PR,BL22demonstrator,10.7983465031917,demonstrator,Thalamus,#b07aa1
+695,PVT,BL22demonstrator,1355.09225879176,demonstrator,Thalamus,#b07aa1
+696,PT,BL22demonstrator,2231.70886343463,demonstrator,Thalamus,#b07aa1
+697,RE,BL22demonstrator,343.429275687944,demonstrator,Thalamus,#b07aa1
+699,RH,BL22demonstrator,201.507489743347,demonstrator,Thalamus,#b07aa1
+700,CM,BL22demonstrator,382.886792104437,demonstrator,Thalamus,#b07aa1
+711,LH,BL22demonstrator,448.170854406186,demonstrator,Thalamus,#b07aa1
+717,ADP,BL22demonstrator,205.365897138781,demonstrator,Hypothalamus,#f28e2b
+720,AVPV,BL22demonstrator,113.819933308636,demonstrator,Hypothalamus,#f28e2b
+721,DMH,BL22demonstrator,1447.61809019967,demonstrator,Hypothalamus,#f28e2b
+723,MPO,BL22demonstrator,918.764246568697,demonstrator,Hypothalamus,#f28e2b
+726,PS,BL22demonstrator,106.632109964363,demonstrator,Hypothalamus,#f28e2b
+728,PVp,BL22demonstrator,789.675223372578,demonstrator,Hypothalamus,#f28e2b
+735,AHN,BL22demonstrator,827.134981590053,demonstrator,Hypothalamus,#f28e2b
+738,SUM,BL22demonstrator,605.745372067838,demonstrator,Hypothalamus,#f28e2b
+739,TM,BL22demonstrator,341.39611882645,demonstrator,Hypothalamus,#f28e2b
+741,PMd,BL22demonstrator,169.743955931857,demonstrator,Hypothalamus,#f28e2b
+742,PMv,BL22demonstrator,45.5970361926473,demonstrator,Hypothalamus,#f28e2b
+743,PVHd,BL22demonstrator,233.406272793582,demonstrator,Hypothalamus,#f28e2b
+744,VMH,BL22demonstrator,168.459473213188,demonstrator,Hypothalamus,#f28e2b
+745,PH,BL22demonstrator,1296.67767761416,demonstrator,Hypothalamus,#f28e2b
+746,LHA,BL22demonstrator,1325.50139243172,demonstrator,Hypothalamus,#f28e2b
+747,LPO,BL22demonstrator,908.545200692244,demonstrator,Hypothalamus,#f28e2b
+748,PST,BL22demonstrator,338.028169014085,demonstrator,Hypothalamus,#f28e2b
+749,PSTN,BL22demonstrator,436.261569819896,demonstrator,Hypothalamus,#f28e2b
+753,TU,BL22demonstrator,161.478790698507,demonstrator,Hypothalamus,#f28e2b
+754,ZI,BL22demonstrator,139.585237554624,demonstrator,Hypothalamus,#f28e2b
+756,SCs,BL22demonstrator,1109.91074574807,demonstrator,Midbrain,#ff9da7
+757,IC,BL22demonstrator,665.665136820519,demonstrator,Midbrain,#ff9da7
+764,VTA,BL22demonstrator,2615.96632354675,demonstrator,Midbrain,#ff9da7
+768,SCm,BL22demonstrator,659.025087251665,demonstrator,Midbrain,#ff9da7
+769,PAG,BL22demonstrator,484.872983281356,demonstrator,Midbrain,#ff9da7
+770,PRT,BL22demonstrator,710.022501752187,demonstrator,Midbrain,#ff9da7
+772,CUN,BL22demonstrator,276.26135886741,demonstrator,Midbrain,#ff9da7
+791,DR,BL22demonstrator,112.977728088501,demonstrator,Midbrain,#ff9da7
+794,MOs,BL6demonstrator,709.709901081349,demonstrator,Isocortex,#e15759
+797,VISC,BL6demonstrator,572.245083188708,demonstrator,Isocortex,#e15759
+798,AUDd,BL6demonstrator,1604.73909755483,demonstrator,Isocortex,#e15759
+800,AUDpo,BL6demonstrator,2205.94194649971,demonstrator,Isocortex,#e15759
+801,AUDv,BL6demonstrator,853.811052898429,demonstrator,Isocortex,#e15759
+802,VISal,BL6demonstrator,4952.9755998913,demonstrator,Isocortex,#e15759
+803,VISam,BL6demonstrator,3056.7573356179,demonstrator,Isocortex,#e15759
+804,VISl,BL6demonstrator,5031.54744750318,demonstrator,Isocortex,#e15759
+805,VISp,BL6demonstrator,3752.39006140733,demonstrator,Isocortex,#e15759
+806,VISpl,BL6demonstrator,1934.233256757,demonstrator,Isocortex,#e15759
+809,ACA,BL6demonstrator,1164.49188417463,demonstrator,Isocortex,#e15759
+810,PL,BL6demonstrator,558.973616663855,demonstrator,Isocortex,#e15759
+812,ORB,BL6demonstrator,1064.74546584886,demonstrator,Isocortex,#e15759
+813,AI,BL6demonstrator,1068.30488600308,demonstrator,Isocortex,#e15759
+814,RSP,BL6demonstrator,1539.16028339057,demonstrator,Isocortex,#e15759
+816,VISrl,BL6demonstrator,4485.91363379219,demonstrator,Isocortex,#e15759
+817,PERI,BL6demonstrator,2697.30972015682,demonstrator,Isocortex,#e15759
+819,MOB,BL6demonstrator,2810.10519389305,demonstrator,Olfactory areas,#76b7b2
+820,AOB,BL6demonstrator,2453.45662641204,demonstrator,Olfactory areas,#76b7b2
+821,AON,BL6demonstrator,3107.767237306,demonstrator,Olfactory areas,#76b7b2
+822,TT,BL6demonstrator,2672.20750573615,demonstrator,Olfactory areas,#76b7b2
+823,DP,BL6demonstrator,880.806964211693,demonstrator,Olfactory areas,#76b7b2
+824,PIR,BL6demonstrator,3361.16201630892,demonstrator,Olfactory areas,#76b7b2
+825,NLOT,BL6demonstrator,1568.89026057053,demonstrator,Olfactory areas,#76b7b2
+826,COA,BL6demonstrator,1517.26941239764,demonstrator,Olfactory areas,#76b7b2
+827,PAA,BL6demonstrator,521.047793751916,demonstrator,Olfactory areas,#76b7b2
+828,TR,BL6demonstrator,845.715550146594,demonstrator,Olfactory areas,#76b7b2
+830,DG,BL6demonstrator,853.205886096484,demonstrator,Hippocampal formation,#edc948
+833,ENT,BL6demonstrator,1440.74817417972,demonstrator,Hippocampal formation,#edc948
+834,PAR,BL6demonstrator,522.038045853119,demonstrator,Hippocampal formation,#edc948
+835,POST,BL6demonstrator,1345.48245812074,demonstrator,Hippocampal formation,#edc948
+836,PRE,BL6demonstrator,2219.9095597535,demonstrator,Hippocampal formation,#edc948
+837,SUB,BL6demonstrator,2584.76071698663,demonstrator,Hippocampal formation,#edc948
+841,CLA,BL6demonstrator,3161.74393167636,demonstrator,Cortical subplate,#59a14f
+842,EP,BL6demonstrator,1968.73090143606,demonstrator,Cortical subplate,#59a14f
+843,LA,BL6demonstrator,909.098664846652,demonstrator,Cortical subplate,#59a14f
+844,BLA,BL6demonstrator,1054.25443916104,demonstrator,Cortical subplate,#59a14f
+845,BMA,BL6demonstrator,973.890060343405,demonstrator,Cortical subplate,#59a14f
+848,ACB,BL6demonstrator,608.012595161763,demonstrator,Striatum,#9c755f
+852,LS,BL6demonstrator,1194.5997860729,demonstrator,Striatum,#9c755f
+856,BA,BL6demonstrator,4604.93004663553,demonstrator,Striatum,#9c755f
+858,IA,BL6demonstrator,2334.37411297191,demonstrator,Striatum,#9c755f
+859,MEA,BL6demonstrator,1430.3200446496,demonstrator,Striatum,#9c755f
+864,MSC,BL6demonstrator,951.086454741488,demonstrator,Pallidum,#bab0ac
+867,BAC,BL6demonstrator,752.572268495835,demonstrator,Pallidum,#bab0ac
+872,SPF,BL6demonstrator,2648.16171716735,demonstrator,Thalamus,#b07aa1
+873,SPA,BL6demonstrator,267.670430782097,demonstrator,Thalamus,#b07aa1
+879,POL,BL6demonstrator,335.289459256407,demonstrator,Thalamus,#b07aa1
+884,AM,BL6demonstrator,742.478422419718,demonstrator,Thalamus,#b07aa1
+886,IAM,BL6demonstrator,3593.32321699549,demonstrator,Thalamus,#b07aa1
+887,IAD,BL6demonstrator,2791.53545045178,demonstrator,Thalamus,#b07aa1
+889,IMD,BL6demonstrator,687.347819792351,demonstrator,Thalamus,#b07aa1
+890,MD,BL6demonstrator,675.466513134423,demonstrator,Thalamus,#b07aa1
+892,PR,BL6demonstrator,32.3950395095751,demonstrator,Thalamus,#b07aa1
+893,PVT,BL6demonstrator,2187.64534440914,demonstrator,Thalamus,#b07aa1
+894,PT,BL6demonstrator,4666.30035081787,demonstrator,Thalamus,#b07aa1
+895,RE,BL6demonstrator,875.325836814395,demonstrator,Thalamus,#b07aa1
+897,RH,BL6demonstrator,714.435645453686,demonstrator,Thalamus,#b07aa1
+898,CM,BL6demonstrator,716.140111158299,demonstrator,Thalamus,#b07aa1
+909,LH,BL6demonstrator,417.262519619553,demonstrator,Thalamus,#b07aa1
+915,ADP,BL6demonstrator,393.617969515996,demonstrator,Hypothalamus,#f28e2b
+918,AVPV,BL6demonstrator,132.789922193409,demonstrator,Hypothalamus,#f28e2b
+919,DMH,BL6demonstrator,2644.3157114314,demonstrator,Hypothalamus,#f28e2b
+921,MPO,BL6demonstrator,1669.91609680392,demonstrator,Hypothalamus,#f28e2b
+924,PS,BL6demonstrator,1101.86513629842,demonstrator,Hypothalamus,#f28e2b
+926,PVp,BL6demonstrator,558.218692384064,demonstrator,Hypothalamus,#f28e2b
+933,AHN,BL6demonstrator,1804.1881785933,demonstrator,Hypothalamus,#f28e2b
+936,SUM,BL6demonstrator,1696.08704178995,demonstrator,Hypothalamus,#f28e2b
+937,TM,BL6demonstrator,317.851558907385,demonstrator,Hypothalamus,#f28e2b
+939,PMd,BL6demonstrator,626.746914209932,demonstrator,Hypothalamus,#f28e2b
+940,PMv,BL6demonstrator,136.791108577942,demonstrator,Hypothalamus,#f28e2b
+941,PVHd,BL6demonstrator,793.58132749818,demonstrator,Hypothalamus,#f28e2b
+942,VMH,BL6demonstrator,198.782178391562,demonstrator,Hypothalamus,#f28e2b
+943,PH,BL6demonstrator,2425.33876198652,demonstrator,Hypothalamus,#f28e2b
+944,LHA,BL6demonstrator,3403.16865975521,demonstrator,Hypothalamus,#f28e2b
+945,LPO,BL6demonstrator,1948.71709123743,demonstrator,Hypothalamus,#f28e2b
+946,PST,BL6demonstrator,2253.52112676056,demonstrator,Hypothalamus,#f28e2b
+947,PSTN,BL6demonstrator,449.092792461658,demonstrator,Hypothalamus,#f28e2b
+951,TU,BL6demonstrator,484.43637209552,demonstrator,Hypothalamus,#f28e2b
+952,ZI,BL6demonstrator,1108.59000260774,demonstrator,Hypothalamus,#f28e2b
+954,SCs,BL6demonstrator,1960.32846992079,demonstrator,Midbrain,#ff9da7
+955,IC,BL6demonstrator,1560.36711839758,demonstrator,Midbrain,#ff9da7
+962,VTA,BL6demonstrator,4228.32292548123,demonstrator,Midbrain,#ff9da7
+966,SCm,BL6demonstrator,1446.50137471574,demonstrator,Midbrain,#ff9da7
+967,PAG,BL6demonstrator,701.047154889818,demonstrator,Midbrain,#ff9da7
+968,PRT,BL6demonstrator,635.656055184627,demonstrator,Midbrain,#ff9da7
+970,CUN,BL6demonstrator,1029.40244435118,demonstrator,Midbrain,#ff9da7
+989,DR,BL6demonstrator,158.168819323902,demonstrator,Midbrain,#ff9da7
+992,MOs,BL14demonstrator,1275.22570315874,demonstrator,Isocortex,#e15759
+995,VISC,BL14demonstrator,977.290985692649,demonstrator,Isocortex,#e15759
+996,AUDd,BL14demonstrator,2475.9263927401,demonstrator,Isocortex,#e15759
+998,AUDpo,BL14demonstrator,2704.24587364826,demonstrator,Isocortex,#e15759
+999,AUDv,BL14demonstrator,1616.35964171033,demonstrator,Isocortex,#e15759
+1000,VISal,BL14demonstrator,5023.35104937531,demonstrator,Isocortex,#e15759
+1001,VISam,BL14demonstrator,2092.66795173841,demonstrator,Isocortex,#e15759
+1002,VISl,BL14demonstrator,9238.40016423151,demonstrator,Isocortex,#e15759
+1003,VISp,BL14demonstrator,4911.9094675633,demonstrator,Isocortex,#e15759
+1004,VISpl,BL14demonstrator,3535.62011674355,demonstrator,Isocortex,#e15759
+1007,ACA,BL14demonstrator,2484.15820786063,demonstrator,Isocortex,#e15759
+1008,PL,BL14demonstrator,1133.60475760401,demonstrator,Isocortex,#e15759
+1010,ORB,BL14demonstrator,2270.98319930749,demonstrator,Isocortex,#e15759
+1011,AI,BL14demonstrator,2089.72122495839,demonstrator,Isocortex,#e15759
+1012,RSP,BL14demonstrator,1845.61420409393,demonstrator,Isocortex,#e15759
+1014,VISrl,BL14demonstrator,4623.49613426362,demonstrator,Isocortex,#e15759
+1015,PERI,BL14demonstrator,2887.65715830742,demonstrator,Isocortex,#e15759
+1017,MOB,BL14demonstrator,10123.4471111964,demonstrator,Olfactory areas,#76b7b2
+1018,AOB,BL14demonstrator,12588.6015359632,demonstrator,Olfactory areas,#76b7b2
+1019,AON,BL14demonstrator,4051.03042198234,demonstrator,Olfactory areas,#76b7b2
+1020,TT,BL14demonstrator,3845.70995283066,demonstrator,Olfactory areas,#76b7b2
+1021,DP,BL14demonstrator,1167.33453088297,demonstrator,Olfactory areas,#76b7b2
+1022,PIR,BL14demonstrator,4261.79669002351,demonstrator,Olfactory areas,#76b7b2
+1023,NLOT,BL14demonstrator,2618.57942771485,demonstrator,Olfactory areas,#76b7b2
+1024,COA,BL14demonstrator,1580.39332894973,demonstrator,Olfactory areas,#76b7b2
+1025,PAA,BL14demonstrator,472.151813106575,demonstrator,Olfactory areas,#76b7b2
+1026,TR,BL14demonstrator,1586.54644022791,demonstrator,Olfactory areas,#76b7b2
+1028,DG,BL14demonstrator,2559.90017679478,demonstrator,Hippocampal formation,#edc948
+1031,ENT,BL14demonstrator,2963.22192188028,demonstrator,Hippocampal formation,#edc948
+1032,PAR,BL14demonstrator,3093.07542167973,demonstrator,Hippocampal formation,#edc948
+1033,POST,BL14demonstrator,3552.69788233169,demonstrator,Hippocampal formation,#edc948
+1034,PRE,BL14demonstrator,6446.83025994348,demonstrator,Hippocampal formation,#edc948
+1035,SUB,BL14demonstrator,5385.20120470737,demonstrator,Hippocampal formation,#edc948
+1039,CLA,BL14demonstrator,4404.74326167854,demonstrator,Cortical subplate,#59a14f
+1040,EP,BL14demonstrator,2240.66534950575,demonstrator,Cortical subplate,#59a14f
+1041,LA,BL14demonstrator,1148.65844815084,demonstrator,Cortical subplate,#59a14f
+1042,BLA,BL14demonstrator,1675.89430254805,demonstrator,Cortical subplate,#59a14f
+1043,BMA,BL14demonstrator,1027.37316710556,demonstrator,Cortical subplate,#59a14f
+1046,ACB,BL14demonstrator,1186.31352667893,demonstrator,Striatum,#9c755f
+1050,LS,BL14demonstrator,3433.31802223429,demonstrator,Striatum,#9c755f
+1054,BA,BL14demonstrator,5948.03464357089,demonstrator,Striatum,#9c755f
+1056,IA,BL14demonstrator,2488.78796480274,demonstrator,Striatum,#9c755f
+1057,MEA,BL14demonstrator,1679.59125500332,demonstrator,Striatum,#9c755f
+1062,MSC,BL14demonstrator,2976.57689482304,demonstrator,Pallidum,#bab0ac
+1065,BAC,BL14demonstrator,3010.28907398334,demonstrator,Pallidum,#bab0ac
+1070,SPF,BL14demonstrator,3599.84483427437,demonstrator,Thalamus,#b07aa1
+1071,SPA,BL14demonstrator,307.820995399412,demonstrator,Thalamus,#b07aa1
+1077,POL,BL14demonstrator,803.135216358371,demonstrator,Thalamus,#b07aa1
+1082,AM,BL14demonstrator,5702.77101557313,demonstrator,Thalamus,#b07aa1
+1084,IAM,BL14demonstrator,5652.20030349021,demonstrator,Thalamus,#b07aa1
+1085,IAD,BL14demonstrator,4430.29107925951,demonstrator,Thalamus,#b07aa1
+1087,IMD,BL14demonstrator,1036.07575777523,demonstrator,Thalamus,#b07aa1
+1088,MD,BL14demonstrator,1455.37262769726,demonstrator,Thalamus,#b07aa1
+1090,PR,BL14demonstrator,140.378504541492,demonstrator,Thalamus,#b07aa1
+1091,PVT,BL14demonstrator,4180.313385395,demonstrator,Thalamus,#b07aa1
+1092,PT,BL14demonstrator,11759.076884061,demonstrator,Thalamus,#b07aa1
+1093,RE,BL14demonstrator,2058.48157317835,demonstrator,Thalamus,#b07aa1
+1095,RH,BL14demonstrator,1474.66844766722,demonstrator,Thalamus,#b07aa1
+1096,CM,BL14demonstrator,1340.10377236553,demonstrator,Thalamus,#b07aa1
+1107,LH,BL14demonstrator,1488.75145888951,demonstrator,Thalamus,#b07aa1
+1113,ADP,BL14demonstrator,1386.21980568677,demonstrator,Hypothalamus,#f28e2b
+1116,AVPV,BL14demonstrator,597.55464987034,demonstrator,Hypothalamus,#f28e2b
+1117,DMH,BL14demonstrator,7918.47095339219,demonstrator,Hypothalamus,#f28e2b
+1119,MPO,BL14demonstrator,4904.21455938696,demonstrator,Hypothalamus,#f28e2b
+1122,PS,BL14demonstrator,1190.72522793539,demonstrator,Hypothalamus,#f28e2b
+1124,PVp,BL14demonstrator,1831.22961282089,demonstrator,Hypothalamus,#f28e2b
+1131,AHN,BL14demonstrator,3559.2652176547,demonstrator,Hypothalamus,#f28e2b
+1134,SUM,BL14demonstrator,3280.84790709175,demonstrator,Hypothalamus,#f28e2b
+1135,TM,BL14demonstrator,1189.00027591281,demonstrator,Hypothalamus,#f28e2b
+1137,PMd,BL14demonstrator,1945.52687952666,demonstrator,Hypothalamus,#f28e2b
+1138,PMv,BL14demonstrator,592.761470504415,demonstrator,Hypothalamus,#f28e2b
+1139,PVHd,BL14demonstrator,973.6375950818,demonstrator,Hypothalamus,#f28e2b
+1140,VMH,BL14demonstrator,859.143313387259,demonstrator,Hypothalamus,#f28e2b
+1141,PH,BL14demonstrator,4624.94530709856,demonstrator,Hypothalamus,#f28e2b
+1142,LHA,BL14demonstrator,4905.70311951511,demonstrator,Hypothalamus,#f28e2b
+1143,LPO,BL14demonstrator,4205.63326115491,demonstrator,Hypothalamus,#f28e2b
+1144,PST,BL14demonstrator,2140.84507042254,demonstrator,Hypothalamus,#f28e2b
+1145,PSTN,BL14demonstrator,2335.28252080062,demonstrator,Hypothalamus,#f28e2b
+1149,TU,BL14demonstrator,666.529476500219,demonstrator,Hypothalamus,#f28e2b
+1150,ZI,BL14demonstrator,1545.55248538743,demonstrator,Hypothalamus,#f28e2b
+1152,SCs,BL14demonstrator,2719.11004456029,demonstrator,Midbrain,#ff9da7
+1153,IC,BL14demonstrator,2503.96460615863,demonstrator,Midbrain,#ff9da7
+1160,VTA,BL14demonstrator,8004.19884531758,demonstrator,Midbrain,#ff9da7
+1164,SCm,BL14demonstrator,4150.01345020463,demonstrator,Midbrain,#ff9da7
+1165,PAG,BL14demonstrator,1782.70196278384,demonstrator,Midbrain,#ff9da7
+1166,PRT,BL14demonstrator,3759.93212586227,demonstrator,Midbrain,#ff9da7
+1168,CUN,BL14demonstrator,1588.5028134876,demonstrator,Midbrain,#ff9da7
+1187,DR,BL14demonstrator,1576.03930683459,demonstrator,Midbrain,#ff9da7
+1190,MOs,BL3demonstrator,1367.65031834181,demonstrator,Isocortex,#e15759
+1193,VISC,BL3demonstrator,1161.75956532138,demonstrator,Isocortex,#e15759
+1194,AUDd,BL3demonstrator,3998.99168137131,demonstrator,Isocortex,#e15759
+1196,AUDpo,BL3demonstrator,3255.00284575981,demonstrator,Isocortex,#e15759
+1197,AUDv,BL3demonstrator,2223.76204157513,demonstrator,Isocortex,#e15759
+1198,VISal,BL3demonstrator,5261.17153383848,demonstrator,Isocortex,#e15759
+1199,VISam,BL3demonstrator,2695.79495966302,demonstrator,Isocortex,#e15759
+1200,VISl,BL3demonstrator,5011.8396690104,demonstrator,Isocortex,#e15759
+1201,VISp,BL3demonstrator,3541.66684300291,demonstrator,Isocortex,#e15759
+1202,VISpl,BL3demonstrator,2132.07901707511,demonstrator,Isocortex,#e15759
+1205,ACA,BL3demonstrator,2201.15284240816,demonstrator,Isocortex,#e15759
+1206,PL,BL3demonstrator,1673.00646892249,demonstrator,Isocortex,#e15759
+1208,ORB,BL3demonstrator,1668.83345769879,demonstrator,Isocortex,#e15759
+1209,AI,BL3demonstrator,1956.59545067701,demonstrator,Isocortex,#e15759
+1210,RSP,BL3demonstrator,1765.10204977896,demonstrator,Isocortex,#e15759
+1212,VISrl,BL3demonstrator,3204.22402413728,demonstrator,Isocortex,#e15759
+1213,PERI,BL3demonstrator,5360.01081519535,demonstrator,Isocortex,#e15759
+1215,MOB,BL3demonstrator,4217.44739311596,demonstrator,Olfactory areas,#76b7b2
+1216,AOB,BL3demonstrator,3172.33847921202,demonstrator,Olfactory areas,#76b7b2
+1217,AON,BL3demonstrator,2613.06776190649,demonstrator,Olfactory areas,#76b7b2
+1218,TT,BL3demonstrator,2883.96734581336,demonstrator,Olfactory areas,#76b7b2
+1219,DP,BL3demonstrator,898.493851043253,demonstrator,Olfactory areas,#76b7b2
+1220,PIR,BL3demonstrator,4343.29836524997,demonstrator,Olfactory areas,#76b7b2
+1221,NLOT,BL3demonstrator,3662.62510471322,demonstrator,Olfactory areas,#76b7b2
+1222,COA,BL3demonstrator,1488.57672305578,demonstrator,Olfactory areas,#76b7b2
+1223,PAA,BL3demonstrator,663.151737502438,demonstrator,Olfactory areas,#76b7b2
+1224,TR,BL3demonstrator,1022.29352215522,demonstrator,Olfactory areas,#76b7b2
+1226,DG,BL3demonstrator,3304.90147534989,demonstrator,Hippocampal formation,#edc948
+1229,ENT,BL3demonstrator,2679.19205980788,demonstrator,Hippocampal formation,#edc948
+1230,PAR,BL3demonstrator,2172.05115506744,demonstrator,Hippocampal formation,#edc948
+1231,POST,BL3demonstrator,3868.26206709712,demonstrator,Hippocampal formation,#edc948
+1232,PRE,BL3demonstrator,5963.37343274442,demonstrator,Hippocampal formation,#edc948
+1233,SUB,BL3demonstrator,5737.59138130049,demonstrator,Hippocampal formation,#edc948
+1237,CLA,BL3demonstrator,4798.41137866177,demonstrator,Cortical subplate,#59a14f
+1238,EP,BL3demonstrator,3980.92164617093,demonstrator,Cortical subplate,#59a14f
+1239,LA,BL3demonstrator,1760.86678326153,demonstrator,Cortical subplate,#59a14f
+1240,BLA,BL3demonstrator,2184.50873622833,demonstrator,Cortical subplate,#59a14f
+1241,BMA,BL3demonstrator,1651.75734372419,demonstrator,Cortical subplate,#59a14f
+1244,ACB,BL3demonstrator,2245.59892618172,demonstrator,Striatum,#9c755f
+1248,LS,BL3demonstrator,2351.5792381497,demonstrator,Striatum,#9c755f
+1252,BA,BL3demonstrator,13239.1738840771,demonstrator,Striatum,#9c755f
+1254,IA,BL3demonstrator,3515.18592109,demonstrator,Striatum,#9c755f
+1255,MEA,BL3demonstrator,2974.69776488541,demonstrator,Striatum,#9c755f
+1260,MSC,BL3demonstrator,4422.4749410913,demonstrator,Pallidum,#bab0ac
+1263,BAC,BL3demonstrator,3951.00440960314,demonstrator,Pallidum,#bab0ac
+1268,SPF,BL3demonstrator,9458.90263350713,demonstrator,Thalamus,#b07aa1
+1269,SPA,BL3demonstrator,408.197406942698,demonstrator,Thalamus,#b07aa1
+1275,POL,BL3demonstrator,2183.28019980916,demonstrator,Thalamus,#b07aa1
+1280,AM,BL3demonstrator,2567.36514740312,demonstrator,Thalamus,#b07aa1
+1282,IAM,BL3demonstrator,835.204855842195,demonstrator,Thalamus,#b07aa1
+1283,IAD,BL3demonstrator,1763.07502133797,demonstrator,Thalamus,#b07aa1
+1285,IMD,BL3demonstrator,232.485291988589,demonstrator,Thalamus,#b07aa1
+1286,MD,BL3demonstrator,1757.84056430163,demonstrator,Thalamus,#b07aa1
+1288,PR,BL3demonstrator,561.514018165968,demonstrator,Thalamus,#b07aa1
+1289,PVT,BL3demonstrator,768.2105754877,demonstrator,Thalamus,#b07aa1
+1290,PT,BL3demonstrator,4739.33809543937,demonstrator,Thalamus,#b07aa1
+1291,RE,BL3demonstrator,714.081603717006,demonstrator,Thalamus,#b07aa1
+1293,RH,BL3demonstrator,457.971567598517,demonstrator,Thalamus,#b07aa1
+1294,CM,BL3demonstrator,655.870893882601,demonstrator,Thalamus,#b07aa1
+1305,LH,BL3demonstrator,2725.08485035486,demonstrator,Thalamus,#b07aa1
+1311,ADP,BL3demonstrator,1694.26865139494,demonstrator,Hypothalamus,#f28e2b
+1314,AVPV,BL3demonstrator,488.477213782897,demonstrator,Hypothalamus,#f28e2b
+1315,DMH,BL3demonstrator,5616.75818997472,demonstrator,Hypothalamus,#f28e2b
+1317,MPO,BL3demonstrator,5211.50395266501,demonstrator,Hypothalamus,#f28e2b
+1320,PS,BL3demonstrator,1688.34174110242,demonstrator,Hypothalamus,#f28e2b
+1322,PVp,BL3demonstrator,108.920720465183,demonstrator,Hypothalamus,#f28e2b
+1329,AHN,BL3demonstrator,2672.67990926286,demonstrator,Hypothalamus,#f28e2b
+1332,SUM,BL3demonstrator,1761.57302795944,demonstrator,Hypothalamus,#f28e2b
+1333,TM,BL3demonstrator,588.613997976638,demonstrator,Hypothalamus,#f28e2b
+1335,PMd,BL3demonstrator,2324.1864735285,demonstrator,Hypothalamus,#f28e2b
+1336,PMv,BL3demonstrator,674.83613565118,demonstrator,Hypothalamus,#f28e2b
+1337,PVHd,BL3demonstrator,646.868813170785,demonstrator,Hypothalamus,#f28e2b
+1338,VMH,BL3demonstrator,1081.50981802867,demonstrator,Hypothalamus,#f28e2b
+1339,PH,BL3demonstrator,2843.45639096991,demonstrator,Hypothalamus,#f28e2b
+1340,LHA,BL3demonstrator,8413.11460064122,demonstrator,Hypothalamus,#f28e2b
+1341,LPO,BL3demonstrator,9945.84110157093,demonstrator,Hypothalamus,#f28e2b
+1342,PST,BL3demonstrator,3718.30985915493,demonstrator,Hypothalamus,#f28e2b
+1343,PSTN,BL3demonstrator,2668.89430948642,demonstrator,Hypothalamus,#f28e2b
+1347,TU,BL3demonstrator,1583.86643642578,demonstrator,Hypothalamus,#f28e2b
+1348,ZI,BL3demonstrator,3611.00940630441,demonstrator,Hypothalamus,#f28e2b
+1350,SCs,BL3demonstrator,2892.1053922772,demonstrator,Midbrain,#ff9da7
+1351,IC,BL3demonstrator,6857.3802883289,demonstrator,Midbrain,#ff9da7
+1358,VTA,BL3demonstrator,9752.28954894552,demonstrator,Midbrain,#ff9da7
+1362,SCm,BL3demonstrator,4598.083433191,demonstrator,Midbrain,#ff9da7
+1363,PAG,BL3demonstrator,1265.49104811953,demonstrator,Midbrain,#ff9da7
+1364,PRT,BL3demonstrator,3200.41314692538,demonstrator,Midbrain,#ff9da7
+1366,CUN,BL3demonstrator,1289.21967471458,demonstrator,Midbrain,#ff9da7
+1385,DR,BL3demonstrator,468.85757156728,demonstrator,Midbrain,#ff9da7
+2,MOs,BL13noshock,1670.22393988257,no_shock,Isocortex,#e15759
+5,VISC,BL13noshock,303.784426877956,no_shock,Isocortex,#e15759
+6,AUDd,BL13noshock,2805.64658432064,no_shock,Isocortex,#e15759
+8,AUDpo,BL13noshock,2089.3796243597,no_shock,Isocortex,#e15759
+9,AUDv,BL13noshock,1126.58441777928,no_shock,Isocortex,#e15759
+10,VISal,BL13noshock,2958.19561796546,no_shock,Isocortex,#e15759
+11,VISam,BL13noshock,470.621831941171,no_shock,Isocortex,#e15759
+12,VISl,BL13noshock,2599.91077808616,no_shock,Isocortex,#e15759
+13,VISp,BL13noshock,1323.65600044014,no_shock,Isocortex,#e15759
+14,VISpl,BL13noshock,591.209683774102,no_shock,Isocortex,#e15759
+17,ACA,BL13noshock,1484.75278686662,no_shock,Isocortex,#e15759
+18,PL,BL13noshock,725.726250206434,no_shock,Isocortex,#e15759
+20,ORB,BL13noshock,1275.69170043603,no_shock,Isocortex,#e15759
+21,AI,BL13noshock,659.03148790265,no_shock,Isocortex,#e15759
+22,RSP,BL13noshock,918.092426343835,no_shock,Isocortex,#e15759
+24,VISrl,BL13noshock,2514.50122572129,no_shock,Isocortex,#e15759
+25,PERI,BL13noshock,821.954846559416,no_shock,Isocortex,#e15759
+27,MOB,BL13noshock,4010.20903322705,no_shock,Olfactory areas,#76b7b2
+28,AOB,BL13noshock,4593.7639608847,no_shock,Olfactory areas,#76b7b2
+29,AON,BL13noshock,446.625231708647,no_shock,Olfactory areas,#76b7b2
+30,TT,BL13noshock,389.48684871343,no_shock,Olfactory areas,#76b7b2
+31,DP,BL13noshock,378.499378195386,no_shock,Olfactory areas,#76b7b2
+32,PIR,BL13noshock,2203.34427854639,no_shock,Olfactory areas,#76b7b2
+33,NLOT,BL13noshock,2009.08249195363,no_shock,Olfactory areas,#76b7b2
+34,COA,BL13noshock,511.303724071973,no_shock,Olfactory areas,#76b7b2
+35,PAA,BL13noshock,174.191931049028,no_shock,Olfactory areas,#76b7b2
+36,TR,BL13noshock,1364.82823477347,no_shock,Olfactory areas,#76b7b2
+38,DG,BL13noshock,2514.41469743666,no_shock,Hippocampal formation,#edc948
+41,ENT,BL13noshock,2107.6154564747,no_shock,Hippocampal formation,#edc948
+42,PAR,BL13noshock,2410.69711888601,no_shock,Hippocampal formation,#edc948
+43,POST,BL13noshock,3618.58490992007,no_shock,Hippocampal formation,#edc948
+44,PRE,BL13noshock,5710.55655980546,no_shock,Hippocampal formation,#edc948
+45,SUB,BL13noshock,6545.96595507554,no_shock,Hippocampal formation,#edc948
+49,CLA,BL13noshock,706.742761198246,no_shock,Cortical subplate,#59a14f
+50,EP,BL13noshock,1229.9135653563,no_shock,Cortical subplate,#59a14f
+51,LA,BL13noshock,468.881969031269,no_shock,Cortical subplate,#59a14f
+52,BLA,BL13noshock,1810.35558961295,no_shock,Cortical subplate,#59a14f
+53,BMA,BL13noshock,645.528660687391,no_shock,Cortical subplate,#59a14f
+56,ACB,BL13noshock,891.349909337711,no_shock,Striatum,#9c755f
+60,LS,BL13noshock,933.724355247479,no_shock,Striatum,#9c755f
+64,BA,BL13noshock,3709.52698201195,no_shock,Striatum,#9c755f
+66,IA,BL13noshock,1662.21969912008,no_shock,Striatum,#9c755f
+67,MEA,BL13noshock,1021.91998045383,no_shock,Striatum,#9c755f
+72,MSC,BL13noshock,1549.17647814456,no_shock,Pallidum,#bab0ac
+75,BAC,BL13noshock,3010.28907398334,no_shock,Pallidum,#bab0ac
+80,SPF,BL13noshock,1050.98918150079,no_shock,Thalamus,#b07aa1
+81,SPA,BL13noshock,33.4588038477622,no_shock,Thalamus,#b07aa1
+87,POL,BL13noshock,1528.29613986641,no_shock,Thalamus,#b07aa1
+92,AM,BL13noshock,1757.79530127078,no_shock,Thalamus,#b07aa1
+94,IAM,BL13noshock,155.386949924129,no_shock,Thalamus,#b07aa1
+95,IAD,BL13noshock,915.442799540867,no_shock,Thalamus,#b07aa1
+97,IMD,BL13noshock,80.8644493873354,no_shock,Thalamus,#b07aa1
+98,MD,BL13noshock,2282.75128836392,no_shock,Thalamus,#b07aa1
+100,PR,BL13noshock,410.337167121285,no_shock,Thalamus,#b07aa1
+101,PVT,BL13noshock,912.493780020923,no_shock,Thalamus,#b07aa1
+102,PT,BL13noshock,2791.66490553278,no_shock,Thalamus,#b07aa1
+103,RE,BL13noshock,730.83425131154,no_shock,Thalamus,#b07aa1
+105,RH,BL13noshock,283.94237191108,no_shock,Thalamus,#b07aa1
+106,CM,BL13noshock,88.6312018760271,no_shock,Thalamus,#b07aa1
+117,LH,BL13noshock,2328.42788725973,no_shock,Thalamus,#b07aa1
+123,ADP,BL13noshock,462.073268562257,no_shock,Hypothalamus,#f28e2b
+126,AVPV,BL13noshock,147.017413856988,no_shock,Hypothalamus,#f28e2b
+127,DMH,BL13noshock,2123.17319895951,no_shock,Hypothalamus,#f28e2b
+129,MPO,BL13noshock,3662.64125321305,no_shock,Hypothalamus,#f28e2b
+132,PS,BL13noshock,941.916971351874,no_shock,Hypothalamus,#f28e2b
+134,PVp,BL13noshock,408.452701744437,no_shock,Hypothalamus,#f28e2b
+141,AHN,BL13noshock,3114.68016505004,no_shock,Hypothalamus,#f28e2b
+144,SUM,BL13noshock,1502.90338258993,no_shock,Hypothalamus,#f28e2b
+145,TM,BL13noshock,412.029798583647,no_shock,Hypothalamus,#f28e2b
+147,PMd,BL13noshock,953.177598694271,no_shock,Hypothalamus,#f28e2b
+148,PMv,BL13noshock,127.671701339412,no_shock,Hypothalamus,#f28e2b
+149,PVHd,BL13noshock,673.543815775766,no_shock,Hypothalamus,#f28e2b
+150,VMH,BL13noshock,717.637355888181,no_shock,Hypothalamus,#f28e2b
+151,PH,BL13noshock,969.622477028983,no_shock,Hypothalamus,#f28e2b
+152,LHA,BL13noshock,4148.14537455243,no_shock,Hypothalamus,#f28e2b
+153,LPO,BL13noshock,4439.99297723454,no_shock,Hypothalamus,#f28e2b
+154,PST,BL13noshock,338.028169014085,no_shock,Hypothalamus,#f28e2b
+155,PSTN,BL13noshock,615.898686804559,no_shock,Hypothalamus,#f28e2b
+159,TU,BL13noshock,446.643463634168,no_shock,Hypothalamus,#f28e2b
+160,ZI,BL13noshock,1565.78222996057,no_shock,Hypothalamus,#f28e2b
+162,SCs,BL13noshock,2588.93532746638,no_shock,Midbrain,#ff9da7
+163,IC,BL13noshock,3143.89526604021,no_shock,Midbrain,#ff9da7
+170,VTA,BL13noshock,5659.70072515775,no_shock,Midbrain,#ff9da7
+174,SCm,BL13noshock,4723.85157961308,no_shock,Midbrain,#ff9da7
+175,PAG,BL13noshock,1113.60076435112,no_shock,Midbrain,#ff9da7
+176,PRT,BL13noshock,4651.44416983291,no_shock,Midbrain,#ff9da7
+178,CUN,BL13noshock,973.492407437538,no_shock,Midbrain,#ff9da7
+197,DR,BL13noshock,214.657683368152,no_shock,Midbrain,#ff9da7
+200,MOs,BL1noshock,145.510272321439,no_shock,Isocortex,#e15759
+203,VISC,BL1noshock,326.548634576821,no_shock,Isocortex,#e15759
+204,AUDd,BL1noshock,473.405596168389,no_shock,Isocortex,#e15759
+206,AUDpo,BL1noshock,696.459874786567,no_shock,Isocortex,#e15759
+207,AUDv,BL1noshock,352.881527801251,no_shock,Isocortex,#e15759
+208,VISal,BL1noshock,424.679436541391,no_shock,Isocortex,#e15759
+209,VISam,BL1noshock,84.5291639894336,no_shock,Isocortex,#e15759
+210,VISl,BL1noshock,416.895314270375,no_shock,Isocortex,#e15759
+211,VISp,BL1noshock,367.546796111574,no_shock,Isocortex,#e15759
+212,VISpl,BL1noshock,591.209683774102,no_shock,Isocortex,#e15759
+215,ACA,BL1noshock,210.203260571586,no_shock,Isocortex,#e15759
+216,PL,BL1noshock,67.3273543880834,no_shock,Isocortex,#e15759
+218,ORB,BL1noshock,120.171514956243,no_shock,Isocortex,#e15759
+219,AI,BL1noshock,446.737111570763,no_shock,Isocortex,#e15759
+220,RSP,BL1noshock,278.528533846362,no_shock,Isocortex,#e15759
+222,VISrl,BL1noshock,642.655100886291,no_shock,Isocortex,#e15759
+223,PERI,BL1noshock,220.629985129106,no_shock,Isocortex,#e15759
+225,MOB,BL1noshock,1012.82611467519,no_shock,Olfactory areas,#76b7b2
+226,AOB,BL1noshock,1271.65842900602,no_shock,Olfactory areas,#76b7b2
+227,AON,BL1noshock,317.13493015423,no_shock,Olfactory areas,#76b7b2
+228,TT,BL1noshock,180.247959113335,no_shock,Olfactory areas,#76b7b2
+229,DP,BL1noshock,74.2849246925524,no_shock,Olfactory areas,#76b7b2
+230,PIR,BL1noshock,511.237780965964,no_shock,Olfactory areas,#76b7b2
+231,NLOT,BL1noshock,1145.62849962525,no_shock,Olfactory areas,#76b7b2
+232,COA,BL1noshock,294.386992647499,no_shock,Olfactory areas,#76b7b2
+233,PAA,BL1noshock,389.639845767562,no_shock,Olfactory areas,#76b7b2
+234,TR,BL1noshock,349.172982242628,no_shock,Olfactory areas,#76b7b2
+236,DG,BL1noshock,665.896117062719,no_shock,Hippocampal formation,#edc948
+239,ENT,BL1noshock,486.669091499044,no_shock,Hippocampal formation,#edc948
+240,PAR,BL1noshock,680.513881201387,no_shock,Hippocampal formation,#edc948
+241,POST,BL1noshock,702.217004560436,no_shock,Hippocampal formation,#edc948
+242,PRE,BL1noshock,1829.59579100563,no_shock,Hippocampal formation,#edc948
+243,SUB,BL1noshock,925.554921654215,no_shock,Hippocampal formation,#edc948
+247,CLA,BL1noshock,533.156819851308,no_shock,Cortical subplate,#59a14f
+248,EP,BL1noshock,567.461382501595,no_shock,Cortical subplate,#59a14f
+249,LA,BL1noshock,149.468924625688,no_shock,Cortical subplate,#59a14f
+250,BLA,BL1noshock,217.28164503966,no_shock,Cortical subplate,#59a14f
+251,BMA,BL1noshock,307.216915587256,no_shock,Cortical subplate,#59a14f
+254,ACB,BL1noshock,1228.94330495161,no_shock,Striatum,#9c755f
+258,LS,BL1noshock,613.026426100393,no_shock,Striatum,#9c755f
+262,BA,BL1noshock,3005.99600266486,no_shock,Striatum,#9c755f
+264,IA,BL1noshock,445.075219982972,no_shock,Striatum,#9c755f
+265,MEA,BL1noshock,508.660440315903,no_shock,Striatum,#9c755f
+270,MSC,BL1noshock,5422.88840807221,no_shock,Pallidum,#bab0ac
+273,BAC,BL1noshock,1505.14453699167,no_shock,Pallidum,#bab0ac
+278,SPF,BL1noshock,2308.86599715528,no_shock,Thalamus,#b07aa1
+279,SPA,BL1noshock,301.129234629859,no_shock,Thalamus,#b07aa1
+285,POL,BL1noshock,296.302312831244,no_shock,Thalamus,#b07aa1
+290,AM,BL1noshock,505.422058635109,no_shock,Thalamus,#b07aa1
+292,IAM,BL1noshock,1476.17602427923,no_shock,Thalamus,#b07aa1
+293,IAD,BL1noshock,870.235747711689,no_shock,Thalamus,#b07aa1
+295,IMD,BL1noshock,252.701404335423,no_shock,Thalamus,#b07aa1
+296,MD,BL1noshock,478.794536418577,no_shock,Thalamus,#b07aa1
+298,PR,BL1noshock,32.3950395095751,no_shock,Thalamus,#b07aa1
+299,PVT,BL1noshock,2407.96969727744,no_shock,Thalamus,#b07aa1
+300,PT,BL1noshock,2726.74246586923,no_shock,Thalamus,#b07aa1
+301,RE,BL1noshock,364.370085181112,no_shock,Thalamus,#b07aa1
+303,RH,BL1noshock,403.014979486695,no_shock,Thalamus,#b07aa1
+304,CM,BL1noshock,545.968203556327,no_shock,Thalamus,#b07aa1
+315,LH,BL1noshock,875.73615228795,no_shock,Thalamus,#b07aa1
+321,ADP,BL1noshock,633.211516177907,no_shock,Hypothalamus,#f28e2b
+324,AVPV,BL1noshock,626.009633197499,no_shock,Hypothalamus,#f28e2b
+325,DMH,BL1noshock,2441.64917880344,no_shock,Hypothalamus,#f28e2b
+327,MPO,BL1noshock,4246.18070711479,no_shock,Hypothalamus,#f28e2b
+330,PS,BL1noshock,462.07247651224,no_shock,Hypothalamus,#f28e2b
+332,PVp,BL1noshock,367.607431569993,no_shock,Hypothalamus,#f28e2b
+339,AHN,BL1noshock,2530.51608430207,no_shock,Hypothalamus,#f28e2b
+342,SUM,BL1noshock,1899.09359891538,no_shock,Hypothalamus,#f28e2b
+343,TM,BL1noshock,894.69327692449,no_shock,Hypothalamus,#f28e2b
+345,PMd,BL1noshock,757.319188003668,no_shock,Hypothalamus,#f28e2b
+346,PMv,BL1noshock,264.462809917354,no_shock,Hypothalamus,#f28e2b
+347,PVHd,BL1noshock,746.900072939463,no_shock,Hypothalamus,#f28e2b
+348,VMH,BL1noshock,619.930861424532,no_shock,Hypothalamus,#f28e2b
+349,PH,BL1noshock,3355.20158717966,no_shock,Hypothalamus,#f28e2b
+350,LHA,BL1noshock,5739.64569048232,no_shock,Hypothalamus,#f28e2b
+351,LPO,BL1noshock,5576.47707986724,no_shock,Hypothalamus,#f28e2b
+352,PST,BL1noshock,1802.81690140845,no_shock,Hypothalamus,#f28e2b
+353,PSTN,BL1noshock,1347.27837738497,no_shock,Hypothalamus,#f28e2b
+357,TU,BL1noshock,1710.98803761397,no_shock,Hypothalamus,#f28e2b
+358,ZI,BL1noshock,719.167419574912,no_shock,Hypothalamus,#f28e2b
+360,SCs,BL1noshock,1138.17236195925,no_shock,Midbrain,#ff9da7
+361,IC,BL1noshock,1582.24142379568,no_shock,Midbrain,#ff9da7
+368,VTA,BL1noshock,9028.37433991371,no_shock,Midbrain,#ff9da7
+372,SCm,BL1noshock,1644.37659175314,no_shock,Midbrain,#ff9da7
+373,PAG,BL1noshock,915.261451869011,no_shock,Midbrain,#ff9da7
+374,PRT,BL1noshock,1304.95407429267,no_shock,Midbrain,#ff9da7
+376,CUN,BL1noshock,1016.24714154797,no_shock,Midbrain,#ff9da7
+395,DR,BL1noshock,1050.69287122306,no_shock,Midbrain,#ff9da7
+398,MOs,BL20noshock,372.9157732861,no_shock,Isocortex,#e15759
+401,VISC,BL20noshock,167.199180684766,no_shock,Isocortex,#e15759
+402,AUDd,BL20noshock,343.332493067809,no_shock,Isocortex,#e15759
+404,AUDpo,BL20noshock,203.98406374502,no_shock,Isocortex,#e15759
+405,AUDv,BL20noshock,146.019942538449,no_shock,Isocortex,#e15759
+406,VISal,BL20noshock,395.558560892838,no_shock,Isocortex,#e15759
+407,VISam,BL20noshock,100.521167987435,no_shock,Isocortex,#e15759
+408,VISl,BL20noshock,432.055143880207,no_shock,Isocortex,#e15759
+409,VISp,BL20noshock,283.853384174598,no_shock,Isocortex,#e15759
+410,VISpl,BL20noshock,146.638622353419,no_shock,Isocortex,#e15759
+413,ACA,BL20noshock,620.355964125901,no_shock,Isocortex,#e15759
+414,PL,BL20noshock,529.224320538888,no_shock,Isocortex,#e15759
+416,ORB,BL20noshock,164.105187090783,no_shock,Isocortex,#e15759
+417,AI,BL20noshock,213.236859689631,no_shock,Isocortex,#e15759
+418,RSP,BL20noshock,420.331472301997,no_shock,Isocortex,#e15759
+420,VISrl,BL20noshock,1001.09372053555,no_shock,Isocortex,#e15759
+421,PERI,BL20noshock,387.183993510883,no_shock,Isocortex,#e15759
+423,MOB,BL20noshock,508.761367364667,no_shock,Olfactory areas,#76b7b2
+424,AOB,BL20noshock,392.117374254533,no_shock,Olfactory areas,#76b7b2
+425,AON,BL20noshock,138.79499388168,no_shock,Olfactory areas,#76b7b2
+426,TT,BL20noshock,297.47215629893,no_shock,Olfactory areas,#76b7b2
+427,DP,BL20noshock,173.331490949289,no_shock,Olfactory areas,#76b7b2
+428,PIR,BL20noshock,400.593082476712,no_shock,Olfactory areas,#76b7b2
+429,NLOT,BL20noshock,434.548741237162,no_shock,Olfactory areas,#76b7b2
+430,COA,BL20noshock,227.246099587543,no_shock,Olfactory areas,#76b7b2
+431,PAA,BL20noshock,215.447914718534,no_shock,Olfactory areas,#76b7b2
+432,TR,BL20noshock,358.466559716767,no_shock,Olfactory areas,#76b7b2
+434,DG,BL20noshock,1081.76335690842,no_shock,Hippocampal formation,#edc948
+437,ENT,BL20noshock,438.605075924294,no_shock,Hippocampal formation,#edc948
+438,PAR,BL20noshock,244.239228595566,no_shock,Hippocampal formation,#edc948
+439,POST,BL20noshock,419.596333589199,no_shock,Hippocampal formation,#edc948
+440,PRE,BL20noshock,1266.30205656269,no_shock,Hippocampal formation,#edc948
+441,SUB,BL20noshock,1029.99827519868,no_shock,Hippocampal formation,#edc948
+445,CLA,BL20noshock,164.286694489066,no_shock,Cortical subplate,#59a14f
+446,EP,BL20noshock,294.285224623366,no_shock,Cortical subplate,#59a14f
+447,LA,BL20noshock,378.791110352772,no_shock,Cortical subplate,#59a14f
+448,BLA,BL20noshock,434.56329007932,no_shock,Cortical subplate,#59a14f
+449,BMA,BL20noshock,298.510363323649,no_shock,Cortical subplate,#59a14f
+452,ACB,BL20noshock,458.593069296939,no_shock,Striatum,#9c755f
+456,LS,BL20noshock,443.426559724529,no_shock,Striatum,#9c755f
+460,BA,BL20noshock,319.786808794134,no_shock,Striatum,#9c755f
+462,IA,BL20noshock,363.326710190181,no_shock,Striatum,#9c755f
+463,MEA,BL20noshock,479.226201454946,no_shock,Striatum,#9c755f
+468,MSC,BL20noshock,801.563948890719,no_shock,Pallidum,#bab0ac
+471,BAC,BL20noshock,1128.85840274375,no_shock,Pallidum,#bab0ac
+476,SPF,BL20noshock,1009.61165467005,no_shock,Thalamus,#b07aa1
+477,SPA,BL20noshock,86.9928900041816,no_shock,Thalamus,#b07aa1
+483,POL,BL20noshock,85.77172213536,no_shock,Thalamus,#b07aa1
+488,AM,BL20noshock,254.947410107975,no_shock,Thalamus,#b07aa1
+490,IAM,BL20noshock,135.963581183613,no_shock,Thalamus,#b07aa1
+491,IAD,BL20noshock,508.57933307826,no_shock,Thalamus,#b07aa1
+493,IMD,BL20noshock,136.458758341129,no_shock,Thalamus,#b07aa1
+494,MD,BL20noshock,242.788164359562,no_shock,Thalamus,#b07aa1
+496,PR,BL20noshock,10.7983465031917,no_shock,Thalamus,#b07aa1
+497,PVT,BL20noshock,735.064433905744,no_shock,Thalamus,#b07aa1
+498,PT,BL20noshock,2442.70679234118,no_shock,Thalamus,#b07aa1
+499,RE,BL20noshock,108.89220936447,no_shock,Thalamus,#b07aa1
+501,RH,BL20noshock,36.6377254078813,no_shock,Thalamus,#b07aa1
+502,CM,BL20noshock,145.355171076684,no_shock,Thalamus,#b07aa1
+513,LH,BL20noshock,808.768093583577,no_shock,Thalamus,#b07aa1
+519,ADP,BL20noshock,290.935020946606,no_shock,Hypothalamus,#f28e2b
+522,AVPV,BL20noshock,56.9099666543181,no_shock,Hypothalamus,#f28e2b
+523,DMH,BL20noshock,1341.45943025169,no_shock,Hypothalamus,#f28e2b
+525,MPO,BL20noshock,928.076046365001,no_shock,Hypothalamus,#f28e2b
+528,PS,BL20noshock,319.896329893089,no_shock,Hypothalamus,#f28e2b
+530,PVp,BL20noshock,224.64898595944,no_shock,Hypothalamus,#f28e2b
+537,AHN,BL20noshock,677.216766176856,no_shock,Hypothalamus,#f28e2b
+540,SUM,BL20noshock,563.179481057666,no_shock,Hypothalamus,#f28e2b
+541,TM,BL20noshock,211.90103927159,no_shock,Hypothalamus,#f28e2b
+543,PMd,BL20noshock,391.716821381207,no_shock,Hypothalamus,#f28e2b
+544,PMv,BL20noshock,63.8358506697062,no_shock,Hypothalamus,#f28e2b
+545,PVHd,BL20noshock,406.793789725958,no_shock,Hypothalamus,#f28e2b
+546,VMH,BL20noshock,128.029199642023,no_shock,Hypothalamus,#f28e2b
+547,PH,BL20noshock,1218.44094335653,no_shock,Hypothalamus,#f28e2b
+548,LHA,BL20noshock,1490.85207460626,no_shock,Hypothalamus,#f28e2b
+549,LPO,BL20noshock,1399.73748233858,no_shock,Hypothalamus,#f28e2b
+550,PST,BL20noshock,788.732394366197,no_shock,Hypothalamus,#f28e2b
+551,PSTN,BL20noshock,282.286898118756,no_shock,Hypothalamus,#f28e2b
+555,TU,BL20noshock,419.157712025911,no_shock,Hypothalamus,#f28e2b
+556,ZI,BL20noshock,233.653549819697,no_shock,Hypothalamus,#f28e2b
+558,SCs,BL20noshock,1013.99253315256,no_shock,Midbrain,#ff9da7
+559,IC,BL20noshock,711.558287361624,no_shock,Midbrain,#ff9da7
+566,VTA,BL20noshock,3047.84755620777,no_shock,Midbrain,#ff9da7
+570,SCm,BL20noshock,647.62210864273,no_shock,Midbrain,#ff9da7
+571,PAG,BL20noshock,353.953358046131,no_shock,Midbrain,#ff9da7
+572,PRT,BL20noshock,1135.85893983548,no_shock,Midbrain,#ff9da7
+574,CUN,BL20noshock,167.730110740927,no_shock,Midbrain,#ff9da7
+593,DR,BL20noshock,33.8933184265504,no_shock,Midbrain,#ff9da7
+596,MOs,BL19noshock,361.070213428776,no_shock,Isocortex,#e15759
+599,VISC,BL19noshock,146.789891023715,no_shock,Isocortex,#e15759
+600,AUDd,BL19noshock,477.943029997479,no_shock,Isocortex,#e15759
+602,AUDpo,BL19noshock,338.030734206032,no_shock,Isocortex,#e15759
+603,AUDv,BL19noshock,549.602839276661,no_shock,Isocortex,#e15759
+604,VISal,BL19noshock,1140.56762956831,no_shock,Isocortex,#e15759
+605,VISam,BL19noshock,1215.39230384807,no_shock,Isocortex,#e15759
+606,VISl,BL19noshock,930.813538043673,no_shock,Isocortex,#e15759
+607,VISp,BL19noshock,897.334219246607,no_shock,Isocortex,#e15759
+608,VISpl,BL19noshock,379.398340374719,no_shock,Isocortex,#e15759
+611,ACA,BL19noshock,1108.43768135554,no_shock,Isocortex,#e15759
+612,PL,BL19noshock,775.830327890589,no_shock,Isocortex,#e15759
+614,ORB,BL19noshock,506.5293963747,no_shock,Isocortex,#e15759
+615,AI,BL19noshock,593.528894539426,no_shock,Isocortex,#e15759
+616,RSP,BL19noshock,822.166909153259,no_shock,Isocortex,#e15759
+618,VISrl,BL19noshock,1450.04714312653,no_shock,Isocortex,#e15759
+619,PERI,BL19noshock,919.29160470461,no_shock,Isocortex,#e15759
+621,MOB,BL19noshock,1478.14374653907,no_shock,Olfactory areas,#76b7b2
+622,AOB,BL19noshock,1102.83011509087,no_shock,Olfactory areas,#76b7b2
+623,AON,BL19noshock,1143.3140697125,no_shock,Olfactory areas,#76b7b2
+624,TT,BL19noshock,1308.37329761987,no_shock,Olfactory areas,#76b7b2
+625,DP,BL19noshock,385.57413292801,no_shock,Olfactory areas,#76b7b2
+626,PIR,BL19noshock,1384.0466302093,no_shock,Olfactory areas,#76b7b2
+627,NLOT,BL19noshock,1286.71575327367,no_shock,Olfactory areas,#76b7b2
+628,COA,BL19noshock,408.010042441271,no_shock,Olfactory areas,#76b7b2
+629,PAA,BL19noshock,288.791885686546,no_shock,Olfactory areas,#76b7b2
+630,TR,BL19noshock,270.84140067489,no_shock,Olfactory areas,#76b7b2
+632,DG,BL19noshock,1510.34392949397,no_shock,Hippocampal formation,#edc948
+635,ENT,BL19noshock,659.666053480639,no_shock,Hippocampal formation,#edc948
+636,PAR,BL19noshock,807.294549480001,no_shock,Hippocampal formation,#edc948
+637,POST,BL19noshock,613.789678060233,no_shock,Hippocampal formation,#edc948
+638,PRE,BL19noshock,1616.69737168861,no_shock,Hippocampal formation,#edc948
+639,SUB,BL19noshock,1981.02718552228,no_shock,Hippocampal formation,#edc948
+643,CLA,BL19noshock,1742.05891137462,no_shock,Cortical subplate,#59a14f
+644,EP,BL19noshock,867.955156167648,no_shock,Cortical subplate,#59a14f
+645,LA,BL19noshock,585.590581410231,no_shock,Cortical subplate,#59a14f
+646,BLA,BL19noshock,676.203863935085,no_shock,Cortical subplate,#59a14f
+647,BMA,BL19noshock,462.691063151656,no_shock,Cortical subplate,#59a14f
+650,ACB,BL19noshock,1505.39095799258,no_shock,Striatum,#9c755f
+654,LS,BL19noshock,1385.78508998751,no_shock,Striatum,#9c755f
+658,BA,BL19noshock,4029.31379080609,no_shock,Striatum,#9c755f
+660,IA,BL19noshock,908.316775475452,no_shock,Striatum,#9c755f
+661,MEA,BL19noshock,1072.5100784961,no_shock,Striatum,#9c755f
+666,MSC,BL19noshock,659.748788702361,no_shock,Pallidum,#bab0ac
+669,BAC,BL19noshock,1693.28760411563,no_shock,Pallidum,#bab0ac
+674,SPF,BL19noshock,4725.31356407049,no_shock,Thalamus,#b07aa1
+675,SPA,BL19noshock,26.7670430782097,no_shock,Thalamus,#b07aa1
+681,POL,BL19noshock,1154.01953418484,no_shock,Thalamus,#b07aa1
+686,AM,BL19noshock,594.877290251942,no_shock,Thalamus,#b07aa1
+688,IAM,BL19noshock,0.0,no_shock,Thalamus,#b07aa1
+689,IAD,BL19noshock,2090.82614709951,no_shock,Thalamus,#b07aa1
+691,IMD,BL19noshock,0.0,no_shock,Thalamus,#b07aa1
+692,MD,BL19noshock,514.059856381418,no_shock,Thalamus,#b07aa1
+694,PR,BL19noshock,43.1933860127668,no_shock,Thalamus,#b07aa1
+695,PVT,BL19noshock,155.981842738619,no_shock,Thalamus,#b07aa1
+696,PT,BL19noshock,1192.94982881779,no_shock,Thalamus,#b07aa1
+697,RE,BL19noshock,64.9165094288187,no_shock,Thalamus,#b07aa1
+699,RH,BL19noshock,0.0,no_shock,Thalamus,#b07aa1
+700,CM,BL19noshock,28.3619846003287,no_shock,Thalamus,#b07aa1
+711,LH,BL19noshock,1071.48893926996,no_shock,Thalamus,#b07aa1
+717,ADP,BL19noshock,119.796773330955,no_shock,Hypothalamus,#f28e2b
+720,AVPV,BL19noshock,9.48499444238635,no_shock,Hypothalamus,#f28e2b
+721,DMH,BL19noshock,1925.33205996556,no_shock,Hypothalamus,#f28e2b
+723,MPO,BL19noshock,1399.87390271109,no_shock,Hypothalamus,#f28e2b
+726,PS,BL19noshock,550.932568149209,no_shock,Hypothalamus,#f28e2b
+728,PVp,BL19noshock,6.80754502907395,no_shock,Hypothalamus,#f28e2b
+735,AHN,BL19noshock,1015.82514926528,no_shock,Hypothalamus,#f28e2b
+738,SUM,BL19noshock,261.943944677984,no_shock,Hypothalamus,#f28e2b
+739,TM,BL19noshock,129.49507955486,no_shock,Hypothalamus,#f28e2b
+741,PMd,BL19noshock,391.716821381207,no_shock,Hypothalamus,#f28e2b
+742,PMv,BL19noshock,227.985180963236,no_shock,Hypothalamus,#f28e2b
+743,PVHd,BL19noshock,380.118787120977,no_shock,Hypothalamus,#f28e2b
+744,VMH,BL19noshock,168.459473213188,no_shock,Hypothalamus,#f28e2b
+745,PH,BL19noshock,648.980123514108,no_shock,Hypothalamus,#f28e2b
+746,LHA,BL19noshock,4708.00121691512,no_shock,Hypothalamus,#f28e2b
+747,LPO,BL19noshock,4163.89796925032,no_shock,Hypothalamus,#f28e2b
+748,PST,BL19noshock,3605.6338028169,no_shock,Hypothalamus,#f28e2b
+749,PSTN,BL19noshock,834.029471714507,no_shock,Hypothalamus,#f28e2b
+753,TU,BL19noshock,1010.10137160343,no_shock,Hypothalamus,#f28e2b
+754,ZI,BL19noshock,1529.36868972893,no_shock,Hypothalamus,#f28e2b
+756,SCs,BL19noshock,1219.53156014295,no_shock,Midbrain,#ff9da7
+757,IC,BL19noshock,1488.31058296856,no_shock,Midbrain,#ff9da7
+764,VTA,BL19noshock,4450.4332737069,no_shock,Midbrain,#ff9da7
+768,SCm,BL19noshock,1068.19079027814,no_shock,Midbrain,#ff9da7
+769,PAG,BL19noshock,643.622828252212,no_shock,Midbrain,#ff9da7
+770,PRT,BL19noshock,1362.49953889852,no_shock,Midbrain,#ff9da7
+772,CUN,BL19noshock,634.743360254881,no_shock,Midbrain,#ff9da7
+791,DR,BL19noshock,0.0,no_shock,Midbrain,#ff9da7
+794,MOs,BL15noshock,217.461080343698,no_shock,Isocortex,#e15759
+797,VISC,BL15noshock,115.390983852867,no_shock,Isocortex,#e15759
+798,AUDd,BL15noshock,225.359213511469,no_shock,Isocortex,#e15759
+800,AUDpo,BL15noshock,192.327831531018,no_shock,Isocortex,#e15759
+801,AUDv,BL15noshock,185.567010309279,no_shock,Isocortex,#e15759
+802,VISal,BL15noshock,274.221579023869,no_shock,Isocortex,#e15759
+803,VISam,BL15noshock,70.8217319911471,no_shock,Isocortex,#e15759
+804,VISl,BL15noshock,95.5069265419404,no_shock,Isocortex,#e15759
+805,VISp,BL15noshock,61.4835097401086,no_shock,Isocortex,#e15759
+806,VISpl,BL15noshock,100.086678749159,no_shock,Isocortex,#e15759
+809,ACA,BL15noshock,162.010317903954,no_shock,Isocortex,#e15759
+810,PL,BL15noshock,339.768276795677,no_shock,Isocortex,#e15759
+812,ORB,BL15noshock,1056.66942317707,no_shock,Isocortex,#e15759
+813,AI,BL15noshock,335.288454517508,no_shock,Isocortex,#e15759
+814,RSP,BL15noshock,47.5094243930644,no_shock,Isocortex,#e15759
+816,VISrl,BL15noshock,108.617763530077,no_shock,Isocortex,#e15759
+817,PERI,BL15noshock,549.411923752873,no_shock,Isocortex,#e15759
+819,MOB,BL15noshock,364.80996270529,no_shock,Olfactory areas,#76b7b2
+820,AOB,BL15noshock,612.683397272708,no_shock,Olfactory areas,#76b7b2
+821,AON,BL15noshock,165.933679836199,no_shock,Olfactory areas,#76b7b2
+822,TT,BL15noshock,510.49247161469,no_shock,Olfactory areas,#76b7b2
+823,DP,BL15noshock,187.481000414537,no_shock,Olfactory areas,#76b7b2
+824,PIR,BL15noshock,135.506825679545,no_shock,Olfactory areas,#76b7b2
+825,NLOT,BL15noshock,152.374233940304,no_shock,Olfactory areas,#76b7b2
+826,COA,BL15noshock,35.0050809970711,no_shock,Olfactory areas,#76b7b2
+827,PAA,BL15noshock,6.11199758066764,no_shock,Olfactory areas,#76b7b2
+828,TR,BL15noshock,58.4167726945842,no_shock,Olfactory areas,#76b7b2
+830,DG,BL15noshock,253.984136291635,no_shock,Hippocampal formation,#edc948
+833,ENT,BL15noshock,135.31611353449,no_shock,Hippocampal formation,#edc948
+834,PAR,BL15noshock,259.154601334227,no_shock,Hippocampal formation,#edc948
+835,POST,BL15noshock,84.9595882060774,no_shock,Hippocampal formation,#edc948
+836,PRE,BL15noshock,563.293734442946,no_shock,Hippocampal formation,#edc948
+837,SUB,BL15noshock,382.958962996377,no_shock,Hippocampal formation,#edc948
+841,CLA,BL15noshock,499.059581372446,no_shock,Cortical subplate,#59a14f
+842,EP,BL15noshock,271.313593165424,no_shock,Cortical subplate,#59a14f
+843,LA,BL15noshock,567.162905771447,no_shock,Cortical subplate,#59a14f
+844,BLA,BL15noshock,174.409930323314,no_shock,Cortical subplate,#59a14f
+845,BMA,BL15noshock,92.0406953581251,no_shock,Cortical subplate,#59a14f
+848,ACB,BL15noshock,225.205798349576,no_shock,Striatum,#9c755f
+852,LS,BL15noshock,256.558343317669,no_shock,Striatum,#9c755f
+856,BA,BL15noshock,1087.27514990006,no_shock,Striatum,#9c755f
+858,IA,BL15noshock,326.994039171163,no_shock,Striatum,#9c755f
+859,MEA,BL15noshock,300.781128360398,no_shock,Striatum,#9c755f
+864,MSC,BL15noshock,47.7855431069467,no_shock,Pallidum,#bab0ac
+867,BAC,BL15noshock,752.572268495835,no_shock,Pallidum,#bab0ac
+872,SPF,BL15noshock,686.866945390281,no_shock,Thalamus,#b07aa1
+873,SPA,BL15noshock,6.69176076955243,no_shock,Thalamus,#b07aa1
+879,POL,BL15noshock,132.556297845556,no_shock,Thalamus,#b07aa1
+884,AM,BL15noshock,214.6925558804,no_shock,Thalamus,#b07aa1
+886,IAM,BL15noshock,58.2701062215485,no_shock,Thalamus,#b07aa1
+887,IAD,BL15noshock,67.810577743768,no_shock,Thalamus,#b07aa1
+889,IMD,BL15noshock,25.2701404335423,no_shock,Thalamus,#b07aa1
+890,MD,BL15noshock,166.832090593442,no_shock,Thalamus,#b07aa1
+892,PR,BL15noshock,10.7983465031917,no_shock,Thalamus,#b07aa1
+893,PVT,BL15noshock,81.8904674377751,no_shock,Thalamus,#b07aa1
+894,PT,BL15noshock,267.805063612156,no_shock,Thalamus,#b07aa1
+895,RE,BL15noshock,58.6342665808685,no_shock,Thalamus,#b07aa1
+897,RH,BL15noshock,9.15943135197034,no_shock,Thalamus,#b07aa1
+898,CM,BL15noshock,46.0882249755341,no_shock,Thalamus,#b07aa1
+909,LH,BL15noshock,72.1194478354782,no_shock,Thalamus,#b07aa1
+915,ADP,BL15noshock,17.1138247615651,no_shock,Hypothalamus,#f28e2b
+918,AVPV,BL15noshock,4.74249722119318,no_shock,Hypothalamus,#f28e2b
+919,DMH,BL15noshock,255.745862601942,no_shock,Hypothalamus,#f28e2b
+921,MPO,BL15noshock,136.573063679131,no_shock,Hypothalamus,#f28e2b
+924,PS,BL15noshock,53.3160549821816,no_shock,Hypothalamus,#f28e2b
+926,PVp,BL15noshock,20.4226350872218,no_shock,Hypothalamus,#f28e2b
+933,AHN,BL15noshock,118.90065360357,no_shock,Hypothalamus,#f28e2b
+936,SUM,BL15noshock,72.0345847864456,no_shock,Hypothalamus,#f28e2b
+937,TM,BL15noshock,35.3168398785983,no_shock,Hypothalamus,#f28e2b
+939,PMd,BL15noshock,0.0,no_shock,Hypothalamus,#f28e2b
+940,PMv,BL15noshock,0.0,no_shock,Hypothalamus,#f28e2b
+941,PVHd,BL15noshock,113.368761071169,no_shock,Hypothalamus,#f28e2b
+942,VMH,BL15noshock,23.5843262498463,no_shock,Hypothalamus,#f28e2b
+943,PH,BL15noshock,126.974371991891,no_shock,Hypothalamus,#f28e2b
+944,LHA,BL15noshock,716.22007441904,no_shock,Hypothalamus,#f28e2b
+945,LPO,BL15noshock,166.941167618363,no_shock,Hypothalamus,#f28e2b
+946,PST,BL15noshock,338.028169014085,no_shock,Hypothalamus,#f28e2b
+947,PSTN,BL15noshock,205.299562268186,no_shock,Hypothalamus,#f28e2b
+951,TU,BL15noshock,72.1500979716732,no_shock,Hypothalamus,#f28e2b
+952,ZI,BL15noshock,442.019918922977,no_shock,Hypothalamus,#f28e2b
+954,SCs,BL15noshock,46.2462810728364,no_shock,Midbrain,#ff9da7
+955,IC,BL15noshock,196.010932684908,no_shock,Midbrain,#ff9da7
+962,VTA,BL15noshock,892.554547499442,no_shock,Midbrain,#ff9da7
+966,SCm,BL15noshock,108.999060232464,no_shock,Midbrain,#ff9da7
+967,PAG,BL15noshock,39.5894675112506,no_shock,Midbrain,#ff9da7
+968,PRT,BL15noshock,162.897930576562,no_shock,Midbrain,#ff9da7
+970,CUN,BL15noshock,75.6429911184574,no_shock,Midbrain,#ff9da7
+989,DR,BL15noshock,11.2977728088501,no_shock,Midbrain,#ff9da7
+992,MOs,BL11noshock,439.016922119557,no_shock,Isocortex,#e15759
+995,VISC,BL11noshock,244.911475932616,no_shock,Isocortex,#e15759
+996,AUDd,BL11noshock,476.430552054449,no_shock,Isocortex,#e15759
+998,AUDpo,BL11noshock,136.960728514513,no_shock,Isocortex,#e15759
+999,AUDv,BL11noshock,257.562954199764,no_shock,Isocortex,#e15759
+1000,VISal,BL11noshock,470.787489651599,no_shock,Isocortex,#e15759
+1001,VISam,BL11noshock,210.180623973727,no_shock,Isocortex,#e15759
+1002,VISl,BL11noshock,291.068728508771,no_shock,Isocortex,#e15759
+1003,VISp,BL11noshock,255.14302279816,no_shock,Isocortex,#e15759
+1004,VISpl,BL11noshock,46.55194360426,no_shock,Isocortex,#e15759
+1007,ACA,BL11noshock,40.6734764358029,no_shock,Isocortex,#e15759
+1008,PL,BL11noshock,29.7492961249671,no_shock,Isocortex,#e15759
+1010,ORB,BL11noshock,270.708950358417,no_shock,Isocortex,#e15759
+1011,AI,BL11noshock,478.074683215759,no_shock,Isocortex,#e15759
+1012,RSP,BL11noshock,62.016118864229,no_shock,Isocortex,#e15759
+1014,VISrl,BL11noshock,700.584574768999,no_shock,Isocortex,#e15759
+1015,PERI,BL11noshock,1873.19183452751,no_shock,Isocortex,#e15759
+1017,MOB,BL11noshock,503.712500806467,no_shock,Olfactory areas,#76b7b2
+1018,AOB,BL11noshock,149.767052666662,no_shock,Olfactory areas,#76b7b2
+1019,AON,BL11noshock,324.501144913314,no_shock,Olfactory areas,#76b7b2
+1020,TT,BL11noshock,141.173226718136,no_shock,Olfactory areas,#76b7b2
+1021,DP,BL11noshock,102.583943623049,no_shock,Olfactory areas,#76b7b2
+1022,PIR,BL11noshock,430.394705135275,no_shock,Olfactory areas,#76b7b2
+1023,NLOT,BL11noshock,180.591684669989,no_shock,Olfactory areas,#76b7b2
+1024,COA,BL11noshock,63.6977703389326,no_shock,Olfactory areas,#76b7b2
+1025,PAA,BL11noshock,39.7279842743396,no_shock,Olfactory areas,#76b7b2
+1026,TR,BL11noshock,183.216241633014,no_shock,Olfactory areas,#76b7b2
+1028,DG,BL11noshock,814.783369371609,no_shock,Hippocampal formation,#edc948
+1031,ENT,BL11noshock,393.053116912683,no_shock,Hippocampal formation,#edc948
+1032,PAR,BL11noshock,962.041541643604,no_shock,Hippocampal formation,#edc948
+1033,POST,BL11noshock,362.378651736126,no_shock,Hippocampal formation,#edc948
+1034,PRE,BL11noshock,1053.40363724567,no_shock,Hippocampal formation,#edc948
+1035,SUB,BL11noshock,787.146249883906,no_shock,Hippocampal formation,#edc948
+1039,CLA,BL11noshock,740.839999677109,no_shock,Cortical subplate,#59a14f
+1040,EP,BL11noshock,639.480551396765,no_shock,Cortical subplate,#59a14f
+1041,LA,BL11noshock,526.212515463039,no_shock,Cortical subplate,#59a14f
+1042,BLA,BL11noshock,347.845503493985,no_shock,Cortical subplate,#59a14f
+1043,BMA,BL11noshock,217.663806590161,no_shock,Cortical subplate,#59a14f
+1046,ACB,BL11noshock,598.539311101169,no_shock,Striatum,#9c755f
+1050,LS,BL11noshock,342.283366685833,no_shock,Striatum,#9c755f
+1054,BA,BL11noshock,959.360426382402,no_shock,Striatum,#9c755f
+1056,IA,BL11noshock,435.992052228217,no_shock,Striatum,#9c755f
+1057,MEA,BL11noshock,361.489246011121,no_shock,Striatum,#9c755f
+1062,MSC,BL11noshock,123.317530598572,no_shock,Pallidum,#bab0ac
+1065,BAC,BL11noshock,0.0,no_shock,Pallidum,#bab0ac
+1070,SPF,BL11noshock,1646.82556786345,no_shock,Thalamus,#b07aa1
+1071,SPA,BL11noshock,26.7670430782097,no_shock,Thalamus,#b07aa1
+1077,POL,BL11noshock,335.289459256407,no_shock,Thalamus,#b07aa1
+1082,AM,BL11noshock,845.351938779076,no_shock,Thalamus,#b07aa1
+1084,IAM,BL11noshock,0.0,no_shock,Thalamus,#b07aa1
+1085,IAD,BL11noshock,169.52644435942,no_shock,Thalamus,#b07aa1
+1087,IMD,BL11noshock,0.0,no_shock,Thalamus,#b07aa1
+1088,MD,BL11noshock,352.653199628413,no_shock,Thalamus,#b07aa1
+1090,PR,BL11noshock,32.3950395095751,no_shock,Thalamus,#b07aa1
+1091,PVT,BL11noshock,70.1918292323787,no_shock,Thalamus,#b07aa1
+1092,PT,BL11noshock,527.494822266368,no_shock,Thalamus,#b07aa1
+1093,RE,BL11noshock,23.0348904424841,no_shock,Thalamus,#b07aa1
+1095,RH,BL11noshock,0.0,no_shock,Thalamus,#b07aa1
+1096,CM,BL11noshock,3.54524807504109,no_shock,Thalamus,#b07aa1
+1107,LH,BL11noshock,113.330560884323,no_shock,Thalamus,#b07aa1
+1113,ADP,BL11noshock,34.2276495231301,no_shock,Hypothalamus,#f28e2b
+1116,AVPV,BL11noshock,151.759911078182,no_shock,Hypothalamus,#f28e2b
+1117,DMH,BL11noshock,1201.52301486573,no_shock,Hypothalamus,#f28e2b
+1119,MPO,BL11noshock,605.266986759783,no_shock,Hypothalamus,#f28e2b
+1122,PS,BL11noshock,159.948164946545,no_shock,Hypothalamus,#f28e2b
+1124,PVp,BL11noshock,279.109346192032,no_shock,Hypothalamus,#f28e2b
+1131,AHN,BL11noshock,480.772208049218,no_shock,Hypothalamus,#f28e2b
+1134,SUM,BL11noshock,242.298148827135,no_shock,Hypothalamus,#f28e2b
+1135,TM,BL11noshock,258.990159109721,no_shock,Hypothalamus,#f28e2b
+1137,PMd,BL11noshock,378.659594001834,no_shock,Hypothalamus,#f28e2b
+1138,PMv,BL11noshock,63.8358506697062,no_shock,Hypothalamus,#f28e2b
+1139,PVHd,BL11noshock,133.375013024904,no_shock,Hypothalamus,#f28e2b
+1140,VMH,BL11noshock,181.936231070243,no_shock,Hypothalamus,#f28e2b
+1141,PH,BL11noshock,529.701168006574,no_shock,Hypothalamus,#f28e2b
+1142,LHA,BL11noshock,1660.69598183988,no_shock,Hypothalamus,#f28e2b
+1143,LPO,BL11noshock,931.018050179331,no_shock,Hypothalamus,#f28e2b
+1144,PST,BL11noshock,788.732394366197,no_shock,Hypothalamus,#f28e2b
+1145,PSTN,BL11noshock,859.69191699803,no_shock,Hypothalamus,#f28e2b
+1149,TU,BL11noshock,298.907548739789,no_shock,Hypothalamus,#f28e2b
+1150,ZI,BL11noshock,1192.54344258625,no_shock,Hypothalamus,#f28e2b
+1152,SCs,BL11noshock,506.996266576281,no_shock,Midbrain,#ff9da7
+1153,IC,BL11noshock,486.810522094903,no_shock,Midbrain,#ff9da7
+1160,VTA,BL11noshock,2031.89837080518,no_shock,Midbrain,#ff9da7
+1164,SCm,BL11noshock,519.170908430319,no_shock,Midbrain,#ff9da7
+1165,PAG,BL11noshock,148.75448436158,no_shock,Midbrain,#ff9da7
+1166,PRT,BL11noshock,455.937142646355,no_shock,Midbrain,#ff9da7
+1168,CUN,BL11noshock,302.571964473829,no_shock,Midbrain,#ff9da7
+1187,DR,BL11noshock,0.0,no_shock,Midbrain,#ff9da7
+1190,MOs,BL7noshock,1048.25892663324,no_shock,Isocortex,#e15759
+1193,VISC,BL7noshock,1287.35519400477,no_shock,Isocortex,#e15759
+1194,AUDd,BL7noshock,1783.21149483237,no_shock,Isocortex,#e15759
+1196,AUDpo,BL7noshock,1322.98235628913,no_shock,Isocortex,#e15759
+1197,AUDv,BL7noshock,1218.86090924455,no_shock,Isocortex,#e15759
+1198,VISal,BL7noshock,1929.2580117166,no_shock,Isocortex,#e15759
+1199,VISam,BL7noshock,1274.79117584065,no_shock,Isocortex,#e15759
+1200,VISl,BL7noshock,1626.64971713495,no_shock,Isocortex,#e15759
+1201,VISp,BL7noshock,1090.72287983884,no_shock,Isocortex,#e15759
+1202,VISpl,BL7noshock,204.828551858744,no_shock,Isocortex,#e15759
+1205,ACA,BL7noshock,929.337667470152,no_shock,Isocortex,#e15759
+1206,PL,BL7noshock,743.732403124177,no_shock,Isocortex,#e15759
+1208,ORB,BL7noshock,711.660880238178,no_shock,Isocortex,#e15759
+1209,AI,BL7noshock,802.288958279773,no_shock,Isocortex,#e15759
+1210,RSP,BL7noshock,782.817500400225,no_shock,Isocortex,#e15759
+1212,VISrl,BL7noshock,1484.44276824439,no_shock,Isocortex,#e15759
+1213,PERI,BL7noshock,3209.94997972151,no_shock,Isocortex,#e15759
+1215,MOB,BL7noshock,479.290076524941,no_shock,Olfactory areas,#76b7b2
+1216,AOB,BL7noshock,884.987129393911,no_shock,Olfactory areas,#76b7b2
+1217,AON,BL7noshock,531.14285368129,no_shock,Olfactory areas,#76b7b2
+1218,TT,BL7noshock,535.701976385786,no_shock,Olfactory areas,#76b7b2
+1219,DP,BL7noshock,385.57413292801,no_shock,Olfactory areas,#76b7b2
+1220,PIR,BL7noshock,571.170325980975,no_shock,Olfactory areas,#76b7b2
+1221,NLOT,BL7noshock,231.383095983424,no_shock,Olfactory areas,#76b7b2
+1222,COA,BL7noshock,177.320820132704,no_shock,Olfactory areas,#76b7b2
+1223,PAA,BL7noshock,131.407947984354,no_shock,Olfactory areas,#76b7b2
+1224,TR,BL7noshock,212.424627980306,no_shock,Olfactory areas,#76b7b2
+1226,DG,BL7noshock,1144.764983597,no_shock,Hippocampal formation,#edc948
+1229,ENT,BL7noshock,418.341152981629,no_shock,Hippocampal formation,#edc948
+1230,PAR,BL7noshock,1331.19701692545,no_shock,Hippocampal formation,#edc948
+1231,POST,BL7noshock,1080.20047862013,no_shock,Hippocampal formation,#edc948
+1232,PRE,BL7noshock,1594.52045300976,no_shock,Hippocampal formation,#edc948
+1233,SUB,BL7noshock,920.460123920338,no_shock,Hippocampal formation,#edc948
+1237,CLA,BL7noshock,1441.38326297011,no_shock,Cortical subplate,#59a14f
+1238,EP,BL7noshock,1049.86564311838,no_shock,Cortical subplate,#59a14f
+1239,LA,BL7noshock,814.912767137314,no_shock,Cortical subplate,#59a14f
+1240,BLA,BL7noshock,1019.17758166585,no_shock,Cortical subplate,#59a14f
+1241,BMA,BL7noshock,388.063472320744,no_shock,Cortical subplate,#59a14f
+1244,ACB,BL7noshock,956.801690119998,no_shock,Striatum,#9c755f
+1248,LS,BL7noshock,1161.29653958455,no_shock,Striatum,#9c755f
+1252,BA,BL7noshock,1023.31778814123,no_shock,Striatum,#9c755f
+1254,IA,BL7noshock,1126.31280158956,no_shock,Striatum,#9c755f
+1255,MEA,BL7noshock,760.691110562842,no_shock,Striatum,#9c755f
+1260,MSC,BL7noshock,299.045011701538,no_shock,Pallidum,#bab0ac
+1263,BAC,BL7noshock,564.429201371877,no_shock,Pallidum,#bab0ac
+1268,SPF,BL7noshock,2706.09025473039,no_shock,Thalamus,#b07aa1
+1269,SPA,BL7noshock,120.451693851944,no_shock,Thalamus,#b07aa1
+1275,POL,BL7noshock,374.276605681571,no_shock,Thalamus,#b07aa1
+1280,AM,BL7noshock,518.840343377634,no_shock,Thalamus,#b07aa1
+1282,IAM,BL7noshock,77.6934749620647,no_shock,Thalamus,#b07aa1
+1283,IAD,BL7noshock,440.768755334492,no_shock,Thalamus,#b07aa1
+1285,IMD,BL7noshock,10.1080561734169,no_shock,Thalamus,#b07aa1
+1286,MD,BL7noshock,223.799145918032,no_shock,Thalamus,#b07aa1
+1288,PR,BL7noshock,10.7983465031917,no_shock,Thalamus,#b07aa1
+1289,PVT,BL7noshock,308.064139408773,no_shock,Thalamus,#b07aa1
+1290,PT,BL7noshock,949.490680079463,no_shock,Thalamus,#b07aa1
+1291,RE,BL7noshock,41.8816189863347,no_shock,Thalamus,#b07aa1
+1293,RH,BL7noshock,45.7971567598517,no_shock,Thalamus,#b07aa1
+1294,CM,BL7noshock,38.9977288254519,no_shock,Thalamus,#b07aa1
+1305,LH,BL7noshock,1406.32923279183,no_shock,Thalamus,#b07aa1
+1311,ADP,BL7noshock,513.414742846952,no_shock,Hypothalamus,#f28e2b
+1314,AVPV,BL7noshock,42.6824749907386,no_shock,Hypothalamus,#f28e2b
+1315,DMH,BL7noshock,998.856482237772,no_shock,Hypothalamus,#f28e2b
+1317,MPO,BL7noshock,654.92991900674,no_shock,Hypothalamus,#f28e2b
+1320,PS,BL7noshock,195.492201601332,no_shock,Hypothalamus,#f28e2b
+1322,PVp,BL7noshock,285.916891221106,no_shock,Hypothalamus,#f28e2b
+1329,AHN,BL7noshock,305.006024461332,no_shock,Hypothalamus,#f28e2b
+1332,SUM,BL7noshock,569.728079674615,no_shock,Hypothalamus,#f28e2b
+1333,TM,BL7noshock,176.584199392991,no_shock,Hypothalamus,#f28e2b
+1335,PMd,BL7noshock,52.2289095174943,no_shock,Hypothalamus,#f28e2b
+1336,PMv,BL7noshock,18.2388144770589,no_shock,Hypothalamus,#f28e2b
+1337,PVHd,BL7noshock,206.731270188601,no_shock,Hypothalamus,#f28e2b
+1338,VMH,BL7noshock,80.8605471423303,no_shock,Hypothalamus,#f28e2b
+1339,PH,BL7noshock,683.609497693714,no_shock,Hypothalamus,#f28e2b
+1340,LHA,BL7noshock,1776.62118836442,no_shock,Hypothalamus,#f28e2b
+1341,LPO,BL7noshock,712.710369447626,no_shock,Hypothalamus,#f28e2b
+1342,PST,BL7noshock,901.408450704225,no_shock,Hypothalamus,#f28e2b
+1343,PSTN,BL7noshock,590.236241521036,no_shock,Hypothalamus,#f28e2b
+1347,TU,BL7noshock,357.314770907334,no_shock,Hypothalamus,#f28e2b
+1348,ZI,BL7noshock,510.801050471632,no_shock,Hypothalamus,#f28e2b
+1350,SCs,BL7noshock,817.874044899237,no_shock,Midbrain,#ff9da7
+1351,IC,BL7noshock,1416.68295548851,no_shock,Midbrain,#ff9da7
+1358,VTA,BL7noshock,3574.33134459454,no_shock,Midbrain,#ff9da7
+1362,SCm,BL7noshock,836.106637413944,no_shock,Midbrain,#ff9da7
+1363,PAG,BL7noshock,288.689532891446,no_shock,Midbrain,#ff9da7
+1364,PRT,BL7noshock,748.976354716148,no_shock,Midbrain,#ff9da7
+1366,CUN,BL7noshock,792.606993893401,no_shock,Midbrain,#ff9da7
+1385,DR,BL7noshock,203.359910559302,no_shock,Midbrain,#ff9da7
