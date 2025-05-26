@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 html, body {
-  min-height: 100%;
+  height: 100%;              /* ensure body is full-height */
   font-family: "Helvetica Neue", Arial, sans-serif;
   background: #f4f4f4;
   color: #333;
@@ -42,36 +42,67 @@ header h1 {
 
 /* ========== Two-Column Main ========== */
 main#charts-container {
-  flex: 1;
+  flex: 1;                 /* fill remaining space under header */
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;    /* top align both panels */
-  justify-content: space-between;
   gap: 2rem;
   padding: 1rem 2rem;
-  overflow: hidden;
-}
-
-/* Common panel styling */
-#density-section,
-#structure-section {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
+  align-items: stretch;    /* force both panels to match height */
+  overflow: hidden;        /* cut off any overflow inside main */
 }
 
 /* ========== Left Panel: Density ========== */
 #density-section {
-  flex: 2;                    /* take twice the width of right panel */
-  max-height: calc(100vh - 160px);  /* adjust for header + padding */
-  overflow-y: auto;           /* scroll if many plots */
+  flex: 2 1 0;             /* twice as wide as right panel */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;        /* only this panel scrolls */
   gap: 1.5rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
 }
 
-/* Each density plot wrapper */
+/* ========== Right Panel: Activation & Volcano ========== */
+#structure-section {
+  flex: 1 1 0;             /* narrower column */
+  display: flex;
+  flex-direction: column;
+  overflow: visible;       /* no internal scrolling here */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  /* keep content at start */
+  justify-content: flex-start;
+}
+
+/* Activation chart container */
+#structure-section {
+  flex: 1 1 0;                 /* narrower column */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;            /* <-- enable vertical scrolling here */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  justify-content: flex-start;
+}
+
+#structure-section .chart-container {
+  flex: none;
+  width: 100%;
+  height: 400px;        /* ↑ make this bigger to un-compress the chart */
+  margin-bottom: 1.5rem;
+}
+
+#activationChart {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Density plot wrappers */
 .structure-plot {
   background: #fafafa;
   border: 1px solid #eee;
@@ -88,36 +119,40 @@ main#charts-container {
   height: 300px !important;
 }
 
-/* ========== Right Panel: Activation ========== */
-#structure-section {
-  flex: 1;                    /* narrower column */
-  /* no scrolling needed here */
+/* Volcano section under activation in right panel */
+#volcano-section {
+  margin-top: 2rem;
+  border-top: 1px solid #ddd;
+  padding-top: 1.5rem;
 }
-#structure-section h2 {
+#volcano-section h2 {
+  font-size: 1.25rem;
   text-align: center;
   margin-bottom: 1rem;
 }
-#structure-section .chart-container {
-  flex: none;                 /* don’t stretch vertically */
-  width: 100%;
-  height: 350px;              /* fixed height for chart */
+.volcano-chart {
+  margin-bottom: 2rem;
 }
-#activationChart {
+.volcano-chart h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+.volcano-chart canvas {
   width: 100% !important;
-  height: 100% !important;
+  height: 300px !important;
 }
 
 /* ========== Responsive ========== */
 @media (max-width: 800px) {
   main#charts-container {
     flex-direction: column;
-    align-items: stretch;
     overflow: auto;
   }
   #density-section,
   #structure-section {
     flex: none;
     width: 100%;
-    max-height: none;
+    overflow: visible;
   }
 }

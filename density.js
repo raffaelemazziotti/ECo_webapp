@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 0) Build areaNameMap from nodes.json
   let areaNameMap = {};
   try {
-    const res = await fetch('nodes.json');
+    const res = await fetch('data/nodes.json');
     const nodes = await res.json();
     nodes.forEach(n => { areaNameMap[n.id] = n.name; });
     console.log('Loaded areaNameMap:', areaNameMap);
@@ -172,4 +172,114 @@ document.addEventListener('DOMContentLoaded', async () => {
     },
     error: err => console.error('Error loading density CSV:', err)
   });
+
+  //
+  // 3 Volcanos
+  //
+
+  function createVolcanoChart(canvasId, rawData) {
+    if (!rawData.length) return;
+
+    // 1) find CSV columns
+    const keys  = Object.keys(rawData[0]);
+    const fcKey = keys.find(k => k.toLowerCase().includes('fold'));
+    const pvKey = keys.find(k => k.toLowerCase().includes('pval'));
+    const thr   = Math.log10(0.05);
+
+    // 2) build points
+    const pts = rawData.map(d => {
+      const fc = parseFloat(d[fcKey]), pv = parseFloat(d[pvKey]);
+      if (isNaN(fc)||isNaN(pv)||fc<=0||pv<=0) return null;
+      return {
+        x:    Math.log10(fc),
+        y:    Math.log10(pv),
+        name: d.area
+      };
+    }).filter(Boolean);
+    if (!pts.length) return;
+
+    // 3) compute extents (include 0 and thr), add 10% padding
+    let xs = pts.map(p=>p.x), ys = pts.map(p=>p.y);
+    let xMin = Math.min(Math.min(...xs), 0),
+        xMax = Math.max(Math.max(...xs), 0);
+    let yMin = Math.min(Math.min(...ys), thr),
+        yMax = Math.max(Math.max(...ys), thr);
+    const xPad = (xMax - xMin)*0.1, yPad = (yMax - yMin)*0.1;
+    xMin -= xPad; xMax += xPad; yMin -= yPad; yMax += yPad;
+
+    // 4) pick color based on canvasId
+    const baseColor = canvasId.includes('dem')
+      ? roleColor.demonstrator
+      : roleColor.observer;
+
+    // 5) scatter dataset: solid above thr, hollow below
+    const scatterDs = {
+      type: 'scatter',
+      label: '',
+      data: pts,
+      pointRadius:      5,
+      pointHoverRadius: 7,
+      hitRadius:        8,
+      backgroundColor: pts.map(p => p.y <= thr ? baseColor : 'transparent'),
+      borderColor:     pts.map(p => baseColor),
+      borderWidth:      1
+    };
+
+    // 6) threshold lines
+    const thrLineDs = {
+      type:'line',
+      data:[ {x:xMin,y:thr}, {x:xMax,y:thr} ],
+      borderDash:[6,4], borderColor:'#444', borderWidth:1,
+      pointRadius:0, fill:false
+    };
+    const zeroLineDs = {
+      type:'line',
+      data:[ {x:0,y:yMin}, {x:0,y:yMax} ],
+      borderDash:[6,4], borderColor:'#444', borderWidth:1,
+      pointRadius:0, fill:false
+    };
+
+    // 7) render mixed scatter+lines
+    new Chart(
+      document.getElementById(canvasId).getContext('2d'),
+      {
+        type: 'scatter',
+        data: { datasets: [scatterDs, thrLineDs, zeroLineDs] },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: { mode:'nearest', axis:'xy', intersect:true },
+          plugins: {
+            legend: { display:false },
+            tooltip: {
+              displayColors:false,
+              callbacks: {
+                title: () => '',
+                label: ctx => ctx.raw.name
+              }
+            }
+          },
+          scales: {
+            x: { title:{display:true,text:'log₁₀(Fold Change)'}, min:xMin, max:xMax },
+            y: { reverse:true, title:{display:true,text:'log₁₀(p-value)'}, min:yMin, max:yMax }
+          }
+        }
+      }
+    );
+  }
+
+    // load demonstrator
+    Papa.parse('data/fold_change_dem_pval.csv', {
+      download: true, header: true, skipEmptyLines: true,
+      complete: ({ data }) => createVolcanoChart('volcano-dem', data),
+      error: err => console.error('Error loading dem CSV:', err)
+    });
+
+    // load observer
+    Papa.parse('data/fold_change_obs_pval.csv', {
+      download: true, header: true, skipEmptyLines: true,
+      complete: ({ data }) => createVolcanoChart('volcano-obs', data),
+      error: err => console.error('Error loading obs CSV:', err)
+    });
+
 });
