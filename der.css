@@ -1,0 +1,73 @@
+/* der.css */
+
+/* Two‐column layout */
+.container {
+  display: flex;
+  align-items: flex-start;
+  height: calc(100vh - 4em);
+  flex-wrap: nowrap;
+}
+
+/* LEFT side charts: fixed width ~65% of container */
+.left-charts {
+  flex: none;
+  width: 65%;
+  padding: 1em;
+  overflow: auto;
+}
+
+/* RIGHT side scatter plots: fixed width ~35% of container */
+.right-charts {
+  flex: none;
+  width: 35%;
+  padding: 1em;
+  border-left: 1px solid #ddd;
+}
+
+/* Each row of time‐series charts */
+.chart-row {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+/* Rotated intensity label */
+.row-label {
+  flex: 0 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #333;
+  margin-right: 0.5em;
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
+
+/* Wrapper for each individual time‐series chart */
+.chart {
+  flex: 1;
+  margin: 0 0.5em;
+  height: 180px;       /* adjust this to make plots larger or smaller */
+  position: relative;
+}
+
+/* Ensure the canvas fills its wrapper */
+.chart canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Wrapper for each scatter plot on the right */
+.scatter-plot {
+  margin-bottom: 2em;
+  height: 280px;       /* reduced height for balance */
+  position: relative;
+}
+
+/* Ensure scatter canvases fill their wrappers */
+.scatter-plot canvas {
+  width: 100% !important;
+  height: 100% !important;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>ECo – Pupillometry DER</title>
+  <link rel="stylesheet" href="home_style.css">
+  <link rel="stylesheet" href="der.css">
+  <link rel="icon" href="favECon.ico" type="image/x-icon">
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Pupillometry – DER</h1>
+    <p class="description">Direct aversive stimulation (DER) time‐series & peaks</p>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- LEFT: full‐width time‐series -->
+      <section class="left-charts" id="charts"></section>
+
+      <!-- RIGHT: two scatter plots -->
+      <section class="right-charts">
+        <div class="scatter-plot">
+          <h3>Pupil‐Size Peaks (1–2 s)</h3>
+          <canvas id="size-peaks-chart"></canvas>
+        </div>
+        <div class="scatter-plot">
+          <h3>Velocity Peaks (1–2 s)</h3>
+          <canvas id="vel-peaks-chart"></canvas>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="der.js"></script>
+</body>
+</html>
