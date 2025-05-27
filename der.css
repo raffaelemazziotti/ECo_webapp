@@ -3,23 +3,22 @@
 /* Two‐column layout */
 .container {
   display: flex;
-  align-items: flex-start;
+  width: 100%;
   height: calc(100vh - 4em);
-  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-/* LEFT side charts: fixed width ~65% of container */
+/* LEFT side time‐series: ~75% width */
 .left-charts {
-  flex: none;
-  width: 65%;
+  flex: 3 1 0;
   padding: 1em;
   overflow: auto;
 }
 
-/* RIGHT side scatter plots: fixed width ~35% of container */
+/* RIGHT side scatter: ~25% width */
 .right-charts {
-  flex: none;
-  width: 35%;
+  flex: 1 1 0;
   padding: 1em;
   border-left: 1px solid #ddd;
 }
@@ -27,46 +26,48 @@
 /* Each row of time‐series charts */
 .chart-row {
   display: flex;
+  align-items: center;    /* center‐vertically align label + charts */
   margin-bottom: 1em;
+  gap: 0.5em;
 }
 
 /* Rotated intensity label */
 .row-label {
-  flex: 0 0 80px;
+  flex: 0 0 40px;
+  width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
   font-size: 0.9em;
   color: #333;
-  margin-right: 0.5em;
   white-space: nowrap;
   transform: rotate(-90deg);
   transform-origin: center;
 }
 
-/* Wrapper for each individual time‐series chart */
+/* Each individual time‐series chart wrapper */
 .chart {
-  flex: 1;
-  margin: 0 0.5em;
-  height: 180px;       /* adjust this to make plots larger or smaller */
+  flex: 1 1 0;            /* allow to grow and fill available width */
+  min-width: 0;           /* critical for flex to respect shrinking */
+  height: 180px;          /* fixed height */
   position: relative;
 }
 
-/* Ensure the canvas fills its wrapper */
+/* Canvas fills its wrapper */
 .chart canvas {
   width: 100% !important;
   height: 100% !important;
 }
 
-/* Wrapper for each scatter plot on the right */
+/* Each scatter plot on the right */
 .scatter-plot {
-  margin-bottom: 2em;
-  height: 280px;       /* reduced height for balance */
+  margin-bottom: 1.5em;
+  height: 240px;          /* adjust for desired size */
   position: relative;
 }
 
-/* Ensure scatter canvases fill their wrappers */
+/* Scatter canvases fill their wrappers */
 .scatter-plot canvas {
   width: 100% !important;
   height: 100% !important;
