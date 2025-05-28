@@ -1,28 +1,37 @@
 /* mod.css */
 
-/* 1) Hide any scrollbar on left panel */
+/* 1) Turn the container into a 2-column grid with fixed widths */
+.container {
+  display: grid;
+  grid-template-columns: 500px 300px; /* left chart 500px wide, right 300px */
+  grid-auto-rows: auto;
+  justify-content: center;            /* center the whole grid in the page */
+  align-items: start;
+  gap: 1em;                            /* space between columns */
+}
+
+/* 2) Hide scrollbars on the left panel */
 .left-charts {
   overflow: hidden !important;
 }
 
-/* 2) Center both panels and keep them equal size */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-/* 3) Give both the time-series and scatter containers the same square size */
-.left-charts .chart,
-.right-charts .scatter-plot {
-  flex: none;
-  width: 320px;      /* pick your desired square dimension */
-  height: 320px;
-  margin: 0 1em;
+/* 3) Force the left time-series wrapper to exactly 500×300 */
+.left-charts .chart {
+  width: 500px !important;
+  height: 300px !important;
+  flex: none !important;
   position: relative;
 }
 
-/* 4) Ensure canvases render crisply at that size */
+/* 4) Force the right scatter wrapper to exactly 300×500 */
+.right-charts .scatter-plot {
+  width: 300px !important;
+  height: 500px !important;
+  flex: none !important;
+  position: relative;
+}
+
+/* 5) Ensure canvases render crisply at that size */
 .left-charts .chart canvas,
 .right-charts .scatter-plot canvas {
   width: 100% !important;
