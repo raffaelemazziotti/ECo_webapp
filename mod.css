@@ -1,0 +1,30 @@
+/* mod.css */
+
+/* 1) Hide any scrollbar on left panel */
+.left-charts {
+  overflow: hidden !important;
+}
+
+/* 2) Center both panels and keep them equal size */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* 3) Give both the time-series and scatter containers the same square size */
+.left-charts .chart,
+.right-charts .scatter-plot {
+  flex: none;
+  width: 320px;      /* pick your desired square dimension */
+  height: 320px;
+  margin: 0 1em;
+  position: relative;
+}
+
+/* 4) Ensure canvases render crisply at that size */
+.left-charts .chart canvas,
+.right-charts .scatter-plot canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
