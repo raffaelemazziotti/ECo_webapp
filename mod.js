@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       borderWidth: 2,
       pointRadius: 0,
       tension: 0.3,
-      fill: false,
+      fill: files[i].color,
       showLine: true
     };
   });
