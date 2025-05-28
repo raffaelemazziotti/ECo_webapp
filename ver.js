@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // 1) Load CSVs
   const [sizeRes, velRes] = await Promise.all([
-    fetch('data/aversive_zpsize_avg_diff.csv'),
-    fetch('data/aversive_vel_avg_diff.csv')
+    fetch('data/vicarious_zpsize_avg_diff.csv'),
+    fetch('data/vicarious_vel_avg_diff.csv')
   ]);
   if (!sizeRes.ok || !velRes.ok) {
     console.error('CSV load error', sizeRes.status, velRes.status);
@@ -85,9 +85,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     ['Size','Velocity'].forEach(type => {
       const map   = (type==='Size' ? sizeByInt : velByInt)[intensity];
-      const yMin  = type==='Size' ? -20 : -60;
-      const yMax  = type==='Size' ?  80 : 350;
-      const yTicks= type==='Size' ? [-20,0,80] : [-60,0,350];
+      const yMin  = type==='Size' ? -5 : -60;
+      const yMax  = type==='Size' ?  20 : 60;
+      const yTicks= type==='Size' ? [-5,0,20] : [-60,0,60];
 
       const chartDiv = document.createElement('div');
       chartDiv.className = 'chart';
@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       row.appendChild(chartDiv);
 
       // raw and average datasets
-      const rawColor = 'rgba(0,128,0,0.2)';
+      const rawColor = 'rgba(0,99,132,0.7)';
       const rawDS = Object.entries(map).map(([subj, arr]) => ({
           label: subj,
           // Data as {x,y} pairs:
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           fill: false,
 
           // Default style: faint green line
-          borderColor: 'rgba(0,128,0,0.2)',
+          borderColor: 'rgba(0,99,132,0.2)',
           borderWidth: 1,
 
           // Hide all point markers
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       );
       const avgDS = {
         data: times.map((t,i)=>({x:t,y:avgArr[i]})),
-        borderColor: 'green',
+        borderColor: 'rgba(0,99,132,0.7)',
         borderWidth: 2,
         pointRadius: 0,
         tension: 0.3,
@@ -196,13 +196,13 @@ document.addEventListener('DOMContentLoaded', async () => {
         {
           label: 'Raw Peaks',
           data: rawData,
-          backgroundColor: 'rgba(0,128,0,0.2)',
+          backgroundColor: 'rgba(0,99,132,0.7)',
           showLine: false
         },
         {
           label: 'Trend',
           data: trendData,
-          borderColor: 'green',
+          borderColor: 'rgba(0,99,132,0.7)',
           borderWidth: 2,
           pointRadius: 3,
           tension: 0.3,
@@ -259,8 +259,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 }
 
-  renderScatter('size-peaks-chart', sizePeaks, avgSize, -20, 80);
-  renderScatter('vel-peaks-chart', velPeaks, avgVel, -60, 350);
+  renderScatter('size-peaks-chart', sizePeaks, avgSize, -5, 20);
+  renderScatter('vel-peaks-chart', velPeaks, avgVel, -60, 60);
 
   console.log('DER.js: done');
 });

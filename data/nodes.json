@@ -6,8 +6,8 @@
     "color": "#e15759",
     "group": "both",
     "shape": "square",
-    "x": 553.15,
-    "y": 150.39
+    "x": 456.95,
+    "y": 333.39
   },
   {
     "id": "MOs",
@@ -16,8 +16,8 @@
     "color": "#e15759",
     "group": "observer",
     "shape": "circle",
-    "x": 294.57,
-    "y": 500.03
+    "x": 251.38,
+    "y": 360.1
   },
   {
     "id": "VISC",
@@ -26,8 +26,8 @@
     "color": "#e15759",
     "group": "both",
     "shape": "square",
-    "x": 685.7,
-    "y": 468.48
+    "x": 706.3,
+    "y": 509.2
   },
   {
     "id": "AUDd",
@@ -36,8 +36,8 @@
     "color": "#e15759",
     "group": "observer",
     "shape": "circle",
-    "x": 346.25,
-    "y": 308.68
+    "x": 539.81,
+    "y": 274.17
   },
   {
     "id": "ORB",
@@ -46,8 +46,8 @@
     "color": "#e15759",
     "group": "both",
     "shape": "square",
-    "x": 143.47,
-    "y": 549.16
+    "x": 144.62,
+    "y": 549.36
   },
   {
     "id": "AUDv",
@@ -56,8 +56,8 @@
     "color": "#e15759",
     "group": "both",
     "shape": "square",
-    "x": 372.64,
-    "y": 82.7
+    "x": 600.41,
+    "y": 274.38
   },
   {
     "id": "ACA",
@@ -66,8 +66,8 @@
     "color": "#e15759",
     "group": "both",
     "shape": "square",
-    "x": 262.89,
-    "y": 546.46
+    "x": 268.91,
+    "y": 432.52
   },
   {
     "id": "PERI",
@@ -76,8 +76,8 @@
     "color": "#e15759",
     "group": "observer",
     "shape": "circle",
-    "x": 690.16,
-    "y": 431.41
+    "x": 887.51,
+    "y": 465.07
   },
   {
     "id": "AI",
@@ -86,8 +86,8 @@
     "color": "#e15759",
     "group": "both",
     "shape": "square",
-    "x": 924.84,
-    "y": 415.07
+    "x": 813.34,
+    "y": 521.59
   },
   {
     "id": "PL",
@@ -96,8 +96,8 @@
     "color": "#e15759",
     "group": "observer",
     "shape": "circle",
-    "x": 67.39,
-    "y": 475.98
+    "x": 306.15,
+    "y": 406.74
   },
   {
     "id": "VISrl",
@@ -106,8 +106,8 @@
     "color": "#e15759",
     "group": "both",
     "shape": "square",
-    "x": 497.29,
-    "y": 50.0
+    "x": 333.83,
+    "y": 254.99
   },
   {
     "id": "VISp",
@@ -116,8 +116,8 @@
     "color": "#e15759",
     "group": "both",
     "shape": "square",
-    "x": 457.09,
-    "y": 332.13
+    "x": 577.96,
+    "y": 214.97
   },
   {
     "id": "VISal",
@@ -126,8 +126,8 @@
     "color": "#e15759",
     "group": "both",
     "shape": "square",
-    "x": 536.41,
-    "y": 82.78
+    "x": 553.47,
+    "y": 158.69
   },
   {
     "id": "VISam",
@@ -136,8 +136,8 @@
     "color": "#e15759",
     "group": "both",
     "shape": "square",
-    "x": 335.13,
-    "y": 254.8
+    "x": 536.98,
+    "y": 83.27
   },
   {
     "id": "VISl",
@@ -146,8 +146,8 @@
     "color": "#e15759",
     "group": "both",
     "shape": "square",
-    "x": 587.4,
-    "y": 123.97
+    "x": 357.68,
+    "y": 124.73
   },
   {
     "id": "RSP",
@@ -156,8 +156,8 @@
     "color": "#e15759",
     "group": "both",
     "shape": "square",
-    "x": 468.18,
-    "y": 87.64
+    "x": 424.01,
+    "y": 57.94
   },
   {
     "id": "AUDpo",
@@ -166,8 +166,8 @@
     "color": "#e15759",
     "group": "both",
     "shape": "square",
-    "x": 424.79,
-    "y": 57.88
+    "x": 396.48,
+    "y": 330.84
   },
   {
     "id": "NLOT",
@@ -176,8 +176,8 @@
     "color": "#76b7b2",
     "group": "both",
     "shape": "square",
-    "x": 880.85,
-    "y": 267.44
+    "x": 882.13,
+    "y": 269.51
   },
   {
     "id": "TR",
@@ -186,8 +186,8 @@
     "color": "#76b7b2",
     "group": "both",
     "shape": "square",
-    "x": 754.53,
-    "y": 519.72
+    "x": 684.58,
+    "y": 468.89
   },
   {
     "id": "AOB",
@@ -196,8 +196,8 @@
     "color": "#76b7b2",
     "group": "observer",
     "shape": "circle",
-    "x": 813.56,
-    "y": 520.61
+    "x": 924.75,
+    "y": 416.09
   },
   {
     "id": "MOB",
@@ -206,8 +206,8 @@
     "color": "#76b7b2",
     "group": "both",
     "shape": "square",
-    "x": 887.83,
-    "y": 463.99
+    "x": 897.57,
+    "y": 313.67
   },
   {
     "id": "DP",
@@ -216,8 +216,8 @@
     "color": "#76b7b2",
     "group": "both",
     "shape": "square",
-    "x": 694.12,
-    "y": 357.41
+    "x": 693.4,
+    "y": 357.81
   },
   {
     "id": "PAA",
@@ -226,8 +226,8 @@
     "color": "#76b7b2",
     "group": "both",
     "shape": "square",
-    "x": 862.87,
-    "y": 413.26
+    "x": 755.6,
+    "y": 520.92
   },
   {
     "id": "COA",
@@ -237,7 +237,7 @@
     "group": "both",
     "shape": "square",
     "x": 950.0,
-    "y": 461.58
+    "y": 462.57
   },
   {
     "id": "AON",
@@ -246,8 +246,8 @@
     "color": "#76b7b2",
     "group": "both",
     "shape": "square",
-    "x": 779.25,
-    "y": 246.49
+    "x": 749.44,
+    "y": 295.9
   },
   {
     "id": "TT",
@@ -256,8 +256,8 @@
     "color": "#76b7b2",
     "group": "both",
     "shape": "square",
-    "x": 897.38,
-    "y": 312.3
+    "x": 689.3,
+    "y": 431.13
   },
   {
     "id": "PIR",
@@ -266,8 +266,8 @@
     "color": "#76b7b2",
     "group": "both",
     "shape": "square",
-    "x": 920.9,
-    "y": 365.02
+    "x": 767.84,
+    "y": 479.82
   },
   {
     "id": "PAR",
@@ -276,8 +276,8 @@
     "color": "#edc948",
     "group": "observer",
     "shape": "circle",
-    "x": 282.48,
-    "y": 690.0
+    "x": 334.94,
+    "y": 950.0
   },
   {
     "id": "POST",
@@ -286,8 +286,8 @@
     "color": "#edc948",
     "group": "observer",
     "shape": "circle",
-    "x": 227.06,
-    "y": 878.05
+    "x": 428.83,
+    "y": 884.85
   },
   {
     "id": "DG",
@@ -296,8 +296,8 @@
     "color": "#edc948",
     "group": "observer",
     "shape": "circle",
-    "x": 454.17,
-    "y": 780.36
+    "x": 281.95,
+    "y": 690.31
   },
   {
     "id": "PRE",
@@ -306,8 +306,8 @@
     "color": "#edc948",
     "group": "observer",
     "shape": "circle",
-    "x": 335.42,
-    "y": 950.0
+    "x": 226.48,
+    "y": 878.16
   },
   {
     "id": "ENT",
@@ -316,8 +316,8 @@
     "color": "#edc948",
     "group": "both",
     "shape": "square",
-    "x": 846.21,
-    "y": 239.45
+    "x": 703.45,
+    "y": 310.13
   },
   {
     "id": "SUB",
@@ -326,8 +326,8 @@
     "color": "#edc948",
     "group": "observer",
     "shape": "circle",
-    "x": 429.09,
-    "y": 884.88
+    "x": 453.63,
+    "y": 780.22
   },
   {
     "id": "BAC",
@@ -336,8 +336,8 @@
     "color": "#bab0ac",
     "group": "observer",
     "shape": "circle",
-    "x": 628.21,
-    "y": 752.14
+    "x": 778.9,
+    "y": 638.49
   },
   {
     "id": "MSC",
@@ -346,8 +346,8 @@
     "color": "#bab0ac",
     "group": "both",
     "shape": "square",
-    "x": 880.81,
-    "y": 859.47
+    "x": 686.12,
+    "y": 917.6
   },
   {
     "id": "BLA",
@@ -356,8 +356,8 @@
     "color": "#59a14f",
     "group": "both",
     "shape": "square",
-    "x": 846.26,
-    "y": 490.66
+    "x": 727.4,
+    "y": 268.72
   },
   {
     "id": "BMA",
@@ -366,8 +366,8 @@
     "color": "#59a14f",
     "group": "both",
     "shape": "square",
-    "x": 934.94,
-    "y": 307.92
+    "x": 920.87,
+    "y": 366.49
   },
   {
     "id": "CLA",
@@ -376,8 +376,8 @@
     "color": "#59a14f",
     "group": "both",
     "shape": "square",
-    "x": 704.55,
-    "y": 308.82
+    "x": 702.15,
+    "y": 395.09
   },
   {
     "id": "EP",
@@ -386,8 +386,8 @@
     "color": "#59a14f",
     "group": "both",
     "shape": "square",
-    "x": 727.52,
-    "y": 268.39
+    "x": 934.9,
+    "y": 308.71
   },
   {
     "id": "LA",
@@ -396,8 +396,8 @@
     "color": "#59a14f",
     "group": "both",
     "shape": "square",
-    "x": 764.35,
-    "y": 477.79
+    "x": 820.56,
+    "y": 275.18
   },
   {
     "id": "ACB",
@@ -406,8 +406,8 @@
     "color": "#9c755f",
     "group": "observer",
     "shape": "circle",
-    "x": 707.14,
-    "y": 508.21
+    "x": 846.99,
+    "y": 240.42
   },
   {
     "id": "IA",
@@ -416,8 +416,8 @@
     "color": "#9c755f",
     "group": "both",
     "shape": "square",
-    "x": 822.22,
-    "y": 274.48
+    "x": 846.34,
+    "y": 491.44
   },
   {
     "id": "MEA",
@@ -426,8 +426,8 @@
     "color": "#9c755f",
     "group": "both",
     "shape": "square",
-    "x": 703.01,
-    "y": 394.44
+    "x": 779.33,
+    "y": 247.12
   },
   {
     "id": "LS",
@@ -436,8 +436,8 @@
     "color": "#9c755f",
     "group": "both",
     "shape": "square",
-    "x": 812.34,
-    "y": 666.13
+    "x": 711.5,
+    "y": 645.21
   },
   {
     "id": "BA",
@@ -446,8 +446,8 @@
     "color": "#9c755f",
     "group": "both",
     "shape": "square",
-    "x": 751.7,
-    "y": 294.2
+    "x": 863.52,
+    "y": 410.97
   },
   {
     "id": "PRT",
@@ -456,8 +456,8 @@
     "color": "#ff9da7",
     "group": "observer",
     "shape": "circle",
-    "x": 365.44,
-    "y": 161.43
+    "x": 421.31,
+    "y": 269.4
   },
   {
     "id": "SCs",
@@ -466,8 +466,8 @@
     "color": "#ff9da7",
     "group": "both",
     "shape": "square",
-    "x": 423.5,
-    "y": 269.08
+    "x": 351.54,
+    "y": 206.49
   },
   {
     "id": "DR",
@@ -476,8 +476,8 @@
     "color": "#ff9da7",
     "group": "observer",
     "shape": "circle",
-    "x": 852.29,
-    "y": 765.13
+    "x": 669.53,
+    "y": 834.09
   },
   {
     "id": "PAG",
@@ -486,8 +486,8 @@
     "color": "#ff9da7",
     "group": "observer",
     "shape": "circle",
-    "x": 577.46,
-    "y": 213.92
+    "x": 364.46,
+    "y": 161.95
   },
   {
     "id": "SCm",
@@ -496,8 +496,8 @@
     "color": "#ff9da7",
     "group": "observer",
     "shape": "circle",
-    "x": 540.15,
-    "y": 272.51
+    "x": 467.62,
+    "y": 87.8
   },
   {
     "id": "IC",
@@ -506,8 +506,8 @@
     "color": "#ff9da7",
     "group": "observer",
     "shape": "circle",
-    "x": 395.23,
-    "y": 329.16
+    "x": 587.76,
+    "y": 123.68
   },
   {
     "id": "VTA",
@@ -516,8 +516,8 @@
     "color": "#ff9da7",
     "group": "observer",
     "shape": "circle",
-    "x": 712.12,
-    "y": 877.42
+    "x": 618.68,
+    "y": 868.81
   },
   {
     "id": "CUN",
@@ -526,8 +526,8 @@
     "color": "#ff9da7",
     "group": "observer",
     "shape": "circle",
-    "x": 494.87,
-    "y": 301.59
+    "x": 371.56,
+    "y": 82.93
   },
   {
     "id": "IMD",
@@ -536,8 +536,8 @@
     "color": "#b07aa1",
     "group": "both",
     "shape": "square",
-    "x": 60.45,
-    "y": 589.25
+    "x": 261.54,
+    "y": 547.12
   },
   {
     "id": "LH",
@@ -546,8 +546,8 @@
     "color": "#b07aa1",
     "group": "observer",
     "shape": "circle",
-    "x": 87.4,
-    "y": 428.67
+    "x": 207.75,
+    "y": 327.69
   },
   {
     "id": "PVT",
@@ -556,8 +556,8 @@
     "color": "#b07aa1",
     "group": "observer",
     "shape": "circle",
-    "x": 252.09,
-    "y": 359.31
+    "x": 178.06,
+    "y": 612.59
   },
   {
     "id": "POL",
@@ -566,8 +566,8 @@
     "color": "#b07aa1",
     "group": "observer",
     "shape": "circle",
-    "x": 600.68,
-    "y": 271.65
+    "x": 345.48,
+    "y": 310.23
   },
   {
     "id": "MD",
@@ -576,8 +576,8 @@
     "color": "#b07aa1",
     "group": "observer",
     "shape": "circle",
-    "x": 269.69,
-    "y": 431.6
+    "x": 112.53,
+    "y": 610.05
   },
   {
     "id": "SPF",
@@ -586,8 +586,8 @@
     "color": "#b07aa1",
     "group": "observer",
     "shape": "circle",
-    "x": 352.64,
-    "y": 205.99
+    "x": 494.72,
+    "y": 302.77
   },
   {
     "id": "AM",
@@ -596,8 +596,8 @@
     "color": "#b07aa1",
     "group": "observer",
     "shape": "circle",
-    "x": 306.71,
-    "y": 405.22
+    "x": 293.61,
+    "y": 500.73
   },
   {
     "id": "SPA",
@@ -606,8 +606,8 @@
     "color": "#b07aa1",
     "group": "both",
     "shape": "square",
-    "x": 208.72,
-    "y": 326.75
+    "x": 83.93,
+    "y": 365.14
   },
   {
     "id": "PR",
@@ -616,8 +616,8 @@
     "color": "#b07aa1",
     "group": "observer",
     "shape": "circle",
-    "x": 112.54,
-    "y": 610.64
+    "x": 218.39,
+    "y": 578.33
   },
   {
     "id": "CM",
@@ -626,8 +626,8 @@
     "color": "#b07aa1",
     "group": "both",
     "shape": "square",
-    "x": 50.0,
-    "y": 531.32
+    "x": 60.13,
+    "y": 588.52
   },
   {
     "id": "RE",
@@ -636,8 +636,8 @@
     "color": "#b07aa1",
     "group": "both",
     "shape": "square",
-    "x": 178.45,
-    "y": 613.21
+    "x": 179.42,
+    "y": 363.98
   },
   {
     "id": "IAM",
@@ -646,8 +646,8 @@
     "color": "#b07aa1",
     "group": "both",
     "shape": "square",
-    "x": 84.23,
-    "y": 364.23
+    "x": 87.59,
+    "y": 431.73
   },
   {
     "id": "IAD",
@@ -656,8 +656,8 @@
     "color": "#b07aa1",
     "group": "observer",
     "shape": "circle",
-    "x": 218.72,
-    "y": 578.93
+    "x": 67.28,
+    "y": 477.42
   },
   {
     "id": "PT",
@@ -666,8 +666,8 @@
     "color": "#b07aa1",
     "group": "both",
     "shape": "square",
-    "x": 126.9,
-    "y": 374.01
+    "x": 50.0,
+    "y": 531.13
   },
   {
     "id": "RH",
@@ -676,8 +676,8 @@
     "color": "#b07aa1",
     "group": "both",
     "shape": "square",
-    "x": 181.53,
-    "y": 363.12
+    "x": 124.0,
+    "y": 376.35
   },
   {
     "id": "PVp",
@@ -686,8 +686,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 756.71,
-    "y": 673.55
+    "x": 799.75,
+    "y": 781.63
   },
   {
     "id": "AVPV",
@@ -696,8 +696,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 659.68,
-    "y": 667.35
+    "x": 781.05,
+    "y": 886.82
   },
   {
     "id": "AHN",
@@ -706,8 +706,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 820.06,
-    "y": 860.66
+    "x": 812.73,
+    "y": 666.34
   },
   {
     "id": "LPO",
@@ -716,8 +716,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 830.08,
-    "y": 710.09
+    "x": 638.09,
+    "y": 706.19
   },
   {
     "id": "MPO",
@@ -726,8 +726,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 634.65,
-    "y": 785.46
+    "x": 627.28,
+    "y": 752.51
   },
   {
     "id": "PSTN",
@@ -736,8 +736,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 689.34,
-    "y": 689.73
+    "x": 620.93,
+    "y": 829.83
   },
   {
     "id": "TM",
@@ -746,8 +746,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 686.21,
-    "y": 916.94
+    "x": 755.94,
+    "y": 673.48
   },
   {
     "id": "PVHd",
@@ -756,8 +756,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 799.05,
-    "y": 785.64
+    "x": 855.97,
+    "y": 814.69
   },
   {
     "id": "LHA",
@@ -766,8 +766,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 855.63,
-    "y": 814.46
+    "x": 820.2,
+    "y": 861.1
   },
   {
     "id": "TU",
@@ -776,8 +776,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 669.8,
-    "y": 833.27
+    "x": 633.82,
+    "y": 785.21
   },
   {
     "id": "SUM",
@@ -786,8 +786,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 641.0,
-    "y": 906.24
+    "x": 866.53,
+    "y": 706.62
   },
   {
     "id": "PMv",
@@ -796,8 +796,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 747.75,
-    "y": 917.31
+    "x": 689.73,
+    "y": 689.3
   },
   {
     "id": "PST",
@@ -806,8 +806,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 619.61,
-    "y": 868.37
+    "x": 852.59,
+    "y": 765.55
   },
   {
     "id": "PH",
@@ -816,8 +816,8 @@
     "color": "#f28e2b",
     "group": "both",
     "shape": "square",
-    "x": 866.19,
-    "y": 706.59
+    "x": 748.17,
+    "y": 917.8
   },
   {
     "id": "ADP",
@@ -826,8 +826,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 639.36,
-    "y": 704.85
+    "x": 880.75,
+    "y": 860.79
   },
   {
     "id": "PS",
@@ -836,8 +836,8 @@
     "color": "#f28e2b",
     "group": "both",
     "shape": "square",
-    "x": 712.65,
-    "y": 645.18
+    "x": 640.46,
+    "y": 907.01
   },
   {
     "id": "PMd",
@@ -846,8 +846,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 621.74,
-    "y": 830.02
+    "x": 658.93,
+    "y": 667.34
   },
   {
     "id": "DMH",
@@ -856,8 +856,8 @@
     "color": "#f28e2b",
     "group": "both",
     "shape": "square",
-    "x": 779.47,
-    "y": 638.71
+    "x": 713.94,
+    "y": 877.85
   },
   {
     "id": "ZI",
@@ -866,8 +866,8 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 358.46,
-    "y": 124.11
+    "x": 497.37,
+    "y": 50.0
   },
   {
     "id": "VMH",
@@ -876,7 +876,7 @@
     "color": "#f28e2b",
     "group": "observer",
     "shape": "circle",
-    "x": 781.03,
-    "y": 886.34
+    "x": 830.13,
+    "y": 710.31
   }
 ]

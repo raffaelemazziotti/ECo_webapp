@@ -39,6 +39,7 @@ header h1 {
 .home-button:hover {
   background: #0056b3;
 }
+header .description { color:#666; margin-bottom:1rem; }
 
 /* ========== Two-Column Main ========== */
 main#charts-container {

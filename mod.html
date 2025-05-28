@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>ECo – Modality Comparison</title>
+  <link rel="stylesheet" href="home_style.css">
+  <link rel="stylesheet" href="der.css">
+  <link rel="icon" href="favECon.ico" type="image/x-icon">
+
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Pupillometry – Modality Comparison</h1>
+    <p class="description">Multisensory vs Screen vs Vision only</p>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- LEFT: time series -->
+      <section class="left-charts">
+        <div class="chart-row">
+          <div class="chart" style="flex:1 0 100%;">
+            <canvas id="mod-timeseries-chart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT: peaks scatter -->
+      <section class="right-charts">
+        <div class="scatter-plot">
+          <h3>Peak Values by Condition</h3>
+          <canvas id="mod-peaks-chart"></canvas>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="mod.js"></script>
+</body>
+</html>
