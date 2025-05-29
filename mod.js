@@ -148,6 +148,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           x: {
             type: 'category',
             labels: byMode.map(([m]) => m),
+            offset: true,
             title: { display: true, text: 'Condition' }
           },
           y: {
