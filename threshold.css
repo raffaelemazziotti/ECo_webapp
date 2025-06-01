@@ -1,0 +1,53 @@
+/* ───────── threshold.css ───────── */
+
+.home-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* pull everything tight under the header */
+main.two-cols{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;   /* ⇦ centre block horizontally */
+  align-items:flex-start;
+  gap:2rem;                 /* gap BETWEEN the two columns */
+  margin-top:0.5rem;
+}
+
+/* each column */
+.col{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:3.5rem;               /* vertical gap INSIDE a column */
+}
+
+/* generic chart wrapper */
+.chart-container{
+  width:360px;              /* all charts same width */
+  text-align:center;
+}
+
+/* height presets */
+.chart-container.rect  {height:260px;}  /* average plot 360×260 */
+.chart-container.square{height:360px;}  /* correlation plots 360×360 */
+
+/* canvases fill wrapper exactly */
+.chart-container canvas{
+  width:100%!important;
+  height:100%!important;
+}
+
+/* headings */
+.chart-container h3{
+  margin-bottom:0.5rem;
+  font-size:1.05rem;
+  font-weight:600;
+}

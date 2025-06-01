@@ -1,0 +1,49 @@
+/* dyad.css – two-column layout, 4 area charts per row */
+
+.home-button{
+  background:#007bff;color:#fff;border:none;
+  padding:.5rem 1rem;font-size:1rem;border-radius:4px;
+  cursor:pointer;transition:background-color .2s;
+}
+.home-button:hover{background:#0056b3;}
+
+.dyad-layout{
+  display:flex;
+  width:100%;
+  height:calc(100vh - 4em); /* full viewport minus header */
+}
+
+/* ── narrow rail ───────────────────*/
+.left-charts{
+  flex:0 0 320px;          /* fixed width */
+  max-width:320px;
+  padding:1rem;
+  overflow-y:auto;
+  border-right:1px solid #ddd;
+}
+
+/* ── wide scrollable grid ──────────*/
+.right-charts{
+  flex:1 1 0;
+  padding:1rem;
+  overflow-y:auto;         /* vertical scroll only */
+  display:grid;
+  grid-template-columns:repeat(4,1fr); /* 4 per row */
+  gap:1rem;
+}
+
+/* generic scatter wrapper */
+.scatter-plot{
+  height:250px;
+  position:relative;
+}
+.left-charts .scatter-plot{height:320px;} /* slightly taller */
+.scatter-plot h3{
+  font-size:.95rem;
+  margin-bottom:.25rem;
+  text-align:center;
+}
+.scatter-plot canvas{
+  width:100%!important;
+  height:calc(100% - 1.4rem)!important; /* leave space for title */
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>ECo – Dyadic Correlations</title>
+
+  <!-- shared + page-specific styles -->
+  <link rel="stylesheet" href="home_style.css">
+  <link rel="stylesheet" href="dyad.css">
+
+  <!-- libraries -->
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+  <link rel="icon" href="favECon.ico" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Dyadic Correlations</h1>
+    <p class="description">
+      Demonstrator ↔ Observer scatter plots
+    </p>
+    <button class="home-button" onclick="location.href='index.html'">Home</button>
+  </header>
+
+  <main class="dyad-layout">
+    <!-- ◀── narrow column (320 px) -->
+    <section class="left-charts">
+      <div class="scatter-plot">
+        <h3>Pupil (DER) vs Pupil (VER)</h3>
+        <canvas id="pupil-chart"></canvas>
+      </div>
+
+      <div class="scatter-plot">
+        <h3>Locomotor (DER) vs Pupil (VER)</h3>
+        <canvas id="loco-chart"></canvas>
+      </div>
+    </section>
+
+    <!-- ──▶ wide column (auto-width) -->
+    <section class="right-charts" id="area-plots">
+      <!-- per-area canvases injected by dyad.js -->
+    </section>
+  </main>
+
+  <script src="dyad.js"></script>
+</body>
+</html>

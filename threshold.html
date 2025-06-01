@@ -1,32 +1,52 @@
-<!-- threshold.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <title>ECo – Thresholds</title>
-  <link rel="stylesheet" href="home_style.css">
+
+  <!-- global styles you already have -->
+  <link rel="stylesheet" href="home_style.css" />
+  <!-- page-specific layout -->
+  <link rel="stylesheet" href="threshold.css" />
   <link rel="icon" href="favECon.ico" type="image/x-icon">
+
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
 </head>
+
 <body>
   <header>
     <h1>Psychometric Thresholds</h1>
-    <p class="description">Average thresholds & correlations</p>
     <button class="home-button" onclick="location.href='index.html'">Home</button>
   </header>
 
-  <main>
-    <section id="threshold-charts" style="margin:2rem auto; text-align:center;">
-      <div class="chart-container" style="width:400px; height:250px; margin:1rem auto;">
-        <h3>Average Threshold</h3>
-        <canvas id="avg-threshold-chart"></canvas>
+  <!-- ==== TWO-COLUMN GRID OF CHARTS ==== -->
+  <main class="two-cols">
+    <!-- column 1 (left) -->
+    <div class="col">
+      <div class="chart-container rect">
+        <h3>A) Average Thresholds</h3>
+        <canvas id="avg-scatter-chart"></canvas>
       </div>
-      <div class="chart-container" style="width:400px; height:250px; margin:1rem auto;">
-        <h3>VER Pupil vs DER Velocity</h3>
-        <canvas id="corr-chart"></canvas>
+
+      <div class="chart-container square">
+        <h3>DER Pupil × DER Velocity</h3>
+        <canvas id="corr-dp-dv"></canvas>
       </div>
-    </section>
+    </div>
+
+    <!-- column 2 (right) -->
+    <div class="col">
+      <div class="chart-container square">
+        <h3>DER Pupil × VER Pupil</h3>
+        <canvas id="corr-dp-vp"></canvas>
+      </div>
+
+      <div class="chart-container square">
+        <h3>DER Velocity × VER Pupil</h3>
+        <canvas id="corr-dv-vp"></canvas>
+      </div>
+    </div>
   </main>
 
   <script src="threshold.js"></script>
