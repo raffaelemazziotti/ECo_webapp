@@ -151,68 +151,79 @@
   }
 }
 
-/* ================================================
-   CONNECTOME-PAGE – move legend to bottom on mobile
-   ================================================ */
+/* ===================================================
+   CONNECTOME-PAGE mobile legend pinned small top-right
+   (scoped to .connectome-page)
+   =================================================== */
 @media (max-width: 768px) {
-  /* 1) Top 70vh: scrollable “window” for the full network graph */
+  /* 1) Let the graph fill the full viewport (no bottom legend bar) */
   .connectome-page #graph-container {
     width: 100% !important;
-    height: 70vh !important;                /* reserve 70% of screen for graph */
-    overflow-x: auto !important;            /* allow horizontal panning */
-    overflow-y: auto !important;            /* allow vertical panning */
-    padding: 0 !important;                  /* remove any extra padding */
+    height: 100vh !important;            /* fill entire screen */
+    overflow-x: auto !important;         /* horizontal scroll */
+    overflow-y: auto !important;         /* vertical scroll */
+    padding: 0 !important;
     box-sizing: border-box !important;
   }
 
-  /* 2) Ensure the inner wrapper is still at full resolution */
+  /* 2) Keep the wrapper at full resolution so everything is scrollable */
   .connectome-page #graph-wrapper {
-    min-width: 1300px !important;           /* preserve full desktop width */
-    min-height: 1000px !important;          /* preserve full desktop height */
-    width: auto !important;                 /* drop any fixed 1300px width */
-    height: auto !important;                /* drop any fixed 1000px height */
+    min-width: 1300px !important;
+    min-height: 1000px !important;
+    width: auto !important;
+    height: auto !important;
     background: #fff !important;
   }
 
-  /* 3) Bottom 30vh: fixed “legend bar” that never overlaps the graph */
+  /* 3) Pin a small legend into the upper right corner */
   .connectome-page #legend {
-    position: fixed !important;             /* pin to bottom of viewport */
-    bottom: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    max-height: 30vh !important;            /* take up to 30% of screen height */
-    overflow-x: auto !important;            /* allow horizontal legend scroll */
-    overflow-y: auto !important;            /* allow vertical legend scroll if needed */
+    position: fixed !important;
+    top: 1rem !important;                /* 1rem down from top */
+    right: 1rem !important;              /* 1rem in from right */
+    width: 120px !important;             /* small fixed width */
+    max-height: 200px !important;        /* limit height */
+    overflow-y: auto !important;         /* scroll if legend is tall */
     background: rgba(255, 255, 255, 0.9) !important;
-    border-top: 1px solid #ccc !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
     padding: 0.5rem !important;
-    box-sizing: border-box !important;
-    z-index: 10 !important;                 /* sit on top of graph scroll area */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
+    z-index: 20 !important;               /* stay above graph & home button */
   }
 
-  /* 4) Tweak legend items so they still render nicely in a strip */
+  /* 4) Tweak legend items for the smaller container */
   .connectome-page #legend .item {
     display: flex !important;
     align-items: center !important;
-    margin-bottom: 0.4rem !important;
+    margin-bottom: 0.3rem !important;
+    font-size: 0.75rem !important;       /* shrink text */
   }
   .connectome-page #legend .item:last-child {
     margin-bottom: 0 !important;
   }
   .connectome-page #legend .swatch {
-    width: 12px !important;
-    height: 12px !important;
-    margin-right: 6px !important;
+    width: 10px !important;
+    height: 10px !important;
+    margin-right: 4px !important;
     border: 1px solid #333 !important;
   }
 }
 
 @media (max-width: 480px) {
-  /* On very small phones, let the legend take a bit more vertical space */
+  /* On very small phones, shrink legend even more */
   .connectome-page #legend {
-    max-height: 40vh !important;            /* up to 40% of screen height */
+    width: 100px !important;
+    max-height: 180px !important;
+    top: 0.5rem !important;
+    right: 0.5rem !important;
+    padding: 0.25rem !important;
   }
-  .connectome-page #graph-container {
-    height: 60vh !important;                /* graph area reduced to 60% */
+  .connectome-page #legend .item {
+    font-size: 0.65rem !important;
+  }
+  .connectome-page #legend .swatch {
+    width: 8px !important;
+    height: 8px !important;
+    margin-right: 3px !important;
   }
 }
