@@ -1,40 +1,94 @@
-
-@media (max-width:768px) {
+/* ================================
+   VER-specific mobile fixes
+   ================================ */
+@media (max-width: 768px) {
+  /* 1) Stack the two panels instead of forcing side-by-side */
   .container {
     flex-direction: column !important;
-    height: auto !important;         /* let it expand */
+    height: auto !important;       /* allow full length vertical scroll */
   }
-  /* Left charts: allow full width, enable vertical scrolling */
+
+  /* 2) LEFT side: make all time-series charts fill width */
   .left-charts {
-    flex: none !important;            /* remove “3 1 0” shrink/grow */
+    flex: none !important;         /* drop “3 1 0” from ver.css */
     width: 100% !important;
-    max-height: none !important;
-    overflow: visible !important;     /* let the canvases show */
     padding: 0.5rem !important;
+    overflow: visible !important;  /* let each canvas expand */
   }
-  /* Each time-series “.chart” wrapper must expand */
+
+  /* Each row (label + chart) should remain a horizontal row,
+     but the rotated label needs to “un-rotate” on mobile */
+  .chart-row {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .row-label {
+    /* Remove the 90° rotation so the label sits normally */
+    transform: none !important;
+    width: auto !important;
+    flex: 0 0 auto !important;
+    font-size: 0.85em !important; /* slightly smaller label on mobile */
+    margin-bottom: 0.25rem !important;
+  }
+
+  /* Each individual time-series wrapper: force full width + reasonable height */
   .chart {
-    height: 200px !important;         /* slightly taller for visibility */
-    min-width: 0 !important;          /* ensure it can shrink to container */
+    flex: none !important;         /* drop “1 1 0” from ver.css */
+    width: 100% !important;
+    height: 200px !important;      /* increase slightly for readability */
+    min-width: 0 !important;       /* ensure flex can shrink it */
+    margin-bottom: 1rem !important;
+    position: relative;
   }
   .chart canvas {
     width: 100% !important;
-    height: 100% !important;          /* fill that 200px height */
+    height: 100% !important;       /* fill that 200px area */
   }
-  /* Right scatters: full width + push below */
+
+  /* 3) RIGHT side: push both scatter plots below the left section */
   .right-charts {
-    flex: none !important;
+    flex: none !important;         /* drop “1 1 0” from ver.css */
     width: 100% !important;
-    border-left: none !important;
-    border-top: 1px solid #ddd !important;
     padding: 0.5rem !important;
+    border-left: none !important;  /* remove vertical separator */
+    border-top: 1px solid #ddd !important; /* add a horizontal separator */
   }
+
+  /* Each scatter: full width + smaller height */
   .scatter-plot {
-    height: 180px !important;         /* reduce so it fits */
+    width: 100% !important;
+    height: 180px !important;      /* shrink from 240px to 180px */
     margin-bottom: 1rem !important;
+    position: relative;
   }
   .scatter-plot canvas {
     width: 100% !important;
     height: 100% !important;
+  }
+}
+
+
+/* Extra tweaks for very small phones (<= 480px) */
+@media (max-width: 480px) {
+  /* Reduce chart heights a bit more if needed */
+  .chart {
+    height: 160px !important;
+  }
+  .scatter-plot {
+    height: 140px !important;
+  }
+  /* Slightly smaller padding on sections */
+  .left-charts,
+  .right-charts {
+    padding: 0.25rem !important;
+  }
+  /* Shrink header text if it wraps badly */
+  header h1 {
+    font-size: 1.5rem !important;
+  }
+  header .description {
+    font-size: 0.9rem !important;
   }
 }
