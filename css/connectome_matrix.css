@@ -1,11 +1,11 @@
-/* ── Reset & Base ───────────────────────────────────────────────────────── */
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html,
-body {
+html, body {
   height: 100%;
   font-family: Arial, sans-serif;
   background: #f4f4f4;
@@ -15,7 +15,7 @@ body {
   flex-direction: column;
 }
 
-/* ── Header ──────────────────────────────────────────────────────────────── */
+/* Header */
 header {
   background: #fff;
   padding: 1rem 2rem;
@@ -27,7 +27,7 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-/* ── Controls (dropdown) ─────────────────────────────────────────────────── */
+/* Controls */
 .controls {
   margin: 1rem 2rem;
   display: flex;
@@ -46,31 +46,32 @@ header h1 {
   cursor: pointer;
 }
 
-/* ── Main Container ──────────────────────────────────────────────────────── */
+/* Main content */
 main {
   flex: 1;
   display: flex;
   flex-direction: column;
+  padding: 1rem 2rem;
   overflow: hidden;
 }
 
-/* ── Heatmap Container ───────────────────────────────────────────────────── */
+/* Heatmap container: scrollable viewport */
 #heatmap-container {
-  position: relative;
-  overflow: auto;          /* allow pan/scroll if SVG exceeds viewport */
-  margin: 0 auto;          /* center on wider screens */
-  background: #fff;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
+  flex: 1;
+  overflow: auto; /* enables both vertical and horizontal scroll */
+  background: none;
+  box-shadow: none;
+  width: 100%;
+  height: 100%;
 }
 
-/* Ensure the SVG never collapses or adds extra scrollbars */
+/* The SVG will be as big as D3 draws it; scrolling allows full view */
 #heatmap-container svg {
   display: block;
   margin: auto;
 }
 
-/* ── Axis Titles (if any) ────────────────────────────────────────────────── */
+/* Optional: axis labels */
 .axis-title {
   font-size: 12px;
   fill: #333;
@@ -78,7 +79,7 @@ main {
   pointer-events: none;
 }
 
-/* ── Tooltip (if used) ───────────────────────────────────────────────────── */
+/* Tooltip styling (if used) */
 .tooltip {
   position: absolute;
   font-size: 12px;

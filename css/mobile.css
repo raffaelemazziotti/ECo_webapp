@@ -321,65 +321,72 @@ main {
   pointer-events: none;
 }
 
-/* ====================================================
-   CONNECTOME_MATRIX – MOBILE OVERRIDES (≤768px)
+/* ================================================
+   CONNECTOME_MATRIX – MOBILE OVERRIDES
    (scoped to <body class="con_mat-page">)
-   ==================================================== */
+   ================================================ */
 @media (max-width: 768px) {
-  /* 1) Fix the “View” dropdown (.controls) at the top-left */
+  /* Ensure content sits below header */
+  .con_mat-page main {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Controls (dropdown) */
   .con_mat-page .controls {
-    position: fixed !important;
-    top: 1rem !important;             /* just beneath the header */
-    left: 1rem !important;            /* 1rem from left edge */
-    background: #fff !important;
-    padding: 0.25rem 0.5rem !important;
-    border-radius: 4px !important;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1) !important;
-    z-index: 10 !important;           /* sit above the heatmap */
+    position: static !important;
+    margin: 1rem 1rem 0 1rem;
+    background: #fff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
   }
 
-  /* 2) Pin the heatmap container below header + controls */
+  /* Heatmap container: full width, allow scroll */
   .con_mat-page #heatmap-container {
-    position: fixed !important;
-    top: 4rem !important;             /* ≈ header (1rem padding) + controls (~1rem) + spacing */
-    left: 0 !important;
-    right: 0 !important;
-    bottom: 0 !important;
-    overflow: hidden !important;      /* no scrollbars here—SVG will auto-scale */
-    background: #fff !important;
+    flex: 1;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    overflow: auto; /* enable scroll both ways */
+    background: none;
+    box-shadow: none;
   }
 
-  /* 3) Force the SVG inside to always shrink to full width */
+  /* SVG stays at natural size; user scrolls to explore it */
   .con_mat-page #heatmap-container svg {
-    display: block !important;
-    width: 100vw !important;          /* span the full device width */
-    height: auto !important;          /* maintain aspect ratio */
-    max-height: 100vh !important;     /* never exceed device height */
-    margin: 0 auto !important;
+    display: block;
+    width: auto !important;
+    height: auto !important;
+    max-width: none !important;
+    margin: 0 auto;
+  }
+
+  /* Optional: scale axis text and tooltip slightly smaller */
+  .con_mat-page .axis-title {
+    font-size: 0.9rem;
+  }
+
+  .con_mat-page .tooltip {
+    font-size: 0.9rem;
   }
 }
 
-/* ─────────────────────────────────────────────────────────
-   Very small phones tweaks (≤480px)
-   (still scoped to <body class="con_mat-page">)
-   ───────────────────────────────────────────────────────── */
 @media (max-width: 480px) {
-  /* Move the dropdown slightly closer to the top/left */
+  /* Tighter spacing for small phones */
   .con_mat-page .controls {
-    top: 0.5rem !important;
-    left: 0.5rem !important;
-    padding: 0.2rem 0.4rem !important;
-    font-size: 0.9rem !important;
+    margin: 0.75rem 1rem 0 1rem;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.9rem;
   }
 
-  /* Adjust the heatmap container’s top offset */
   .con_mat-page #heatmap-container {
-    top: 3.5rem !important;           /* if header + controls occupy less space */
+    padding: 0 0.5rem;
   }
 
-  /* Ensure the SVG still spans full viewport width */
-  .con_mat-page #heatmap-container svg {
-    width: 100vw !important;
-    height: auto !important;
+  .con_mat-page .tooltip {
+    font-size: 0.8rem;
   }
 }
