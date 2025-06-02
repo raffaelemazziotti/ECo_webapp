@@ -150,3 +150,50 @@
     font-size: 0.9rem !important;             /* likewise shrink subtitle */
   }
 }
+
+* ================================
+   CONNECTOME-PAGE mobile fixes
+   (scoped to .connectome-page)
+   ================================ */
+@media (max-width: 768px) {
+  /* 1) Shrink the wrapper so it’s not fixed at 1300×1000 */
+  .connectome-page #graph-wrapper {
+    width: 1000px !important;
+    height: 770px !important;
+  }
+  /* 2) Drop the legend below the graph instead of floating */
+  .connectome-page #legend {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    margin-top: 0.5rem !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+  }
+  /* 3) Allow horizontal panning of the entire graph+legend */
+  .connectome-page #graph-container {
+    overflow-x: auto !important;
+    overflow-y: visible !important;
+    padding: 0.5rem !important;
+  }
+  /* 4) Optionally reduce header font slightly */
+  .connectome-page header h1 {
+    font-size: 1.6rem !important;
+  }
+  .connectome-page header .description {
+    font-size: 0.95rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* On very small phones, shrink further */
+  .connectome-page #graph-wrapper {
+    width: 800px !important;
+    height: 620px !important;
+  }
+  .connectome-page header h1 {
+    font-size: 1.4rem !important;
+  }
+  .connectome-page header .description {
+    font-size: 0.85rem !important;
+  }
+}
