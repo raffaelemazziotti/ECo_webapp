@@ -1,94 +1,152 @@
 /* ================================
-   VER-specific mobile fixes
+   VER-specific mobile fixes (scoped to .ver-page)
    ================================ */
 @media (max-width: 768px) {
   /* 1) Stack the two panels instead of forcing side-by-side */
-  .container {
+  .ver-page .container {
     flex-direction: column !important;
-    height: auto !important;       /* allow full length vertical scroll */
+    height: auto !important;
   }
 
   /* 2) LEFT side: make all time-series charts fill width */
-  .left-charts {
-    flex: none !important;         /* drop “3 1 0” from ver.css */
+  .ver-page .left-charts {
+    flex: none !important;
     width: 100% !important;
     padding: 0.5rem !important;
-    overflow: visible !important;  /* let each canvas expand */
+    overflow: visible !important;
   }
 
-  /* Each row (label + chart) should remain a horizontal row,
-     but the rotated label needs to “un-rotate” on mobile */
-  .chart-row {
+  .ver-page .chart-row {
     display: flex !important;
     align-items: center !important;
     gap: 0.5rem !important;
     margin-bottom: 1rem !important;
   }
-  .row-label {
-    /* Remove the 90° rotation so the label sits normally */
+  .ver-page .row-label {
     transform: none !important;
     width: auto !important;
     flex: 0 0 auto !important;
-    font-size: 0.85em !important; /* slightly smaller label on mobile */
+    font-size: 0.85em !important;
     margin-bottom: 0.25rem !important;
   }
 
-  /* Each individual time-series wrapper: force full width + reasonable height */
-  .chart {
-    flex: none !important;         /* drop “1 1 0” from ver.css */
+  .ver-page .chart {
+    flex: none !important;
     width: 100% !important;
-    height: 200px !important;      /* increase slightly for readability */
-    min-width: 0 !important;       /* ensure flex can shrink it */
+    height: 200px !important;
+    min-width: 0 !important;
     margin-bottom: 1rem !important;
     position: relative;
   }
-  .chart canvas {
+  .ver-page .chart canvas {
     width: 100% !important;
-    height: 100% !important;       /* fill that 200px area */
+    height: 100% !important;
   }
 
   /* 3) RIGHT side: push both scatter plots below the left section */
-  .right-charts {
-    flex: none !important;         /* drop “1 1 0” from ver.css */
+  .ver-page .right-charts {
+    flex: none !important;
     width: 100% !important;
     padding: 0.5rem !important;
-    border-left: none !important;  /* remove vertical separator */
-    border-top: 1px solid #ddd !important; /* add a horizontal separator */
+    border-left: none !important;
+    border-top: 1px solid #ddd !important;
   }
 
-  /* Each scatter: full width + smaller height */
-  .scatter-plot {
+  .ver-page .scatter-plot {
     width: 100% !important;
-    height: 180px !important;      /* shrink from 240px to 180px */
+    height: 180px !important;
     margin-bottom: 1rem !important;
     position: relative;
   }
-  .scatter-plot canvas {
+  .ver-page .scatter-plot canvas {
     width: 100% !important;
     height: 100% !important;
   }
 }
 
-
-/* Extra tweaks for very small phones (<= 480px) */
 @media (max-width: 480px) {
-  /* Reduce chart heights a bit more if needed */
-  .chart {
+  .ver-page .chart {
     height: 160px !important;
   }
-  .scatter-plot {
+  .ver-page .scatter-plot {
     height: 140px !important;
   }
-  /* Slightly smaller padding on sections */
-  .left-charts,
-  .right-charts {
+  .ver-page .left-charts,
+  .ver-page .right-charts {
     padding: 0.25rem !important;
   }
-  /* Shrink header text if it wraps badly */
-  header h1 {
+  .ver-page header h1 {
     font-size: 1.5rem !important;
   }
-  header .description {
+  .ver-page header .description {
     font-size: 0.9rem !important;
+  }
+}
+
+/* ================================
+   MOD-PAGE mobile fixes (scoped to .mod-page)
+   ================================ */
+@media (max-width: 768px) {
+  /* 1) Override the 2-column grid → switch to a flex column */
+  .mod-page .container {
+    display: flex !important;               /* instead of grid */
+    flex-direction: column !important;       /* stack left + right */
+    width: 100% !important;
+    height: auto !important;                 /* let it grow vertically */
+    padding: 0 !important;                   /* drop any extra gaps */
+    gap: 0 !important;
+  }
+
+  /* 2) LEFT side: full-width time series, allow vertical scrolling */
+  .mod-page .left-charts {
+    width: 100% !important;
+    overflow: visible !important;            /* show entire chart */
+    padding: 0.5rem !important;              /* breathe room on mobile */
+  }
+  .mod-page .left-charts .chart {
+    width: 100% !important;                  /* stretch to phone width */
+    height: 200px !important;                /* tall enough to read */
+  }
+  .mod-page .left-charts .chart canvas {
+    width: 100% !important;
+    height: 100% !important;                 /* fill that 200px wrapper */
+  }
+
+  /* 3) RIGHT side: push below left, full width, with separator */
+  .mod-page .right-charts {
+    width: 100% !important;
+    padding: 0.5rem !important;
+    border-left: none !important;            /* remove grid divider */
+    border-top: 1px solid #ddd !important;   /* add subtle horizontal line */
+    margin-top: 1rem !important;
+  }
+  .mod-page .right-charts .scatter-plot {
+    width: 100% !important;
+    height: 300px !important;                /* make it taller to show details */
+    margin-bottom: 1rem !important;
+  }
+  .mod-page .right-charts .scatter-plot canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+/* Additional tweaks for very small phones (≤480px) */
+@media (max-width: 480px) {
+  .mod-page .left-charts .chart {
+    height: 160px !important;                /* shrink slightly on tiny screens */
+  }
+  .mod-page .right-charts .scatter-plot {
+    height: 240px !important;                /* also shrink scatter for readability */
+  }
+  .mod-page .left-charts,
+  .mod-page .right-charts {
+    padding: 0.25rem !important;             /* tighter padding on very small phones */
+  }
+  .mod-page header h1 {
+    font-size: 1.5rem !important;             /* reduce heading size if it wraps */
+  }
+  .mod-page header .description {
+    font-size: 0.9rem !important;             /* likewise shrink subtitle */
   }
 }
