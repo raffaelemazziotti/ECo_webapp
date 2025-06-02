@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // 1) Load CSVs
   const [sizeRes, velRes] = await Promise.all([
-    fetch('data/aversive_zpsize_avg_diff.csv'),
-    fetch('data/aversive_vel_avg_diff.csv')
+    fetch('../data/aversive_zpsize_avg_diff.csv'),
+    fetch('../data/aversive_vel_avg_diff.csv')
   ]);
   if (!sizeRes.ok || !velRes.ok) {
     console.error('CSV load error', sizeRes.status, velRes.status);
@@ -262,5 +262,5 @@ document.addEventListener('DOMContentLoaded', async () => {
   renderScatter('size-peaks-chart', sizePeaks, avgSize, -20, 80);
   renderScatter('vel-peaks-chart', velPeaks, avgVel, -60, 350);
 
-  console.log('DER.js: done');
+
 });

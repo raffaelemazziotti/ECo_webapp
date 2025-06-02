@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', async () => {
-  console.log('DER.js: startup');
 
   // 0) Plugin for dashed zero-lines
   Chart.register({
@@ -31,8 +30,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // 1) Load CSVs
   const [sizeRes, velRes] = await Promise.all([
-    fetch('data/vicarious_zpsize_avg_diff.csv'),
-    fetch('data/vicarious_vel_avg_diff.csv')
+    fetch('../data/vicarious_zpsize_avg_diff.csv'),
+    fetch('../data/vicarious_vel_avg_diff.csv')
   ]);
   if (!sizeRes.ok || !velRes.ok) {
     console.error('CSV load error', sizeRes.status, velRes.status);
@@ -262,5 +261,4 @@ document.addEventListener('DOMContentLoaded', async () => {
   renderScatter('size-peaks-chart', sizePeaks, avgSize, -5, 20);
   renderScatter('vel-peaks-chart', velPeaks, avgVel, -60, 60);
 
-  console.log('DER.js: done');
 });

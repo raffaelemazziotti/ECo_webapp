@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 0) Build areaNameMap from nodes.json
   let areaNameMap = {};
   try {
-    const res = await fetch('data/nodes.json');
+    const res = await fetch('../data/nodes.json');
     const nodes = await res.json();
     nodes.forEach(n => { areaNameMap[n.id] = n.name; });
     console.log('Loaded areaNameMap:', areaNameMap);
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   //
   // 1) Percent Activation (horizontal bar)
   //
-  Papa.parse('data/struct_activation_perc.csv', {
+  Papa.parse('../data/struct_activation_perc.csv', {
     download: true,
     header: true,
     skipEmptyLines: true,
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   //
   // 2) Density per Structure (vertical bars with full-name tooltips)
   //
-  Papa.parse('data/area_activation_density.csv', {
+  Papa.parse('../data/area_activation_density.csv', {
     download: true,
     header: true,
     skipEmptyLines: true,
@@ -269,14 +269,14 @@ document.addEventListener('DOMContentLoaded', async () => {
   }
 
     // load demonstrator
-    Papa.parse('data/fold_change_dem_pval.csv', {
+    Papa.parse('../data/fold_change_dem_pval.csv', {
       download: true, header: true, skipEmptyLines: true,
       complete: ({ data }) => createVolcanoChart('volcano-dem', data),
       error: err => console.error('Error loading dem CSV:', err)
     });
 
     // load observer
-    Papa.parse('data/fold_change_obs_pval.csv', {
+    Papa.parse('../data/fold_change_obs_pval.csv', {
       download: true, header: true, skipEmptyLines: true,
       complete: ({ data }) => createVolcanoChart('volcano-obs', data),
       error: err => console.error('Error loading obs CSV:', err)

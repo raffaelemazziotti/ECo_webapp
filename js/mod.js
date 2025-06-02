@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   // 1) Time‐series averages for VER, VER+Occluder, Vision Only
   const files = [
-    { path: 'data/mod_ts_multisensory.csv', label: 'VER',           color: 'green'  },
-    { path: 'data/mod_ts_screen.csv',       label: 'VER+Occluder', color: 'blue'   },
-    { path: 'data/mod_ts_vision_only.csv',  label: 'Vision Only',  color: 'orange' }
+    { path: '../data/mod_ts_multisensory.csv', label: 'VER',           color: 'green'  },
+    { path: '../data/mod_ts_screen.csv',       label: 'VER+Occluder', color: 'blue'   },
+    { path: '../data/mod_ts_vision_only.csv',  label: 'Vision Only',  color: 'orange' }
   ];
   const rowArrays = await Promise.all(
     files.map(f =>
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   );
 
   // 2) Peaks scatter: raw + mean, with consistent colors
-  const peakText = await fetch('data/mod_peaks.csv').then(r => r.text());
+  const peakText = await fetch('../data/mod_peaks.csv').then(r => r.text());
   const peaks    = d3.csvParse(peakText);
 
   const modeInfo = {

@@ -1,8 +1,8 @@
 (async function() {
   // 1) Load data
   const [allNodes, allEdges] = await Promise.all([
-    d3.json("data/nodes.json"),
-    d3.json("data/edges.json")
+    d3.json("../data/nodes.json"),
+    d3.json("../data/edges.json")
   ]);
 
   // Shortcut refs

@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ═══════════════════════════════════════════════════════════════════
      1. Pupil (DER)  ↔  Pupil (VER)
      ═════════════════════════════════════════════════════════════════ */
-  d3.csv('data/dyad_pupil.csv').then(csv => {
+  d3.csv('../data/dyad_pupil.csv').then(csv => {
     const xKey = firstColumnMatching(csv[0], /demonstrator/i);
     const yKey = firstColumnMatching(csv[0], /observer/i);
     if (!xKey || !yKey) return;
@@ -94,8 +94,8 @@ document.addEventListener('DOMContentLoaded', () => {
      2. Locomotor (DER)  ↔  Pupil (VER)
      ═════════════════════════════════════════════════════════════════ */
   Promise.all([
-    d3.csv('data/dyad_loco.csv'),
-    d3.csv('data/dyad_pupil.csv')
+    d3.csv('../data/dyad_loco.csv'),
+    d3.csv('../data/dyad_pupil.csv')
   ]).then(([loco, pupil]) => {
     const locoKey  = firstColumnMatching(loco [0], /demonstrator/i);
     const pupilKey = firstColumnMatching(pupil[0], /observer/i);
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ═══════════════════════════════════════════════════════════════════
      3. Brain-area grid  (4 per row, auto-generated canvases)
      ═════════════════════════════════════════════════════════════════ */
-  d3.json('data/dyad_area.json').then(areas => {
+  d3.json('../data/dyad_area.json').then(areas => {
     const grid = document.getElementById('area-plots');
 
     Object.entries(areas).forEach(([area, obj]) => {

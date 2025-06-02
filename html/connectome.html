@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <title>ECo - Network</title>
-  <link rel="stylesheet" href="connectome.css">
-  <link rel="icon" href="favECon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/connectome.css">
+  <link rel="icon" href="../favECon.ico" type="image/x-icon">
 </head>
 <body>
   <header>
@@ -13,18 +13,16 @@
       Explore ipsilateral connectivity strengths between brain areas for observer and demonstrator groups.
       Hover over a region to highlight its outgoing projections.
     </p>
-    <button class="home-button" onclick="window.location.href='index.html'">Home</button>
+    <button class="home-button" onclick="window.location.href='../index.html'">Home</button>
   </header>
   <main>
     <div id="graph-container">
-      <!-- this fixed-size box will scroll if the viewport is smaller -->
       <div id="graph-wrapper"></div>
       <div id="legend"></div>
       <div id="tooltip" class="tooltip"></div>
     </div>
   </main>
 
-  <!-- no changes to your canvas-graph code, except it must target #graph-wrapper now -->
-  <script src="connectome.js"></script>
+  <script src="../js/connectome.js"></script>
 </body>
 </html>

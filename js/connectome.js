@@ -1,8 +1,8 @@
 (async function(){
   // 1) Load data
   const [nodesData, edgesData] = await Promise.all([
-    fetch("data/nodes.json").then(r=>r.json()),
-    fetch("data/edges.json").then(r=>r.json())
+    fetch("../data/nodes.json").then(r=>r.json()),
+    fetch("../data/edges.json").then(r=>r.json())
   ]);
 
   // 2) Prepare lookups
