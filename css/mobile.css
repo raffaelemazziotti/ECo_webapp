@@ -151,53 +151,83 @@
   }
 }
 
-/* ==============================================
-   CONNECTOME-PAGE mobile fixes (revised)
-   — allows full horizontal scroll of the graph
-   ============================================== */
+/* ===========================================
+   CONNECTOME-PAGE mobile fixes (revised v2)
+   — horizontal + vertical scroll for graph+legend
+   =========================================== */
 @media (max-width: 768px) {
-  /* 1) Ensure the container fills the screen and scrolls */
+  /* 1) Make the container a flex-row so wrapper+legend sit side by side */
   .connectome-page #graph-container {
-    width: 100% !important;
-    overflow-x: auto !important;   /* horizontal panning enabled */
-    overflow-y: visible !important;
-    padding: 0 !important;         /* remove side padding so graph aligns left */
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important; /* top-align wrapper+legend */
+    width: 100% !important;              /* span the viewport */
+    overflow-x: auto !important;         /* horizontal panning */
+    overflow-y: auto !important;         /* vertical panning */
+    padding: 0 !important;               /* remove extra padding */
     box-sizing: border-box !important;
   }
 
-  /* 2) Make the inner wrapper “at least” 1000 px wide (still larger than a phone) */
+  /* 2) Keep the wrapper at its original full height, but allow min-width to shrink */
   .connectome-page #graph-wrapper {
-    min-width: 1000px !important;   /* keeps it wide, but lets container scroll */
-    height: 770px !important;      /* same as before for legibility */
+    flex: none !important;               /* do not flex-shrink or grow */
+    min-width: 1000px !important;        /* still larger than phone width */
+    min-height: 1000px !important;       /* preserve full vertical space */
+    width: auto !important;              /* override fixed 1300px */
+    height: auto !important;             /* override fixed 1000px */
+    background: #fff !important;         /* same background */
   }
 
-  /* 3) Move legend below so it doesn’t overlap nodes, and give it full width */
+  /* 3) Drop legend to be a sibling, not overlay, immediately right of wrapper */
   .connectome-page #legend {
-    position: relative !important;
+    position: relative !important;       /* no longer absolute */
     top: auto !important;
     right: auto !important;
-    margin-top: 0.5rem !important;
-    background: rgba(255, 255, 255, 0.95) !important;
-    width: 100% !important;        /* span the full container */
-    box-sizing: border-box !important;
-    padding: 0.5rem !important;     /* some breathing room */
+    margin: 0 0 0 1rem !important;       /* 1rem gap to the right of wrapper */
+    background: rgba(255,255,255,0.95) !important;
+    border: 1px solid #ccc !important;   /* preserve border styling */
+    border-radius: 4px !important;
+    padding: 0.5rem !important;
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    z-index: auto !important;
+    flex: none !important;               /* do not flex-shrink/grow */
   }
 
-  /* 4) Adjust header text if needed */
+  /* 4) Ensure each legend item still displays properly */
+  .connectome-page #legend .item {
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 0.4rem !important;
+  }
+  .connectome-page #legend .item:last-child {
+    margin-bottom: 0 !important;
+  }
+  .connectome-page #legend .swatch {
+    width: 12px !important;
+    height: 12px !important;
+    margin-right: 6px !important;
+    border: 1px solid #333 !important;
+  }
+
+  /* 5) Optionally tweak header text so it doesn’t wrap poorly */
   .connectome-page header h1 {
     font-size: 1.6rem !important;
+    margin-bottom: 0.5rem !important;
   }
   .connectome-page header .description {
     font-size: 0.95rem !important;
+    margin-bottom: 1rem !important;
   }
 }
 
 @media (max-width: 480px) {
-  /* On very small phones, shrink the “min-width” wrapper further */
+  /* Further shrink the “min-width” so mobile users scroll less */
   .connectome-page #graph-wrapper {
     min-width: 800px !important;
-    height: 620px !important;
+    min-height: 800px !important;
   }
+  /* Tweak header text on very small screens */
   .connectome-page header h1 {
     font-size: 1.4rem !important;
   }
