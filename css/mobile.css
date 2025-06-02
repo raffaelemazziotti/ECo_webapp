@@ -151,52 +151,53 @@
   }
 }
 
-/* ====================================================
-   CONNECTOME-PAGE: legend positioned lower under header
+/* ======================================================
+   CONNECTOME-PAGE: attach legend to top-right of network
    (scoped to .connectome-page)
-   ==================================================== */
+   ====================================================== */
 @media (max-width: 768px) {
-  /* 1) Make the network container fill the viewport and scroll under the legend */
+  /* 1) Make the graph-container scrollable in both directions */
   .connectome-page #graph-container {
+    position: relative !important;         /* so legend's absolute position is relative to this */
     width: 100% !important;
-    height: 100vh !important;
-    overflow-x: auto !important;
-    overflow-y: auto !important;
-    padding: 0 !important;
+    height: 100vh !important;              /* fill the device viewport */
+    overflow-x: auto !important;           /* horizontal panning enabled */
+    overflow-y: auto !important;           /* vertical panning enabled */
+    padding: 0 !important;                 /* remove any extra padding */
     box-sizing: border-box !important;
   }
 
   /* 2) Keep the inner wrapper at full desktop resolution */
   .connectome-page #graph-wrapper {
-    min-width: 1300px !important;
-    min-height: 1000px !important;
-    width: auto !important;
-    height: auto !important;
-    background: #fff !important;
+    min-width: 1300px !important;          /* preserve full network width */
+    min-height: 1000px !important;         /* preserve full network height */
+    width: auto !important;                /* drop any fixed 1300px width */
+    height: auto !important;               /* drop any fixed 1000px height */
+    background: #fff !important;           /* ensure it has a white backdrop */
   }
 
-  /* 3) Pin a small legend lower under the header (top:6rem) */
+  /* 3) Position legend absolutely inside graph-container */
   .connectome-page #legend {
-    position: fixed !important;
-    top: 8rem !important;                
-    right: 1rem !important;
-    width: 120px !important;
-    max-height: 200px !important;
-    overflow-y: auto !important;
-    background: rgba(255, 255, 255, 0.9) !important;
+    position: absolute !important;         /* position relative to #graph-container */
+    top: 10px !important;                  /* 10px down from top of network */
+    right: 10px !important;                /* 10px in from right edge of network */
+    width: 120px !important;               /* small fixed width */
+    max-height: 200px !important;          /* cap height within the scroll area */
+    overflow-y: auto !important;           /* internal scroll if legend is tall */
+    background: rgba(255, 255, 255, 0.85) !important; /* semi-transparent so nodes underneath are faintly visible */
     border: 1px solid #ccc !important;
     border-radius: 4px !important;
     padding: 0.5rem !important;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
-    z-index: 20 !important;
+    z-index: 5 !important;                 /* keep it above the network canvas */
   }
 
-  /* 4) Adjust legend items for the smaller box */
+  /* 4) Tweak legend item sizing for this small box */
   .connectome-page #legend .item {
     display: flex !important;
     align-items: center !important;
     margin-bottom: 0.3rem !important;
-    font-size: 0.75rem !important;
+    font-size: 0.75rem !important;         /* shrink text slightly */
   }
   .connectome-page #legend .item:last-child {
     margin-bottom: 0 !important;
@@ -210,15 +211,16 @@
 }
 
 @media (max-width: 480px) {
-  /* On very small phones, shift it to top:5.5rem and shrink slightly */
+  /* On very small phones, shrink legend further */
   .connectome-page #legend {
-    top: 5.5rem !important;
-    width: 100px !important;
-    max-height: 180px !important;
+    top: 8px !important;                   /* a little closer to top */
+    right: 8px !important;                 /* a little closer to right edge */
+    width: 100px !important;               /* narrower width */
+    max-height: 180px !important;          /* shorter height */
     padding: 0.25rem !important;
   }
   .connectome-page #legend .item {
-    font-size: 0.65rem !important;
+    font-size: 0.65rem !important;          /* even smaller text */
   }
   .connectome-page #legend .swatch {
     width: 8px !important;
@@ -226,3 +228,4 @@
     margin-right: 3px !important;
   }
 }
+
