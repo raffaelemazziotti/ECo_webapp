@@ -1,0 +1,31 @@
+canvas,img{max-width:100%;height:auto}
+
+@media (max-width:768px){          /* anything narrower than a tablet */
+
+  /* Two-column pages (der/ver/mod) */
+  .container{flex-direction:column !important;height:auto !important}
+  .left-charts,.right-charts{flex:1 1 100%!important;max-width:none;border:none}
+
+  /* Dyad page */
+  .dyad-layout{flex-direction:column !important}
+  .right-charts{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+
+  /* Threshold two-column grid */
+  main.two-cols{flex-direction:column !important}
+  .chart-container{width:100%!important;height:auto}
+
+  /* Huge network graph — keep it scrollable */
+  #graph-wrapper{width:1000px;height:770px}
+  #graph-container{overflow:auto}
+
+  /* Heat-map wrapper */
+  #heatmap-container{width:100%;overflow:auto}
+
+  /* Home page buttons a bit smaller */
+  .nav-button{font-size:.9rem;padding:.45rem}
+}
+
+/* an extra rule for very small phones */
+@media (max-width:480px){
+  #graph-wrapper{width:800px;height:620px}
+}
