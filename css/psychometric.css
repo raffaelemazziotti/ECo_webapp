@@ -1,0 +1,59 @@
+
+.home-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+
+.fit-container{
+  display:flex;flex-wrap:wrap;gap:2rem;padding:2rem;justify-content:center;
+}
+
+/* left column ---------------------------------------------------------- */
+.input-panel{
+  flex:1 1 260px;max-width:320px;padding:1rem;background:#fff;
+  border:1px solid #ddd;border-radius:4px;
+  box-shadow:0 1px 3px rgba(0,0,0,.08);
+  display:flex;flex-direction:column;gap:.75rem;
+}
+.input-panel textarea{width:100%;min-height:70px;padding:.5rem;font-family:monospace;}
+
+/* right column --------------------------------------------------------- */
+.output-panel{
+  flex:2 1 460px;min-width:460px;display:flex;flex-direction:column;align-items:center;gap:1.5rem;
+}
+.chart-wrapper{width:100%;max-width:600px;height:340px;}
+.summary-table{border-collapse:collapse;width:320px;}
+.summary-table th,.summary-table td{border:1px solid #ccc;padding:.4rem .6rem;text-align:center;}
+.summary-table th{background:#f0f0f0;font-weight:600;}
+
+.error-msg{color:#d9534f;font-size:.9rem;min-height:1.2em;}
+
+main{
+  flex:1;
+  padding:2rem;
+
+  /* NEW: two-column centred grid ---------------------------------- */
+  display:grid;
+  grid-template-columns:repeat(2,minmax(260px,1fr)); /* 2 equal columns   */
+  gap:2rem;
+
+  /* centre the grid block itself */
+  margin-inline:auto;          /* push left/right auto -> centred       */
+  max-width:1000px;            /* optional: keeps the grid from stretching */
+
+  /* centre items inside each grid cell */
+  justify-items:center;
+
+  /* let rows flow naturally downward */
+  align-content:start;
+
+  /* keep your original scroll behaviour */
+  overflow-y:auto;
+}

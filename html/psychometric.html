@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ECo – Psychometric Tool</title>
+
+  <!-- global styling you already have -->
+  <link rel="stylesheet" href="../css/home_style.css">
+  <link rel="stylesheet" href="../css/psychometric.css">
+
+  <!-- Chart.js (UMD – attaches global Chart) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Psychometric Tool</h1>
+    <p class="description">A tool to calculate Psychometric threshold for pupillary or locomotor responses to ECo</p>
+    <button class="home-button" onclick="location.href='../index.html'">Home</button>
+  </header>
+
+  <main class="fit-container">
+    <!-- ------------  INPUT  ------------ -->
+    <section class="input-panel">
+      <h3>Data input</h3>
+
+      <label>Intensities
+        <textarea id="intensity-input"
+                  placeholder="0 50 150 300 500"></textarea>
+      </label>
+
+      <label>Responses
+        <textarea id="response-input"
+                  placeholder="0 0 5.2 21.5 41.4"></textarea>
+      </label>
+
+      <button id="fit-btn">Fit curve</button>
+      <p id="input-error" class="error-msg"></p>
+    </section>
+
+    <!-- ------------  OUTPUT  ------------ -->
+    <section class="output-panel">
+      <div class="chart-wrapper"><canvas id="psych-chart"></canvas></div>
+
+      <table id="summary-table" class="summary-table">
+        <thead><tr><th>parameter</th><th>value</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- page logic (ES-module) -->
+  <script type="module" src="../js/psychometric.js"></script>
+</body>
+</html>
