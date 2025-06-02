@@ -151,52 +151,52 @@
   }
 }
 
-/* ===================================================
-   CONNECTOME-PAGE mobile legend pinned small top-right
+/* ====================================================
+   CONNECTOME-PAGE: place small legend just below header
    (scoped to .connectome-page)
-   =================================================== */
+   ==================================================== */
 @media (max-width: 768px) {
-  /* 1) Let the graph fill the full viewport (no bottom legend bar) */
+  /* 1) Let the graph fill the entire screen, scrollable under the legend */
   .connectome-page #graph-container {
     width: 100% !important;
-    height: 100vh !important;            /* fill entire screen */
-    overflow-x: auto !important;         /* horizontal scroll */
-    overflow-y: auto !important;         /* vertical scroll */
+    height: 100vh !important;            /* allow full-screen scroll */
+    overflow-x: auto !important;         /* horizontal panning */
+    overflow-y: auto !important;         /* vertical panning */
     padding: 0 !important;
     box-sizing: border-box !important;
   }
 
-  /* 2) Keep the wrapper at full resolution so everything is scrollable */
+  /* 2) Keep the wrapper at full resolution so nothing is clipped */
   .connectome-page #graph-wrapper {
-    min-width: 1300px !important;
-    min-height: 1000px !important;
+    min-width: 1300px !important;         /* preserve desktop width */
+    min-height: 1000px !important;        /* preserve desktop height */
     width: auto !important;
     height: auto !important;
     background: #fff !important;
   }
 
-  /* 3) Pin a small legend into the upper right corner */
+  /* 3) Pin a small legend under the header in the top-right corner */
   .connectome-page #legend {
     position: fixed !important;
-    top: 1rem !important;                /* 1rem down from top */
-    right: 1rem !important;              /* 1rem in from right */
-    width: 120px !important;             /* small fixed width */
-    max-height: 200px !important;        /* limit height */
-    overflow-y: auto !important;         /* scroll if legend is tall */
+    top: 5rem !important;                 /* ~header's bottom (adjust if needed) */
+    right: 1rem !important;
+    width: 120px !important;
+    max-height: 200px !important;
+    overflow-y: auto !important;          /* scroll if too many items */
     background: rgba(255, 255, 255, 0.9) !important;
     border: 1px solid #ccc !important;
     border-radius: 4px !important;
     padding: 0.5rem !important;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
-    z-index: 20 !important;               /* stay above graph & home button */
+    z-index: 20 !important;               /* sit above the graph and home button */
   }
 
-  /* 4) Tweak legend items for the smaller container */
+  /* 4) Shrink legend items so they fit in the small box */
   .connectome-page #legend .item {
     display: flex !important;
     align-items: center !important;
     margin-bottom: 0.3rem !important;
-    font-size: 0.75rem !important;       /* shrink text */
+    font-size: 0.75rem !important;        /* smaller text */
   }
   .connectome-page #legend .item:last-child {
     margin-bottom: 0 !important;
@@ -210,12 +210,11 @@
 }
 
 @media (max-width: 480px) {
-  /* On very small phones, shrink legend even more */
+  /* On very small phones, shrink the legend even more */
   .connectome-page #legend {
+    top: 4.5rem !important;               /* nudge up slightly if header is shorter */
     width: 100px !important;
     max-height: 180px !important;
-    top: 0.5rem !important;
-    right: 0.5rem !important;
     padding: 0.25rem !important;
   }
   .connectome-page #legend .item {
