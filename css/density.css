@@ -43,39 +43,37 @@ header .description { color:#666; margin-bottom:1rem; }
 
 /* ========== Two-Column Main ========== */
 main#charts-container {
-  flex: 1;                 /* fill remaining space under header */
+  flex: 1;
   display: flex;
+  flex-direction: row;
   gap: 2rem;
   padding: 1rem 2rem;
-  align-items: stretch;    /* force both panels to match height */
-  overflow: hidden;        /* cut off any overflow inside main */
+  align-items: flex-start;
+  overflow: auto;
 }
-
 /* ========== Left Panel: Density ========== */
 #density-section {
-  flex: 2 1 0;             /* twice as wide as right panel */
+  flex: 2 1 0;
   display: flex;
   flex-direction: column;
-  overflow-y: auto;        /* only this panel scrolls */
   gap: 1.5rem;
+  padding: 1rem;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  padding: 1rem;
+  overflow-y: auto;
 }
 
 /* ========== Right Panel: Activation & Volcano ========== */
 #structure-section {
-  flex: 1 1 0;             /* narrower column */
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
-  overflow: visible;       /* no internal scrolling here */
+  padding: 1rem;
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
-  padding: 1rem;
-  /* keep content at start */
-  justify-content: flex-start;
+  overflow-y: auto;
 }
 
 /* Activation chart container */
@@ -144,16 +142,3 @@ main#charts-container {
   height: 300px !important;
 }
 
-/* ========== Responsive ========== */
-@media (max-width: 800px) {
-  main#charts-container {
-    flex-direction: column;
-    overflow: auto;
-  }
-  #density-section,
-  #structure-section {
-    flex: none;
-    width: 100%;
-    overflow: visible;
-  }
-}

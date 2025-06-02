@@ -390,3 +390,42 @@ main {
     font-size: 0.8rem;
   }
 }
+/* ================================================
+   DENSITY – MOBILE OVERRIDES
+   (scoped to <body class="con_mat-page">)
+   ================================================ */
+
+@media (max-width: 768px) {
+  .density-page main#charts-container {
+    flex-direction: column !important;
+    padding: 1rem !important;
+  }
+
+  .density-page #density-section,
+  .density-page #structure-section {
+    flex: none !important;
+    width: 100% !important;
+    margin-bottom: 1.5rem !important;
+    padding: 1rem !important;
+    overflow: visible !important;
+  }
+
+  .density-page #structure-section {
+    border-top: 1px solid #ddd !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .density-page header h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .density-page header .description {
+    font-size: 0.9rem !important;
+  }
+
+  .density-page #density-section,
+  .density-page #structure-section {
+    padding: 0.75rem !important;
+  }
+}
