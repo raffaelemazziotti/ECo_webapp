@@ -1,0 +1,39 @@
+/* coronal.css – layout and styling for coronal-page */
+
+.home-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.home-button:hover {
+  background: #0056b3;
+}
+
+header .description {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Main container layout */
+.container {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 4em);
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem; /* push content down below fixed/visible header */
+  box-sizing: border-box;
+}
+
+/* Embedded iframe holding the coronal slices */
+.container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
