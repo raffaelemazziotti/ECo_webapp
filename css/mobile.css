@@ -151,31 +151,39 @@
   }
 }
 
-* ================================
-   CONNECTOME-PAGE mobile fixes
-   (scoped to .connectome-page)
-   ================================ */
+/* ==============================================
+   CONNECTOME-PAGE mobile fixes (revised)
+   — allows full horizontal scroll of the graph
+   ============================================== */
 @media (max-width: 768px) {
-  /* 1) Shrink the wrapper so it’s not fixed at 1300×1000 */
-  .connectome-page #graph-wrapper {
-    width: 1000px !important;
-    height: 770px !important;
+  /* 1) Ensure the container fills the screen and scrolls */
+  .connectome-page #graph-container {
+    width: 100% !important;
+    overflow-x: auto !important;   /* horizontal panning enabled */
+    overflow-y: visible !important;
+    padding: 0 !important;         /* remove side padding so graph aligns left */
+    box-sizing: border-box !important;
   }
-  /* 2) Drop the legend below the graph instead of floating */
+
+  /* 2) Make the inner wrapper “at least” 1000 px wide (still larger than a phone) */
+  .connectome-page #graph-wrapper {
+    min-width: 1000px !important;   /* keeps it wide, but lets container scroll */
+    height: 770px !important;      /* same as before for legibility */
+  }
+
+  /* 3) Move legend below so it doesn’t overlap nodes, and give it full width */
   .connectome-page #legend {
     position: relative !important;
     top: auto !important;
     right: auto !important;
     margin-top: 0.5rem !important;
     background: rgba(255, 255, 255, 0.95) !important;
+    width: 100% !important;        /* span the full container */
+    box-sizing: border-box !important;
+    padding: 0.5rem !important;     /* some breathing room */
   }
-  /* 3) Allow horizontal panning of the entire graph+legend */
-  .connectome-page #graph-container {
-    overflow-x: auto !important;
-    overflow-y: visible !important;
-    padding: 0.5rem !important;
-  }
-  /* 4) Optionally reduce header font slightly */
+
+  /* 4) Adjust header text if needed */
   .connectome-page header h1 {
     font-size: 1.6rem !important;
   }
@@ -185,9 +193,9 @@
 }
 
 @media (max-width: 480px) {
-  /* On very small phones, shrink further */
+  /* On very small phones, shrink the “min-width” wrapper further */
   .connectome-page #graph-wrapper {
-    width: 800px !important;
+    min-width: 800px !important;
     height: 620px !important;
   }
   .connectome-page header h1 {
