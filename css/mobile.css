@@ -152,52 +152,52 @@
 }
 
 /* ======================================================
-   CONNECTOME-PAGE: attach legend to top-right of network
+   CONNECTOME-PAGE: attach legend to top-left of network
    (scoped to .connectome-page)
    ====================================================== */
 @media (max-width: 768px) {
-  /* 1) Make the graph-container scrollable in both directions */
+  /* 1) Ensure the graph-container is fully scrollable */
   .connectome-page #graph-container {
-    position: relative !important;         /* so legend's absolute position is relative to this */
+    position: relative !important;
     width: 100% !important;
-    height: 100vh !important;              /* fill the device viewport */
-    overflow-x: auto !important;           /* horizontal panning enabled */
-    overflow-y: auto !important;           /* vertical panning enabled */
-    padding: 0 !important;                 /* remove any extra padding */
+    height: 100vh !important;
+    overflow-x: auto !important;
+    overflow-y: auto !important;
+    padding: 0 !important;
     box-sizing: border-box !important;
   }
 
-  /* 2) Keep the inner wrapper at full desktop resolution */
+  /* 2) Keep the full network resolution inside */
   .connectome-page #graph-wrapper {
-    min-width: 1300px !important;          /* preserve full network width */
-    min-height: 1000px !important;         /* preserve full network height */
-    width: auto !important;                /* drop any fixed 1300px width */
-    height: auto !important;               /* drop any fixed 1000px height */
-    background: #fff !important;           /* ensure it has a white backdrop */
+    min-width: 1300px !important;
+    min-height: 1000px !important;
+    width: auto !important;
+    height: auto !important;
+    background: #fff !important;
   }
 
-  /* 3) Position legend absolutely inside graph-container */
+  /* 3) Position legend absolutely at top-left of the graph */
   .connectome-page #legend {
-    position: absolute !important;         /* position relative to #graph-container */
-    top: 10px !important;                  /* 10px down from top of network */
-    right: 10px !important;                /* 10px in from right edge of network */
-    width: 120px !important;               /* small fixed width */
-    max-height: 200px !important;          /* cap height within the scroll area */
-    overflow-y: auto !important;           /* internal scroll if legend is tall */
-    background: rgba(255, 255, 255, 0.85) !important; /* semi-transparent so nodes underneath are faintly visible */
+    position: absolute !important;       /* relative to #graph-container */
+    top: 10px !important;                /* 10px down from top of network */
+    left: 10px !important;               /* 10px in from left edge of network */
+    width: 120px !important;             /* fixed small width */
+    max-height: 200px !important;        /* cap height */
+    overflow-y: auto !important;         /* scroll inside if too many items */
+    background: rgba(255, 255, 255, 0.85) !important;
     border: 1px solid #ccc !important;
     border-radius: 4px !important;
     padding: 0.5rem !important;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2) !important;
-    z-index: 5 !important;                 /* keep it above the network canvas */
+    z-index: 5 !important;               /* above network canvas */
   }
 
-  /* 4) Tweak legend item sizing for this small box */
+  /* 4) Tweak legend items to fit this small box */
   .connectome-page #legend .item {
     display: flex !important;
     align-items: center !important;
     margin-bottom: 0.3rem !important;
-    font-size: 0.75rem !important;         /* shrink text slightly */
+    font-size: 0.75rem !important;
   }
   .connectome-page #legend .item:last-child {
     margin-bottom: 0 !important;
@@ -211,16 +211,16 @@
 }
 
 @media (max-width: 480px) {
-  /* On very small phones, shrink legend further */
+  /* On very small phones, shift legend slightly and shrink */
   .connectome-page #legend {
-    top: 8px !important;                   /* a little closer to top */
-    right: 8px !important;                 /* a little closer to right edge */
-    width: 100px !important;               /* narrower width */
-    max-height: 180px !important;          /* shorter height */
+    top: 8px !important;                 /* a little closer to top */
+    left: 8px !important;                /* a little closer to left edge */
+    width: 100px !important;             /* narrower width */
+    max-height: 180px !important;        /* shorter height */
     padding: 0.25rem !important;
   }
   .connectome-page #legend .item {
-    font-size: 0.65rem !important;          /* even smaller text */
+    font-size: 0.65rem !important;
   }
   .connectome-page #legend .swatch {
     width: 8px !important;
@@ -228,4 +228,3 @@
     margin-right: 3px !important;
   }
 }
-
