@@ -435,44 +435,26 @@ main {
    (scoped to <body class="con_mat-page">)
    ================================================ */
 @media (max-width: 768px) {
-  .coronal-page body, .coronal-page html {
-    overflow: hidden;
+  .coronal-page .container {
+    padding: 1rem;
+    display: block;
   }
 
-  /* Hide iframe in portrait mode */
-  @media (orientation: portrait) {
-    .coronal-page .container iframe {
-      display: none !important;
-    }
-
-    .coronal-page .rotate-message {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      height: calc(100vh - 4rem);
-      padding: 2rem;
-      font-size: 1.2rem;
-      color: #333;
-    }
-  }
-
-  /* Show iframe in landscape */
-  @media (orientation: landscape) {
-    .coronal-page .rotate-message {
-      display: none !important;
-    }
-
-    .coronal-page .container iframe {
-      display: block !important;
-      width: 100%;
-      height: 100%;
-    }
-
-    .coronal-page .container {
-      padding: 0 !important;
-      height: 100vh;
-    }
+  .coronal-page .container iframe {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 960 / 700; /* maintain aspect ratio */
+    border: none;
+    display: block;
   }
 }
 
+@media (max-width: 480px) {
+  .coronal-page .container {
+    padding: 0.5rem;
+  }
+
+  .coronal-page .container iframe {
+    aspect-ratio: 4 / 3; /* use slightly taller ratio for small phones */
+  }
+}

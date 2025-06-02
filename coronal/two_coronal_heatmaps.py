@@ -21,7 +21,7 @@ N_SLICES        = 30
 THICKNESS       = 100.0
 SLICE_POSITIONS = np.linspace(1000.0, 10000.0, N_SLICES)
 PLOTLY_RANGE    = [-5500, 5500]
-HTML_OUTPUT     = "two_brains_slices.html"
+HTML_OUTPUT     = "two_coronal_heatmaps2.html"
 
 # ────────────────────────────────────────────────────────────────────────────────
 # HELPER FUNCTIONS
@@ -55,6 +55,7 @@ def build_segments_list(excel_path):
 
     segments_list = []
     for idx, xpos in enumerate(SLICE_POSITIONS):
+        print(f'Processing slice {idx}')
         heatmap = Heatmap(
             region_values,
             position=float(xpos),
@@ -289,8 +290,8 @@ html = f"""<!DOCTYPE html>
         tooltipDemo.style.top = (evt.pageY + 10) + "px";
         tooltipDemo.innerHTML =
           `<b>${{found.acronym}}</b>: ${{found.fullName}}<br>` +
-          `Fold cange: ${{found.value.toFixed(2)}}` +
-          `Area: ${{found.area.toFixed(1)}} µm²<br>`
+          `Area: ${{found.area.toFixed(1)}} µm²<br>` +
+          `Value: ${{found.value.toFixed(2)}}`;
       }} else {{
         tooltipDemo.style.display = "none";
       }}
@@ -327,8 +328,8 @@ html = f"""<!DOCTYPE html>
         tooltipObsv.style.top = (evt.pageY + 10) + "px";
         tooltipObsv.innerHTML =
           `<b>${{found.acronym}}</b>: ${{found.fullName}}<br>` +
-          `Fold Change: ${{found.value.toFixed(2)}}<br>` +
-          `Area: ${{found.area.toFixed(1)}} µm²`
+          `Area: ${{found.area.toFixed(1)}} µm²<br>` +
+          `<b>Value:<b> ${{found.value.toFixed(2)}}`;
       }} else {{
         tooltipObsv.style.display = "none";
       }}
@@ -342,4 +343,4 @@ html = f"""<!DOCTYPE html>
 with open(HTML_OUTPUT, "w") as f:
     f.write(html)
 
-print(f"Created {HTML_OUTPUT}")
+print(f"Created {HTML_OUTPUT} – open in a browser to explore both brains side by side.")
