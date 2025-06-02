@@ -432,29 +432,16 @@ main {
 
 /* ================================================
    CORONAL – MOBILE OVERRIDES
-   (scoped to <body class="con_mat-page">)
+
    ================================================ */
 @media (max-width: 768px) {
-  .coronal-page .container {
-    padding: 1rem;
-    display: block;
+  .coronal-page #container {
+    flex-direction: column;
   }
 
-  .coronal-page .container iframe {
-    width: 100% !important;
-    height: auto !important;
-    aspect-ratio: 960 / 700; /* maintain aspect ratio */
-    border: none;
-    display: block;
+  .coronal-page .slice {
+    width: 100%;
+    max-width: 400px;
   }
 }
 
-@media (max-width: 480px) {
-  .coronal-page .container {
-    padding: 0.5rem;
-  }
-
-  .coronal-page .container iframe {
-    aspect-ratio: 4 / 3; /* use slightly taller ratio for small phones */
-  }
-}

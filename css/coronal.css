@@ -1,32 +1,76 @@
+/* ===============================
+   coronal.css – for coronal.html
+   =============================== */
+
+/* ===== Reset and Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* ===== Page Layout ===== */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Header (same style as homepage) ===== */
+header {
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+header .description {
+  font-size: 1rem;
+  color: #666666;
+}
+
+/* ===== Home Button ===== */
 .home-button {
-  background: #007bff;
-  color: #fff;
+  background-color: #007bff;
+  color: #ffffff;
   border: none;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s;
+  margin-top: 0.5rem;
 }
 .home-button:hover {
-  background: #0056b3;
+  background-color: #0056b3;
 }
 
-header .description {
-  color: #666;
-  margin-bottom: 1rem;
+/* ===== Main & iframe container ===== */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
 }
 
-/* Container centers iframe on desktop */
+/* Centered iframe container */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 5rem;
   width: 100%;
 }
 
-/* Reasonable default iframe size for desktop */
+/* Iframe size for desktop (adjust as needed) */
 .container iframe {
   width: 960px;
   height: 700px;
@@ -34,4 +78,12 @@ header .description {
   max-height: 85vh;
   border: none;
   display: block;
+}
+
+@media (max-width: 768px) {
+  .coronal-page .container iframe {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 960 / 700;
+  }
 }

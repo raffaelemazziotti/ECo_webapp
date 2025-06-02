@@ -4,15 +4,16 @@
   <meta charset="utf-8"/>
   <title>ECo – Coronal Heatmaps</title>
 
-  <link rel="stylesheet" href="../css/mobile.css">
-  <link rel="stylesheet" href="../css/home_style.css">
   <link rel="stylesheet" href="../css/coronal.css">
+  <link rel="stylesheet" href="../css/mobile.css">
+
   <link rel="icon" href="../assets/favECon.ico" type="image/x-icon">
   <script src="https://d3js.org/d3.v6.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body class="coronal-page">
   <header>
     <h1>Coronal Heatmap</h1>
@@ -23,12 +24,21 @@
   <main>
     <div class="container" style="justify-content: center; align-items: center;">
       <iframe
-        src="../coronal/two_brains_slices.html"
+        id="coronalFrame"
         style="border:none; width:100%; height:calc(100vh - 4em);"
-      ></iframe>
+        src=""></iframe>
     </div>
   </main>
 
-
+  <!-- ✅ Script goes here, just before </body> -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const iframe = document.getElementById('coronalFrame');
+      const isMobile = window.innerWidth <= 768;
+      iframe.src = isMobile
+        ? "../coronal/two_coronal_vertical.html"
+        : "../coronal/two_coronal_horizontal.html";
+    });
+  </script>
 </body>
 </html>
