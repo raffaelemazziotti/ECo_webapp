@@ -1,4 +1,34 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html, body {
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+header .description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
 .home-button {
   background: #007bff;
   color: #fff;
@@ -8,52 +38,129 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s;
-  margin-top: 1rem;
+}
+.home-button:hover {
+  background: #0056b3;
 }
 
-.fit-container{
-  display:flex;flex-wrap:wrap;gap:2rem;padding:2rem;justify-content:center;
+/* ===== Layout Container ===== */
+main.fit-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-/* left column ---------------------------------------------------------- */
-.input-panel{
-  flex:1 1 260px;max-width:320px;padding:1rem;background:#fff;
-  border:1px solid #ddd;border-radius:4px;
-  box-shadow:0 1px 3px rgba(0,0,0,.08);
-  display:flex;flex-direction:column;gap:.75rem;
+/* ===== Input Panel ===== */
+.input-panel {
+  flex: 1 1 280px;
+  max-width: 320px;
+  padding: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
-.input-panel textarea{width:100%;min-height:70px;padding:.5rem;font-family:monospace;}
-
-/* right column --------------------------------------------------------- */
-.output-panel{
-  flex:2 1 460px;min-width:460px;display:flex;flex-direction:column;align-items:center;gap:1.5rem;
+.input-panel h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
-.chart-wrapper{width:100%;max-width:600px;height:340px;}
-.summary-table{border-collapse:collapse;width:320px;}
-.summary-table th,.summary-table td{border:1px solid #ccc;padding:.4rem .6rem;text-align:center;}
-.summary-table th{background:#f0f0f0;font-weight:600;}
+.input-panel label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95rem;
+}
+.input-panel textarea {
+  width: 100%;
+  min-height: 70px;
+  padding: 0.5rem;
+  font-family: monospace;
+  resize: vertical;
+}
+.input-panel button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.input-panel button:hover {
+  background-color: #1e7e34;
+}
+.error-msg {
+  color: #d9534f;
+  font-size: 0.9rem;
+  min-height: 1.2em;
+}
 
-.error-msg{color:#d9534f;font-size:.9rem;min-height:1.2em;}
+/* ===== Output Panel ===== */
+.output-panel {
+  flex: 2 1 460px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.chart-wrapper {
+  width: 100%;
+  max-width: 600px;
+  height: 340px;
+}
+.summary-table {
+  border-collapse: collapse;
+  width: 320px;
+}
+.summary-table th,
+.summary-table td {
+  border: 1px solid #ccc;
+  padding: 0.4rem 0.6rem;
+  text-align: center;
+}
+.summary-table th {
+  background: #f0f0f0;
+  font-weight: 600;
+}
 
-main{
-  flex:1;
-  padding:2rem;
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  main.fit-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
 
-  /* NEW: two-column centred grid ---------------------------------- */
-  display:grid;
-  grid-template-columns:repeat(2,minmax(260px,1fr)); /* 2 equal columns   */
-  gap:2rem;
+  .input-panel, .output-panel {
+    max-width: 100%;
+    width: 100%;
+  }
 
-  /* centre the grid block itself */
-  margin-inline:auto;          /* push left/right auto -> centred       */
-  max-width:1000px;            /* optional: keeps the grid from stretching */
+  .chart-wrapper {
+    height: 280px;
+  }
 
-  /* centre items inside each grid cell */
-  justify-items:center;
+  .summary-table {
+    width: 100%;
+    max-width: 320px;
+  }
+}
 
-  /* let rows flow naturally downward */
-  align-content:start;
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
 
-  /* keep your original scroll behaviour */
-  overflow-y:auto;
+  header .description {
+    font-size: 0.95rem;
+  }
+
+  .chart-wrapper {
+    height: 240px;
+  }
 }
