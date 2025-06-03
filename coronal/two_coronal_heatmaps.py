@@ -25,7 +25,7 @@ PLOTLY_RANGE    = [-5500, 5500]
 HTML_OUTPUT     = "two_coronal"
 
 # Set LAYOUT = "horizontal" for side‐by‐side, or "vertical" for stacked
-LAYOUT = "vertical"
+LAYOUT = "horizontal"
 
 HTML_OUTPUT = f'{HTML_OUTPUT}_{LAYOUT}.html'
 
@@ -308,7 +308,6 @@ html = f"""<!DOCTYPE html>
         tooltipDemo.style.top = (evt.pageY + 10) + "px";
         tooltipDemo.innerHTML =
           `<b>${{found.acronym}}</b>: ${{found.fullName}}<br>` +
-          `Area: ${{found.area.toFixed(1)}} µm²<br>` +
           `<b>Fold Change</b>: ${{found.value.toFixed(2)}}`;
       }} else {{
         tooltipDemo.style.display = "none";
@@ -346,7 +345,6 @@ html = f"""<!DOCTYPE html>
         tooltipObsv.style.top = (evt.pageY + 10) + "px";
         tooltipObsv.innerHTML =
           `<b>${{found.acronym}}</b>: ${{found.fullName}}<br>` +
-          `Area: ${{found.area.toFixed(1)}} µm²<br>` +
           `<b>Fold Change</b>: ${{found.value.toFixed(2)}}`;
       }} else {{
         tooltipObsv.style.display = "none";
