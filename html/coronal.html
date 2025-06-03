@@ -30,15 +30,26 @@
     </div>
   </main>
 
-  <!-- ✅ Script goes here, just before </body> -->
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       const iframe = document.getElementById('coronalFrame');
       const isMobile = window.innerWidth <= 768;
+
+      // Choose appropriate iframe content
       iframe.src = isMobile
         ? "../coronal/two_coronal_vertical.html"
         : "../coronal/two_coronal_horizontal.html";
+
+      // Adjust iframe size explicitly
+      if (isMobile) {
+        iframe.style.width = "100%";
+        iframe.style.height = "calc(100vh - 6rem)"; // leave room for header
+      } else {
+        iframe.style.width = "960px";
+        iframe.style.height = "700px";
+      }
     });
-  </script>
+</script>
+
 </body>
 </html>
