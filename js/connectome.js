@@ -153,8 +153,4 @@
     lastHover = null;
   });
 
-  document.getElementById("toggle-legend").addEventListener("click", () => {
-    const l = document.getElementById("legend");
-    l.style.display = l.style.display === "none" ? "block" : "none";
-  });
 })();
