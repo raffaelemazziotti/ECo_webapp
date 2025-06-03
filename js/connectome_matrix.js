@@ -75,13 +75,15 @@
         .attr("height", cellSize)
         .attr("fill",   colorInterp(t))
         .on("mouseover", (event) => {
+            const [mx, my] = d3.pointer(event, containerNode);
+            const scrollTop = containerNode.scrollTop;
+            const scrollLeft = containerNode.scrollLeft;
 
-          const [mx, my] = d3.pointer(event, containerNode);
-          tooltip.html(`${ids[i]} → ${ids[j]}: ${sci(w)}`)
-            .style("left",  `${mx + 10}px`)
-            .style("top",   `${my - 30}px`)
-            .style("opacity", 1);
-        })
+            tooltip.html(`${ids[i]} → ${ids[j]}: ${sci(w)}`)
+              .style("left", `${mx + scrollLeft + 10}px`)
+              .style("top",  `${my + scrollTop - 10}px`)
+              .style("opacity", 1);
+          })
         .on("mouseout", () => {
           tooltip.style("opacity", 0);
         });

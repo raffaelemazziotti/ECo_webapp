@@ -1,4 +1,36 @@
-/* der.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header .description {
+  font-size: 1rem;
+  color: #666666;
+  padding-bottom: 1rem;
+}
 
 .home-button {
   background: #007bff;
@@ -13,7 +45,6 @@
 .home-button:hover {
   background: #0056b3;
 }
-header .description { color:#666; margin-bottom:1rem; }
 
 /* Two‐column layout */
 .container {

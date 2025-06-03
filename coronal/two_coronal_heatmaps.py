@@ -4,11 +4,12 @@ import numpy as np
 import pandas as pd
 import matplotlib.colors as mcolors
 
+# pip install brainglobe-heatmap brainglobe-atlasapi
 from brainglobe_heatmap import Heatmap
 from brainglobe_atlasapi import BrainGlobeAtlas
-from shapely import Polygon
-from shapely.algorithms.polylabel import polylabel
-from shapely.geometry import MultiPolygon
+#from shapely import Polygon
+#from shapely.algorithms.polylabel import polylabel
+#from shapely.geometry import MultiPolygon
 
 # ────────────────────────────────────────────────────────────────────────────────
 # CONFIGURATION: two “brains” (Demonstrator and Observer), plus layout choice
@@ -24,7 +25,7 @@ PLOTLY_RANGE    = [-5500, 5500]
 HTML_OUTPUT     = "two_coronal"
 
 # Set LAYOUT = "horizontal" for side‐by‐side, or "vertical" for stacked
-LAYOUT = "horizontal"
+LAYOUT = "vertical"
 
 HTML_OUTPUT = f'{HTML_OUTPUT}_{LAYOUT}.html'
 
@@ -308,7 +309,7 @@ html = f"""<!DOCTYPE html>
         tooltipDemo.innerHTML =
           `<b>${{found.acronym}}</b>: ${{found.fullName}}<br>` +
           `Area: ${{found.area.toFixed(1)}} µm²<br>` +
-          `<b>Value</b>: ${{found.value.toFixed(2)}}`;
+          `<b>Fold Change</b>: ${{found.value.toFixed(2)}}`;
       }} else {{
         tooltipDemo.style.display = "none";
       }}
@@ -346,7 +347,7 @@ html = f"""<!DOCTYPE html>
         tooltipObsv.innerHTML =
           `<b>${{found.acronym}}</b>: ${{found.fullName}}<br>` +
           `Area: ${{found.area.toFixed(1)}} µm²<br>` +
-          `<b>Value</b>: ${{found.value.toFixed(2)}}`;
+          `<b>Fold Change</b>: ${{found.value.toFixed(2)}}`;
       }} else {{
         tooltipObsv.style.display = "none";
       }}
