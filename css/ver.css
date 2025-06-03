@@ -1,3 +1,8 @@
+/* ===========================
+   ver.css – VER Pupillometry
+   =========================== */
+
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
@@ -46,38 +51,64 @@ header .description {
   background: #0056b3;
 }
 
-/* Two‐column layout */
-.container {
+/* ===== Main Layout Container ===== */
+main {
+  padding: 1rem;
+}
+.ver-grid {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
   width: 100%;
-  height: calc(100vh - 4em);
-  justify-content: flex-start;
-  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-/* LEFT side time‐series: ~75% width */
-.left-charts {
-  flex: 3 1 0;
-  padding: 1em;
-  overflow: auto;
-}
-
-/* RIGHT side scatter: ~25% width */
+/* ===== Scatter Plots ===== */
 .right-charts {
-  flex: 1 1 0;
-  padding: 1em;
-  border-left: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;             /* slightly tighter gap */
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 700px;        /* NEW: constrain total width */
+  margin: 0 auto;          /* center the whole row */
 }
 
-/* Each row of time‐series charts */
+.scatter-plot {
+  flex: 1 1 240px;         /* shrink starting width */
+  max-width: 360px;        /* tighter max */
+  min-width: 220px;        /* tighter min */
+  height: 320px;           /* slightly shorter if needed */
+  position: relative;
+}
+
+.scatter-plot h3 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.scatter-plot canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* ===== Time-Series Section ===== */
+.left-charts {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  overflow-x: auto;
+  padding: 0 1rem;
+}
 .chart-row {
   display: flex;
-  align-items: center;    /* center‐vertically align label + charts */
-  margin-bottom: 1em;
-  gap: 0.5em;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
 }
-
-/* Rotated intensity label */
 .row-label {
   flex: 0 0 40px;
   width: 40px;
@@ -91,30 +122,61 @@ header .description {
   transform: rotate(-90deg);
   transform-origin: center;
 }
-
-/* Each individual time‐series chart wrapper */
 .chart {
-  flex: 1 1 0;            /* allow to grow and fill available width */
-  min-width: 0;           /* critical for flex to respect shrinking */
-  height: 180px;          /* fixed height */
+  flex: 1 1 0;
+  min-width: 0;
+  height: 180px;
   position: relative;
 }
-
-/* Canvas fills its wrapper */
 .chart canvas {
   width: 100% !important;
   height: 100% !important;
 }
 
-/* Each scatter plot on the right */
-.scatter-plot {
-  margin-bottom: 1.5em;
-  height: 240px;          /* adjust for desired size */
-  position: relative;
+/* ===== Mobile Responsiveness ===== */
+@media (max-width: 768px) {
+  .right-charts {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scatter-plot {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .left-charts {
+    padding: 0;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header .description {
+    font-size: 0.95rem;
+  }
+
+  .home-button {
+    font-size: 0.95rem;
+    padding: 0.4rem 0.9rem;
+  }
 }
 
-/* Scatter canvases fill their wrappers */
-.scatter-plot canvas {
-  width: 100% !important;
-  height: 100% !important;
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  header .description {
+    font-size: 0.9rem;
+  }
+
+  .chart {
+    height: 160px;
+  }
+
+  .scatter-plot {
+    height: 220px;
+  }
 }
