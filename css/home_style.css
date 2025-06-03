@@ -6,10 +6,12 @@
 }
 
 html, body {
-  height: 100%;
+  min-height: 100%;
   font-family: "Helvetica Neue", Arial, sans-serif;
   background-color: #f4f4f4;
   color: #333;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 body {
@@ -37,14 +39,15 @@ header .description {
 
 /* ===== Main / Groups ===== */
 main {
-  flex: 1;
-  padding: 2rem;
+  width: 100%;
+  flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
   gap: 2rem;
-  justify-content: center; /* horizontal center */
-  align-items: center;     /* vertical center */
-  overflow-y: auto;
+  overflow-y: visible;
 }
 
 .nav-group {
@@ -93,4 +96,62 @@ main {
   position: relative;  /* required for Chart.js */
   width: 70%;
   height: 100%;       /* bump this up/down to taste */
+}
+
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+    align-items: center;         /* center each nav-group */
+    overflow-y: auto;
+  }
+
+  .nav-group {
+    width: 90%;
+    max-width: 500px;            /* don’t get too wide */
+    padding: 1rem;
+  }
+
+  .nav-group h2 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .button-group {
+    gap: 0.75rem;
+  }
+
+  .nav-button {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;              /* center the button */
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header .description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-button {
+    font-size: 1.05rem;
+    padding: 0.9rem;
+    max-width: 280px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  header .description {
+    font-size: 0.9rem;
+  }
 }
