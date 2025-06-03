@@ -1,16 +1,15 @@
-/* ========== Base & Layout ========== */
+/* ===== Reset & Base ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html, body {
-  /* allow page to scroll if content is taller than viewport */
-  min-height: 100%;
+  height: 100%;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  background-color: #f4f4f4;
+  background: #f4f4f4;
   color: #333;
+  overflow: hidden;
 }
 
 body {
@@ -18,14 +17,15 @@ body {
   flex-direction: column;
 }
 
+/* ===== Header ===== */
 header {
-  background-color: #ffffff;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: #fff;
+  padding: 1.5rem 2rem;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 header h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 header .description {
@@ -34,7 +34,7 @@ header .description {
   margin-bottom: 1rem;
 }
 .home-button {
-  background-color: #007bff;
+  background: #007bff;
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -47,22 +47,24 @@ header .description {
   background-color: #0056b3;
 }
 
+/* ===== Main Layout ===== */
 main {
   flex: 1;
-  /* center the wrapper, allow scroll */
+  overflow: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-  overflow: auto;
-}
-
-#graph-container {
-  position: relative;
-  /* padding around the graph */
+  align-items: flex-start;
   padding: 1rem;
 }
 
-/* fixed 1000×1000 box for your graph */
+/* ===== Graph Container ===== */
+#graph-container {
+  position: relative;
+  min-width: 1300px;
+  min-height: 1000px;
+}
+
+/* ===== Graph Wrapper (fixed size canvas) ===== */
 #graph-wrapper {
   position: relative;
   width: 1300px;
@@ -70,15 +72,13 @@ main {
   background: #fff;
   box-shadow: 0 1px 4px rgba(0,0,0,0.2);
 }
-
-/* canvases will be appended inside this wrapper */
 #graph-wrapper canvas {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* ========== Tooltip ========== */
+/* ===== Tooltip ===== */
 .tooltip {
   position: absolute;
   pointer-events: none;
@@ -87,13 +87,13 @@ main {
   border-radius: 4px;
   padding: 4px 8px;
   font-size: 12px;
-  box-shadow: 0 1px 4px rgba(0,0,0,.2);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
   opacity: 0;
   transition: opacity 0.1s ease;
   z-index: 10;
 }
 
-/* ========== Legend ========== */
+/* ===== Legend ===== */
 #legend {
   position: absolute;
   top: 1rem;
@@ -105,11 +105,13 @@ main {
   font-size: 12px;
   line-height: 1.4;
   z-index: 5;
+  max-height: 300px;
+  overflow-y: auto;
 }
 #legend .item {
   display: flex;
   align-items: center;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 #legend .item:last-child {
   margin-bottom: 0;
@@ -119,4 +121,33 @@ main {
   height: 12px;
   margin-right: 6px;
   border: 1px solid #333;
+}
+
+/* ===== Legend Toggle Button (visible on small screens) ===== */
+.legend-toggle {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 6;
+}
+
+/* ===== Mobile Legend Behavior ===== */
+@media (max-width: 768px) {
+  .legend-toggle {
+    display: block;
+  }
+  #legend {
+    display: none;
+  }
+  #legend.visible {
+    display: block;
+  }
 }
