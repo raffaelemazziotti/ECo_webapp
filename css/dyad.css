@@ -1,4 +1,4 @@
-/* ===== Reset & Base ===== */
+/* ===== Base Reset ===== */
 * {
   margin: 0;
   padding: 0;
@@ -10,9 +10,9 @@ html, body {
   font-family: "Helvetica Neue", Arial, sans-serif;
   background-color: #f4f4f4;
   color: #333;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 /* ===== Header ===== */
@@ -22,7 +22,6 @@ header {
   text-align: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-
 header h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -46,15 +45,15 @@ header .description {
   background: #0056b3;
 }
 
-/* ===== Layout Container ===== */
+/* ===== Layout ===== */
 .dyad-layout {
   flex: 1;
   display: flex;
   overflow: hidden;
-  height: calc(100vh - 6rem); /* 6rem ≈ header height */
+  height: calc(100vh - 6rem);
 }
 
-/* ===== Left Panel ===== */
+/* ===== Left Graphs ===== */
 .left-charts {
   flex: 0 0 320px;
   max-width: 320px;
@@ -67,28 +66,27 @@ header .description {
   background: #fafafa;
 }
 
-/* ===== Right Grid ===== */
+/* ===== Right Graphs ===== */
 .right-charts {
   flex: 1;
-  padding: 1rem;
+
   overflow-y: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  padding-bottom: 5rem;
   background: #f4f4f4;
 }
 
-/* ===== Scatter Plot Style ===== */
+/* ===== Scatter Plot Styling ===== */
 .scatter-plot {
   aspect-ratio: 1 / 1;
   position: relative;
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding-top: 1.4rem; /* space for title */
+  padding-top: 1.4rem;
   overflow: hidden;
 }
-
 .scatter-plot h3 {
   font-size: 0.95rem;
   margin: 0;
@@ -98,51 +96,46 @@ header .description {
   width: 100%;
   padding-top: 0.2rem;
 }
-
 .scatter-plot canvas {
-  position: absolute;
-  top: 1.4rem;
+  width: 100% !important;
+  height: auto !important;
+
+
+
   left: 0;
   width: 100% !important;
   height: calc(100% - 1.4rem) !important;
 }
 
-/* ===== Responsive (Mobile) ===== */
-@media (max-width: 768px) {
+/* ===== Responsive Layout ===== */
+@media (max-width: 1024px) {
   .dyad-layout {
     flex-direction: column;
+    overflow: auto;
     height: auto;
-    overflow: visible;
   }
 
-  .left-charts {
+  .left-charts,
+  .right-charts {
     max-width: 100%;
     width: 100%;
     border-right: none;
     border-bottom: 1px solid #ddd;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1rem;
-    overflow-y: visible;
+    overflow: visible;
   }
 
   .right-charts {
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    padding: 1rem;
-    overflow-y: visible;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .scatter-plot {
-    max-width: 90vw;
-    margin: 0 auto;
-  }
-
-  header h1 {
-    font-size: 1.6rem;
-  }
-
-  header .description {
-    font-size: 0.95rem;
+    width: 90vw;
+    max-width: 400px;
   }
 }
