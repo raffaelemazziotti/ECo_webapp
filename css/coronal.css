@@ -68,7 +68,7 @@ body {
   font-family: sans-serif;
   background: #fff;
   max-width: 100%;
-  overflow-x: hidden;
+  
   overscroll-behavior: contain;  /* Prevent pull-to-refresh on mobile */
   touch-action: manipulation;    /* Optimize touch events */
 }
