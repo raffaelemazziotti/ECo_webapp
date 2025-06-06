@@ -198,12 +198,12 @@ function draw(canvasId, polys) {{
   }});
 }}
 
-function tooltip(canvasId, tooltipId, slices) {{
+function tooltip(canvasId, tooltipId, slices, sliderEl) {{
   const canvas = document.getElementById(canvasId);
   const tooltip = document.getElementById(tooltipId);
   canvas.addEventListener("mousemove", evt => {{
     const r = canvas.getBoundingClientRect(), x = evt.clientX - r.left, y = evt.clientY - r.top;
-    const polys = slices[+slider.value];
+    const polys = slices[+sliderEl.value];
     let hit = null;
     const ctx = canvas.getContext("2d");
     for (const p of polys) {{
@@ -254,15 +254,16 @@ window.addEventListener("DOMContentLoaded", () => {{
     localStorage.setItem("coronal_slice_index", idx);
   }};
 
-  // Initialize tooltips
-  tooltip("canvasDemo", "tooltipDemo", slicesDemo);
-  tooltip("canvasObsv", "tooltipObsv", slicesObsv);
+  // Initialize tooltips — now pass slider explicitly!
+  tooltip("canvasDemo", "tooltipDemo", slicesDemo, slider);
+  tooltip("canvasObsv", "tooltipObsv", slicesObsv, slider);
 }});
 </script>
 
 </body>
 </html>
 """
+
 
 
 
