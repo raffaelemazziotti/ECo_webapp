@@ -111,10 +111,12 @@ html = f"""<!DOCTYPE html>
   <meta charset="UTF-8" />
   <title>Coronal Slices</title>
   <style>
-    body {{
+    html, body {{
       margin: 0;
       font-family: sans-serif;
       background: #fff;
+      max-width: 100%;
+      overflow-x: hidden; /* prevent horizontal scrollbar */
     }}
     #container {{
       display: flex;
@@ -224,19 +226,34 @@ function tooltip(canvasId, tooltipId, slices) {{
   canvas.addEventListener("mouseout", () => tooltip.style.display = "none");
 }}
 
-draw("canvasDemo", slicesDemo[0]);
-draw("canvasObsv", slicesObsv[0]);
-tooltip("canvasDemo", "tooltipDemo", slicesDemo);
-tooltip("canvasObsv", "tooltipObsv", slicesObsv);
-
+// Initialize
 const slider = document.getElementById("sliceSlider");
 const label = document.getElementById("sliceLabel");
+
+// Load saved index if available
+const savedIndex = localStorage.getItem("coronal_slice_index");
+if (savedIndex !== null && savedIndex >= 0 && savedIndex <= {N_SLICES - 1}) {{
+  slider.value = savedIndex;
+  label.textContent = savedIndex;
+  draw("canvasDemo", slicesDemo[savedIndex]);
+  draw("canvasObsv", slicesObsv[savedIndex]);
+}} else {{
+  draw("canvasDemo", slicesDemo[0]);
+  draw("canvasObsv", slicesObsv[0]);
+}}
+
+// Update on slider move and save index
 slider.oninput = () => {{
   const idx = +slider.value;
   label.textContent = idx;
   draw("canvasDemo", slicesDemo[idx]);
   draw("canvasObsv", slicesObsv[idx]);
+  localStorage.setItem("coronal_slice_index", idx);
 }};
+
+// Initialize tooltips
+tooltip("canvasDemo", "tooltipDemo", slicesDemo);
+tooltip("canvasObsv", "tooltipObsv", slicesObsv);
 </script>
 
 </body>
