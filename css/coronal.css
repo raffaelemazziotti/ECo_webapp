@@ -68,9 +68,9 @@ body {
   font-family: sans-serif;
   background: #fff;
   max-width: 100%;
-  
-  overscroll-behavior: contain;  /* Prevent pull-to-refresh on mobile */
-  touch-action: manipulation;    /* Optimize touch events */
+
+  /*overscroll-behavior: contain;  /* Prevent pull-to-refresh on mobile */
+  /*touch-action: manipulation;    /* Optimize touch events */
 }
 
 /* Container spans full width
