@@ -32,8 +32,8 @@
     const iframe = document.getElementById('coronalFrame');
     const isPortrait = window.innerHeight > window.innerWidth;
 
-    const horizontal = { src: "../coronal/two_coronal_cbar_horizontal.html", width: 1200, height: 700 };
-    const vertical = { src: "../coronal/two_coronal_cbar_vertical.html", width: 700, height: 1300 };
+    const horizontal = { src: "../coronal/two_coronal_cbar_horizontal.html", width: 1200, height: 800 };
+    const vertical = { src: "../coronal/two_coronal_cbar_vertical.html", width: 800, height: 1300 };
     const mode = isPortrait ? vertical : horizontal;
 
     if (!iframe.src.includes(mode.src)) {
