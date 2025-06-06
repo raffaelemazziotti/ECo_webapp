@@ -3,3 +3,4 @@
 
 # TODO dyad.html add title to the second subplot (adjust the css)
 # TODO adjust the tooltip of coronal.html
+# TODO from the py, in vertical add overflow-y: hidden; and remove overscroll-behavior: contain (?)
