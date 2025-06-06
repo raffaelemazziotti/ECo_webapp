@@ -11,7 +11,7 @@ from brainglobe_atlasapi import BrainGlobeAtlas
 # ─── CONFIG ─────────────────────────────────────────────────────────────────────
 EXCEL_PATH_DEMO = "fchange_heatmap_demonstrator.xlsx"
 EXCEL_PATH_OBSV = "fchange_heatmap_observer.xlsx"
-LAYOUT = "horizontal"  # or "vertical"
+LAYOUT = "vertical"  # or "vertical"
 N_SLICES = 30
 THICKNESS = 100.0
 SLICE_POSITIONS = np.linspace(1000.0, 10000.0, N_SLICES)
