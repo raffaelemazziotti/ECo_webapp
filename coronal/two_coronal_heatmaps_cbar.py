@@ -11,7 +11,7 @@ from brainglobe_atlasapi import BrainGlobeAtlas
 # ─── CONFIG ─────────────────────────────────────────────────────────────────────
 EXCEL_PATH_DEMO = "fchange_heatmap_demonstrator.xlsx"
 EXCEL_PATH_OBSV = "fchange_heatmap_observer.xlsx"
-LAYOUT = "vertical"  # or "vertical"
+LAYOUT = "vertical"  #  "vertical" o "horizontal"
 N_SLICES = 30
 THICKNESS = 100.0
 SLICE_POSITIONS = np.linspace(1000.0, 10000.0, N_SLICES)
@@ -117,6 +117,7 @@ html = f"""<!DOCTYPE html>
       background: #fff;
       max-width: 100%;
       overflow-x: hidden; /* prevent horizontal scrollbar */
+      overscroll-behavior: contain; /* prevent pull to refresh */
     }}
     #container {{
       display: flex;
@@ -226,39 +227,44 @@ function tooltip(canvasId, tooltipId, slices) {{
   canvas.addEventListener("mouseout", () => tooltip.style.display = "none");
 }}
 
-// Initialize
-const slider = document.getElementById("sliceSlider");
-const label = document.getElementById("sliceLabel");
+window.addEventListener("DOMContentLoaded", () => {{
+  const slider = document.getElementById("sliceSlider");
+  const label = document.getElementById("sliceLabel");
 
-// Load saved index if available
-const savedIndex = localStorage.getItem("coronal_slice_index");
-if (savedIndex !== null && savedIndex >= 0 && savedIndex <= {N_SLICES - 1}) {{
-  slider.value = savedIndex;
-  label.textContent = savedIndex;
-  draw("canvasDemo", slicesDemo[savedIndex]);
-  draw("canvasObsv", slicesObsv[savedIndex]);
-}} else {{
-  draw("canvasDemo", slicesDemo[0]);
-  draw("canvasObsv", slicesObsv[0]);
-}}
+  // Load saved index if available
+  const savedIndex = localStorage.getItem("coronal_slice_index");
+  if (savedIndex !== null && savedIndex >= 0 && savedIndex <= {N_SLICES - 1}) {{
+    slider.value = savedIndex;
+    label.textContent = savedIndex;
+    draw("canvasDemo", slicesDemo[savedIndex]);
+    draw("canvasObsv", slicesObsv[savedIndex]);
+  }} else {{
+    slider.value = 0;
+    label.textContent = 0;
+    draw("canvasDemo", slicesDemo[0]);
+    draw("canvasObsv", slicesObsv[0]);
+  }}
 
-// Update on slider move and save index
-slider.oninput = () => {{
-  const idx = +slider.value;
-  label.textContent = idx;
-  draw("canvasDemo", slicesDemo[idx]);
-  draw("canvasObsv", slicesObsv[idx]);
-  localStorage.setItem("coronal_slice_index", idx);
-}};
+  // Update on slider move and save index
+  slider.oninput = () => {{
+    const idx = +slider.value;
+    label.textContent = idx;
+    draw("canvasDemo", slicesDemo[idx]);
+    draw("canvasObsv", slicesObsv[idx]);
+    localStorage.setItem("coronal_slice_index", idx);
+  }};
 
-// Initialize tooltips
-tooltip("canvasDemo", "tooltipDemo", slicesDemo);
-tooltip("canvasObsv", "tooltipObsv", slicesObsv);
+  // Initialize tooltips
+  tooltip("canvasDemo", "tooltipDemo", slicesDemo);
+  tooltip("canvasObsv", "tooltipObsv", slicesObsv);
+}});
 </script>
 
 </body>
 </html>
 """
+
+
 
 with open(HTML_OUTPUT, "w") as f:
     f.write(html)
