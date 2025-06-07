@@ -17,14 +17,14 @@
   <header>
     <h1>Dyadic Correlations</h1>
     <p class="description">
-      Demonstrator ↔ Observer scatter plots
+      Demonstrator vs Observer scatter plots
     </p>
     <button class="home-button" onclick="location.href='../index.html'">Home</button>
   </header>
 
   <main class="dyad-layout">
-    <h1>Pupil</h1>
-    <!-- ◀── narrow column (320 px) -->
+    <h1 class="section-title">Pupil</h1>
+
     <section class="left-charts">
       <div class="scatter-plot">
         <h3>Pupil (DER) vs Pupil (VER)</h3>
@@ -37,9 +37,8 @@
       </div>
     </section>
 
-    <!-- ──▶ wide column (auto-width) -->
+    <h1 class="section-title">cFos Activation</h1>
     <section class="right-charts" id="area-plots">
-      <h1>cFos Activation</h1>
       <!-- per-area canvases injected by dyad.js -->
     </section>
   </main>

@@ -111,6 +111,19 @@ main {
   height: calc(100% - 1.4rem) !important;
 }
 
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding-left: 0.2rem;
+  color: #222;
+  border-bottom: 2px solid #ddd;
+}
+
+.left-charts, .right-charts {
+  margin-bottom: 2rem;
+}
+
 /* ===== Responsive Behavior ===== */
 @media (max-width: 768px) {
   main {
@@ -137,5 +150,10 @@ main {
 
   header .description {
     font-size: 0.95rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+    text-align: center;
   }
 }
