@@ -112,11 +112,6 @@ main {
   right: 0;
 }
 
-.drawer-content {
-  padding: 1rem;
-  font-size: 0.9rem;
-}
-
 /* ===== Drawer Tab inside drawer ===== */
 .drawer-tab {
   position: absolute;
@@ -139,6 +134,23 @@ main {
 .drawer-tab:hover {
   background-color: #0056b3;
 }
+
+.drawer-content {
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.drawer-content a {
+  color: #ffffff; /* light yellow */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.drawer-content a:hover {
+  color: #f6e6c2;
+  text-decoration: underline;
+}
+
 
 /* ===== Footer ===== */
 footer {
