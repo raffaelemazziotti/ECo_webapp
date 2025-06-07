@@ -212,6 +212,11 @@ footer i {
   header .description {
     font-size: 0.95rem;
   }
+
+  .side-drawer {
+    display: none;
+  }
+
 }
 
 @media (max-width: 480px) {
