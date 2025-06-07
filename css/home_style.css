@@ -42,7 +42,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;  /* Changed from flex-start to center */
   padding: 2rem;
   gap: 2rem;
 }
@@ -51,10 +51,11 @@ main {
 .nav-group {
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 0.75rem 1rem;
-  width: max-content;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border-radius: 8px; /* Slightly rounder corners */
+  padding: 1rem 1.5rem;
+  width: 300px; /* Fixed width for symmetry */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Slightly more visible shadow */
+  text-align: center; /* Center content in nav-group */
 }
 
 .nav-group h2 {
@@ -66,24 +67,76 @@ main {
 .button-group {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  align-items: center; /* Changed from stretch to center */
+  gap: 0.75rem;
+  margin-top: 0.75rem;
 }
 
 .nav-button {
-  display: inline-block;
+  display: block;
+  width: 100%;
+  max-width: 240px; /* Consistent max width */
   background-color: #007bff;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
-  padding: 0.5rem 1rem;
-  font-size: 0.95rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
   border-radius: 4px;
   transition: background-color 0.2s;
   text-align: center;
 }
 
 .nav-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* ===== Side Drawer (Small with attached tab) ===== */
+.side-drawer {
+  position: fixed;
+  top: 80%;
+  right: -220px;
+  width: 220px;
+  height: auto;
+  max-height: 200px;
+  background-color: #007bff;
+  box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  transform: translateY(-50%);
+  border-radius: 8px 0 0 8px;
+  color: #fff;
+}
+
+.side-drawer.open {
+  right: 0;
+}
+
+.drawer-content {
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* ===== Drawer Tab inside drawer ===== */
+.drawer-tab {
+  position: absolute;
+  top: 100%;
+  left: -10px; /* Tab width */
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  width: 100px; /* Optional: wider tab */
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px 6px 0 0;
+  /*box-shadow: 0 2px 6px rgba(0,0,0,0.3);*/
+  transition: background-color 0.2s;
+}
+
+.drawer-tab:hover {
   background-color: #0056b3;
 }
 
@@ -95,6 +148,21 @@ footer {
   font-size: 0.9rem;
   color: #666;
   border-top: 1px solid #ddd;
+  margin-top: auto; /* <--- Only this line is new */
+}
+
+footer a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #0056b3;
+}
+
+footer i {
+  margin-right: 0.4em;
 }
 
 /* ===== Responsive ===== */
