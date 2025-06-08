@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           max: 550,
           title: { display: true, text: 'Intensity uA' },
           ticks: {
-            callback: v => [0,50,150,300,500].includes(v) ? v : ''
+            callback: v => [200,400].includes(v) ? v : ''
           }
         },
         y: {
