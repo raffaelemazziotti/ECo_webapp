@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html, body {
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header .description {
+  font-size: 1rem;
+  color: #666666;
+  padding-bottom: 1rem;
+}
+
+.home-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.9rem;
+}
+
+.home-button:hover {
+  background: #0056b3;
+}
+
+.subjects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.subject-block {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.subject-block h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.charts-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.chart-container {
+  flex: 1 1 300px;
+  max-width: 400px;
+  height: 300px;
+}
+.chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.charts-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.chart-container {
+  flex: 1 1 280px;
+  max-width: 360px;
+  height: 300px;
+}
+
+.chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.report-box {
+  flex: 1 1 200px;
+  max-width: 220px;
+  padding: 1rem;
+  background: #fafafa;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+.psychometric-button-row {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+}
+
+
+@media (max-width: 768px) {
+  .charts-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .report-box {
+    max-width: 300px;
+    width: 90%;
+  }
+}

@@ -47,6 +47,7 @@ header .description {
   cursor: pointer;
   transition: background-color 0.2s;
 }
+
 .home-button:hover {
   background: #0056b3;
 }
