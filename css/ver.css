@@ -133,6 +133,21 @@ main {
   height: 100% !important;
 }
 
+/* image */
+.page-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.page-image img {
+  display: block !important;
+  width: 500px !important;
+  height: auto !important;
+}
+
 /* ===== Mobile Responsiveness ===== */
 @media (max-width: 768px) {
   .right-charts {
@@ -161,6 +176,10 @@ main {
     font-size: 0.95rem;
     padding: 0.4rem 0.9rem;
   }
+
+  .page-image img {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -178,5 +197,9 @@ main {
 
   .scatter-plot {
     height: 220px;
+  }
+
+  .page-image img {
+    max-width: 350px;
   }
 }
