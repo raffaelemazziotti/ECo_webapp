@@ -1,10 +1,11 @@
 
 
-# TODO insert all the subject in psichometric fit and make the tool a link inside
-
+# TODO insert all the subject in psychometric fit and make the tool a link inside
+# TODO check the subject 29 in the psychometrics it is strange
 
 # TODO adjust the tooltip of coronal.html
-# TODO from the py to create coronal, only in vertical add overflow-y: hidden; and remove overscroll-behavior: contain (?)
 # TODO coronal heatmaps tooltip on  the right should appear on the left and the contrary on the other side
 
-# TODO insert a credits and methods section
+# TODO insert the data for the videos
+
+# TODO insert next and back buttons

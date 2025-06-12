@@ -126,6 +126,7 @@ function axisCat() {
     }
   };
 }
+
 function axisSq(xLab, yLab) {
   return {
     responsive: true,
