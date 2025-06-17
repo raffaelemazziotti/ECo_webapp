@@ -36,6 +36,17 @@ header .description {
   padding-bottom: 1rem;
 }
 
+.home-button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
 /* ===== Main ===== */
 main {
   flex-grow: 1;
