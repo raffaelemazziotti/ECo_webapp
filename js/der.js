@@ -1,3 +1,8 @@
+function hideSpinner() {
+  document.getElementById('loading-overlay').style.display = 'none';
+  document.querySelector('main').style.display = 'flex';
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
   console.log('DER.js: startup');
 
@@ -261,6 +266,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   renderScatter('size-peaks-chart', sizePeaks, avgSize, -20, 80);
   renderScatter('vel-peaks-chart', velPeaks, avgVel, -60, 350);
-
+  hideSpinner();
 
 });

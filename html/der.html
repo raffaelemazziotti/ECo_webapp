@@ -3,14 +3,24 @@
 <head>
   <meta charset="utf-8"/>
   <title>ECo – Pupillometry DER</title>
+
   <link rel="stylesheet" href="../css/der.css">
   <link rel="icon" href="../assets/favECon.ico" type="image/x-icon">
-  <script src="https://d3js.org/d3.v6.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" defer></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body class="ver-page">
+
+  <!-- Loading -->
+  <div id="loading-overlay">
+    <div class="spinner"></div>
+    <p>Loading data...</p>
+  </div>
+
   <header>
     <h1>Pupillometry – DER</h1>
     <p class="description">Direct Emotional Response (DER). Mice are exposed to tail shocks of varying intensities, resulting in corresponding changes in both pupil dilation and locomotor activity.</p>
@@ -18,8 +28,7 @@
     <button class="home-button" onclick="location.href='ver.html'">Next</button>
   </header>
 
-  <main>
-
+  <main style="display:none;">
     <div class="ver-grid">
       <div class="page-image">
         <img src="../assets/der.png" alt="DER Image">
@@ -42,6 +51,7 @@
     </div>
   </main>
 
-  <script src="../js/der.js"></script>
+  <script defer src="../js/der.js"></script>
+
 </body>
 </html>

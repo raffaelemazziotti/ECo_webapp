@@ -1,3 +1,8 @@
+function hideSpinner() {
+  document.getElementById('loading-overlay').style.display = 'none';
+  document.querySelector('main').style.display = 'flex';
+}
+
 document.addEventListener('DOMContentLoaded', async () => {
 
   // 0) Plugin for dashed zero-lines
@@ -260,5 +265,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   renderScatter('size-peaks-chart', sizePeaks, avgSize, -5, 20);
   renderScatter('vel-peaks-chart', velPeaks, avgVel, -60, 60);
+  hideSpinner();
+}
 
-});
+);
+
+//document.getElementById('loading-overlay').style.display = 'none';
+//document.querySelector('main').style.display = 'flex';

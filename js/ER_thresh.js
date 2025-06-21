@@ -1,5 +1,10 @@
 // er_thresh.js
 
+function hideSpinner() {
+  document.getElementById('loading-overlay').style.display = 'none';
+  //document.querySelector('main').style.display = 'flex';
+}
+
 async function loadData() {
   const response = await fetch('../data/ER_thresh.json');
   const data = await response.json();
@@ -46,6 +51,8 @@ async function loadData() {
       R²: ${formatNumber(subjectData.ver.pupil.r_squared)}
     `;
   });
+
+  hideSpinner();
 }
 
 function renderScatterWithFit(canvasId, series, fitColor, chartTitle) {
