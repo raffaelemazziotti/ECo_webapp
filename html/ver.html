@@ -3,16 +3,20 @@
 <head>
   <meta charset="utf-8"/>
   <title>ECo – Pupillometry VER</title>
+
   <link rel="stylesheet" href="../css/ver.css">
   <link rel="icon" href="../assets/favECon.ico" type="image/x-icon">
-  <script src="https://d3js.org/d3.v6.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" defer></script>
+  <script defer src="../js/ver.js"></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body class="ver-page">
+<body>
 
-  <!-- Loading -->
+  <!-- Loading overlay -->
   <div id="loading-overlay">
     <div class="spinner"></div>
     <p>Loading data...</p>
@@ -20,36 +24,50 @@
 
   <header>
     <h1>Pupillometry – VER</h1>
-    <p class="description">Vicarious aversive stimulation (VER) time‐series & peaks</p>
-    <button class="home-button" onclick="location.href='der.html'">Back</button>
-    <button class="home-button" onclick="location.href='../index.html'">Home</button>
-    <button class="home-button" onclick="location.href='mod.html'">Next</button>
+    <p class="description">
+      Vicarious Emotional Response (VER). Observer mice are exposed to demonstrators receiving shocks,
+      showing changes in both pupil dilation and locomotor activity.
+    </p>
+    <div class="nav-buttons">
+        <button onclick="location.href='der.html'">Previous</button>
+        <button onclick="location.href='../index.html'">Home</button>
+        <button onclick="location.href='mod.html'">Next</button>
+    </div>
   </header>
 
   <main style="display:none;">
-    <div class="ver-grid">
-      <div class="page-image">
-        <img src="../assets/ver.png" alt="VER Image">
-      </div>
 
-      <!-- Top scatter plots -->
-      <section class="right-charts">
-        <div class="scatter-plot">
-          <h3>Pupil‐Size Peaks</h3>
+    <!-- Top: 3 cards -->
+    <div class="top-grid">
+      <figure class="card">
+        <img src="../assets/ver.png" alt="VER Image">
+        <figcaption>Overview of VER experimental design</figcaption>
+      </figure>
+
+      <div class="card">
+        <h3>Pupil Size Peaks</h3>
+        <div class="canvas-container">
           <canvas id="size-peaks-chart"></canvas>
         </div>
-        <div class="scatter-plot">
-          <h3>Locomotor Activity Peaks</h3>
+        <p class="figcaption">Peak pupil dilation in observers</p>
+      </div>
+
+      <div class="card">
+        <h3>Locomotor Activity Peaks</h3>
+        <div class="canvas-container">
           <canvas id="vel-peaks-chart"></canvas>
         </div>
-      </section>
-
-      <!-- Bottom time series -->
-      <section class="left-charts" id="charts"></section>
+        <p class="figcaption">Peak locomotor speed in observers</p>
+      </div>
     </div>
-  </main>
 
-  <script defer src="../js/ver.js"></script>
+    <!-- Bottom: time series -->
+    <div class="time-series">
+      <h3 class="timeseries-title">Pupillary and locomotor response</h3>
+      <div id="charts"></div>
+    </div>
+
+  </main>
 
 </body>
 </html>
