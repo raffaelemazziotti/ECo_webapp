@@ -9,13 +9,14 @@
 
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js" defer></script>
+  <script defer src="../js/der.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body class="ver-page">
+<body>
 
-  <!-- Loading -->
+  <!-- Loading overlay -->
   <div id="loading-overlay">
     <div class="spinner"></div>
     <p>Loading data...</p>
@@ -23,35 +24,49 @@
 
   <header>
     <h1>Pupillometry – DER</h1>
-    <p class="description">Direct Emotional Response (DER). Mice are exposed to tail shocks of varying intensities, resulting in corresponding changes in both pupil dilation and locomotor activity.</p>
-    <button class="home-button" onclick="location.href='../index.html'">Home</button>
-    <button class="home-button" onclick="location.href='ver.html'">Next</button>
+    <p class="description">
+      Direct Emotional Response (DER). Mice are exposed to tail shocks of varying intensities,
+      resulting in corresponding changes in both pupil dilation and locomotor activity.
+    </p>
+    <div class="nav-buttons">
+      <button onclick="location.href='../index.html'">Home</button>
+      <button onclick="location.href='ver.html'">Next</button>
+    </div>
   </header>
 
   <main style="display:none;">
-    <div class="ver-grid">
-      <div class="page-image">
-        <img src="../assets/der.png" alt="DER Image">
-      </div>
 
-      <!-- scatter plots -->
-      <section class="right-charts">
-        <div class="scatter-plot">
-          <h3>Pupil Size Peaks</h3>
+    <!-- Top: 3 cards -->
+    <div class="top-grid">
+      <figure class="card">
+        <img src="../assets/der.png" alt="DER Image">
+        <figcaption>Overview of DER experimental design</figcaption>
+      </figure>
+
+      <div class="card">
+        <h3>Pupil Size Peaks</h3>
+        <div class="canvas-container">
           <canvas id="size-peaks-chart"></canvas>
         </div>
-        <div class="scatter-plot">
-          <h3>Locomotor Activity Peaks</h3>
+        <p class="figcaption">Peak pupil dilation after tail shocks</p>
+      </div>
+
+      <div class="card">
+        <h3>Locomotor Activity Peaks</h3>
+        <div class="canvas-container">
           <canvas id="vel-peaks-chart"></canvas>
         </div>
-      </section>
-
-      <!--time series -->
-      <section class="left-charts" id="charts"></section>
+        <p class="figcaption">Peak locomotor speed during tail shocks</p>
+      </div>
     </div>
-  </main>
 
-  <script defer src="../js/der.js"></script>
+    <!-- Bottom: time series -->
+    <div class="time-series">
+      <h3 class="timeseries-title">Pupillary and locomotor response</h3>
+      <div id="charts"></div>
+    </div>
+
+  </main>
 
 </body>
 </html>
