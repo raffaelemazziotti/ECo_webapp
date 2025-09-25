@@ -33,38 +33,65 @@
   const ctxHighlight = createLayer(1);
   const ctxNodes = createLayer(2);
 
-  // --- Background: faint edges, all same style ---
-  ctxEdges.globalAlpha = 0.05;
-  edgesData.forEach(e => {
-    const s = nodeById[e.source], t = nodeById[e.target];
-    ctxEdges.beginPath();
-    ctxEdges.moveTo(s.x, s.y);
-    ctxEdges.lineTo(t.x, t.y);
-    ctxEdges.strokeStyle = e.color;
-    ctxEdges.lineWidth = 1;
-    ctxEdges.stroke();
-  });
-  ctxEdges.globalAlpha = 1;
+  // faint background edges
+  function drawFaintEdges() {
+    ctxEdges.clearRect(0, 0, W, H);
+    ctxEdges.globalAlpha = 0.05;
+    edgesData.forEach(e => {
+      const s = nodeById[e.source], t = nodeById[e.target];
+      ctxEdges.beginPath();
+      ctxEdges.moveTo(s.x, s.y);
+      ctxEdges.lineTo(t.x, t.y);
+      ctxEdges.strokeStyle = e.color;
+      ctxEdges.lineWidth = 1;
+      ctxEdges.stroke();
+    });
+    ctxEdges.globalAlpha = 1;
+  }
+  drawFaintEdges();
 
   ctxNodes.font = "12px Arial";
   ctxNodes.textAlign = "center";
   ctxNodes.textBaseline = "middle";
 
-  function drawNodes(hoverId = null) {
+  function drawNodes(hoverId = null, targetStrengths = {}) {
     ctxNodes.clearRect(0, 0, W, H);
-    const r = 15;
+    const baseR = 15;
+
     nodes.forEach(n => {
+      let size = baseR;
+      let fillCol = n.color; // default: structure color
+      let alpha = 1;
+
+      if (hoverId) {
+        if (n.id === hoverId) {
+          // hovered node: bigger, keep its structure color
+          size = baseR + 4;
+          fillCol = n.color;
+        } else if (targetStrengths[n.id]) {
+          // connected target node: structure color, alpha ∝ strength
+          const strength = targetStrengths[n.id];
+          size = baseR + 8 * strength;
+          fillCol = hexToRgba(n.color || "#ccc", 0.3 + 0.7 * strength);
+        } else {
+          // unrelated nodes: white
+          fillCol = "#fff";
+        }
+      }
+
       ctxNodes.beginPath();
       if (n.group === "both") {
-        ctxNodes.rect(n.x - r, n.y - r, r * 2, r * 2);
+        ctxNodes.rect(n.x - size, n.y - size, size * 2, size * 2);
       } else {
-        ctxNodes.arc(n.x, n.y, r, 0, Math.PI * 2);
+        ctxNodes.arc(n.x, n.y, size, 0, Math.PI * 2);
       }
-      ctxNodes.fillStyle = n.color || "#ccc";
+      ctxNodes.fillStyle = fillCol;
       ctxNodes.fill();
+
       ctxNodes.lineWidth = (n.id === hoverId ? 3 : 1);
       ctxNodes.strokeStyle = "#333";
       ctxNodes.stroke();
+
       ctxNodes.fillStyle = "#000";
       ctxNodes.fillText(n.id, n.x, n.y);
     });
@@ -72,55 +99,36 @@
 
   drawNodes();
 
-  const legend = document.getElementById("legend");
-  const structMap = {};
-  nodes.forEach(n => structMap[n.structure] = n.color);
-  Object.entries(structMap).forEach(([label, color]) => {
-    const div = document.createElement("div");
-    div.className = "item";
-    div.innerHTML = `
-      <div class="swatch" style="background:${color}"></div>
-      <div>${label}</div>`;
-    legend.appendChild(div);
-  });
-
   const tip = document.getElementById("tooltip");
   function showTooltip(x, y, html) {
-  tip.innerHTML = html;
-  const offset = 15;
-  let tx = x + offset;
-  let ty = y + offset;
+    tip.innerHTML = html;
+    const offset = 15;
+    let tx = x + offset;
+    let ty = y + offset;
 
-  const r = 20; // node radius + padding
-  let overlap = true;
-  let attempts = 0;
+    const r = 20;
+    const candidates = [
+      { dx: offset, dy: offset },
+      { dx: -offset - tip.offsetWidth, dy: offset },
+      { dx: offset, dy: -offset - tip.offsetHeight },
+      { dx: -offset - tip.offsetWidth, dy: -offset - tip.offsetHeight }
+    ];
 
-  // try up to 4 positions (right-down, left-down, right-up, left-up)
-  const candidates = [
-    { dx: offset, dy: offset },
-    { dx: -offset - tip.offsetWidth, dy: offset },
-    { dx: offset, dy: -offset - tip.offsetHeight },
-    { dx: -offset - tip.offsetWidth, dy: -offset - tip.offsetHeight }
-  ];
+    for (const cand of candidates) {
+      tx = x + cand.dx;
+      ty = y + cand.dy;
+      const overlap = nodes.some(n => {
+        const dx = n.x - tx;
+        const dy = n.y - ty;
+        return Math.sqrt(dx * dx + dy * dy) < r;
+      });
+      if (!overlap) break;
+    }
 
-  for (const cand of candidates) {
-    tx = x + cand.dx;
-    ty = y + cand.dy;
-
-    overlap = nodes.some(n => {
-      const dx = n.x - tx;
-      const dy = n.y - ty;
-      return Math.sqrt(dx * dx + dy * dy) < r;
-    });
-
-    if (!overlap) break;
-    attempts++;
+    tip.style.left = `${tx}px`;
+    tip.style.top = `${ty}px`;
+    tip.style.opacity = 1;
   }
-
-  tip.style.left = `${tx}px`;
-  tip.style.top = `${ty}px`;
-  tip.style.opacity = 1;
-}
   function hideTooltip() {
     tip.style.opacity = 0;
   }
@@ -157,30 +165,39 @@
     ctxHighlight.clearRect(0, 0, W, H);
 
     if (hovered) {
-      drawNodes(hovered.id);
-      showTooltip(mx, my, `${hovered.id}<br><b>${hovered.name}</b><br>${hovered.structure}`);
+      // hide faint edges
+      ctxEdges.clearRect(0, 0, W, H);
 
       const outs = outgoing[hovered.id] || [];
-    if (outs.length > 0) {
-      const wVals = outs.map(e => e.weight || 0);
-      const minW = Math.min(...wVals);
-      const maxW = Math.max(...wVals);
-      const range = maxW - minW || 1;
+      const targetStrengths = {};
 
-      outs.forEach(e => {
-        const s = nodeById[e.source], t = nodeById[e.target];
-        const norm = (e.weight - minW) / range; // 0 → weakest, 1 → strongest
-        const alpha = norm; // direct map: 0..1
-        ctxHighlight.beginPath();
-        ctxHighlight.moveTo(s.x, s.y);
-        ctxHighlight.lineTo(t.x, t.y);
-        ctxHighlight.strokeStyle = hexToRgba(e.color, alpha);
-        ctxHighlight.lineWidth = 2;
-        ctxHighlight.stroke();
-        drawArrow(ctxHighlight, s, t, e.color, alpha);
-      });
-    }
+      if (outs.length > 0) {
+        const wVals = outs.map(e => e.weight || 0);
+        const minW = Math.min(...wVals);
+        const maxW = Math.max(...wVals);
+        const range = maxW - minW || 1;
+
+        outs.forEach(e => {
+          const s = nodeById[e.source], t = nodeById[e.target];
+          const norm = (e.weight - minW) / range;
+          const alpha = norm;
+
+          ctxHighlight.beginPath();
+          ctxHighlight.moveTo(s.x, s.y);
+          ctxHighlight.lineTo(t.x, t.y);
+          ctxHighlight.strokeStyle = hexToRgba(e.color, alpha);
+          ctxHighlight.lineWidth = 2;
+          ctxHighlight.stroke();
+          drawArrow(ctxHighlight, s, t, e.color, alpha);
+
+          targetStrengths[t.id] = Math.max(targetStrengths[t.id] || 0, norm);
+        });
+      }
+
+      drawNodes(hovered.id, targetStrengths);
+      showTooltip(mx, my, `${hovered.id}<br><b>${hovered.name}</b><br>${hovered.structure}`);
     } else {
+      drawFaintEdges();
       drawNodes();
       hideTooltip();
     }
@@ -190,12 +207,12 @@
 
   wrapper.addEventListener("mouseleave", () => {
     ctxHighlight.clearRect(0, 0, W, H);
+    drawFaintEdges();
     drawNodes();
     hideTooltip();
     lastHover = null;
   });
 
-  // helper: convert hex color to rgba string with alpha
   function hexToRgba(hex, alpha) {
     let h = hex.replace('#', '');
     if (h.length === 3) h = h.split('').map(c => c + c).join('');
@@ -205,5 +222,4 @@
     const b = int & 255;
     return `rgba(${r},${g},${b},${alpha})`;
   }
-
 })();
