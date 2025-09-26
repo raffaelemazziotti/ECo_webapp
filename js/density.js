@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const res = await fetch('../data/nodes.json');
     const nodes = await res.json();
     nodes.forEach(n => {
-      // normalize keys: remove commas and trim
       const keyId   = n.id.replace(/,/g, '').trim();
       const keyName = n.name.replace(/,/g, '').trim();
       areaNameMap[n.id] = n.name;
@@ -41,7 +40,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   };
 
   //
-  // 1) Percent Activation (horizontal bar)
+  // 1) Percent Activation (horizontal bar, same as before)
   //
   Papa.parse('../data/struct_activation_perc.csv', {
     download: true,
@@ -67,25 +66,14 @@ document.addEventListener('DOMContentLoaded', async () => {
           indexAxis: 'y',
           responsive: true,
           maintainAspectRatio: false,
-          interaction: {
-            mode: 'index',
-            axis: 'y',
-            intersect: false
-          },
+          interaction: { mode: 'index', axis: 'y', intersect: false },
           plugins: {
             legend: { position: 'bottom' },
-            tooltip: {
-              mode: 'index',
-              intersect: false
-            }
+            tooltip: { mode: 'index', intersect: false }
           },
           scales: {
-            x: {
-              title: { display: true, text: 'Percentage Activation' }
-            },
-            y: {
-              title: { display: true, text: 'Brain Structure' }
-            }
+            x: { title: { display: true, text: 'Percentage Activation' } },
+            y: { title: { display: true, text: 'Brain Structure' } }
           }
         }
       });
@@ -94,15 +82,28 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   //
-  // 2) Density per Structure (vertical bars with full-name tooltips)
+  // 2) Density per Structure (using density_avg_vals.csv)
   //
-  Papa.parse('../data/area_activation_density.csv', {
+  Papa.parse('../data/density_avg_vals.csv', {
     download: true,
     header: true,
     skipEmptyLines: true,
     complete: ({ data }) => {
-      const container   = document.getElementById('structure-charts');
-      const structures  = [...new Set(data.map(d => d.structure))];
+      const container = document.getElementById('structure-charts');
+
+      // enforce custom order
+      const structureOrder = [
+        "Isocortex",
+        "Olfactory areas",
+        "Hippocampal formation",
+        "Pallidum",
+        "Cortical subplate",
+        "Striatum",
+        "Midbrain",
+        "Thalamus",
+        "Hypothalamus"
+      ];
+      const structures = structureOrder.filter(s => data.some(d => d.structure === s));
 
       structures.forEach(struct => {
         const rows    = data.filter(r => r.structure === struct);
@@ -111,7 +112,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         const structColor = rows[0].color;
         const gridColor   = hexToRgba(structColor, 0.2);
 
-        // Create wrapper
         const wrap = document.createElement('div');
         wrap.className = 'structure-plot';
         wrap.innerHTML = `
@@ -120,7 +120,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         `;
         container.appendChild(wrap);
 
-        // Build datasets
         const datasets = roles.map((role, i) => ({
           label: role.replace('_',' '),
           data: areas.map(area => {
@@ -130,7 +129,6 @@ document.addEventListener('DOMContentLoaded', async () => {
           backgroundColor: roleColor[role] || `rgba(${50*i},${99+50*i},${132+30*i},0.7)`
         }));
 
-        // Render chart
         const ctx2 = wrap.querySelector('canvas').getContext('2d');
         new Chart(ctx2, {
           type: 'bar',
@@ -138,11 +136,7 @@ document.addEventListener('DOMContentLoaded', async () => {
           options: {
             responsive: true,
             maintainAspectRatio: false,
-            interaction: {
-              mode: 'index',
-              axis: 'x',
-              intersect: false
-            },
+            interaction: { mode: 'index', axis: 'x', intersect: false },
             plugins: {
               legend: {
                 position: 'bottom',
@@ -182,74 +176,45 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
   //
-  // 3) Volcanos (use structure colors, nodes normalized by removing commas)
+  // 3) Volcano plots (unchanged)
   //
-function createVolcanoChart(canvasId, rawData) {
-  if (!rawData.length) return;
+  function createVolcanoChart(canvasId, rawData) {
+    if (!rawData.length) return;
+    const keys  = Object.keys(rawData[0]);
+    const fcKey = keys.find(k => k.toLowerCase().includes('fold'));
+    const pvKey = keys.find(k => k.toLowerCase().includes('pval'));
+    const thr   = Math.log10(0.05);
 
-  // 1) find CSV columns
-  const keys  = Object.keys(rawData[0]);
-  const fcKey = keys.find(k => k.toLowerCase().includes('fold'));
-  const pvKey = keys.find(k => k.toLowerCase().includes('pval'));
-  const thr   = Math.log10(0.05);
+    const pts = rawData.map(d => {
+      const fc = parseFloat(d[fcKey]), pv = parseFloat(d[pvKey]);
+      if (isNaN(fc) || isNaN(pv) || fc <= 0 || pv <= 0) return null;
+      const key = d.area ? d.area.trim() : '';
+      const color = areaColorMap[key] || '#000000';
+      return { x: Math.log10(fc), y: Math.log10(pv), name: d.area, color };
+    }).filter(Boolean);
+    if (!pts.length) return;
 
-  // 2) build points
-  const pts = rawData.map(d => {
-    const fc = parseFloat(d[fcKey]), pv = parseFloat(d[pvKey]);
-    if (isNaN(fc) || isNaN(pv) || fc <= 0 || pv <= 0) return null;
+    let xs = pts.map(p=>p.x), ys = pts.map(p=>p.y);
+    let xMin = Math.min(...xs, 0), xMax = Math.max(...xs, 0);
+    let yMin = Math.min(...ys, thr), yMax = Math.max(...ys, thr);
+    const xPad = (xMax - xMin)*0.1, yPad = (yMax - yMin)*0.1;
+    xMin -= xPad; xMax += xPad; yMin -= yPad; yMax += yPad;
 
-    const key = d.area ? d.area.trim() : '';
-    const color = areaColorMap[key] || '#000000'; // black if not in nodes.json
-
-    return {
-      x:    Math.log10(fc),
-      y:    Math.log10(pv),
-      name: d.area,
-      color
+    const scatterDs = {
+      type: 'scatter',
+      data: pts,
+      pointRadius: 5,
+      pointHoverRadius: 7,
+      hitRadius: 8,
+      backgroundColor: pts.map(p => p.y <= thr ? p.color : 'transparent'),
+      borderColor: pts.map(p => p.color),
+      borderWidth: 1
     };
-  }).filter(Boolean);
-  if (!pts.length) return;
 
-  // 3) compute extents (include 0 and thr), add 10% padding
-  let xs = pts.map(p=>p.x), ys = pts.map(p=>p.y);
-  let xMin = Math.min(Math.min(...xs), 0),
-      xMax = Math.max(Math.max(...xs), 0);
-  let yMin = Math.min(Math.min(...ys), thr),
-      yMax = Math.max(Math.max(...ys), thr);
-  const xPad = (xMax - xMin)*0.1, yPad = (yMax - yMin)*0.1;
-  xMin -= xPad; xMax += xPad; yMin -= yPad; yMax += yPad;
+    const thrLineDs = { type:'line', data:[{x:xMin,y:thr},{x:xMax,y:thr}], borderDash:[6,4], borderColor:'#444', borderWidth:1, pointRadius:0, fill:false };
+    const zeroLineDs= { type:'line', data:[{x:0,y:yMin},{x:0,y:yMax}], borderDash:[6,4], borderColor:'#444', borderWidth:1, pointRadius:0, fill:false };
 
-  // 4) scatter dataset: filled below thr, hollow above
-  const scatterDs = {
-    type: 'scatter',
-    label: '',
-    data: pts,
-    pointRadius:      5,
-    pointHoverRadius: 7,
-    hitRadius:        8,
-    backgroundColor: pts.map(p => p.y <= thr ? p.color : 'transparent'),
-    borderColor:     pts.map(p => p.color),
-    borderWidth:      1
-  };
-
-  // 5) threshold lines
-  const thrLineDs = {
-    type:'line',
-    data:[ {x:xMin,y:thr}, {x:xMax,y:thr} ],
-    borderDash:[6,4], borderColor:'#444', borderWidth:1,
-    pointRadius:0, fill:false
-  };
-  const zeroLineDs = {
-    type:'line',
-    data:[ {x:0,y:yMin}, {x:0,y:yMax} ],
-    borderDash:[6,4], borderColor:'#444', borderWidth:1,
-    pointRadius:0, fill:false
-  };
-
-  // 6) render mixed scatter+lines
-  new Chart(
-    document.getElementById(canvasId).getContext('2d'),
-    {
+    new Chart(document.getElementById(canvasId).getContext('2d'), {
       type: 'scatter',
       data: { datasets: [scatterDs, thrLineDs, zeroLineDs] },
       options: {
@@ -260,10 +225,7 @@ function createVolcanoChart(canvasId, rawData) {
           legend: { display:false },
           tooltip: {
             displayColors:false,
-            callbacks: {
-              title: () => '',
-              label: ctx => ctx.raw.name
-            }
+            callbacks: { title: () => '', label: ctx => ctx.raw.name }
           }
         },
         scales: {
@@ -271,18 +233,14 @@ function createVolcanoChart(canvasId, rawData) {
           y: { reverse:true, title:{display:true,text:'log₁₀(p-value)'}, min:yMin, max:yMax }
         }
       }
-    }
-  );
-}
+    });
+  }
 
-  // load demonstrator
   Papa.parse('../data/fold_change_dem_pval.csv', {
     download: true, header: true, skipEmptyLines: true,
     complete: ({ data }) => createVolcanoChart('volcano-dem', data),
     error: err => console.error('Error loading dem CSV:', err)
   });
-
-  // load observer
   Papa.parse('../data/fold_change_obs_pval.csv', {
     download: true, header: true, skipEmptyLines: true,
     complete: ({ data }) => createVolcanoChart('volcano-obs', data),
