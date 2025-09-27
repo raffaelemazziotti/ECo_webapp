@@ -1,41 +1,28 @@
 // connectome.js
 (async function () {
-  // ---- load data ----
   const [nodesRaw, edges] = await Promise.all([
     fetch("../data/nodes.json").then(r => r.json()),
     fetch("../data/edges.json").then(r => r.json())
   ]);
 
-  // ---- elements ----
   const container = document.getElementById("graph-container");
-  const wrapper = document.getElementById("graph-wrapper");
-  const tip = document.getElementById("tooltip");
-
-  Object.assign(container.style, {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100%",
-    height: "calc(100vh - 200px)",
-    position: "relative"
-  });
-  Object.assign(wrapper.style, { position: "relative", margin: "0 auto" });
-
-  // ---- params (adaptive for mobile) ----
-  const padding = 60;
-  let baseR = getBaseR();
-
-  function getBaseR() {
-    const w = Math.min(window.innerWidth || 1024, container.clientWidth || 1024);
-    if (w <= 420) return 6;      // phones
-    if (w <= 768) return 10;     // small tablets
-    return 15;                   // desktop (unchanged)
-  }
+  const wrapper   = document.getElementById("graph-wrapper");
+  const infoBox   = document.getElementById("node-info");
+  const edgeModeSelect = document.getElementById("edge-mode");
 
   // ---- sizing ----
+  const padding = 40;
+  function getBaseR() {
+    const w = window.innerWidth;
+    if (w <= 420) return 6;
+    if (w <= 768) return 10;
+    return 15;
+  }
+  let baseR = getBaseR();
+
   function getCanvasSize() {
-    const W = Math.min(1400, Math.max(320, container.clientWidth - 20));
-    const H = Math.min(1000, Math.max(300, container.clientHeight - 20));
+    const W = container.clientWidth;
+    const H = container.clientHeight;
     return { W, H };
   }
   let { W, H } = getCanvasSize();
@@ -52,74 +39,55 @@
   function initLayers() {
     wrapper.innerHTML = "";
     ({ W, H } = getCanvasSize());
-    Object.assign(wrapper.style, { width: W + "px", height: H + "px" });
-    ctxEdges = createLayer(0);
+    Object.assign(wrapper.style, { width: `${W}px`, height: `${H}px` });
+    ctxEdges     = createLayer(0);
     ctxHighlight = createLayer(1);
-    ctxNodes = createLayer(2);
+    ctxNodes     = createLayer(2);
     const fs = Math.max(10, Math.round(baseR * 0.9));
     ctxNodes.font = `${fs}px Arial`;
     ctxNodes.textAlign = "center";
     ctxNodes.textBaseline = "middle";
   }
 
-  // ---- data prep ----
+  // ---- scaling ----
   const xs = nodesRaw.map(n => n.x), ys = nodesRaw.map(n => n.y);
   const minX = Math.min(...xs), maxX = Math.max(...xs);
   const minY = Math.min(...ys), maxY = Math.max(...ys);
 
-  let nodes = [];
-  let nodeById = {};
+  let nodes = [], nodeById = {};
   const outgoing = {};
-  edges.forEach(e => (outgoing[e.source] ||= []).push(e));
+  const incoming = {};
+  edges.forEach(e => {
+    (outgoing[e.source] ||= []).push(e);
+    (incoming[e.target] ||= []).push(e);
+  });
 
   function scaleNodes() {
+    const { W, H } = getCanvasSize();
     const scaleX = (W - 2 * padding) / (maxX - minX || 1);
     const scaleY = (H - 2 * padding) / (maxY - minY || 1);
-    const scale = Math.min(scaleX, scaleY);
-    const usedW = (maxX - minX) * scale;
-    const usedH = (maxY - minY) * scale;
+    const scale  = Math.min(scaleX, scaleY);
+
+    const usedW  = (maxX - minX) * scale;
+    const usedH  = (maxY - minY) * scale;
     const offsetX = (W - usedW) / 2 - minX * scale;
     const offsetY = (H - usedH) / 2 - minY * scale;
-    nodes = nodesRaw.map(n => ({ ...n, x: n.x * scale + offsetX, y: n.y * scale + offsetY }));
-  }
 
-  function clampToBounds(n, m = baseR + 2) {
-    n.x = Math.max(padding + m, Math.min(W - padding - m, n.x));
-    n.y = Math.max(padding + m, Math.min(H - padding - m, n.y));
-  }
-
-  function resolveCollisions(minDist = baseR * 2.2, iterations = 240) {
-    for (let k = 0; k < iterations; k++) {
-      let moved = false;
-      for (let i = 0; i < nodes.length; i++) {
-        for (let j = i + 1; j < nodes.length; j++) {
-          const a = nodes[i], b = nodes[j];
-          const dx = b.x - a.x, dy = b.y - a.y;
-          const d2 = dx * dx + dy * dy; if (!d2) continue;
-          const d = Math.sqrt(d2);
-          if (d < minDist) {
-            const push = (minDist - d) * 0.5;
-            const ux = dx / d, uy = dy / d;
-            a.x -= ux * push; a.y -= uy * push;
-            b.x += ux * push; b.y += uy * push;
-            clampToBounds(a); clampToBounds(b);
-            moved = true;
-          }
-        }
-      }
-      if (!moved) break;
-    }
+    nodes = nodesRaw.map(n => ({
+      ...n,
+      x: n.x * scale + offsetX,
+      y: n.y * scale + offsetY
+    }));
   }
 
   function rebuildIndex() {
     nodeById = Object.fromEntries(nodes.map(n => [n.id, n]));
   }
 
-  // ---- draw ----
+  // ---- drawing ----
   function drawFaintEdges() {
     ctxEdges.clearRect(0, 0, W, H);
     ctxEdges.globalAlpha = 0.06;
-    const lw = Math.max(0.6, baseR * 0.07); // thinner on mobile
     edges.forEach(e => {
       const s = nodeById[e.source], t = nodeById[e.target];
       if (!s || !t) return;
@@ -127,7 +95,7 @@
       ctxEdges.moveTo(s.x, s.y);
       ctxEdges.lineTo(t.x, t.y);
       ctxEdges.strokeStyle = e.color;
-      ctxEdges.lineWidth = lw;
+      ctxEdges.lineWidth = 1;
       ctxEdges.stroke();
     });
     ctxEdges.globalAlpha = 1;
@@ -135,31 +103,33 @@
 
   function drawNodes(hoverId = null, strengths = {}) {
     ctxNodes.clearRect(0, 0, W, H);
-    const strokeW = Math.max(1, Math.round(baseR * 0.12));
     nodes.forEach(n => {
       let r = baseR;
       let fill = n.color;
       if (hoverId) {
-        if (n.id === hoverId) r = baseR + Math.max(3, Math.round(baseR * 0.3));
+        if (n.id === hoverId) r = baseR + 4;
         else if (strengths[n.id]) {
           const s = strengths[n.id];
-          r = baseR + Math.max(3, Math.round(baseR * 0.5)) * s;
+          r = baseR + 8 * s;
           fill = hexToRgba(n.color || "#ccc", 0.3 + 0.7 * s);
         } else fill = "#fff";
       }
       ctxNodes.beginPath();
       if (n.group === "both") ctxNodes.rect(n.x - r, n.y - r, r * 2, r * 2);
       else ctxNodes.arc(n.x, n.y, r, 0, Math.PI * 2);
-      ctxNodes.fillStyle = fill; ctxNodes.fill();
-      ctxNodes.lineWidth = hoverId === n.id ? strokeW + 1 : strokeW;
-      ctxNodes.strokeStyle = "#333"; ctxNodes.stroke();
-      ctxNodes.fillStyle = "#000"; ctxNodes.fillText(n.id, n.x, n.y);
+      ctxNodes.fillStyle = fill;
+      ctxNodes.fill();
+      ctxNodes.lineWidth = hoverId === n.id ? 3 : 1;
+      ctxNodes.strokeStyle = "#333";
+      ctxNodes.stroke();
+      ctxNodes.fillStyle = "#000";
+      ctxNodes.fillText(n.id, n.x, n.y);
     });
   }
 
   function drawArrow(ctx, s, t, col, alpha) {
     const ang = Math.atan2(t.y - s.y, t.x - s.x);
-    const len = Math.max(6, Math.round(baseR * 0.55));
+    const len = 8;
     ctx.beginPath();
     ctx.moveTo(t.x, t.y);
     ctx.lineTo(t.x - len * Math.cos(ang - 0.3), t.y - len * Math.sin(ang - 0.3));
@@ -169,39 +139,13 @@
     ctx.fill();
   }
 
-  // ---- tooltip (container-relative, using page mouse) ----
-  function showTooltipAtMouse(html, e) {
-    tip.innerHTML = html;
-    tip.style.opacity = 0;
-    tip.style.left = "-9999px";
-    tip.style.top  = "-9999px";
-
-    const w = tip.offsetWidth || 160;
-    const h = tip.offsetHeight || 60;
-    const offset = Math.max(8, Math.round(baseR * 0.7));
-
-    const dirs = [
-      [ offset,  0], [-offset - w, 0],
-      [ 0,  offset], [ 0, -offset - h]
-    ];
-    const [dx, dy] = dirs[Math.floor(Math.random() * dirs.length)];
-
-    const cRect = container.getBoundingClientRect();
-    let tx = (e.pageX - cRect.left) + dx;
-    let ty = (e.pageY - cRect.top)  + dy;
-
-    const cw = container.clientWidth;
-    const ch = container.clientHeight;
-    if (tx + w > cw - 2) tx = cw - w - 2;
-    if (ty + h > ch - 2) ty = ch - h - 2;
-    if (tx < 2) tx = 2;
-    if (ty < 2) ty = 2;
-
-    tip.style.left = `${tx}px`;
-    tip.style.top  = `${ty}px`;
-    tip.style.opacity = 1;
+  // ---- info panel ----
+  function showNodeInfo(n) {
+    infoBox.innerHTML = `<b>${n.id}</b><br>${n.name}<br>${n.structure}`;
   }
-  function hideTooltip() { tip.style.opacity = 0; }
+  function clearNodeInfo() {
+    infoBox.innerHTML = "Hover a node to see details";
+  }
 
   // ---- interaction ----
   let lastHover = null;
@@ -211,53 +155,61 @@
     const my = e.clientY - rect.top;
 
     let hover = null;
-    const hitR = baseR + Math.max(2, Math.round(baseR * 0.2));
-    const hitR2 = hitR * hitR;
     for (const n of nodes) {
-      const dx = n.x - mx, dy = n.y - my;
-      if (dx * dx + dy * dy <= hitR2) { hover = n; break; }
+      if ((n.x - mx) ** 2 + (n.y - my) ** 2 < (baseR + 2) ** 2) { hover = n; break; }
     }
+    if (hover?.id === lastHover) return;
 
     ctxHighlight.clearRect(0, 0, W, H);
 
     if (hover) {
-      if (hover.id !== lastHover) {
-        ctxEdges.clearRect(0, 0, W, H);
+      ctxEdges.clearRect(0, 0, W, H);
 
-        const outs = outgoing[hover.id] || [];
-        const strengths = {};
-        if (outs.length) {
-          const weights = outs.map(e => e.weight || 0);
-          const minW = Math.min(...weights);
-          const maxW = Math.max(...weights);
-          const range = maxW - minW || 1;
+      const mode = edgeModeSelect.value;
+      const list = mode === "outgoing" ? (outgoing[hover.id] || []) : (incoming[hover.id] || []);
+      const strengths = {};
 
-          const hlw = Math.max(1, Math.round(baseR * 0.15));
-          outs.forEach(e2 => {
-            const s = nodeById[e2.source], t = nodeById[e2.target];
-            if (!s || !t) return;
-            const norm = (e2.weight - minW) / range;
-            ctxHighlight.beginPath();
-            ctxHighlight.moveTo(s.x, s.y);
-            ctxHighlight.lineTo(t.x, t.y);
-            ctxHighlight.strokeStyle = hexToRgba(e2.color, norm);
-            ctxHighlight.lineWidth = hlw;
-            ctxHighlight.stroke();
-            drawArrow(ctxHighlight, s, t, e2.color, norm);
-            strengths[t.id] = Math.max(strengths[t.id] || 0, norm);
-          });
-        }
+      if (list.length) {
+        const weights = list.map(e => e.weight || 0);
+        const minW = Math.min(...weights);
+        const maxW = Math.max(...weights);
+        const range = maxW - minW || 1;
 
-        drawNodes(hover.id, strengths);
-        const html = `${hover.id}<br><b>${hover.name}</b><br>${hover.structure}`;
-        showTooltipAtMouse(html, e);
+        list.forEach(e2 => {
+          const s = nodeById[e2.source], t = nodeById[e2.target];
+          if (!s || !t) return;
+          const norm = (e2.weight - minW) / range;
+
+          ctxEdges.beginPath();
+          ctxEdges.moveTo(s.x, s.y);
+          ctxEdges.lineTo(t.x, t.y);
+
+          // coloring rule
+          if (mode === "outgoing") {
+            ctxEdges.strokeStyle = hexToRgba(hover.color, norm);
+          } else {
+            ctxEdges.strokeStyle = hexToRgba(s.color, norm);
+          }
+
+          ctxEdges.lineWidth = 2;
+          ctxEdges.stroke();
+
+          // arrow
+          const arrowColor = (mode === "outgoing") ? hover.color : s.color;
+          drawArrow(ctxEdges, s, t, arrowColor, norm);
+
+          const targetId = mode === "outgoing" ? t.id : s.id;
+          strengths[targetId] = Math.max(strengths[targetId] || 0, norm);
+        });
       }
+
+      drawNodes(hover.id, strengths);
+      showNodeInfo(hover);
     } else {
       drawFaintEdges();
       drawNodes();
-      hideTooltip();
+      clearNodeInfo();
     }
-
     lastHover = hover?.id || null;
   });
 
@@ -265,24 +217,21 @@
     ctxHighlight.clearRect(0, 0, W, H);
     drawFaintEdges();
     drawNodes();
-    hideTooltip();
+    clearNodeInfo();
     lastHover = null;
   });
 
-  // ---- build ----
+  // ---- rebuild ----
   function rebuildAll() {
     baseR = getBaseR();
     initLayers();
     scaleNodes();
-    resolveCollisions(baseR * 2.2, 260);
     rebuildIndex();
     drawFaintEdges();
     drawNodes();
-    hideTooltip();
+    clearNodeInfo();
   }
   window.addEventListener("resize", rebuildAll);
-
-  // ---- start ----
   rebuildAll();
 
   // ---- utils ----

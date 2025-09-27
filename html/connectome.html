@@ -14,16 +14,29 @@
     <h1>Emotional Contagion Connectome</h1>
     <p class="description">
       Explore ipsilateral connectivity strengths between brain areas for observer and demonstrator groups.
-      Hover over a region to highlight its strongest outgoing projections.
+      Hover over a region to highlight its strongest projections.
     </p>
-    <button class="home-button" onclick="location.href='threshold.html'">Back</button>
-    <button class="home-button" onclick="window.location.href='../index.html'">Home</button>
-    <button class="home-button" onclick="location.href='connectome_matrix.html'">Next</button>
+    <div class="header-controls">
+      <button class="home-button" onclick="location.href='threshold.html'">Back</button>
+      <button class="home-button" onclick="window.location.href='../index.html'">Home</button>
+      <button class="home-button" onclick="location.href='connectome_matrix.html'">Next</button>
+    </div>
   </header>
+
   <main>
     <div id="graph-container">
       <div id="graph-wrapper"></div>
 
+      <!-- Node info panel -->
+      <div id="node-info">Hover a node to see details</div>
+
+      <!-- Dropdown for edge mode -->
+      <select id="edge-mode">
+        <option value="outgoing" selected>Outgoing edges</option>
+        <option value="incoming">Incoming edges</option>
+      </select>
+
+      <!-- Legend and tooltip -->
       <div id="legend"></div>
       <div id="tooltip" class="tooltip"></div>
     </div>
