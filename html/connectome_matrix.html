@@ -3,23 +3,22 @@
 <head>
   <meta charset="utf-8"/>
   <title>ECo - Matrix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="../css/mobile.css">
   <link rel="stylesheet" href="../css/connectome_matrix.css">
   <link rel="icon" href="../assets/favECon.ico" type="image/x-icon">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body class="con_mat-page">
+<body>
   <header>
-    <h1>Connectome Adjacency Heatmap</h1>
-    <p class="description">
-      Select a view, then hover a cell to see the connection strength between two brain areas.
-    </p>
-    <button class="home-button" onclick="location.href='connectome.html'">Prev</button>
-    <button class="home-button" onclick="window.location.href='../index.html'">Home</button>
-    <button class="home-button" onclick="location.href='hits.html'">Next</button>
+    <h1>Connectome Heatmap</h1>
+    <p>Select a view and tap a cell to see the connection strength.</p>
+    <div class="nav-buttons">
+      <button onclick="location.href='connectome.html'">Prev</button>
+      <button onclick="location.href='../index.html'">Home</button>
+      <button onclick="location.href='hits.html'">Next</button>
+    </div>
   </header>
+
   <main>
     <div class="controls">
       <label for="group-select">View:</label>
@@ -34,7 +33,7 @@
     </div>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
-  <script src="../js/connectome_matrix.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="../js/connectome_matrix.js"></script>
 </body>
 </html>

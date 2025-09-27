@@ -1,108 +1,102 @@
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.home-button {
-  background: #007bff;
-  color: #fff;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-header .description { color:#666; margin-bottom:1rem; }
+* { margin:0; padding:0; box-sizing:border-box; }
 
 html, body {
-  height: 100%;
+  height:100%;
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background:#f4f4f4;
+  color:#333;
 }
+
 body {
-  display: flex;
-  flex-direction: column;
+  display:flex;
+  flex-direction:column;
 }
 
 /* Header */
 header {
-  background: #fff;
-  padding: 1rem 2rem;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background:#fff;
+  padding:1rem;
+  text-align:center;
+  box-shadow:0 2px 4px rgba(0,0,0,0.1);
 }
-header h1 {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
+header h1 { font-size:1.4rem; margin-bottom:0.4rem; }
+header p { font-size:0.9rem; color:#666; margin-bottom:0.6rem; }
+
+.nav-buttons {
+  display:flex;
+  justify-content:center;
+  gap:0.5rem;
 }
+.nav-buttons button {
+  background:#007bff;
+  color:#fff;
+  border:none;
+  padding:0.4rem 0.8rem;
+  border-radius:4px;
+  font-size:0.9rem;
+  cursor:pointer;
+}
+.nav-buttons button:hover { background:#0056b3; }
 
 /* Controls */
 .controls {
-  margin: 1rem 2rem;
-  display: flex;
-  align-items: center;
-}
-.controls label {
-  margin-right: 0.5rem;
-  font-size: 1rem;
+  margin:0.5rem auto;
+  display:flex;
+  align-items:center;
+  gap:0.5rem;
+  font-size:0.9rem;
 }
 .controls select {
-  padding: 0.3rem 0.6rem;
-  font-size: 1rem;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  background: #fff;
-  cursor: pointer;
+  padding:0.2rem 0.6rem;
+  font-size:0.9rem;
+  border:1px solid #aaa;
+  border-radius:4px;
+  background:#fff;
+  cursor:pointer;
 }
 
-/* Main content */
+/* Heatmap container */
 main {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 2rem;
-  overflow: hidden;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
 }
 
-/* Heatmap container: scrollable viewport */
 #heatmap-container {
-  position: relative;
-  flex: 1;
-  overflow: auto; /* enables both vertical and horizontal scroll */
-  background: none;
-  box-shadow: none;
-  width: 100%;
-  height: 100%;
+  flex:1;
+  width:100%;
+  height:100%;
+  position:relative;
+  overflow:hidden; /* no scroll */
+  background:#fff;
 }
 
-/* The SVG will be as big as D3 draws it; scrolling allows full view */
 #heatmap-container svg {
-  display: block;
-  margin: auto;
+  width:100%;
+  height:100%;
+  display:block;
 }
 
-/* Optional: axis labels */
-.axis-title {
-  font-size: 12px;
-  fill: #333;
-  font-weight: bold;
-  pointer-events: none;
-}
-
- /* Tooltip styling (if used)*/
+/* Tooltip */
 .tooltip {
-  position: absolute;
-  pointer-events: none;
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid #ccc;
-  padding: 0.3rem 0.5rem;
-  border-radius: 4px;
-  font-size: 12px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  position:absolute;
+  pointer-events:none;
+  z-index:10;
+  background:rgba(0,0,0,0.75);
+  color:#fff;
+  border-radius:4px;
+  padding:0.3rem 0.5rem;
+  font-size:0.75rem;
+  max-width:200px;
+}
+
+/* Mobile adjustments */
+@media (max-width:600px) {
+  header h1 { font-size:1.1rem; }
+  header p { font-size:0.75rem; }
+  .controls { font-size:0.8rem; }
+  .controls select { font-size:0.8rem; }
+  .nav-buttons button { font-size:0.8rem; padding:0.3rem 0.6rem; }
+  .tooltip { font-size:0.7rem; }
 }
