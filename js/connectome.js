@@ -21,9 +21,16 @@
   });
   Object.assign(wrapper.style, { position: "relative", margin: "0 auto" });
 
-  // ---- params ----
+  // ---- params (adaptive for mobile) ----
   const padding = 60;
-  const baseR = 15;
+  let baseR = getBaseR();
+
+  function getBaseR() {
+    const w = Math.min(window.innerWidth || 1024, container.clientWidth || 1024);
+    if (w <= 420) return 6;      // phones
+    if (w <= 768) return 10;     // small tablets
+    return 15;                   // desktop (unchanged)
+  }
 
   // ---- sizing ----
   function getCanvasSize() {
@@ -49,7 +56,8 @@
     ctxEdges = createLayer(0);
     ctxHighlight = createLayer(1);
     ctxNodes = createLayer(2);
-    ctxNodes.font = "12px Arial";
+    const fs = Math.max(10, Math.round(baseR * 0.9));
+    ctxNodes.font = `${fs}px Arial`;
     ctxNodes.textAlign = "center";
     ctxNodes.textBaseline = "middle";
   }
@@ -111,6 +119,7 @@
   function drawFaintEdges() {
     ctxEdges.clearRect(0, 0, W, H);
     ctxEdges.globalAlpha = 0.06;
+    const lw = Math.max(0.6, baseR * 0.07); // thinner on mobile
     edges.forEach(e => {
       const s = nodeById[e.source], t = nodeById[e.target];
       if (!s || !t) return;
@@ -118,7 +127,7 @@
       ctxEdges.moveTo(s.x, s.y);
       ctxEdges.lineTo(t.x, t.y);
       ctxEdges.strokeStyle = e.color;
-      ctxEdges.lineWidth = 1;
+      ctxEdges.lineWidth = lw;
       ctxEdges.stroke();
     });
     ctxEdges.globalAlpha = 1;
@@ -126,14 +135,15 @@
 
   function drawNodes(hoverId = null, strengths = {}) {
     ctxNodes.clearRect(0, 0, W, H);
+    const strokeW = Math.max(1, Math.round(baseR * 0.12));
     nodes.forEach(n => {
       let r = baseR;
       let fill = n.color;
       if (hoverId) {
-        if (n.id === hoverId) r = baseR + 4;
+        if (n.id === hoverId) r = baseR + Math.max(3, Math.round(baseR * 0.3));
         else if (strengths[n.id]) {
           const s = strengths[n.id];
-          r = baseR + 8 * s;
+          r = baseR + Math.max(3, Math.round(baseR * 0.5)) * s;
           fill = hexToRgba(n.color || "#ccc", 0.3 + 0.7 * s);
         } else fill = "#fff";
       }
@@ -141,7 +151,7 @@
       if (n.group === "both") ctxNodes.rect(n.x - r, n.y - r, r * 2, r * 2);
       else ctxNodes.arc(n.x, n.y, r, 0, Math.PI * 2);
       ctxNodes.fillStyle = fill; ctxNodes.fill();
-      ctxNodes.lineWidth = hoverId === n.id ? 3 : 1;
+      ctxNodes.lineWidth = hoverId === n.id ? strokeW + 1 : strokeW;
       ctxNodes.strokeStyle = "#333"; ctxNodes.stroke();
       ctxNodes.fillStyle = "#000"; ctxNodes.fillText(n.id, n.x, n.y);
     });
@@ -149,7 +159,7 @@
 
   function drawArrow(ctx, s, t, col, alpha) {
     const ang = Math.atan2(t.y - s.y, t.x - s.x);
-    const len = 8;
+    const len = Math.max(6, Math.round(baseR * 0.55));
     ctx.beginPath();
     ctx.moveTo(t.x, t.y);
     ctx.lineTo(t.x - len * Math.cos(ang - 0.3), t.y - len * Math.sin(ang - 0.3));
@@ -159,7 +169,7 @@
     ctx.fill();
   }
 
-  // ---- tooltip: relative to #graph-container ----
+  // ---- tooltip (container-relative, using page mouse) ----
   function showTooltipAtMouse(html, e) {
     tip.innerHTML = html;
     tip.style.opacity = 0;
@@ -168,7 +178,7 @@
 
     const w = tip.offsetWidth || 160;
     const h = tip.offsetHeight || 60;
-    const offset = 12;
+    const offset = Math.max(8, Math.round(baseR * 0.7));
 
     const dirs = [
       [ offset,  0], [-offset - w, 0],
@@ -176,7 +186,6 @@
     ];
     const [dx, dy] = dirs[Math.floor(Math.random() * dirs.length)];
 
-    // position relative to container
     const cRect = container.getBoundingClientRect();
     let tx = (e.pageX - cRect.left) + dx;
     let ty = (e.pageY - cRect.top)  + dy;
@@ -202,9 +211,11 @@
     const my = e.clientY - rect.top;
 
     let hover = null;
+    const hitR = baseR + Math.max(2, Math.round(baseR * 0.2));
+    const hitR2 = hitR * hitR;
     for (const n of nodes) {
-      const r = baseR + 3;
-      if ((n.x - mx) ** 2 + (n.y - my) ** 2 <= r * r) { hover = n; break; }
+      const dx = n.x - mx, dy = n.y - my;
+      if (dx * dx + dy * dy <= hitR2) { hover = n; break; }
     }
 
     ctxHighlight.clearRect(0, 0, W, H);
@@ -221,6 +232,7 @@
           const maxW = Math.max(...weights);
           const range = maxW - minW || 1;
 
+          const hlw = Math.max(1, Math.round(baseR * 0.15));
           outs.forEach(e2 => {
             const s = nodeById[e2.source], t = nodeById[e2.target];
             if (!s || !t) return;
@@ -229,7 +241,7 @@
             ctxHighlight.moveTo(s.x, s.y);
             ctxHighlight.lineTo(t.x, t.y);
             ctxHighlight.strokeStyle = hexToRgba(e2.color, norm);
-            ctxHighlight.lineWidth = 2;
+            ctxHighlight.lineWidth = hlw;
             ctxHighlight.stroke();
             drawArrow(ctxHighlight, s, t, e2.color, norm);
             strengths[t.id] = Math.max(strengths[t.id] || 0, norm);
@@ -259,6 +271,7 @@
 
   // ---- build ----
   function rebuildAll() {
+    baseR = getBaseR();
     initLayers();
     scaleNodes();
     resolveCollisions(baseR * 2.2, 260);
