@@ -43,6 +43,7 @@
     ctxEdges     = createLayer(0);
     ctxHighlight = createLayer(1);
     ctxNodes     = createLayer(2);
+
     const fs = Math.max(10, Math.round(baseR * 0.9));
     ctxNodes.font = `${fs}px Arial`;
     ctxNodes.textAlign = "center";
@@ -103,25 +104,46 @@
 
   function drawNodes(hoverId = null, strengths = {}) {
     ctxNodes.clearRect(0, 0, W, H);
+
+    const isMobile = window.innerWidth <= 768;
+
     nodes.forEach(n => {
       let r = baseR;
       let fill = n.color;
+
       if (hoverId) {
-        if (n.id === hoverId) r = baseR + 4;
-        else if (strengths[n.id]) {
+        if (n.id === hoverId) {
+          r = baseR + 4;
+        } else if (strengths[n.id]) {
           const s = strengths[n.id];
           r = baseR + 8 * s;
           fill = hexToRgba(n.color || "#ccc", 0.3 + 0.7 * s);
-        } else fill = "#fff";
+        } else {
+          fill = "#fff";
+        }
       }
+
       ctxNodes.beginPath();
       if (n.group === "both") ctxNodes.rect(n.x - r, n.y - r, r * 2, r * 2);
       else ctxNodes.arc(n.x, n.y, r, 0, Math.PI * 2);
+
       ctxNodes.fillStyle = fill;
       ctxNodes.fill();
-      ctxNodes.lineWidth = hoverId === n.id ? 3 : 1;
-      ctxNodes.strokeStyle = "#333";
-      ctxNodes.stroke();
+
+      if (hoverId === n.id) {
+        ctxNodes.lineWidth = 3;
+        ctxNodes.strokeStyle = "#333";
+        ctxNodes.stroke();
+      } else if (!isMobile) {
+        ctxNodes.lineWidth = 1;
+        ctxNodes.strokeStyle = "#333";
+        ctxNodes.stroke();
+      } else {
+        // mobile: transparent border for unselected nodes
+        ctxNodes.strokeStyle = "rgba(0,0,0,0)";
+        ctxNodes.stroke();
+      }
+
       ctxNodes.fillStyle = "#000";
       ctxNodes.fillText(n.id, n.x, n.y);
     });
@@ -141,7 +163,7 @@
 
   // ---- info panel ----
   function showNodeInfo(n) {
-    infoBox.innerHTML = `<b>${n.id}</b><br>${n.name}<br>${n.structure}`;
+    infoBox.innerHTML = `<b>${n.id}</b><br>${n.name}<br><b>${n.structure}</b>`;
   }
   function clearNodeInfo() {
     infoBox.innerHTML = "Hover a node to see details";
@@ -184,7 +206,6 @@
           ctxEdges.moveTo(s.x, s.y);
           ctxEdges.lineTo(t.x, t.y);
 
-          // coloring rule
           if (mode === "outgoing") {
             ctxEdges.strokeStyle = hexToRgba(hover.color, norm);
           } else {
@@ -194,7 +215,6 @@
           ctxEdges.lineWidth = 2;
           ctxEdges.stroke();
 
-          // arrow
           const arrowColor = (mode === "outgoing") ? hover.color : s.color;
           drawArrow(ctxEdges, s, t, arrowColor, norm);
 

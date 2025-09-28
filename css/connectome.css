@@ -169,8 +169,8 @@ main {
     font-size: 0.8rem;
   }
   #node-info {
-    font-size: 10px;
-    color: #fff;
+    font-size: 20px;
+    color: #ffff;
     background: rgba(0,0,0,0.7);
     border: 1px solid #444;
   }
