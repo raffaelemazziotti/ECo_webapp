@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>ECo – Emotional Contagion Video</title>
+
+  <link rel="stylesheet" href="../css/emovideo.css" />
+  <link rel="icon" href="../assets/favECon.ico" type="image/x-icon">
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <h1>Emotional Contagion – Video Stimuli</h1>
+    <button class="home-button" onclick="location.href='mod.html'">Back</button>
+    <button class="home-button" onclick="window.location.href='../index.html'">Home</button>
+    <button class="home-button" onclick="location.href='ER_thresh.html'">Next</button>
+  </header>
+
+  <main>
+    <!-- Left column: gifs stacked vertically -->
+    <div class="gif-col">
+      <div class="gif-box">
+        <h3>Upright</h3>
+        <img src="../assets/trial_up.gif" alt="Upright video" />
+      </div>
+      <div class="gif-box">
+        <h3>Inverted</h3>
+        <img src="../assets/trial_in.gif" alt="Inverted video" />
+      </div>
+      <div class="gif-box">
+        <h3>Phase Scrambled</h3>
+        <img src="../assets/trial_ps.gif" alt="Phase scrambled video" />
+      </div>
+    </div>
+
+    <!-- Middle: time series -->
+    <div class="chart-container">
+      <h3>Pupil Dilation Time Series</h3>
+      <canvas id="timeseries-chart"></canvas>
+    </div>
+
+    <!-- Right: peak responses -->
+    <div class="chart-container">
+      <h3>Peak Responses</h3>
+      <canvas id="peaks-chart"></canvas>
+    </div>
+  </main>
+
+  <script src="../js/emovideo.js"></script>
+</body>
+</html>
