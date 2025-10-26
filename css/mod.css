@@ -21,35 +21,60 @@ header {
   text-align: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
 header h1 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
+
 header .description {
   font-size: 1rem;
   color: #666;
   padding-bottom: 1rem;
 }
 
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .home-button {
   background: #007bff;
   color: #fff;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.2s;
 }
+
 .home-button:hover {
   background: #0056b3;
+}
+
+/* ===== Image Section ===== */
+.mod-image-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.mod-image {
+  max-width: 30%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 /* ===== Layout ===== */
 main {
   padding: 2rem 1rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
@@ -60,39 +85,43 @@ main {
   gap: 2rem;
 }
 
-/* ===== Charts (square 400x400) ===== */
-.left-charts,
-.right-charts {
-  flex: 0 0 auto;
+/* ===== Charts ===== */
+.chart-section {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 400px;
 }
 
-.chart,
-.scatter-plot {
-  width: 400px;
+.chart-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.chart {
+  width: 100%;
   height: 400px;
   position: relative;
 }
 
-/* Canvas scaling */
-.chart canvas,
-.scatter-plot canvas {
+.chart canvas {
   width: 100% !important;
   height: 100% !important;
 }
 
-/* ===== Responsive Tweaks ===== */
+/* ===== Responsive ===== */
 @media (max-width: 850px) {
   .container {
     flex-direction: column;
     align-items: center;
   }
 
-  .chart,
-  .scatter-plot {
+  .chart-section {
     width: 90vw;
-    height: 90vw;
     max-width: 400px;
-    max-height: 400px;
   }
 
   header h1 {

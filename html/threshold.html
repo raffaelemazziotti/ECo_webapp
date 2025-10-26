@@ -2,50 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>ECo – Thresholds</title>
+  <title>ECo – Psychometric Thresholds</title>
 
   <link rel="stylesheet" href="../css/threshold.css" />
-  <link rel="icon" href="../assets/favECon.ico" type="image/x-icon">
+  <link rel="icon" href="../assets/favECon.ico" type="image/x-icon" />
 
-  <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
   <header>
     <h1>Psychometric Thresholds</h1>
-    <button class="home-button" onclick="location.href='ER_thresh.html'">Back</button>
-    <button class="home-button" onclick="location.href='../index.html'">Home</button>
-    <button class="home-button" onclick="location.href='connectome.html'">Next</button>
+    <p class="description">Comparative correlations across tasks</p>
+    <div class="nav-buttons">
+      <button class="home-button" onclick="location.href='ER_thresh.html'">Back</button>
+      <button class="home-button" onclick="location.href='../index.html'">Home</button>
+      <button class="home-button" onclick="location.href='connectome.html'">Next</button>
+    </div>
   </header>
 
-  <!-- ==== TWO-COLUMN GRID OF CHARTS ==== -->
   <main class="two-cols">
-    <!-- column 1 (left) -->
+    <!-- LEFT COLUMN -->
     <div class="col">
-      <div class="chart-container rect">
-        <h3>A) Average Thresholds</h3>
-        <canvas id="avg-scatter-chart"></canvas>
+      <div class="chart-container square">
+        <div class="chart-header">
+          <h3>A) Average Thresholds</h3>
+        </div>
+        <div class="chart-body">
+          <canvas id="avg-scatter-chart"></canvas>
+        </div>
+        <div class="chart-footer">
+          <p class="chart-desc">Mean detection thresholds across experimental conditions.</p>
+        </div>
       </div>
 
       <div class="chart-container square">
-        <h3>DER Pupil × DER Velocity</h3>
-        <canvas id="corr-dp-dv"></canvas>
+        <div class="chart-header">
+          <h3>DER Pupil × DER Velocity</h3>
+        </div>
+        <div class="chart-body">
+          <canvas id="corr-dp-dv"></canvas>
+        </div>
+        <div class="chart-footer">
+          <p class="chart-desc">Correlation between pupil response and movement speed in DER condition.</p>
+        </div>
       </div>
     </div>
 
-    <!-- column 2 (right) -->
+    <!-- RIGHT COLUMN -->
     <div class="col">
       <div class="chart-container square">
-        <h3>DER Pupil × VER Pupil</h3>
-        <canvas id="corr-dp-vp"></canvas>
+        <div class="chart-header">
+          <h3>DER Pupil × VER Pupil</h3>
+        </div>
+        <div class="chart-body">
+          <canvas id="corr-dp-vp"></canvas>
+        </div>
+        <div class="chart-footer">
+          <p class="chart-desc">Cross-condition correlation of pupil size between DER and VER.</p>
+        </div>
       </div>
 
       <div class="chart-container square">
-        <h3>DER Velocity × VER Pupil</h3>
-        <canvas id="corr-dv-vp"></canvas>
+        <div class="chart-header">
+          <h3>DER Velocity × VER Pupil</h3>
+        </div>
+        <div class="chart-body">
+          <canvas id="corr-dv-vp"></canvas>
+        </div>
+        <div class="chart-footer">
+          <p class="chart-desc">Relationship between DER velocity and VER pupil dilation.</p>
+        </div>
       </div>
     </div>
   </main>

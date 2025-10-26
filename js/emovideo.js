@@ -16,21 +16,21 @@
   // ---------- Time series chart (linear axis) ----------
   const datasetsTS = [
     {
-      label: "Upright",
+      label: "UP",
       data: ts.map(d => ({ x: d.time, y: d.up })),
       borderColor: "#1f77b4",
       fill: false,
       pointRadius: 0
     },
     {
-      label: "Inverted",
+      label: "IN",
       data: ts.map(d => ({ x: d.time, y: d.in })),
       borderColor: "#ff7f0e",
       fill: false,
       pointRadius: 0
     },
     {
-      label: "Phase Scrambled",
+      label: "PS",
       data: ts.map(d => ({ x: d.time, y: d.ps })),
       borderColor: "#2ca02c",
       fill: false,
@@ -76,9 +76,9 @@
 
   function normalizeCond(c) {
     const x = c.trim().toLowerCase();
-    if (x === "inv" || x === "inverted") return "in";
-    if (x === "upright" || x === "up") return "up";
-    if (x === "ps" || x.includes("scram")) return "ps";
+    if (x === "inv" || x === "inverted") return "IN";
+    if (x === "upright" || x === "up") return "UP";
+    if (x === "ps" || x.includes("scram")) return "PS";
     return x;
   }
 
@@ -91,7 +91,7 @@
   //console.log("Peaks parsed:", pk.slice(0, 5));
 
   // ---------- Peak responses scatter plot ----------
-  const colors = { up: "#1f77b4", in: "#ff7f0e", ps: "#2ca02c" };
+  const colors = { UP: "#1f77b4", IN: "#ff7f0e", PS: "#2ca02c" };
   const grouped = d3.group(pk.filter(d => !isNaN(d.value)), d => d.cond);
   const conditions = Array.from(grouped.keys());
 

@@ -21,84 +21,83 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ─── Create a scatterplot ─────────────────────────
   const makeScatter = ({ id, xs, ys, colour = '#007bff', square = false, normalize = false }) => {
-  const normalizeArr = (arr) => {
-    const min = Math.min(...arr);
-    const max = Math.max(...arr);
-    return arr.map(v => (v - min) / (max - min));
-  };
+    const normalizeArr = (arr) => {
+      const min = Math.min(...arr);
+      const max = Math.max(...arr);
+      return arr.map(v => (v - min) / (max - min));
+    };
 
-  const normXs = normalize ? normalizeArr(xs) : xs;
-  const normYs = normalize ? normalizeArr(ys) : ys;
+    const normXs = normalize ? normalizeArr(xs) : xs;
+    const normYs = normalize ? normalizeArr(ys) : ys;
+    const { slope, intercept, line } = ols(normXs, normYs);
 
-  const { slope, intercept, line } = ols(normXs, normYs);
+    const canvas = document.getElementById(id);
+    const box = canvas.getBoundingClientRect();
+    canvas.width = box.width;
+    canvas.height = box.height;
 
-  const canvas = document.getElementById(id);
-  const box = canvas.getBoundingClientRect();
-  canvas.width = box.width;
-  canvas.height = box.height;
-
-  new Chart(canvas, {
-    type: 'scatter',
-    data: {
-      datasets: [
-        {
-          label: 'Dyads',
-          data: normXs.map((x, i) => ({
-            x, y: normYs[i],
-            rawX: xs[i],
-            rawY: ys[i]
-          })),
-          pointRadius: 4,
-          pointHoverRadius: 6,
-          pointHitRadius: 8,
-          pointBackgroundColor: 'transparent',
-          pointBorderColor: colour,
-          pointBorderWidth: 1.5
-        },
-        {
-          label: `y = ${slope.toFixed(2)}x + ${intercept.toFixed(2)}`,
-          data: line,
-          type: 'line',
-          borderColor: colour,
-          borderWidth: 2,
-          pointRadius: 0,
-          fill: false
-        }
-      ]
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: !square,
-      aspectRatio: square ? 1 : undefined,
-      interaction: { mode: 'nearest', intersect: true },
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          callbacks: {
-            label: ctx => {
-              const d = ctx.raw;
-              return normalize
-                ? `x: ${d.rawX.toFixed(2)}, y: ${d.rawY.toFixed(2)}`
-                : `x: ${d.x.toFixed(2)}, y: ${d.y.toFixed(2)}`;
+    new Chart(canvas, {
+      type: 'scatter',
+      data: {
+        datasets: [
+          {
+            label: 'Dyads',
+            data: normXs.map((x, i) => ({
+              x, y: normYs[i],
+              rawX: xs[i],
+              rawY: ys[i]
+            })),
+            pointRadius: 4,
+            pointHoverRadius: 6,
+            pointHitRadius: 8,
+            pointBackgroundColor: 'transparent',
+            pointBorderColor: colour,
+            pointBorderWidth: 1.5
+          },
+          {
+            label: `y = ${slope.toFixed(2)}x + ${intercept.toFixed(2)}`,
+            data: line,
+            type: 'line',
+            borderColor: colour,
+            borderWidth: 2,
+            pointRadius: 0,
+            fill: false
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: !square,
+        aspectRatio: square ? 1 : undefined,
+        interaction: { mode: 'nearest', intersect: true },
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: ctx => {
+                const d = ctx.raw;
+                return normalize
+                  ? `x: ${d.rawX.toFixed(2)}, y: ${d.rawY.toFixed(2)}`
+                  : `x: ${d.x.toFixed(2)}, y: ${d.y.toFixed(2)}`;
+              }
             }
           }
-        }
-      },
-      scales: {
-        x: {
-          title: { display: true, text: 'Demonstrator' },
-          min: normalize ? -0.1 : undefined,
-          max: normalize ? 1.1 : undefined
         },
-        y: {
-          title: { display: true, text: 'Observer' },
-          min: normalize ? -0.1 : undefined,
-          max: normalize ? 1.1 : undefined
+        scales: {
+          x: {
+            title: { display: true, text: 'Demonstrator' },
+            min: normalize ? -0.1 : undefined,
+            max: normalize ? 1.1 : undefined
+          },
+          y: {
+            title: { display: true, text: 'Observer' },
+            min: normalize ? -0.1 : undefined,
+            max: normalize ? 1.1 : undefined
+          }
         }
       }
-    }
-  });
-};
+    });
+  };
 
 
   const firstColumnMatching = (row, re) =>
